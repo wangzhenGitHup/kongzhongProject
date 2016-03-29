@@ -1,0 +1,294 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../意见反馈_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:39px;
+    top:9px;
+    width:341px;
+    height:540px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:546px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:262px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../意见反馈_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:39px;
+    top:9px;
+    width:341px;
+    height:37px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:43px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:49px;
+    top:18px;
+    width:54px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_normal {
+    background-image: url('../意见反馈_files/u5_normal.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:295px;
+    top:10px;
+    width:84px;
+    height:36px;
+}
+
+#u5_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:90px;
+    height:42px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:80px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7 {
+    position:absolute;
+    left:49px;
+    top:245px;
+    width:151px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u8 {
+    position:absolute;
+    left:49px;
+    top:248px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:270px;
+    top:243px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u10_normal {
+    background-image: url('../意见反馈_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:43px;
+    top:334px;
+    width:335px;
+    height:209px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:335px;
+    height:209px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:96px;
+    width:331px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:49px;
+    top:56px;
+    width:321px;
+    height:177px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#CCCCCC;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+#u13 {
+    position:absolute;
+    left:61px;
+    top:133px;
+    width:298px;
+    height:81px;
+    overflow:hidden;
+}
+
+#pd0u13 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:298px;
+    height:81px;
+    
+}
+
+.u14_normal {
+    background-image: url('../意见反馈_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:297px;
+    height:80px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:303px;
+    height:86px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:293px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

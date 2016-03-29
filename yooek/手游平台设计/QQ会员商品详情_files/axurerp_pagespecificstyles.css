@@ -1,0 +1,392 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../QQ会员商品详情_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:37px;
+    top:16px;
+    width:350px;
+    height:600px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:350px;
+    height:600px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:292px;
+    width:346px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../QQ会员商品详情_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:60px;
+    top:123px;
+    width:180px;
+    height:23px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:29px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../QQ会员商品详情_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:122px;
+    top:146px;
+    width:63px;
+    height:18px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:18px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:122px;
+    top:148px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../QQ会员商品详情_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:53px;
+    top:212px;
+    width:249px;
+    height:27px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:249px;
+    height:27px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:245px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../QQ会员商品详情_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:53px;
+    top:284px;
+    width:153px;
+    height:33px;
+}
+
+#u9_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:153px;
+    height:33px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:149px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../QQ会员商品详情_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:56px;
+    top:339px;
+    width:43px;
+    height:28px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:49px;
+    height:34px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:39px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../QQ会员商品详情_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:243px;
+    top:63px;
+    width:135px;
+    height:50px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:135px;
+    height:50px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:131px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../QQ会员商品详情_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:332px;
+    top:20px;
+    width:45px;
+    height:39px;
+}
+
+#u15_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:45px;
+    height:39px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../QQ会员商品详情_files/u17_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:54px;
+    top:24px;
+    width:58px;
+    height:32px;
+}
+
+#u17_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:58px;
+    height:32px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../QQ会员商品详情_files/u19_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:226px;
+    top:526px;
+    width:46px;
+    height:29px;
+}
+
+#u19_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:46px;
+    height:29px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:42px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:232px;
+    top:527px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

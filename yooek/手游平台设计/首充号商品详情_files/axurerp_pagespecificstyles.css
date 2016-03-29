@@ -1,0 +1,532 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../首充号商品详情_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:38px;
+    top:16px;
+    width:354px;
+    height:597px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:354px;
+    height:597px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:290px;
+    width:350px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../首充号商品详情_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:257px;
+    top:65px;
+    width:135px;
+    height:46px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:135px;
+    height:46px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:15px;
+    width:131px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../首充号商品详情_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:335px;
+    top:19px;
+    width:57px;
+    height:38px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:57px;
+    height:38px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:53px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../首充号商品详情_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:61px;
+    top:24px;
+    width:54px;
+    height:29px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:29px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../首充号商品详情_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:289px;
+    top:19px;
+    width:46px;
+    height:41px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:46px;
+    height:41px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:42px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u10 {
+    position:absolute;
+    left:411px;
+    top:90px;
+    width:181px;
+    height:42px;
+    overflow:hidden;
+}
+
+#pd0u10 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:181px;
+    height:42px;
+    
+}
+
+.u11_normal {
+    background-image: url('../首充号商品详情_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:180px;
+    height:41px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:47px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../首充号商品详情_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:57px;
+    top:357px;
+    width:143px;
+    height:37px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:143px;
+    height:37px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:139px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../首充号商品详情_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:92px;
+    top:340px;
+    width:43px;
+    height:17px;
+}
+
+#u15_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:43px;
+    height:17px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:39px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../首充号商品详情_files/u13_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:61px;
+    top:252px;
+    width:143px;
+    height:37px;
+}
+
+#u17_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:143px;
+    height:37px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:139px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../首充号商品详情_files/u19_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:61px;
+    top:252px;
+    width:190px;
+    height:43px;
+}
+
+#u19_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:190px;
+    height:43px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:186px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../首充号商品详情_files/u21_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:55px;
+    top:316px;
+    width:336px;
+    height:111px;
+}
+
+#u21_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:336px;
+    height:111px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:48px;
+    width:332px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../首充号商品详情_files/u23_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:61px;
+    top:418px;
+    width:330px;
+    height:99px;
+}
+
+#u23_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:330px;
+    height:99px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:326px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../首充号商品详情_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:60px;
+    top:324px;
+    width:43px;
+    height:18px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:49px;
+    height:24px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:39px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../首充号商品详情_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:239px;
+    top:527px;
+    width:52px;
+    height:30px;
+}
+
+#u27_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:52px;
+    height:30px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29 {
+    position:absolute;
+    left:239px;
+    top:530px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

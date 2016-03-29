@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../游易客服务条款_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:39px;
+    top:9px;
+    width:341px;
+    height:540px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:546px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:262px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../游易客服务条款_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:39px;
+    top:9px;
+    width:341px;
+    height:37px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:43px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:45px;
+    top:18px;
+    width:54px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:280px;
+    top:18px;
+    width:91px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:39px;
+    top:46px;
+    width:341px;
+    height:503px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+

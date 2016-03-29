@@ -1,0 +1,53 @@
+﻿if(!window.STR)
+window.STR = {};
+__Page.STR=window.STR;
+__Page.STR.APUnMatch = "账号密码错误";
+__Page.STR.Cleaning = "获得更新内容";
+__Page.STR.ClearCacheCue = "确认清除缓存?";
+__Page.STR.Downloading = "奋力更新中...";
+__Page.STR.LoadCity="正在加载资源...";
+__Page.STR.Error = "您的网络不稳定，网络连接已断开，请尝试重新连接";
+__Page.STR.FileUpdate = "游戏需要更新，请您耐心等待";
+__Page.STR.FileUpdateMore = "游戏有较多内容需要更新，请您耐心等待";
+__Page.STR.Logining = "登录中";
+__Page.STR.Relogin = "确认重新进入游戏";
+__Page.STR.VersionLow = "亲，您的软件版本较低，赶紧更新后一起愉快地玩耍";
+__Page.STR.UseExistingAccount="是否用已有账号登录？";
+__Page.STR.InputAccountPwd="请输入账号和密码：";
+__Page.STR.Account="账号：";
+__Page.STR.Password="密码：";
+__Page.STR.SystemMaintenance="抱歉，服务器正在维护中，请您稍后尝试连接";
+
+
+__Page.STR.Day="天";
+__Page.STR.Hour="时";
+__Page.STR.Minute="分";
+__Page.STR.Second="秒";
+__Page.STR.LoginPurError="是否重新登录？";
+__Page.STR.SuggestUpgrade="您的软件版本较低，需要现在更新吗？";
+__Page.STR.NetworkError="您的网络与服务器连接出现异常，请尝试断开并重新连接网络后，重启软件";
+
+(function() {
+var re_test = /\$\w+\$/;
+var re_replace = /\$(\w+)\$/g;
+function load(strings) {
+var key, text;
+for (key in strings) {
+text = strings[key];
+if (re_test.test(text)) {
+strings[key] = new getText(text);
+}
+}
+};
+
+function getText(str){
+this.str = str;
+}
+
+getText.prototype.toString = function(args){
+return args?this.str.replace(re_replace, function(word, key) {
+return args[key] != null? args[key]: word;
+}):this.str;
+};
+load(__Page.STR);
+})();

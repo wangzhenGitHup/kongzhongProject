@@ -1,0 +1,379 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../找回密码下一步_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:39px;
+    top:9px;
+    width:341px;
+    height:540px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:546px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:262px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../找回密码下一步_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:39px;
+    top:9px;
+    width:341px;
+    height:37px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:43px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:45px;
+    top:18px;
+    width:54px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:313px;
+    top:18px;
+    width:58px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_line {
+    background-image: url('../找回密码下一步_files/u6_line.png');
+}
+
+.u6_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:211px;
+    height:3px;
+}
+
+.u6 {
+    position:absolute;
+    left:45px;
+    top:144px;
+    width:211px;
+    height:10px;
+    
+}
+
+.u7 {
+    position:absolute;
+    left:45px;
+    top:76px;
+    width:184px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:46px;
+    top:268px;
+    width:326px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u9_line {
+    background-image: url('../找回密码下一步_files/u9_line.png');
+}
+
+.u9_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:192px;
+    height:3px;
+}
+
+.u9 {
+    position:absolute;
+    left:229px;
+    top:76px;
+    width:192px;
+    height:10px;
+    
+}
+
+.u10 {
+    position:absolute;
+    left:421px;
+    top:76px;
+    width:212px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:266px;
+    top:129px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u12 {
+    position:absolute;
+    left:45px;
+    top:128px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_line {
+    background-image: url('../找回密码下一步_files/u13_line.png');
+}
+
+.u13_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:321px;
+    height:3px;
+}
+
+.u13 {
+    position:absolute;
+    left:45px;
+    top:199px;
+    width:321px;
+    height:10px;
+    
+}
+
+.u14 {
+    position:absolute;
+    left:45px;
+    top:183px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../找回密码下一步_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:43px;
+    top:334px;
+    width:335px;
+    height:209px;
+}
+
+#u15_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:335px;
+    height:209px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:96px;
+    width:331px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_line {
+    background-image: url('../找回密码下一步_files/u17_line.png');
+}
+
+.u17_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:75px;
+    height:3px;
+}
+
+.u17 {
+    position:absolute;
+    left:364px;
+    top:274px;
+    width:75px;
+    height:10px;
+    
+}
+
+.u18 {
+    position:absolute;
+    left:439px;
+    top:268px;
+    width:212px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_line {
+    background-image: url('../找回密码下一步_files/u19_line.png');
+}
+
+.u19_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:321px;
+    height:3px;
+}
+
+.u19 {
+    position:absolute;
+    left:43px;
+    top:246px;
+    width:321px;
+    height:10px;
+    
+}
+
+.u20 {
+    position:absolute;
+    left:43px;
+    top:230px;
+    width:166px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

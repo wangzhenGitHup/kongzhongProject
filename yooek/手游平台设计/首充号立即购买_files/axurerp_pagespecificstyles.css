@@ -1,0 +1,2590 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../首充号立即购买_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:19px;
+    top:14px;
+    width:338px;
+    height:597px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:597px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:290px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../首充号立即购买_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:384px;
+    top:21px;
+    width:339px;
+    height:522px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:339px;
+    height:522px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:253px;
+    width:335px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../首充号立即购买_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:394px;
+    top:77px;
+    width:180px;
+    height:27px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../首充号立即购买_files/u4_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:391px;
+    top:218px;
+    width:180px;
+    height:27px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../首充号立即购买_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:391px;
+    top:571px;
+    width:315px;
+    height:40px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:315px;
+    height:40px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:311px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../首充号立即购买_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:388px;
+    top:498px;
+    width:333px;
+    height:41px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:333px;
+    height:41px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:329px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../首充号立即购买_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:30px;
+    top:20px;
+    width:54px;
+    height:29px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:29px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_line {
+    background-image: url('../首充号立即购买_files/u14_line.png');
+}
+
+.u14_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:118px;
+    height:3px;
+}
+
+.u14 {
+    position:absolute;
+    left:681px;
+    top:513px;
+    width:118px;
+    height:10px;
+    
+}
+
+.u15 {
+    position:absolute;
+    left:806px;
+    top:477px;
+    width:201px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../首充号立即购买_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:392px;
+    top:571px;
+    width:312px;
+    height:40px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:318px;
+    height:46px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:308px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../首充号立即购买_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:100px;
+    top:94px;
+    width:10px;
+    height:21px;
+}
+
+#u18_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:10px;
+    height:21px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:6px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../首充号立即购买_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:24px;
+    top:196px;
+    width:333px;
+    height:103px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:333px;
+    height:103px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:44px;
+    width:329px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../首充号立即购买_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:23px;
+    top:196px;
+    width:334px;
+    height:38px;
+}
+
+#u22_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:334px;
+    height:38px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:330px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../首充号立即购买_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:23px;
+    top:289px;
+    width:334px;
+    height:47px;
+}
+
+#u24_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:334px;
+    height:47px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:330px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_normal {
+    background-image: url('../首充号立即购买_files/u26_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:23px;
+    top:223px;
+    width:334px;
+    height:28px;
+}
+
+#u26_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:334px;
+    height:28px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:330px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../首充号立即购买_files/u28_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:604px;
+    top:213px;
+    width:117px;
+    height:31px;
+}
+
+#u28_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:117px;
+    height:31px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:113px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:1px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../首充号立即购买_files/u32_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:100px;
+    top:95px;
+    width:29px;
+    height:25px;
+}
+
+#u32_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:29px;
+    height:25px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:25px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../首充号立即购买_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:292px;
+    top:97px;
+    width:28px;
+    height:23px;
+}
+
+#u34_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:28px;
+    height:23px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:24px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_normal {
+    background-image: url('../首充号立即购买_files/u36_normal.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:390px;
+    top:114px;
+    width:319px;
+    height:14px;
+}
+
+#u36_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:319px;
+    height:14px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:315px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_normal {
+    background-image: url('../首充号立即购买_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:388px;
+    top:104px;
+    width:333px;
+    height:98px;
+}
+
+#u38_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:333px;
+    height:98px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:329px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../首充号立即购买_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:394px;
+    top:97px;
+    width:311px;
+    height:30px;
+}
+
+#u40_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:311px;
+    height:30px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:307px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../首充号立即购买_files/u42_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:394px;
+    top:125px;
+    width:314px;
+    height:25px;
+}
+
+#u42_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:314px;
+    height:25px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:310px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44 {
+    position:absolute;
+    left:392px;
+    top:150px;
+    width:327px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45 {
+    position:absolute;
+    left:392px;
+    top:169px;
+    width:327px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46 {
+    position:absolute;
+    left:394px;
+    top:187px;
+    width:327px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_line {
+    background-image: url('../首充号立即购买_files/u47_line.png');
+}
+
+.u47_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:203px;
+    height:3px;
+}
+
+.u47 {
+    position:absolute;
+    left:721px;
+    top:263px;
+    width:203px;
+    height:10px;
+    
+}
+
+.u48 {
+    position:absolute;
+    left:914px;
+    top:245px;
+    width:134px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../首充号立即购买_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:1059px;
+    top:59px;
+    width:341px;
+    height:508px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:514px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:246px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../首充号立即购买_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:1059px;
+    top:22px;
+    width:341px;
+    height:37px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:43px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53 {
+    position:absolute;
+    left:1067px;
+    top:30px;
+    width:42px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54 {
+    position:absolute;
+    left:1325px;
+    top:31px;
+    width:74px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../首充号立即购买_files/u55_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:1059px;
+    top:59px;
+    width:173px;
+    height:33px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:179px;
+    height:39px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:169px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../首充号立即购买_files/u57_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:1232px;
+    top:59px;
+    width:168px;
+    height:33px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:174px;
+    height:39px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:164px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../首充号立即购买_files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:1373px;
+    top:102px;
+    width:26px;
+    height:399px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:405px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:22px;
+    height:390px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../首充号立即购买_files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:1064px;
+    top:99px;
+    width:97px;
+    height:28px;
+}
+
+#u61_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:97px;
+    height:28px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:93px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../首充号立即购买_files/u63_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:1060px;
+    top:133px;
+    width:116px;
+    height:28px;
+}
+
+#u63_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:116px;
+    height:28px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:112px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../首充号立即购买_files/u65_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:1066px;
+    top:161px;
+    width:116px;
+    height:31px;
+}
+
+#u65_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:116px;
+    height:31px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:112px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../首充号立即购买_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:1064px;
+    top:194px;
+    width:113px;
+    height:29px;
+}
+
+#u67_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:113px;
+    height:29px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:109px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../首充号立即购买_files/u69_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:1066px;
+    top:223px;
+    width:82px;
+    height:32px;
+}
+
+#u69_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:82px;
+    height:32px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../首充号立即购买_files/u71_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:1064px;
+    top:255px;
+    width:118px;
+    height:29px;
+}
+
+#u71_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:118px;
+    height:29px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../首充号立即购买_files/u49_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:1569px;
+    top:59px;
+    width:341px;
+    height:508px;
+}
+
+#u73_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:514px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:246px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../首充号立即购买_files/u51_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:1569px;
+    top:22px;
+    width:341px;
+    height:37px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:43px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77 {
+    position:absolute;
+    left:1575px;
+    top:30px;
+    width:42px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78 {
+    position:absolute;
+    left:1791px;
+    top:31px;
+    width:120px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79 {
+    position:absolute;
+    left:1575px;
+    top:69px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u80 {
+    position:absolute;
+    left:1211px;
+    top:577px;
+    width:332px;
+    height:143px;
+    overflow:hidden;
+}
+
+#pd0u80 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:332px;
+    height:143px;
+    
+}
+
+.u81_normal {
+    background-image: url('../首充号立即购买_files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:331px;
+    height:142px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:337px;
+    height:148px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:63px;
+    width:327px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_line {
+    background-image: url('../首充号立即购买_files/u83_line.png');
+}
+
+.u83_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:331px;
+    height:3px;
+}
+
+.u83 {
+    position:absolute;
+    left:0px;
+    top:29px;
+    width:331px;
+    height:10px;
+    
+}
+
+.u84 {
+    position:absolute;
+    left:13px;
+    top:13px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85 {
+    position:absolute;
+    left:13px;
+    top:49px;
+    width:150px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86_normal {
+    background-image: url('../首充号立即购买_files/u86_normal.png');
+}
+
+.u86_container {
+    position:absolute;
+    left:1575px;
+    top:95px;
+    width:328px;
+    height:193px;
+}
+
+#u86_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:334px;
+    height:199px;
+}
+
+.u87 {
+    position:absolute;
+    left:2px;
+    top:88px;
+    width:324px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:111px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90 {
+    position:absolute;
+    left:1585px;
+    top:316px;
+    width:302px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u91 {
+    position:absolute;
+    left:1575px;
+    top:344px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92 {
+    position:absolute;
+    left:1575px;
+    top:364px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93_line {
+    background-image: url('../首充号立即购买_files/u93_line.png');
+}
+
+.u93_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u93 {
+    position:absolute;
+    left:1609px;
+    top:126px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u94 {
+    position:absolute;
+    left:1609px;
+    top:110px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_line {
+    background-image: url('../首充号立即购买_files/u95_line.png');
+}
+
+.u95_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u95 {
+    position:absolute;
+    left:1610px;
+    top:162px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u96 {
+    position:absolute;
+    left:1610px;
+    top:146px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97_line {
+    background-image: url('../首充号立即购买_files/u97_line.png');
+}
+
+.u97_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u97 {
+    position:absolute;
+    left:1609px;
+    top:199px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u98 {
+    position:absolute;
+    left:1609px;
+    top:183px;
+    width:211px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99_line {
+    background-image: url('../首充号立即购买_files/u99_line.png');
+}
+
+.u99_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u99 {
+    position:absolute;
+    left:1609px;
+    top:239px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u100 {
+    position:absolute;
+    left:1609px;
+    top:223px;
+    width:211px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101_normal {
+    background-image: url('../首充号立即购买_files/u101_normal.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:1569px;
+    top:390px;
+    width:341px;
+    height:177px;
+}
+
+#u101_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:341px;
+    height:177px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:80px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103_normal {
+    background-image: url('../首充号立即购买_files/u49_normal.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:1931px;
+    top:59px;
+    width:341px;
+    height:508px;
+}
+
+#u103_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:514px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:246px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105_normal {
+    background-image: url('../首充号立即购买_files/u51_normal.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:1931px;
+    top:22px;
+    width:341px;
+    height:37px;
+}
+
+#u105_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:43px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107 {
+    position:absolute;
+    left:1937px;
+    top:30px;
+    width:42px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108 {
+    position:absolute;
+    left:2153px;
+    top:31px;
+    width:120px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109 {
+    position:absolute;
+    left:1937px;
+    top:69px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../首充号立即购买_files/u110_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:1937px;
+    top:95px;
+    width:328px;
+    height:215px;
+}
+
+#u110_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:334px;
+    height:221px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:100px;
+    width:324px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:111px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114 {
+    position:absolute;
+    left:1947px;
+    top:332px;
+    width:302px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u115 {
+    position:absolute;
+    left:1937px;
+    top:364px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_line {
+    background-image: url('../首充号立即购买_files/u116_line.png');
+}
+
+.u116_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u116 {
+    position:absolute;
+    left:1972px;
+    top:126px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u117 {
+    position:absolute;
+    left:1972px;
+    top:110px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118_line {
+    background-image: url('../首充号立即购买_files/u118_line.png');
+}
+
+.u118_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u118 {
+    position:absolute;
+    left:1973px;
+    top:162px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u119 {
+    position:absolute;
+    left:1973px;
+    top:146px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_line {
+    background-image: url('../首充号立即购买_files/u120_line.png');
+}
+
+.u120_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u120 {
+    position:absolute;
+    left:1972px;
+    top:228px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u121 {
+    position:absolute;
+    left:1972px;
+    top:212px;
+    width:211px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_line {
+    background-image: url('../首充号立即购买_files/u122_line.png');
+}
+
+.u122_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:255px;
+    height:3px;
+}
+
+.u122 {
+    position:absolute;
+    left:1972px;
+    top:268px;
+    width:255px;
+    height:10px;
+    
+}
+
+.u123 {
+    position:absolute;
+    left:1972px;
+    top:252px;
+    width:211px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../首充号立即购买_files/u101_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:1931px;
+    top:390px;
+    width:341px;
+    height:177px;
+}
+
+#u124_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:341px;
+    height:177px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:80px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126 {
+    position:absolute;
+    left:1972px;
+    top:186px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u127_end {
+    background-image: url('../首充号立即购买_files/u127_end.png');
+}
+
+.u127_end {
+    position:absolute;
+    left:332px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u127_line {
+    background-image: url('../首充号立即购买_files/u127_line.png');
+}
+
+.u127_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:341px;
+    height:3px;
+}
+
+.u127 {
+    position:absolute;
+    left:707px;
+    top:376px;
+    width:341px;
+    height:10px;
+    
+}
+
+.u128 {
+    position:absolute;
+    left:797px;
+    top:391px;
+    width:236px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129_end {
+    background-image: url('../首充号立即购买_files/u129_end.png');
+}
+
+.u129_end {
+    position:absolute;
+    left:231px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u129_line {
+    background-image: url('../首充号立即购买_files/u129_line.png');
+}
+
+.u129_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:240px;
+    height:3px;
+}
+
+.u129 {
+    position:absolute;
+    left:1325px;
+    top:108px;
+    width:240px;
+    height:10px;
+    
+}
+
+.u130 {
+    position:absolute;
+    left:1409px;
+    top:118px;
+    width:150px;
+    height:144px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u131 {
+    position:absolute;
+    left:1609px;
+    top:259px;
+    width:117px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#CCCCCC;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u132 {
+    position:absolute;
+    left:1764px;
+    top:259px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u133 {
+    position:absolute;
+    left:1972px;
+    top:282px;
+    width:117px;
+    height:25px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#CCCCCC;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u134 {
+    position:absolute;
+    left:2127px;
+    top:282px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u135_normal {
+    background-image: url('../首充号立即购买_files/u135_normal.png');
+}
+
+.u135_container {
+    position:absolute;
+    left:35px;
+    top:96px;
+    width:94px;
+    height:18px;
+}
+
+#u135_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:94px;
+    height:18px;
+}
+
+.u136 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:90px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:40px;
+    top:97px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u138_normal {
+    background-image: url('../首充号立即购买_files/u138_normal.png');
+}
+
+.u138_container {
+    position:absolute;
+    left:110px;
+    top:98px;
+    width:49px;
+    height:18px;
+}
+
+#u138_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:49px;
+    height:18px;
+}
+
+.u139 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140_normal {
+    background-image: url('../首充号立即购买_files/u49_normal.png');
+}
+
+.u140_container {
+    position:absolute;
+    left:380px;
+    top:637px;
+    width:341px;
+    height:508px;
+}
+
+#u140_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:514px;
+}
+
+.u141 {
+    position:absolute;
+    left:2px;
+    top:246px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142 {
+    position:absolute;
+    left:436px;
+    top:672px;
+    width:223px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143 {
+    position:absolute;
+    left:515px;
+    top:710px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144_line {
+    background-image: url('../首充号立即购买_files/u144_line.png');
+}
+
+.u144_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:341px;
+    height:3px;
+}
+
+.u144 {
+    position:absolute;
+    left:380px;
+    top:734px;
+    width:341px;
+    height:10px;
+    
+}
+
+.u145 {
+    position:absolute;
+    left:434px;
+    top:754px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146 {
+    position:absolute;
+    left:550px;
+    top:754px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147 {
+    position:absolute;
+    left:434px;
+    top:788px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148 {
+    position:absolute;
+    left:545px;
+    top:788px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u149 {
+    position:absolute;
+    left:456px;
+    top:835px;
+    width:199px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u150 {
+    position:absolute;
+    left:415px;
+    top:1114px;
+    width:279px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u151_end {
+    background-image: url('../首充号立即购买_files/u151_end.png');
+}
+
+.u151_end {
+    position:absolute;
+    left:-5px;
+    top:84px;
+    width:20px;
+    height:14px;
+}
+
+.u151_line {
+    background-image: url('../首充号立即购买_files/u151_line.png');
+}
+
+.u151_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:93px;
+}
+
+.u151 {
+    position:absolute;
+    left:694px;
+    top:543px;
+    width:10px;
+    height:93px;
+    
+}
+
+.u152 {
+    position:absolute;
+    left:731px;
+    top:610px;
+    width:111px;
+    height:160px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u153_line {
+    background-image: url('../首充号立即购买_files/u153_line.png');
+}
+
+.u153_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:240px;
+}
+
+.u153 {
+    position:absolute;
+    left:305px;
+    top:407px;
+    width:10px;
+    height:240px;
+    
+}
+
+.u154 {
+    position:absolute;
+    left:235px;
+    top:647px;
+    width:150px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

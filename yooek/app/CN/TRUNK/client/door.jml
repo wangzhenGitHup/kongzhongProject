@@ -1,0 +1,5 @@
+﻿<jml>
+<script>
+	jgx.App.switchApp(__Page.genPageURL("main.jml"));
+</script>
+</jml>

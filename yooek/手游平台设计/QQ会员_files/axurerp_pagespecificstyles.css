@@ -1,0 +1,780 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../QQ会员_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:39px;
+    top:9px;
+    width:341px;
+    height:540px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:546px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:262px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../QQ会员_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:39px;
+    top:10px;
+    width:341px;
+    height:37px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:347px;
+    height:43px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../QQ会员_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:44px;
+    top:16px;
+    width:54px;
+    height:29px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:29px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../QQ会员_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:296px;
+    top:9px;
+    width:84px;
+    height:37px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:90px;
+    height:43px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:80px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:165px;
+    top:20px;
+    width:75px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../QQ会员_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:39px;
+    top:85px;
+    width:341px;
+    height:89px;
+}
+
+#u9_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:341px;
+    height:89px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:36px;
+    width:337px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../QQ会员_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:40px;
+    top:47px;
+    width:73px;
+    height:36px;
+}
+
+#u11_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:73px;
+    height:36px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:69px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../QQ会员_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:174px;
+    top:49px;
+    width:76px;
+    height:32px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:76px;
+    height:32px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../QQ会员_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:110px;
+    top:49px;
+    width:65px;
+    height:32px;
+}
+
+#u15_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:65px;
+    height:32px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../QQ会员_files/u17_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:250px;
+    top:49px;
+    width:123px;
+    height:32px;
+}
+
+#u17_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:129px;
+    height:38px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:320px;
+    top:57px;
+    width:36px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../QQ会员_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:503px;
+    top:9px;
+    width:338px;
+    height:600px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:600px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:292px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../QQ会员_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:42px;
+    top:174px;
+    width:338px;
+    height:89px;
+}
+
+#u22_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:89px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:36px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../QQ会员_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:52px;
+    top:94px;
+    width:150px;
+    height:30px;
+}
+
+#u24_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:36px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:146px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_normal {
+    background-image: url('../QQ会员_files/u24_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:52px;
+    top:184px;
+    width:150px;
+    height:30px;
+}
+
+#u26_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:156px;
+    height:36px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:146px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../QQ会员_files/u28_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:310px;
+    top:146px;
+    width:55px;
+    height:18px;
+}
+
+#u28_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:55px;
+    height:18px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:51px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../QQ会员_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:310px;
+    top:234px;
+    width:55px;
+    height:15px;
+}
+
+#u30_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:55px;
+    height:15px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:51px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../QQ会员_files/u32_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:509px;
+    top:56px;
+    width:322px;
+    height:47px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:328px;
+    height:53px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:318px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../QQ会员_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:503px;
+    top:568px;
+    width:338px;
+    height:41px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:344px;
+    height:47px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_end {
+    background-image: url('../QQ会员_files/u36_end.png');
+}
+
+.u36_end {
+    position:absolute;
+    left:114px;
+    top:-5px;
+    width:14px;
+    height:20px;
+}
+
+.u36_line {
+    background-image: url('../QQ会员_files/u36_line.png');
+}
+
+.u36_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:123px;
+    height:3px;
+}
+
+.u36 {
+    position:absolute;
+    left:373px;
+    top:63px;
+    width:123px;
+    height:10px;
+    
+}
+
+.u37 {
+    position:absolute;
+    left:390px;
+    top:47px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_line {
+    background-image: url('../QQ会员_files/u38_line.png');
+}
+
+.u38_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:94px;
+    height:3px;
+}
+
+.u38 {
+    position:absolute;
+    left:820px;
+    top:514px;
+    width:94px;
+    height:10px;
+    
+}
+
+.u39 {
+    position:absolute;
+    left:914px;
+    top:508px;
+    width:94px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../QQ会员_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:39px;
+    top:512px;
+    width:336px;
+    height:37px;
+}
+
+#u40_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:336px;
+    height:37px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:332px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../QQ会员_files/u42_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:280px;
+    top:512px;
+    width:27px;
+    height:18px;
+}
+
+#u42_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:27px;
+    height:18px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:23px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

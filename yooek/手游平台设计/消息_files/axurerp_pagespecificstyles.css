@@ -1,0 +1,446 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../消息_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:16px;
+    top:14px;
+    width:338px;
+    height:597px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:597px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:290px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../消息_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:375px;
+    top:14px;
+    width:338px;
+    height:597px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:597px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:290px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../消息_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:723px;
+    top:14px;
+    width:338px;
+    height:736px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:736px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:360px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:1080px;
+    top:126px;
+    width:269px;
+    height:48px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../消息_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:943px;
+    top:32px;
+    width:118px;
+    height:37px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:118px;
+    height:37px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../消息_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:989px;
+    top:32px;
+    width:67px;
+    height:32px;
+}
+
+#u9_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:67px;
+    height:32px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:63px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../消息_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:827px;
+    top:32px;
+    width:76px;
+    height:32px;
+}
+
+#u11_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:76px;
+    height:32px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../消息_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:600px;
+    top:14px;
+    width:113px;
+    height:40px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:113px;
+    height:40px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:109px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../消息_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:248px;
+    top:14px;
+    width:106px;
+    height:40px;
+}
+
+#u15_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:106px;
+    height:40px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:102px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../消息_files/u17_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:281px;
+    top:20px;
+    width:63px;
+    height:27px;
+}
+
+#u17_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:27px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../消息_files/u17_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:637px;
+    top:20px;
+    width:63px;
+    height:27px;
+}
+
+#u19_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:27px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../消息_files/u21_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:104px;
+    top:20px;
+    width:113px;
+    height:34px;
+}
+
+#u21_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:113px;
+    height:34px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:109px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../消息_files/u23_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:459px;
+    top:26px;
+    width:113px;
+    height:21px;
+}
+
+#u23_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:113px;
+    height:21px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:109px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

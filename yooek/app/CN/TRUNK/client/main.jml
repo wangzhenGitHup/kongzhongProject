@@ -1,0 +1,114 @@
+<jml>
+<import>"config.js"</import>
+
+//===========================================================
+<import>"csslib.js"</import>
+<import>"app_env.js"</import>
+<import>"app_env_game.js"</import>
+<import>"app_env_check.js"</import>
+<import>"app_env_net.js"</import>
+<import>"app_env_algorithm.js"</import>
+<import>"app_env_md5.js"</import>
+<import>"app_env_load.js"</import>
+<import>"app_env_login.js"</import>
+
+<import>"import_language.js"</import>
+
+<import>"ui/state_base.js"</import>
+<import>"ui/state_main.js"</import>
+<import>"ui/state_login.js"</import>
+<import>"ui/state_home.js"</import>
+<import>"ui/state_userlogin.js"</import>
+<import>"ui/state_userregister.js"</import>
+<import>"ui/state_findpwd.js"</import>
+<import>"ui/state_serviceprotocol.js"</import>
+<import>"ui/state_mygame.js"</import>
+<import>"ui/state_my.js"</import>
+<import>"ui/state_my_soft.js"</import>
+<import>"ui/state_my_game.js"</import>
+<import>"ui/state_my_order.js"</import>
+<import>"ui/state_fillout_order.js"</import>
+<import>"ui/state_selectpaymethod.js"</import>
+<import>"ui/state_selectpaymethod_bankcard.js"</import>
+
+<import>"ui/state_buysuccess.js"</import>
+<import>"ui/state_recharge.js"</import>
+<import>"ui/state_recharge_filter.js"</import>
+<import>"ui/state_buygoods.js"</import>
+<import>"ui/state_message.js"</import>
+<import>"ui/state_talk.js"</import>
+<import>"ui/state_search.js"</import>
+
+<body>
+{
+	head:
+	{
+		title:"",
+	},
+	body:
+	{
+		page_mode:"page",w:"100%",h:"100%",
+		items:[{
+			type:"3ddiv",id:"game",w:"100%",h:"100%",
+			items:[
+				{
+					type:"3dform", id:"ui-form",x:0, y:0, w:"100%", h:"100%",
+					top_form:1,hud_size:[jgx.Screen.w, jgx.Screen.h, 0],
+					layers:[
+						{name:"background",event:1},
+						{name:"target",event:1},
+						{name:"menu",event:1},
+						{name:"dialog",event:0},
+						{name:"dialog2",event:0},
+						{name:"tip",event:0}
+					]
+				}
+			]
+		}]
+	}//Body
+}
+</body>
+<script>
+	__Page.init = function()
+	{
+		jgx.App.setUpdateSpeed("m");
+		this.initCSSLib();
+		this.appEnv.init();
+		//Add Event handler:
+		jgx.Event.addEventHandler("key", this, this.appEnv.onKey, this.appEnv);
+		jgx.Event.addEventHandler("pen", this, this.appEnv.onTouch, this.appEnv);
+	};
+	__Page.onKey=function(msg,key,pass,extra)
+	{
+		DBOut("Key: "+msg+", "+key+", "+pass+", "+extra);
+		if(msg==1 && pass==1)
+		{
+			if(key==1)//
+			{
+				if(extra==101)
+				{
+					this.memo.setCurPos(this.memo.text.getMarkPos("mark1"),0);
+				}
+				else if(extra==102)
+				{
+					this.memo.setCurPos(this.memo.text.getMarkPos("mark2"),0);
+				}
+				else if(extra==103)
+				{
+					this.memo.setCurPos(0,0);
+				}
+			}
+			else if(key==49)//'1'
+			{
+				this.memo.text.setReadSpeed(1);
+				this.memo.text.startRead();
+			}
+			else if(key==50)//'2'
+			{
+				this.memo.showLine(10000);
+			}
+		}
+	};
+	__Page.init();
+</script>
+</jml>

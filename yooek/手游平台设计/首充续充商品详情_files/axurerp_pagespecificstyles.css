@@ -1,0 +1,446 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../首充续充商品详情_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:37px;
+    top:16px;
+    width:350px;
+    height:600px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:350px;
+    height:600px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:292px;
+    width:346px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../首充续充商品详情_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:246px;
+    top:66px;
+    width:135px;
+    height:44px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:135px;
+    height:44px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:131px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../首充续充商品详情_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:57px;
+    top:24px;
+    width:54px;
+    height:29px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:29px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../首充续充商品详情_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:285px;
+    top:24px;
+    width:45px;
+    height:37px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:45px;
+    height:37px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../首充续充商品详情_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:333px;
+    top:23px;
+    width:42px;
+    height:37px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:42px;
+    height:37px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:38px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../首充续充商品详情_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:49px;
+    top:575px;
+    width:338px;
+    height:40px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:344px;
+    height:46px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:334px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../首充续充商品详情_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:57px;
+    top:284px;
+    width:133px;
+    height:37px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:133px;
+    height:37px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../首充续充商品详情_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:94px;
+    top:267px;
+    width:43px;
+    height:17px;
+}
+
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:43px;
+    height:17px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:39px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../首充续充商品详情_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:57px;
+    top:339px;
+    width:43px;
+    height:28px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:49px;
+    height:34px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:39px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../首充续充商品详情_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:49px;
+    top:118px;
+    width:180px;
+    height:28px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:34px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../首充续充商品详情_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:122px;
+    top:146px;
+    width:180px;
+    height:23px;
+}
+
+#u20_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:29px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../首充续充商品详情_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:230px;
+    top:521px;
+    width:53px;
+    height:33px;
+}
+
+#u22_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:53px;
+    height:33px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:49px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:230px;
+    top:528px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

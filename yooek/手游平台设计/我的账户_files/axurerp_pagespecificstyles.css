@@ -1,0 +1,250 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../我的账户_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:36px;
+    top:13px;
+    width:338px;
+    height:596px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:596px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:290px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../我的账户_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:39px;
+    top:19px;
+    width:55px;
+    height:28px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:55px;
+    height:28px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:51px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../我的账户_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:222px;
+    top:521px;
+    width:54px;
+    height:32px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:32px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:210px;
+    top:527px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../我的账户_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:39px;
+    top:66px;
+    width:335px;
+    height:232px;
+}
+
+#u7_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:341px;
+    height:238px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:108px;
+    width:331px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../我的账户_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:171px;
+    top:324px;
+    width:75px;
+    height:24px;
+}
+
+#u9_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:75px;
+    height:24px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:185px;
+    top:326px;
+    width:47px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:62px;
+    top:82px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:62px;
+    top:123px;
+    width:150px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

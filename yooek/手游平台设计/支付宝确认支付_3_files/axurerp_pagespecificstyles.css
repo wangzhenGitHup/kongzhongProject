@@ -1,0 +1,576 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../支付宝确认支付_3_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:20px;
+    top:13px;
+    width:312px;
+    height:513px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:312px;
+    height:513px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:248px;
+    width:308px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../支付宝确认支付_3_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:349px;
+    top:13px;
+    width:314px;
+    height:514px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:314px;
+    height:514px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:249px;
+    width:310px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../支付宝确认支付_3_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:682px;
+    top:13px;
+    width:339px;
+    height:522px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:339px;
+    height:522px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:253px;
+    width:335px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../支付宝确认支付_3_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:1041px;
+    top:13px;
+    width:338px;
+    height:522px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:522px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:253px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../支付宝确认支付_3_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:1066px;
+    top:342px;
+    width:289px;
+    height:45px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:289px;
+    height:45px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:285px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../支付宝确认支付_3_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:723px;
+    top:59px;
+    width:254px;
+    height:57px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:260px;
+    height:63px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:250px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../支付宝确认支付_3_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:754px;
+    top:65px;
+    width:42px;
+    height:41px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:42px;
+    height:41px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:38px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../支付宝确认支付_3_files/u10_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:1083px;
+    top:65px;
+    width:254px;
+    height:57px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:260px;
+    height:63px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:250px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../支付宝确认支付_3_files/u12_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:1114px;
+    top:71px;
+    width:42px;
+    height:41px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:42px;
+    height:41px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:38px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../支付宝确认支付_3_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:770px;
+    top:126px;
+    width:180px;
+    height:28px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:34px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../支付宝确认支付_3_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:1126px;
+    top:127px;
+    width:229px;
+    height:28px;
+}
+
+#u20_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:235px;
+    height:34px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:225px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../支付宝确认支付_3_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:1226px;
+    top:244px;
+    width:141px;
+    height:28px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:147px;
+    height:34px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:137px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../支付宝确认支付_3_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:28px;
+    top:93px;
+    width:49px;
+    height:23px;
+}
+
+#u24_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:49px;
+    height:23px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:32px;
+    top:96px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../支付宝确认支付_3_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:870px;
+    top:499px;
+    width:48px;
+    height:27px;
+}
+
+#u27_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:48px;
+    height:27px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../支付宝确认支付_3_files/u27_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:1216px;
+    top:499px;
+    width:48px;
+    height:27px;
+}
+
+#u29_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:48px;
+    height:27px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31 {
+    position:absolute;
+    left:867px;
+    top:501px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32 {
+    position:absolute;
+    left:1223px;
+    top:501px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

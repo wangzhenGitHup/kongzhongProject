@@ -1,0 +1,990 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../首页点击游戏进入页面_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:76px;
+    top:11px;
+    width:340px;
+    height:598px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:340px;
+    height:598px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:291px;
+    width:336px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../首页点击游戏进入页面_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:433px;
+    top:9px;
+    width:338px;
+    height:600px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:600px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:292px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../首页点击游戏进入页面_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:793px;
+    top:9px;
+    width:338px;
+    height:600px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:338px;
+    height:600px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:292px;
+    width:334px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../首页点击游戏进入页面_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:80px;
+    top:146px;
+    width:333px;
+    height:85px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:333px;
+    height:85px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:34px;
+    width:329px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../首页点击游戏进入页面_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:80px;
+    top:18px;
+    width:54px;
+    height:29px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:29px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../首页点击游戏进入页面_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:306px;
+    top:54px;
+    width:107px;
+    height:55px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:61px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../首页点击游戏进入页面_files/u10_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:199px;
+    top:54px;
+    width:107px;
+    height:55px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:113px;
+    height:61px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:103px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../首页点击游戏进入页面_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:79px;
+    top:54px;
+    width:120px;
+    height:55px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:61px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:116px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_container {
+    position:absolute;
+    left:353px;
+    top:56px;
+    width:36px;
+    height:35px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:36px;
+    height:35px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:32px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:344px;
+    top:91px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../首页点击游戏进入页面_files/u19_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:117px;
+    top:57px;
+    width:43px;
+    height:38px;
+}
+
+#u19_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:43px;
+    height:38px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:39px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:112px;
+    top:95px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../首页点击游戏进入页面_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:237px;
+    top:54px;
+    width:45px;
+    height:41px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:51px;
+    height:47px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:234px;
+    top:95px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../首页点击游戏进入页面_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:80px;
+    top:109px;
+    width:73px;
+    height:36px;
+}
+
+#u25_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:73px;
+    height:36px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:69px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../首页点击游戏进入页面_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:214px;
+    top:111px;
+    width:76px;
+    height:32px;
+}
+
+#u27_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:76px;
+    height:32px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../首页点击游戏进入页面_files/u29_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:150px;
+    top:111px;
+    width:54px;
+    height:32px;
+}
+
+#u29_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:54px;
+    height:32px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:50px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../首页点击游戏进入页面_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:290px;
+    top:111px;
+    width:123px;
+    height:32px;
+}
+
+#u31_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:129px;
+    height:38px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33 {
+    position:absolute;
+    left:355px;
+    top:119px;
+    width:36px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../首页点击游戏进入页面_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:291px;
+    top:187px;
+    width:120px;
+    height:15px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:21px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:116px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_line {
+    background-image: url('../首页点击游戏进入页面_files/u36_line.png');
+}
+
+.u36_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:29px;
+    height:3px;
+}
+
+.u36 {
+    position:absolute;
+    left:356px;
+    top:190px;
+    width:29px;
+    height:10px;
+    
+}
+
+.u37_normal {
+    background-image: url('../首页点击游戏进入页面_files/u34_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:293px;
+    top:207px;
+    width:120px;
+    height:15px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:21px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:116px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../首页点击游戏进入页面_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:298px;
+    top:275px;
+    width:111px;
+    height:16px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:117px;
+    height:22px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:107px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_line {
+    background-image: url('../首页点击游戏进入页面_files/u41_line.png');
+}
+
+.u41_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:27px;
+    height:3px;
+}
+
+.u41 {
+    position:absolute;
+    left:358px;
+    top:278px;
+    width:27px;
+    height:10px;
+    
+}
+
+.u42_normal {
+    background-image: url('../首页点击游戏进入页面_files/u42_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:295px;
+    top:293px;
+    width:109px;
+    height:15px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:21px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:105px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_normal {
+    background-image: url('../首页点击游戏进入页面_files/u44_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:302px;
+    top:450px;
+    width:106px;
+    height:16px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:112px;
+    height:22px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:102px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_line {
+    background-image: url('../首页点击游戏进入页面_files/u46_line.png');
+}
+
+.u46_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:26px;
+    height:3px;
+}
+
+.u46 {
+    position:absolute;
+    left:359px;
+    top:453px;
+    width:26px;
+    height:10px;
+    
+}
+
+.u47_normal {
+    background-image: url('../首页点击游戏进入页面_files/u42_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:299px;
+    top:468px;
+    width:109px;
+    height:15px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:21px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:105px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../首页点击游戏进入页面_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:299px;
+    top:365px;
+    width:109px;
+    height:16px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:115px;
+    height:22px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:105px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_line {
+    background-image: url('../首页点击游戏进入页面_files/u51_line.png');
+}
+
+.u51_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:26px;
+    height:3px;
+}
+
+.u51 {
+    position:absolute;
+    left:358px;
+    top:368px;
+    width:26px;
+    height:10px;
+    
+}
+
+.u52_normal {
+    background-image: url('../首页点击游戏进入页面_files/u34_normal.png');
+}
+
+.u52_container {
+    position:absolute;
+    left:291px;
+    top:380px;
+    width:120px;
+    height:15px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:126px;
+    height:21px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:116px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_normal {
+    background-image: url('../首页点击游戏进入页面_files/u54_normal.png');
+}
+
+.u54_container {
+    position:absolute;
+    left:259px;
+    top:516px;
+    width:47px;
+    height:25px;
+}
+
+#u54_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:47px;
+    height:25px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:43px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56 {
+    position:absolute;
+    left:259px;
+    top:524px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
