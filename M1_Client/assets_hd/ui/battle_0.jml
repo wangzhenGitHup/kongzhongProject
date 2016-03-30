@@ -1,0 +1,25 @@
+//For image: battle_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("battle_0_32.png"));
+	this.imgInfos["battle_0_32"]={w:1024,h:1024};
+	this["pic_battle_lost"]={tex_u:1/1024, tex_v:4/1024, tex_w:542/1024, tex_h:103/1024, w:542, h:103, tex:this.imgList[id]};
+	this["pic_battle_star"]={tex_u:796/1024, tex_v:449/1024, tex_w:152/1024, tex_h:142/1024, w:152, h:142, tex:this.imgList[id]};
+	this["pic_battle_star_bg"]={tex_u:546/1024, tex_v:3/1024, tex_w:204/1024, tex_h:50/1024, w:204, h:50, tex:this.imgList[id]};
+	this["pic_battle_star_dark"]={tex_u:796/1024, tex_v:593/1024, tex_w:152/1024, tex_h:142/1024, w:152, h:142, tex:this.imgList[id]};
+	this["pic_battle_win"]={tex_u:1/1024, tex_v:116/1024, tex_w:542/1024, tex_h:103/1024, w:542, h:103, tex:this.imgList[id]};
+	this["pic_line"]={tex_u:3/1024, tex_v:226/1024, tex_w:785/1024, tex_h:3/1024, w:785, h:3, tex:this.imgList[id]};
+	this["btn_bt_end"]={tex_u:795/1024, tex_v:276/1024, tex_w:154/1024, tex_h:80/1024, w:154, h:80, tex:this.imgList[id]};
+	this["pic_radar"]={tex_u:796/1024, tex_v:4/1024, tex_w:112/1024, tex_h:112/1024, w:112, h:112, tex:this.imgList[id]};
+	this["pic_radar_light"]={tex_u:796/1024, tex_v:124/1024, tex_w:112/1024, tex_h:112/1024, w:112, h:112, tex:this.imgList[id]};
+	this["btn_bt_next"]={tex_u:795/1024, tex_v:364/1024, tex_w:154/1024, tex_h:80/1024, w:154, h:80, tex:this.imgList[id]};
+	this["cdNum3"]={tex_u:913/1024, tex_v:1/1024, tex_w:109/1024, tex_h:133/1024, w:109, h:133, tex:this.imgList[id]};
+	this["cdNum1"]={tex_u:913/1024, tex_v:137/1024, tex_w:109/1024, tex_h:133/1024, w:109, h:133, tex:this.imgList[id]};
+	this["cdNum2"]={tex_u:361/1024, tex_v:641/1024, tex_w:109/1024, tex_h:133/1024, w:109, h:133, tex:this.imgList[id]};
+	this["pic_shadow_left"]={tex_u:361/1024, tex_v:233/1024, tex_w:326/1024, tex_h:406/1024, w:326, h:406, tex:this.imgList[id]};
+	this["pic_shadow_right"]={tex_u:1/1024, tex_v:234/1024, tex_w:358/1024, tex_h:419/1024, w:358, h:419, tex:this.imgList[id]};
+	this["pic_wreaths"]={tex_u:794/1024, tex_v:738/1024, tex_w:152/1024, tex_h:152/1024, w:152, h:152, tex:this.imgList[id]};
+}

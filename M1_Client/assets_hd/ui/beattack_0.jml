@@ -1,0 +1,20 @@
+//For image: beattack_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("beattack_0_32.png"));
+	this.imgInfos["beattack_0_32"]={w:512,h:512};
+	this["pic_captcha_bg1"]={tex_u:3/512, tex_v:2/512, tex_w:170/512, tex_h:68/512, w:170, h:68, tex:this.imgList[id]};
+	this["pic_captcha_bg2"]={tex_u:179/512, tex_v:2/512, tex_w:170/512, tex_h:68/512, w:170, h:68, tex:this.imgList[id]};
+	this["pic_video"]={tex_u:354/512, tex_v:2/512, tex_w:28/512, tex_h:28/512, w:28, h:28, tex:this.imgList[id]};
+	this["box_unit_dark"]={tex_u:387/512, tex_v:3/512, tex_w:17/512, tex_h:17/512, w:17, h:17, tex:this.imgList[id]};
+	this["box_unit_white"]={tex_u:411/512, tex_v:3/512, tex_w:17/512, tex_h:17/512, w:17, h:17, tex:this.imgList[id]};
+	this["btn_msg"]={tex_u:356/512, tex_v:36/512, tex_w:80/512, tex_h:80/512, w:80, h:80, tex:this.imgList[id]};
+	this["pic_girl"]={tex_u:4/512, tex_v:73/512, tex_w:296/512, tex_h:373/512, w:296, h:373, tex:this.imgList[id]};
+	this["btn_share"]={tex_u:308/512, tex_v:124/512, tex_w:80/512, tex_h:80/512, w:80, h:80, tex:this.imgList[id]};
+	this["pic_captcha_bg3"]={tex_u:307/512, tex_v:210/512, tex_w:170/512, tex_h:68/512, w:170, h:68, tex:this.imgList[id]};
+	this["pic_captcha_bg4"]={tex_u:307/512, tex_v:282/512, tex_w:170/512, tex_h:68/512, w:170, h:68, tex:this.imgList[id]};
+	this["pic_captcha_bg5"]={tex_u:307/512, tex_v:354/512, tex_w:170/512, tex_h:68/512, w:170, h:68, tex:this.imgList[id]};
+}

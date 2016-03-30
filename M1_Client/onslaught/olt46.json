@@ -1,0 +1,76 @@
+[
+	{wave:3,delaytime:100,edge:0,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:150,edge:0,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:200,edge:0,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:250,edge:0,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:100,edge:0,type:"UntCyber",level:5,num:1},
+	
+		{wave:3,delaytime:100,edge:1,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:150,edge:1,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:200,edge:1,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:250,edge:1,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:100,edge:1,type:"UntCyber",level:5,num:1},
+	
+		{wave:3,delaytime:100,edge:2,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:150,edge:2,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:200,edge:2,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:250,edge:2,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:100,edge:2,type:"UntCyber",level:5,num:1},
+	
+		{wave:3,delaytime:100,edge:3,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:150,edge:3,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:200,edge:3,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:250,edge:3,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:100,edge:3,type:"UntCyber",level:5,num:1},
+	
+	
+	{wave:3,delaytime:300,edge:0,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:350,edge:0,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:400,edge:0,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:450,edge:0,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:300,edge:0,type:"UntCyber",level:5,num:1},
+	
+		{wave:3,delaytime:300,edge:1,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:350,edge:1,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:400,edge:1,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:450,edge:1,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:300,edge:1,type:"UntCyber",level:5,num:1},
+	
+		{wave:3,delaytime:300,edge:2,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:350,edge:2,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:400,edge:2,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:450,edge:2,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:300,edge:2,type:"UntCyber",level:5,num:1},
+	
+		{wave:3,delaytime:300,edge:3,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:350,edge:3,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:400,edge:3,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:450,edge:3,type:"UntTank",level:5,num:1},
+	{wave:3,delaytime:300,edge:3,type:"UntCyber",level:5,num:1},
+
+	
+
+	
+	
+		{wave:3,delaytime:800,edge:0,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:850,edge:0,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:900,edge:0,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:950,edge:0,type:"UntTank",level:5,num:1},
+	
+		{wave:3,delaytime:800,edge:1,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:850,edge:1,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:900,edge:1,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:950,edge:1,type:"UntTank",level:5,num:1},
+	
+		{wave:3,delaytime:800,edge:2,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:850,edge:2,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:900,edge:2,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:950,edge:2,type:"UntTank",level:5,num:1},
+	
+		{wave:3,delaytime:800,edge:3,type:"UntTank",level:5,num:1},
+	{wave:4,delaytime:850,edge:3,type:"UntTank",level:5,num:1},
+	{wave:5,delaytime:900,edge:3,type:"UntTank",level:5,num:1},
+	{wave:6,delaytime:950,edge:3,type:"UntTank",level:5,num:1},
+	
+	
+]

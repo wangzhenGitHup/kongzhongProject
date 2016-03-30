@@ -1,0 +1,13 @@
+//For image: mech_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("mech_0_32.png"));
+	this.imgInfos["mech_0_32"]={w:1024,h:512};
+	this["pic_mech_bg1"]={tex_u:2/1024, tex_v:2/512, tex_w:420/1024, tex_h:436/512, w:420, h:436, tex:this.imgList[id]};
+	this["pic_mech_bg2"]={tex_u:426/1024, tex_v:2/512, tex_w:420/1024, tex_h:436/512, w:420, h:436, tex:this.imgList[id]};
+	this["pic_mech_add"]={tex_u:930/1024, tex_v:2/512, tex_w:36/1024, tex_h:36/512, w:36, h:36, tex:this.imgList[id]};
+	this["pic_mech_no"]={tex_u:850/1024, tex_v:1/512, tex_w:75/1024, tex_h:85/512, w:75, h:85, tex:this.imgList[id]};
+}

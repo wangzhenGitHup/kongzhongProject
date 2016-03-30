@@ -1,0 +1,77 @@
+﻿<jml>
+<import>"config.js"</import>
+<import>"img_lib.jml"</import>
+<import>"css_lib.jml"</import>
+
+<import>"app_env.js"</import>
+<import>"ui/state_base.js"</import>
+<import>"ui/state_debug.js"</import>
+<body>
+{
+	body:{
+		page_mode:"ui",w:"100%",h:"100%",align_v:"m",background:0x808080,
+		items:[
+			{
+				type:"3ddiv",x:0,y:0,w:"100%",h:"100%",
+				items:[
+					{
+						type:"3dlayer",id:"ui-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[960,640,0],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"dlg-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[Screen.w,Screen.h,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"dlg-layer2",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[960,640,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"act-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[960,640,1],
+						frame_time:25,
+					},
+				]
+			},
+			{type:"page",id:"gamepage",x:0,y:0,w:"100%",h:"100%"}
+		],
+		onFree:function()
+		{
+		}
+	}
+}
+</body>
+
+<script>
+__Page.initApp=function()
+{
+	var stub;
+	setUpdateSpeed("h");
+	this.appEnv.init(1);
+	addEventHandler("key", __Page, this.appEnv.onKey, this.appEnv);
+
+	/*stub=this.loadFileText("ui_debugx.jml");
+	stub.onLoad=function()
+	{
+		DBOut("File onLoad: "+this.getText());
+	};
+	stub.onError=function()
+	{
+		DBOut("File read Error!!");
+	};*/
+};
+
+__Page.initApp();
+
+</script>
+</jml>

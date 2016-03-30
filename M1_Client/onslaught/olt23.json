@@ -1,0 +1,33 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntMarine",level:3,num:4},
+	{wave:2,delaytime:150,edge:0,type:"UntMarine",level:3,num:4},
+	{wave:3,delaytime:200,edge:0,type:"UntMarine",level:3,num:4},
+	{wave:4,delaytime:400,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:430,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:460,edge:0,type:"UntMarine",level:3,num:5},
+	
+	{wave:7,delaytime:500,edge:0,type:"UntTNTMac",level:2,num:3},
+	{wave:8,delaytime:500,edge:0,type:"UntTNTMac",level:2,num:3},
+	{wave:9,delaytime:550,edge:0,type:"UntCyber",level:2,num:3},
+	{wave:10,delaytime:600,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:11,delaytime:800,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:12,delaytime:830,edge:0,type:"UntSniper",level:3,num:5},
+	{wave:13,delaytime:860,edge:0,type:"UntSniper",level:3,num:5},
+	
+	{wave:1,delaytime:500,edge:1,type:"UntMarine",level:3,num:4},
+	{wave:2,delaytime:550,edge:1,type:"UntMarine",level:3,num:4},
+	{wave:3,delaytime:600,edge:1,type:"UntMarine",level:3,num:4},
+	{wave:4,delaytime:800,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:830,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:860,edge:1,type:"UntMarine",level:3,num:5},
+	
+	{wave:14,delaytime:920,edge:1,type:"UntTNTMac",level:2,num:3},
+	{wave:15,delaytime:950,edge:1,type:"UntTNTMac",level:2,num:3},
+	{wave:16,delaytime:1000,edge:1,type:"UntCyber",level:2,num:3},
+	{wave:17,delaytime:1050,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:18,delaytime:1100,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:19,delaytime:1150,edge:1,type:"UntSniper",level:3,num:5},
+	{wave:20,delaytime:1200,edge:1,type:"UntSniper",level:3,num:5},
+
+
+]

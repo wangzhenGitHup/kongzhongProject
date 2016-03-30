@@ -1,0 +1,25 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntMarine",level:1,num:4},
+	{wave:2,delaytime:150,edge:0,type:"UntMarine",level:1,num:4},
+	{wave:3,delaytime:200,edge:0,type:"UntMarine",level:1,num:4},
+	{wave:4,delaytime:250,edge:0,type:"UntMarine",level:1,num:5},
+	{wave:5,delaytime:300,edge:0,type:"UntMarine",level:1,num:5},
+	{wave:6,delaytime:350,edge:0,type:"UntMarine",level:1,num:5},
+	
+	{wave:7,delaytime:500,edge:0,type:"UntTank",level:1,num:1},
+	{wave:8,delaytime:500,edge:0,type:"UntTank",level:1,num:1},
+	{wave:9,delaytime:550,edge:0,type:"UntTank",level:1,num:1},
+	{wave:10,delaytime:600,edge:0,type:"UntTank",level:1,num:1},
+	
+	{wave:11,delaytime:100,edge:1,type:"UntMarine",level:1,num:4},
+	{wave:12,delaytime:150,edge:1,type:"UntMarine",level:1,num:4},
+	{wave:13,delaytime:200,edge:1,type:"UntMarine",level:1,num:4},
+	{wave:14,delaytime:250,edge:1,type:"UntMarine",level:1,num:5},
+	{wave:15,delaytime:300,edge:1,type:"UntMarine",level:1,num:5},
+	{wave:16,delaytime:350,edge:1,type:"UntMarine",level:1,num:5},
+
+	{wave:17,delaytime:500,edge:1,type:"UntTank",level:1,num:1},
+	{wave:18,delaytime:500,edge:1,type:"UntTank",level:1,num:1},
+	{wave:19,delaytime:550,edge:1,type:"UntTank",level:1,num:1},
+	{wave:20,delaytime:600,edge:1,type:"UntTank",level:1,num:1},
+]

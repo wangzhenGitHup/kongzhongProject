@@ -1,0 +1,221 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:120,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:120,edge:0,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:300,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:350,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:400,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:300,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:350,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:400,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:300,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:4,delaytime:350,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:400,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:500,edge:0,type:"UntSniper",level:2,num:5},
+	{wave:4,delaytime:550,edge:0,type:"UntSniper",level:2,num:5},
+	{wave:5,delaytime:600,edge:0,type:"UntSniper",level:2,num:5},
+	{wave:6,delaytime:650,edge:0,type:"UntSniper",level:2,num:5},
+	
+	{wave:3,delaytime:500,edge:0,type:"UntSniper",level:2,num:3},
+	{wave:4,delaytime:550,edge:0,type:"UntSniper",level:2,num:3},
+	{wave:5,delaytime:600,edge:0,type:"UntSniper",level:2,num:3},
+	{wave:6,delaytime:650,edge:0,type:"UntSniper",level:2,num:3},
+	
+	
+	
+		{wave:3,delaytime:500,edge:0,type:"UntTNTMac",level:5,num:2},
+	{wave:4,delaytime:550,edge:0,type:"UntTNTMac",level:5,num:2},
+	{wave:5,delaytime:600,edge:0,type:"UntTNTMac",level:5,num:2},
+	{wave:6,delaytime:650,edge:0,type:"UntTNTMac",level:5,num:2},
+	
+	
+	
+	{wave:1,delaytime:700,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:720,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:720,edge:0,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:900,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:950,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:1000,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:1050,edge:0,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:900,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:950,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:1000,edge:0,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:1050,edge:0,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:900,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:4,delaytime:950,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:1000,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:1050,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:1050,edge:0,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:1100,edge:0,type:"UntSniper",level:2,num:5},
+	{wave:4,delaytime:1150,edge:0,type:"UntSniper",level:2,num:5},
+	{wave:5,delaytime:1200,edge:0,type:"UntSniper",level:2,num:5},
+	{wave:6,delaytime:1250,edge:0,type:"UntSniper",level:2,num:5},
+	
+	{wave:3,delaytime:1100,edge:0,type:"UntSniper",level:2,num:3},
+	{wave:4,delaytime:1150,edge:0,type:"UntSniper",level:2,num:3},
+	{wave:5,delaytime:1200,edge:0,type:"UntSniper",level:2,num:3},
+	{wave:6,delaytime:1250,edge:0,type:"UntSniper",level:2,num:3},
+	
+	
+	
+	
+	
+	
+	
+	
+	{wave:1,delaytime:100,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:120,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:120,edge:1,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:300,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:350,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:400,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:450,edge:1,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:300,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:350,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:400,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:450,edge:1,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:300,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:4,delaytime:350,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:400,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:450,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:450,edge:1,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:500,edge:1,type:"UntSniper",level:2,num:5},
+	{wave:4,delaytime:550,edge:1,type:"UntSniper",level:2,num:5},
+	{wave:5,delaytime:600,edge:1,type:"UntSniper",level:2,num:5},
+	{wave:6,delaytime:650,edge:1,type:"UntSniper",level:2,num:5},
+	
+	{wave:3,delaytime:500,edge:1,type:"UntSniper",level:2,num:3},
+	{wave:4,delaytime:550,edge:1,type:"UntSniper",level:2,num:3},
+	{wave:5,delaytime:600,edge:1,type:"UntSniper",level:2,num:3},
+	{wave:6,delaytime:650,edge:1,type:"UntSniper",level:2,num:3},
+	
+	
+	
+		{wave:3,delaytime:500,edge:1,type:"UntTNTMac",level:5,num:2},
+	{wave:4,delaytime:550,edge:1,type:"UntTNTMac",level:5,num:2},
+	{wave:5,delaytime:600,edge:1,type:"UntTNTMac",level:5,num:2},
+	{wave:6,delaytime:650,edge:1,type:"UntTNTMac",level:5,num:2},
+	
+	
+	
+	{wave:1,delaytime:700,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:720,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:720,edge:1,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:900,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:950,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:1000,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:1050,edge:1,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:900,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:950,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:1000,edge:1,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:1050,edge:1,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:900,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:4,delaytime:950,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:1000,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:1050,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:1050,edge:1,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:1100,edge:1,type:"UntSniper",level:2,num:5},
+	{wave:4,delaytime:1150,edge:1,type:"UntSniper",level:2,num:5},
+	{wave:5,delaytime:1200,edge:1,type:"UntSniper",level:2,num:5},
+	{wave:6,delaytime:1250,edge:1,type:"UntSniper",level:2,num:5},
+	
+	{wave:3,delaytime:1100,edge:1,type:"UntSniper",level:2,num:3},
+	{wave:4,delaytime:1150,edge:1,type:"UntSniper",level:2,num:3},
+	{wave:5,delaytime:1200,edge:1,type:"UntSniper",level:2,num:3},
+	{wave:6,delaytime:1250,edge:1,type:"UntSniper",level:2,num:3},
+	
+	
+	
+	
+	
+	
+		{wave:1,delaytime:100,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:120,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:120,edge:2,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:300,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:350,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:400,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:450,edge:2,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:300,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:350,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:400,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:450,edge:2,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:300,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:4,delaytime:350,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:400,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:450,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:450,edge:2,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:500,edge:2,type:"UntSniper",level:2,num:5},
+	{wave:4,delaytime:550,edge:2,type:"UntSniper",level:2,num:5},
+	{wave:5,delaytime:600,edge:2,type:"UntSniper",level:2,num:5},
+	{wave:6,delaytime:650,edge:2,type:"UntSniper",level:2,num:5},
+	
+	{wave:3,delaytime:500,edge:2,type:"UntSniper",level:2,num:3},
+	{wave:4,delaytime:550,edge:2,type:"UntSniper",level:2,num:3},
+	{wave:5,delaytime:600,edge:2,type:"UntSniper",level:2,num:3},
+	{wave:6,delaytime:650,edge:2,type:"UntSniper",level:2,num:3},
+	
+	
+	
+		{wave:3,delaytime:500,edge:2,type:"UntTNTMac",level:5,num:2},
+	{wave:4,delaytime:550,edge:2,type:"UntTNTMac",level:5,num:2},
+	{wave:5,delaytime:600,edge:2,type:"UntTNTMac",level:5,num:2},
+	{wave:6,delaytime:650,edge:2,type:"UntTNTMac",level:5,num:2},
+	
+	
+	
+	{wave:1,delaytime:700,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:720,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:1,delaytime:720,edge:2,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:900,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:950,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:1000,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:1050,edge:2,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:900,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:4,delaytime:950,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:5,delaytime:1000,edge:2,type:"UntMarine",level:2,num:5},
+	{wave:6,delaytime:1050,edge:2,type:"UntMarine",level:2,num:5},
+	
+	{wave:3,delaytime:900,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:4,delaytime:950,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:1000,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:1050,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:6,delaytime:1050,edge:2,type:"UntMarine",level:3,num:5},
+	
+	{wave:3,delaytime:1100,edge:2,type:"UntSniper",level:2,num:5},
+	{wave:4,delaytime:1150,edge:2,type:"UntSniper",level:2,num:5},
+	{wave:5,delaytime:1200,edge:2,type:"UntSniper",level:2,num:5},
+	{wave:6,delaytime:1250,edge:2,type:"UntSniper",level:2,num:5},
+	
+	{wave:3,delaytime:1100,edge:2,type:"UntSniper",level:2,num:3},
+	{wave:4,delaytime:1150,edge:2,type:"UntSniper",level:2,num:3},
+	{wave:5,delaytime:1200,edge:2,type:"UntSniper",level:2,num:3},
+	{wave:6,delaytime:1250,edge:2,type:"UntSniper",level:2,num:3},
+	
+]

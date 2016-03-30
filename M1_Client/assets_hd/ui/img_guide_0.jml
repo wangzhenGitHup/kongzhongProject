@@ -1,0 +1,18 @@
+//For image: img_guide_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("img_guide_0_32.png"));
+	this.imgInfos["img_guide_0_32"]={w:1024,h:512};
+	this["mark_focus"]={tex_u:33/1024, tex_v:401/512, tex_w:118/1024, tex_h:102/512, w:118, h:102, tex:this.imgList[id]};
+	this["mark_girl"]={tex_u:346/1024, tex_v:9/512, tex_w:323/1024, tex_h:341/512, w:323, h:341, tex:this.imgList[id]};
+	this["mark_girl_talk"]={tex_u:444/1024, tex_v:388/512, tex_w:88/1024, tex_h:104/512, w:88, h:104, tex:this.imgList[id]};
+	this["mark_pirate"]={tex_u:1/1024, tex_v:3/512, tex_w:341/1024, tex_h:346/512, w:341, h:346, tex:this.imgList[id]};
+	this["mark_pirate_talk"]={tex_u:564/1024, tex_v:388/512, tex_w:88/1024, tex_h:104/512, w:88, h:104, tex:this.imgList[id]};
+	this["mark_girl2"]={tex_u:676/1024, tex_v:9/512, tex_w:335/1024, tex_h:342/512, w:335, h:342, tex:this.imgList[id]};
+	this["pic_radar_light"]={tex_u:676/1024, tex_v:379/512, tex_w:112/1024, tex_h:112/512, w:112, h:112, tex:this.imgList[id]};
+	this["pic_radar"]={tex_u:308/1024, tex_v:395/512, tex_w:112/1024, tex_h:112/512, w:112, h:112, tex:this.imgList[id]};
+	this["guide_mask"]={tex_u:162/1024, tex_v:394/512, tex_w:98/1024, tex_h:65/512, w:98, h:65, tex:this.imgList[id]};
+}

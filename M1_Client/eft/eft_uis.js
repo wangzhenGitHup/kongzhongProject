@@ -1,0 +1,1873 @@
+﻿{//收获能量块1:
+	name:"bld_getcube_1",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:4,item_count:256*1,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.28,speed_max:0.38,intertia:0,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.6,scale_max:0.6,scale_end:1.1,rescale_frame:0,
+			items:[{name:"cube"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-1.5,1,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx//cube_collect.wav"),fade:0},
+		
+		
+	]
+},
+{//收获能量块2:
+	name:"bld_getcube_2",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:20,item_count:256*1,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.28,speed_max:0.38,intertia:0,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.6,scale_max:0.6,scale_end:1.1,rescale_frame:0,
+			items:[{name:"cube"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/cube_collect.wav"),fade:0},
+		
+	]
+},
+{//收获能量块3:
+	name:"bld_getcube_3",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:25,item_count:256*1.5,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.22,speed_max:0.33,intertia:0,gravity:0.01,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.6,scale_max:0.6,scale_end:1.1,rescale_frame:0,
+			items:[{name:"cube"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/cube_collect.wav"),fade:0},
+		
+	]
+},
+{//9级墙火光X:
+	name:"fire09_x",
+	elements:[
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.8,-0.3,0.72],
+			items:[ {name:"fire09_x"}]
+		},
+		
+	]
+},
+{//9级墙火光Y:
+	name:"fire09_y",
+	elements:[
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.3,-0.8,0.72],
+			items:[ {name:"fire09_y"}]
+		},
+		
+	]
+},
+{//9级墙火光XY:
+	name:"fire09_xy",
+	elements:[
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.8,-0.3,0.72],
+			items:[ {name:"fire09_x"}]
+		},
+		
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.3,-0.8,0.72],
+			items:[ {name:"fire09_y"}]
+		},
+		
+	]
+},
+{//10级墙火光X:
+	name:"fire10_x",
+	elements:[
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.8,-0.3,0.72],
+			items:[ {name:"fire10_x"}]
+		},
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:0,pos:[-0.8,-0.3,0],
+			items:[ {name:"EMP"}]
+		},
+		
+	]
+},
+{//10级墙火光Y:
+	name:"fire10_y",
+	elements:[
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.3,-0.8,0.72],
+			items:[ {name:"fire10_y"}]
+		},
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:0,pos:[-0.3,-0.8,0],
+			items:[ {name:"EMP"}]
+		},
+		
+	]
+},
+{//10级墙火光XY:
+	name:"fire10_xy",
+	elements:[
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.8,-0.3,0.72],
+			items:[ {name:"fire10_x"}]
+		},
+		
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[-0.3,-0.8,0.72],
+			items:[ {name:"fire10_y"}]
+		},
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:0,pos:[-0.8,-0.3,0],
+			items:[ {name:"EMP"}]
+		},
+		{
+			name:"firex",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:60,item_life_max:60,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:0,pos:[-0.3,-0.8,0],
+			items:[ {name:"EMP"}]
+		},
+		
+	]
+},
+
+{//新手引导:
+	name:"bld_hand",
+	elements:[
+		{
+			name:"hand",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*1,item_life_min:35,item_life_max:35,fade_out:1,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:1,pos:[3.3,0,-1.3],
+			items:[ {name:"hand"}]
+		},
+		{
+			name:"marine",type:"particle",wait:0,delay:25,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:0,item_count:256*1,item_life_min:90,item_life_max:90,fade_out:1,
+			radius_min:0,radius_max:0,angle_h_min:385,angle_h_max:385,angle_v_min:0,angle_v_max:0,
+			speed_min:0.08,speed_max:0.08,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[ {name:"marine"}, ]
+		},
+		{
+			name:"deploy",type:"particle",wait:0,delay:25,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:20,item_life_max:20,fade_out:1,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0.00,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.5,scale_max:0.5,scale_end:3,rescale_frame:0,pos:[0,0,0.1],
+			items:[{name:"deploy"}]
+		},
+	]
+},
+{//障碍物冒烟:
+	name:"bld_smoke",
+	elements:[
+
+		{
+			name:"dust2",type:"particle",wait:0,delay:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:60,item_count:256*0.5,item_life_min:100,item_life_max:200,fade_out:1,
+			radius_min:0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.001,speed_max:0.006,intertia:0.9,gravity:-0.003,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.5,scale_max:0.8,scale_end:1.5,rescale_frame:0,pos:[0,0,0],blend_add:0,
+			items:[{name:"d_7"},{name:"d_2"},{name:"d_4"}]
+		},
+	]
+},		
+{//陷阱冒烟:
+	name:"trap_smoke",
+	elements:[
+
+		{
+			name:"dust2",type:"particle",wait:0,delay:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:100,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.001,speed_max:0.006,intertia:0.9,gravity:-0.003,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.01,scale_max:0.4,scale_end:1.5,rescale_frame:0,pos:[0,0,0],blend_add:0,
+			items:[{name:"d_3"},{name:"d_2"},{name:"d_4"}]
+		},
+	]
+},	
+		
+{//收矿闪烁:
+	name:"bld_shining",
+	elements:[
+	
+		{
+			type:11,life:40,tgt_ani:0,speed:60,fade:0,color_r:0.8,color_g:0.8,color_b:0.8,color_a:0.2
+		},	
+	
+	]
+},
+	
+{//机甲瞬移
+	name:"par_shining",
+	elements:[
+		{
+			type:5,wait:0,delay:0,filter_move:0,factor_pos:[0,0,0],filter_scale:1,factor_scale:[0,2,0],tgt_ani:0,speed:0.2,gravity:0.03,
+			bounce:0.5,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,5],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,5],filter_scale:1,factor_scale:[1,2,0],tgt_ani:1,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,5],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:0.4,angle_h_min:0,angle_h_max:512,angle_v_min:20,angle_v_max:0,
+			speed_min:0.4,speed_max:0.4,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1.5,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"flash_up",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:10,item_life_max:10,fade_out:1,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:128,angle_v_max:128,angle_byhost:0,
+			speed_min:0.3,speed_max:0.3,intertia:0.9,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.6,scale_max:0.6,scale_end:2,rescale_frame:0,pos:[0,0,0],blend_add:1,
+			items:[{name:"e_fx"}]
+		},
+		
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/par_shining.wav"),vol:128,fade:0},
+	]
+},
+{//开始建设_大号栅栏:
+	name:"bld_startbuild_big",
+	elements:[
+		/*{
+			name:"zhalan",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:144000,item_life_max:144000,fade_out:0,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:1.5,scale_max:1.5,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[ {name:"startbuild3"}]
+		},*/
+		{
+		name:"bld",type:1,aniset:"startbuild3",action:"stay",pos_obj:0,dit_mode:0,layer:"gnd_objs",loop:1,done_on_lost_org:1,pos:[0.1,0.1,0],
+	
+		},
+	
+
+		{
+			type:11,life:0,tgt_ani:0,speed:10,fade:0,color_r:0.3,color_g:1,color_b:0.3,color_a:0.4
+		},	
+	]
+},
+{//开始建设_小号栅栏:
+	name:"bld_startbuild_small",
+	elements:[
+		{
+		name:"bld",type:1,aniset:"startbuild2",action:"stay",pos_obj:0,dit_mode:0,layer:"gnd_objs",loop:1,done_on_lost_org:1,pos:[0.3,0.3,0],
+	
+		},
+	
+
+		{
+			type:11,life:0,tgt_ani:0,speed:10,fade:0,color_r:0.3,color_g:1,color_b:0.3,color_a:0.3
+		},
+	]
+},
+
+{//建设中-跳:
+	name:"bld_building_jump",
+	elements:[
+
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,0.03],filter_scale:1,factor_scale:[0,0.05,0],tgt_ani:0,
+			speed:0.7,gravity:0.2,bounce:0,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,0.03],filter_scale:1,factor_scale:[0,0.05,0],tgt_ani:2,
+			speed:0.7,gravity:0.2,bounce:0,bounce_cnt:1
+		},
+		{
+			name:"grass",type:"particle",wait:0,delay:10,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*3,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.8,angle_h_min:0,angle_h_max:256,angle_v_min:30,angle_v_max:90,
+			speed_min:0.4,speed_max:0.5,intertia:0.7,gravity:0.01,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.8,scale_max:0.8,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[/* {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}*/{name:"debris10"},{name:"debris10"},{name:"debris11_2"},{name:"debris11"}]
+		},
+	]
+},
+
+{//机甲维修中:
+	name:"par_repairing",
+	elements:[
+
+		{
+			name:"light",type:"particle",wait:0,item_type:0,layer:"sky_fx",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:30,item_life_max:30,fade_out:1,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,angle_byhost:1,
+			speed_min:0,speed_max:0,intertia:0.8,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.8,scale_max:0.8,scale_end:2,rescale_frame:0,pos:[0.3,0.5,0.5],blend_add:1,
+			items:[{name:"light"}]
+		},
+		
+		{
+			name:"fireball",type:"particle",wait:0,delay:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:256*1,item_life_min:20,item_life_max:40,fade_out:1,
+			radius_min:0,radius_max:0.4,angle_h_min:0,angle_h_max:512,angle_v_min:30,angle_v_max:128,
+			speed_min:0.6,speed_max:0.7,intertia:0.7,gravity:0.03,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.08,scale_max:0.1,scale_end:0.3,rescale_frame:0,pos:[0.3,0.5,0.1],blend_add:1,
+			items:[{name:"fireball2_2"},{name:"fireball2_2"},{name:"fireball2_3"},]
+		},
+		
+		{
+			name:"light2",type:"particle",wait:0,delay:50,item_type:0,layer:"sky_fx",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:30,item_life_max:30,fade_out:1,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,angle_byhost:1,
+			speed_min:0,speed_max:0,intertia:0.8,gravity:0,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.8,scale_max:0.8,scale_end:2,rescale_frame:0,pos:[-0.3,-0.5,0.8],blend_add:1,
+			items:[{name:"light"}]
+		},
+		
+		{
+			name:"fireball2",type:"particle",wait:0,delay:50,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:256*1,item_life_min:20,item_life_max:40,fade_out:1,
+			radius_min:0,radius_max:0.4,angle_h_min:0,angle_h_max:512,angle_v_min:30,angle_v_max:128,
+			speed_min:0.6,speed_max:0.7,intertia:0.7,gravity:0.03,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.08,scale_max:0.1,scale_end:0.3,rescale_frame:0,pos:[-0.3,-0.5,0.3],blend_add:1,
+			items:[{name:"fireball2_2"},{name:"fireball2_2"},{name:"fireball2_3"},]
+		},
+	]
+},
+{//机甲维修完成:
+	name:"par_repairing_done",
+	elements:[
+
+		{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:128*1,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.01,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.3,scale_max:0.4,scale_end:0.5,rescale_frame:1,
+			items:[{name:"e_fx2"}]
+		},
+		{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:128*1,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.01,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.2,scale_max:0.3,scale_end:0.3,rescale_frame:1,
+			items:[{name:"e_flash2"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/unit_traing_finished.wav"),fade:0},
+	]
+},
+{//建筑加速——跳:
+	name:"bld_boost_jump",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,0.2],filter_scale:1,factor_scale:[0,0.1,0],tgt_ani:0,
+			speed:0.2,gravity:0.1,bounce:1,bounce_cnt:1
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:20,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*2,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+
+	]
+},
+{//选中建筑指挥中心:
+	name:"bld_select_TownHall",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/oth_pickup.wav"),fade:0,},
+	]
+},
+{//选中建筑金矿:
+	name:"bld_select_GoldMine",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑能源钻井:
+	name:"bld_select_OilWell",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑金库:
+	name:"bld_select_GoldVault",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑能源罐:
+	name:"bld_select_OilTank",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑工程站:
+	name:"bld_select_WorkerHut",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑兵营:
+	name:"bld_select_Barrack",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑训练场:
+	name:"bld_select_Camp",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑研究所:
+	name:"bld_select_TechLab",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_pickup.wav"),fade:0},
+	]
+},
+{//选中建卫星通讯站:
+	name:"bld_select_SpellLab",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑联盟城堡:
+	name:"bld_select_ClanBld",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑墙:
+	name:"bld_select_Wall",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/wall_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑加农炮:
+	name:"bld_select_Cannon",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑机枪塔:
+	name:"bld_select_Tower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑巨炮:
+	name:"bld_select_Motar",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑战火箭塔:
+	name:"bld_select_RocketTower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑防空塔:
+	name:"bld_select_AATower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_pickup.wav"),fade:0},
+	]
+},
+{//选中建光陵塔:
+	name:"bld_select_LaserTower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_pickup.wav"),fade:0},
+	]
+},
+{//选中建筑轨道炮:
+	name:"bld_select_RGunTower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_pickup.wav"),fade:0},
+	]
+},
+
+{//选中建筑钻石矿:
+	name:"bld_select_DiamondMine",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:1
+		},
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_pickup.wav"),fade:0},
+	]
+},
+
+
+{//选中装饰物:
+	name:"bld_select_dec",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,1],filter_scale:1,factor_scale:[0.4,0.6,0],tgt_ani:0,
+			speed:0.2,gravity:0.07,	bounce:0,bounce_cnt:1
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,0.3],filter_scale:1,factor_scale:[0.4,0.6,0],tgt_ani:2,
+			speed:0.2,gravity:0.07,	bounce:0,bounce_cnt:1
+		},
+		/*{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*3,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},*/
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/dec_pickup.wav"),fade:0},
+	]
+},
+{//选中障碍物石头类:
+	name:"bld_select_stones",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0.5,0.5,0],filter_scale:0,factor_scale:[0,0.05,0],tgt_ani:0,
+			speed:0.1,gravity:0.1,bounce:0.3,bounce_cnt:4
+		},	
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0.5,0.5,0],filter_scale:0,factor_scale:[0,0.05,0],tgt_ani:2,
+			speed:0.1,gravity:0.1,bounce:0.3,bounce_cnt:4
+		},	
+
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*2,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"debris17"} ,{name:"debris18"} ,{name:"debris19"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/dec_pickup.wav"),fade:0},
+	]
+},
+{//选中障碍物植物类:
+	name:"bld_select_plans",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0.5,0.5,0],filter_scale:0,factor_scale:[0,0.05,0],tgt_ani:0,
+			speed:0.1,gravity:0.1,bounce:0.3,bounce_cnt:4
+		},	
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0.5,0.5,0],filter_scale:0,factor_scale:[0,0.05,0],tgt_ani:2,
+			speed:0.1,gravity:0.1,bounce:0.3,bounce_cnt:4
+		},	
+
+		{
+			name:"dots",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:3,item_count:256*2,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.5,radius_max:1,angle_h_min:0,angle_h_max:512,angle_v_min:64,angle_v_max:128,
+			speed_min:0.18,speed_max:0.28,intertia:0,gravity:0.03,bounce:0.5,rotate_min:0,rotate_max:256,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:1,
+			items:[ {name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/dec_pickup.wav"),fade:0},
+	]
+},
+
+
+
+{//建筑被放置指挥中心:
+	name:"bld_place_TownHall",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/oth_place.wav"),fade:0},
+	]
+},
+{//建筑被放置金矿:
+	name:"bld_place_GoldMine",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_place.wav"),fade:0},
+	]
+},
+{//建筑被放置能源井:
+	name:"bld_place_OilWell",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_place.wav"),fade:0},
+	]
+},
+{//建筑被放置金库:
+	name:"bld_place_GoldVault",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_place.wav"),fade:0},
+	]
+},
+{//建筑被放置能源罐:
+	name:"bld_place_OilTank",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_place.wav"),fade:0},
+	]
+},
+{//建筑被放置SCV格纳库:
+	name:"bld_place_WorkerHut",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_place.wav"),fade:0},
+	]
+},
+{//建筑被放置兵营:
+	name:"bld_place_Barrack",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_place.wav"),fade:0},
+	]
+},
+{//建筑被放置操场:
+	name:"bld_place_Camp",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_place.wav"),fade:0},
+	]
+},
+{//建筑被放置研究所:
+	name:"bld_place_TechLab",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_place.wav"),fade:0},
+	]
+},
+{//建筑被放置卫星通讯站:
+	name:"bld_place_SpellLab",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_place.wav"),fade:0},
+	]
+},
+{//建筑被放置联盟城堡:
+	name:"bld_place_ClanBld",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/arm_place.wav"),fade:0},
+	]
+},
+{//建筑被放置墙:
+	name:"bld_place_Wall",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/wall_place.wav"),fade:0},
+	]
+},
+{//建筑被放置加农炮:
+	name:"bld_place_Cannon",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},
+{//建筑被放置机枪塔:
+	name:"bld_place_Tower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},
+{//建筑被放置巨炮:
+	name:"bld_place_Motar",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},
+{//建筑被放置火箭塔:
+	name:"bld_place_RocketTower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},
+{//建筑被放置防空塔:
+	name:"bld_place_AATower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},
+{//建筑被放置光陵塔:
+	name:"bld_place_LaserTower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},
+{//建筑被放置轨道炮:
+	name:"bld_place_RGunTower",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},
+
+
+{//建筑被放置钻石矿:
+	name:"bld_place_DiamondMine",
+	elements:[
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:0,factor_scale:[1,2,0],tgt_ani:0,
+			speed:0.03,gravity:0.01,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:1,factor_pos:[0,0,4],filter_scale:1,factor_scale:[1,2,0],tgt_ani:2,
+			speed:0.03,gravity:0.008,bounce:0.4,bounce_cnt:0
+		},
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*5,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/res_place.wav"),fade:0},
+	]
+},
+
+{//装饰物放置:
+	name:"bld_place_dec",
+	elements:[
+		{
+			name:"smoke",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*3,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		/*{
+			name:"grass",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*4,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:0,radius_max:1.8,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:128,
+			speed_min:0.1,speed_max:0.3,intertia:0.6,gravity:0.1,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:0.4,scale_end:0.6,rescale_frame:0,pos:[0,0,0.8],
+			items:[{name:"grass_2"} ,{name:"grass_3"} ,{name:"grass_4"}]
+		},*/
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/dec_place.wav"),fade:0},
+	]
+},
+
+
+
+{//收获金币1:
+	name:"bld_getcoin_1",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:4,item_count:256*1,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.28,speed_max:0.38,intertia:0,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.4,scale_max:0.4,scale_end:0.7,rescale_frame:0,
+			items:[{name:"coin"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-1.5,1,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx//coin_collect.wav"),fade:0},
+		
+		
+	]
+},
+{//收获金币2:
+	name:"bld_getcoin_2",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:20,item_count:256*2,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.28,speed_max:0.38,intertia:0,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.4,scale_max:0.4,scale_end:0.7,rescale_frame:0,
+			items:[{name:"coin"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/coin_collect.wav"),fade:0},
+		
+	]
+},
+{//收获金币3:
+	name:"bld_getcoin_3",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:25,item_count:256*4,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.22,speed_max:0.33,intertia:0,gravity:0.01,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.4,scale_max:0.4,scale_end:0.7,rescale_frame:0,
+			items:[{name:"coin"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/coin_collect.wav"),fade:0},
+		
+	]
+},
+{//收获能源1:
+	name:"bld_geteli_1",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:4,item_count:256*1,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.28,speed_max:0.38,intertia:0,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.2,scale_max:0.8,scale_end:1,rescale_frame:0,
+			items:[{name:"eli_1"},{name:"eli_2"},{name:"eli_3"},{name:"eli_4"},
+			{name:"eli_5"},{name:"eli_6"},{name:"eli_7"},{name:"eli_8"},{name:"eli_9"},{name:"eli_10"},{name:"eli_11"},
+			{name:"eli_5"},{name:"eli_6"},{name:"eli_7"},{name:"eli_8"},{name:"eli_9"},{name:"eli_10"},{name:"eli_11"},]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-1.5,1,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/fuel_collect.wav"),fade:0},
+		
+	]
+},
+{//收获能源2:
+	name:"bld_geteli_2",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:15,item_count:256*2,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.28,speed_max:0.38,intertia:0,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.2,scale_max:0.8,scale_end:1,rescale_frame:0,
+			items:[{name:"eli_1"},{name:"eli_2"},{name:"eli_3"},{name:"eli_4"},
+			{name:"eli_5"},{name:"eli_6"},{name:"eli_7"},{name:"eli_8"},{name:"eli_9"},{name:"eli_10"},{name:"eli_11"},
+			{name:"eli_5"},{name:"eli_6"},{name:"eli_7"},{name:"eli_8"},{name:"eli_9"},{name:"eli_10"},{name:"eli_11"},]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/fuel_collect.wav"),fade:0},
+		
+	]
+},
+{//收获能源3:
+	name:"bld_geteli_3",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:25,item_count:256*4,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.28,speed_max:0.38,intertia:0,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.2,scale_max:0.8,scale_end:1,rescale_frame:0,
+			items:[{name:"eli_1"},{name:"eli_2"},{name:"eli_3"},{name:"eli_4"},
+			{name:"eli_5"},{name:"eli_6"},{name:"eli_7"},{name:"eli_8"},{name:"eli_9"},{name:"eli_10"},{name:"eli_11"},
+			{name:"eli_5"},{name:"eli_6"},{name:"eli_7"},{name:"eli_8"},{name:"eli_9"},{name:"eli_10"},{name:"eli_11"},]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/fuel_collect.wav"),fade:0},
+		
+		
+	]
+},
+{//收获墓碑:
+	name:"bld_gettomb",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:5,item_count:256*1,item_life_min:20,item_life_max:30,fade_out:1,
+			radius_min:0.0,radius_max:0.4,angle_h_min:0,angle_h_max:512,angle_v_min:128,angle_v_max:128,
+			speed_min:0,speed_max:0,intertia:0,gravity:-0.008,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.5,scale_max:0.5,scale_end:1,rescale_frame:0,
+			items:[{name:"eli_1"},{name:"eli_2"},{name:"eli_3"},{name:"eli_4"},
+			{name:"eli_5"},{name:"eli_6"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/fuel_collect.wav"),fade:0},
+	]
+},
+{//收获经验:
+	name:"bld_getexp",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:30,item_life_max:60,fade_out:1,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:100,angle_v_max:128,
+			speed_min:0.4,speed_max:0.5,intertia:0.9,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.6,scale_max:0.6,scale_end:1,rescale_frame:0,
+			items:[{name:"exp"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/exp_gain.wav"),vol:100,fade:0},
+	]
+},
+{//收获钻石:
+	name:"bld_getgem",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:80,item_life_max:80,fade_out:1,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:110,angle_v_max:128,
+			speed_min:0.7,speed_max:0.9,intertia:0.9,gravity:0.01,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.6,scale_max:0.6,scale_end:1,rescale_frame:0,
+			items:[{name:"gem"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/diamonds_collect.wav"),fade:0},
+	]
+},
+{//收获钻石2:
+	name:"bld_getgem2",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:20,item_count:256*2,item_life_min:20,item_life_max:50,fade_out:1,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:80,angle_v_max:128,
+			speed_min:0.7,speed_max:0.9,intertia:0.9,gravity:0.02,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.6,scale_max:0.6,scale_end:1,rescale_frame:0,
+			items:[{name:"gem"}]
+		},
+		{
+			name:"pusher",type:"pusher",wait:0,delay:0,filter_move:0,factor_pos:[0.5,0.5,0],filter_scale:1,factor_scale:[-4,3,0],tgt_ani:0,
+			speed:0.01,gravity:0.0015,bounce:0.6,bounce_cnt:0
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/diamonds_collect.wav"),fade:0},
+	]
+},
+{//升级:
+	name:"bld_levelup",
+	elements:[
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/exp_levelup.wav"),fade:0},
+	]
+},
+{//墙完成:
+	name:"bld_wall_done",
+	elements:[
+		{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:128*1,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.01,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.3,scale_max:0.4,scale_end:0.5,rescale_frame:1,
+			items:[{name:"e_fx2"}]
+		},
+		{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:128*1,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.01,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.2,scale_max:0.3,scale_end:0.3,rescale_frame:1,
+			items:[{name:"e_flash2"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/bld_done.wav"),fade:0},
+	]
+},
+{//建筑完成或升级完成:
+	name:"bld_done",
+	elements:[
+		{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:128*1,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.01,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.3,scale_max:0.4,scale_end:0.5,rescale_frame:1,
+			items:[{name:"e_fx2"}]
+		},
+		{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:30,item_count:128*1,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.01,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.2,scale_max:0.3,scale_end:0.3,rescale_frame:1,
+			items:[{name:"e_flash2"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/bld_done.wav"),fade:0},
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:30,item_life_max:60,fade_out:1,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:100,angle_v_max:128,
+			speed_min:0.4,speed_max:0.5,intertia:0.9,gravity:0.012,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.6,scale_max:0.6,scale_end:1,rescale_frame:0,
+			items:[{name:"exp"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/exp_gain.wav"),vol:100,fade:0},
+	]
+},
+{//研发兵种完成:
+	name:"bld_upgrade",
+	elements:[
+		{
+			name:"coins",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:25,item_count:256*3,item_life_min:30,item_life_max:60,fade_out:2,
+			radius_min:0.0,radius_max:0.5,angle_h_min:0,angle_h_max:512,angle_v_min:90,angle_v_max:128,
+			speed_min:0.12,speed_max:0.23,intertia:0,gravity:0.008,bounce:0.5,rotate_min:0,rotate_max:512,
+			scale_min:0.1,scale_max:0.3,scale_end:1,rescale_frame:0,pos:[0,0,1.3],blend_add:1,
+			items:[{name:"star"},]
+		},
+	
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/exp_gain.wav"),vol:100,fade:0},
+	]
+},
+//建筑物建设开工:
+{
+	name:"bld_StartBld",
+	elements:[
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/bld_start.wav")},
+	]
+},
+
+{//建筑加速:
+	name:"bld_boost",
+	elements:[
+		{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:-1,item_count:80,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0.2,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.05,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.3,scale_max:0.3,scale_end:0.4,rescale_frame:1,
+			items:[{name:"e_fx"}]
+		},
+		{
+			type:11,life:0,tgt_ani:0,speed:10,fade:0,color_r:0.8,color_g:0.8,color_b:0,color_a:0.3
+		},	
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/boost_gem.wav"),fade:0},
+	]
+},
+
+{//起跳
+	name:"jump_on",
+	elements:[
+		{
+			type:5,wait:0,delay:0,filter_move:0,factor_pos:[0,0,0.6],filter_scale:1,factor_scale:[0.0,0.2,0],tgt_ani:0,speed:0.2,gravity:0.03,
+			bounce:0.5,bounce_cnt:0
+		},
+	]
+},
+{//落地
+	name:"jump_off",
+	elements:[
+		{
+			type:5,wait:0,delay:0,filter_move:0,factor_pos:[0,0,0.6],filter_scale:1,factor_scale:[0.0,-0.2,0],tgt_ani:0,speed:0.2,gravity:0.03,
+			bounce:0.5,bounce_cnt:0
+		},
+	]
+},
+{//移动建筑:
+	name:"bld_moving",
+	elements:[
+		/*{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:-1,item_count:32,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0.2,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.05,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.3,scale_max:0.3,scale_end:0.4,rescale_frame:1,
+			items:[{name:"e_fx"}]
+		},*/
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/bld_move.wav"),fade:0},
+	]
+},
+{//放置建筑错误:
+	name:"bld_badmoving",
+	elements:[
+		/*{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:-1,item_count:32,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0.2,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.05,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.3,scale_max:0.3,scale_end:0.4,rescale_frame:1,
+			items:[{name:"e_fx"}]
+		},*/
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/bad_moving.wav"),fade:0},
+	]
+},
+{//卖东西:
+	name:"bld_sellitem",
+	elements:[
+		/*{
+			name:"lights",type:"particle",wait:0,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:-1,item_count:32,item_life_min:10,item_life_max:20,fade_out:1,
+			radius_min:0.2,radius_max:1.5,angle_h_min:0,angle_h_max:512,angle_v_min:0,angle_v_max:0,
+			speed_min:0.01,speed_max:0.02,intertia:0.92,gravity:-0.05,bounce:0,rotate_min:0,rotate_max:0,
+			scale_min:0.3,scale_max:0.3,scale_end:0.4,rescale_frame:1,
+			items:[{name:"e_fx"}]
+		},*/
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/sell_item.wav"),fade:0},
+	]
+},
+{//部队训练完成:
+	name:"bld_traing_finished",
+	elements:[
+
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/unit_traing_finished.wav"),fade:0},
+	]
+},
+{//收资源暴击:
+	name:"bld_getresource_cri",
+	elements:[
+		{
+			name:"cri",type:"particle",wait:0,item_type:0,layer:"gnd_objs",pos_obj:0,emitter_life:1,item_count:256*1,item_life_min:15,item_life_max:15,fade_out:1,
+			radius_min:0,radius_max:0,angle_h_min:0,angle_h_max:0,angle_v_min:0,angle_v_max:0,
+			speed_min:0,speed_max:0,intertia:0,gravity:0.00,bounce:0,rotate_min:0,rotate_max:0,blend_add:1,
+			scale_min:0.3,scale_max:0.3,scale_end:6,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"cri"}]
+		},
+		{
+			type:11,life:15,tgt_ani:0,speed:10,fade:0,color_r:1,color_g:1,color_b:0.3,color_a:0.3
+		},	
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/cri.wav"),fade:0},
+	]
+},
+{//电磁炮切换模式:
+	name:"bld_Rgun_switch",
+	elements:[
+
+		{
+			type:11,life:15,tgt_ani:0,speed:10,fade:0,color_r:0.3,color_g:1,color_b:0.3,color_a:0.3
+		},	
+		{
+			name:"smoke",type:"particle",wait:0,delay:5,item_type:0,layer:"gnd_fxs",pos_obj:0,emitter_life:2,item_count:256*2,item_life_min:20,item_life_max:60,fade_out:1,
+			radius_min:1,radius_max:1.4,angle_h_min:-64,angle_h_max:256,angle_v_min:0,angle_v_max:0,
+			speed_min:0.1,speed_max:0.2,intertia:0.7,gravity:0,bounce:0,rotate_min:0,rotate_max:512,
+			scale_min:0.3,scale_max:1,scale_end:1,rescale_frame:0,pos:[0,0,0],
+			items:[{name:"d_4"}]
+		},
+		{name:"sfx",type:"audio",audio:page.genPageURL("sfx/def_place.wav"),fade:0},
+	]
+},	
+
+{
+	name:"test_flash",
+	elements:[
+		{
+			type:11,life:300,tgt_ani:0,speed:60,fade:1,color_r:1,color_g:1,color_b:0.5
+		},
+	]
+},
+{
+	name:"test_flash2",
+	elements:[
+		{
+			type:11,life:160,tgt_ani:0,speed:100,fade:0,color_r:0,color_g:1,color_b:1,color_a:0.01
+		},
+	]
+},

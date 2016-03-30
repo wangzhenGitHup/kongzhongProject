@@ -1,0 +1,11 @@
+﻿<jml>
+<import>"dlg_addon_buy.js"</import>
+<import>"dlg_addon_joint.js"</import>
+<import>"dlg_addons_addons.js"</import>
+<import>"dlgcss_btnaddon.js"</import>
+<import>"pmt_dlgjoint.js"</import>
+<script>
+DBOut("Dialog JML loaded.");
+__Page.gamePage.appEnv.onPageDlgOpen(__Page);
+</script>
+</jml>

@@ -1,0 +1,37 @@
+﻿if(!__Page.imgLib)
+{
+	__Page.imgLib={};
+	__Page.imgLib.page=__Page;
+	__Page.imgLib.initSteps = 0;
+	__Page.imgLib.getImgByName = function(name)
+	{
+		if(this[name])
+			return this[name];
+		else
+		{
+			DBOut("Can't find img "+name);
+			return {};//this["Unknown"];
+		}
+	};
+	__Page.imgLib.getImg = __Page.imgLib.getImgByName;
+	__Page.imgLib.gen3x3Info=function(pName,size3x3,imgW,imgH)
+	{
+		var box=this.getImg(pName);
+		box.size3x3=size3x3;
+		box.uv3x3=[size3x3[0]/imgW,size3x3[1]/imgH,size3x3[2]/imgW,size3x3[3]/imgH];
+		box.mode3x3=1;
+		box.mgL=size3x3[0];//margin left
+		box.mgR=size3x3[2];//margin right
+		box.mgU=size3x3[1];//margin up
+		box.mgD=size3x3[3];//margin down
+		box.mgW=size3x3[0]+size3x3[2];//margin total w
+		box.mgH=size3x3[1]+size3x3[3];//margin total h
+	//	box.iw=box.w-mw;
+	//	box.ih=box.h-mh;
+	};
+}
+__Page.imgLib.initSteps++;
+__Page.imgLib["genPath_"+(__Page.imgLib.initSteps-1)] = function(pName)
+{
+	return this.page.genPageURL(imgPath+"/ui/"+pName);
+};

@@ -1,0 +1,608 @@
+﻿<import>
+	window.LanguageStr="cn";
+	null
+</import>
+<include check="0">"load_img.jml"</include>
+<include check="0">"load_css.jml"</include>
+<include check="0">"load_strings_"+window.LanguageStr+".jml"</include>
+<include check="0">"dwr.jml"</include>
+<include check="0">"audio_base.jml"</include>
+<include check="0">"purchase.jml"</include>
+//*********************************************************
+//游戏界面环境*********************************************
+//*********************************************************
+__Page.appEnv = {
+	page:__Page,curUI:null,curLogic:null,nextUI:null,nextLogic:null,layerInfos:[],
+	pageBoard:null,popBoard:null,confirmBoard:null,notifyBoard:null,popBoard2:null,
+	img:{},css:{},boards:[],times:[],aniSps:{},pi:3.1415926,keys:{},modules:["Pmd","Chat"],
+	_hiddui:false,_hiddground:false,_mouseDown:false,oldX:0,oldY:0,email:"",password:"",
+	serverId:-1,bldLvState:1,dynaStates:[],
+	hudKeys:{
+		curValue:128,used:[],ref:{},
+		getKey:function(obj)
+		{
+			var key;
+			if (this.used.length) {
+				key = this.used.pop();
+			} else {
+				this.curValue++;
+				key = this.curValue;
+			}
+			this.ref[key] = null;//obj;
+			return key;
+		},
+		delKey:function(key)
+		{
+			//this.ref[key] = null;
+			//this.used.push(key);
+		}
+	},
+	appKeys:
+		{
+			navBox:-1,
+			confirmNewBld:-3,
+			abortNewBld:-4,
+			bldUpgrade:-5,
+			bldInfo:-6,
+			bldHarvest:-7,
+			bldTrain:-8,
+			bldMakeSpell:-9,
+			bldResearch:-10,
+			bldRequsetUnit:-11,
+			bldClanInfo:-12,
+			bldBoost:-13,
+			bldSell:-14,
+			bldRemove:-15,
+
+			bldTrainUnit_1:-100,
+			bldTrainUnit_2:-102,
+			bldTrainUnit_3:-104,
+			bldTrainUnit_4:-106,
+			bldTrainUnit_5:-108,
+			bldTrainUnit_6:-110,
+			bldTrainUnit_7:-112,
+			bldTrainUnit_8:-114,
+			bldTrainUnit_9:-116,
+			bldTrainUnit_10:-118,
+		},
+		subDlgPages:[],
+		pushMsgs:[],
+};
+__Page.appEnv.STATE_NORMAL = 1;
+__Page.appEnv.STATE_SWITCH = 2;
+__Page.appEnv.loadConfig = function()
+{
+	this.stageLayerCSS = {pos:[0,0,0],w:ScreenW,h:ScreenH,ui_event:1};
+};
+__Page.appEnv.init = function()
+{
+	//TODO:Complete this!
+	this.state = this.STATE_NORMAL;
+
+	this.img = this.page.imgLib;
+	this.css = this.page.cssLib;
+	this.loadConfig();
+
+	this.uLayerBase = this.page.getElementById("ui_3ddiv");
+
+	this.uLayer = this.layer=this.uLayerBase.getElementById("ui-layer");
+//	this.stageiLayer = this.uLayer.addHudItem({type:"icon",id:"stage-layer",css:this.stageLayerCSS});
+//	this.uiLayer = this.uLayer.addHudItem({type:"icon",id:"uilayer",css:this.stageLayerCSS});
+	this.uSubLayer = this.uLayerBase.getElementById("u-sub-layer");
+	this.uPopLayer = this.uLayerBase.getElementById("u-pop-layer");
+	this.uPop2Layer = this.uLayerBase.getElementById("pop2-layer");
+	this.loadingPage = this.page.getElementById("load_page");
+	this.appVersion = System.getProperty("Version");
+	this.deviceType = System.getProperty("DeviceType");
+	this.aniSpSys=this.uLayer.getAniSpSys();
+	this.advSpSys=this.uPopLayer.getAdvSpSys();
+	this.advSpSys.loadFmURL(this.page.genURL(window.imgPath+"/buildings/search3.spl"));
+
+	this.page.audioObject.init(this);
+	this.page.uiLoading.init(this);
+	this.page.logicLoading.init(this);
+
+	this.layer=this.page.getElementById("ui-layer");
+	this.dlgLayer=this.page.getElementById("u-sub-layer");
+	this.pmtLayer=this.page.getElementById("pmt-layer");
+	var scrSize=this.scrSize=[this.page.getW(),this.page.getH()];
+
+	//一级对话框用来用来遮挡下面界面的蒙板
+	this.dlgMask=this.dlgLayer.addHudItem({
+		type:"shape",id:"dlgMask",pos:[0,0,0],w:scrSize[0],h:scrSize[1],border_a:0,face_r:0,face_g:0,face_b:0,face_a:128,
+		display:0,fade_pos:[0,0,0],fade_size:1,fade:1,fade_alpha:0
+	});
+
+	//一级对话框用来做动画的底板
+	this.dlgBoxDock=this.dlgLayer.addHudItem({
+		type:"shape",id:"dlgDock",pos:[Math.floor(scrSize[0]/2),Math.floor(scrSize[1]/2),0],w:scrSize[0],h:scrSize[1],border_a:0,face_g:0,face_a:0,anchor_h:1,anchor_v:1,ui_event:1,
+		display:1,fade:1,fade_alpha:0,fade_pos:[0,0,0],fade_size:1.0
+	});
+	//为一级对话框动画底板增加动画Mover
+	this.dlgBoxDock.adRot=this.dlgBoxDock.addAdTMFirst("rotate");
+	this.dlgBoxDock.adRot.setCurValue([-3.1415926535*0.52,0,0]);
+	this.dlgBoxDock.adRot.setUpdate(1,this.dlgLayer);
+	this.dlgBoxDock.adSize=this.dlgBoxDock.addAdTMLast("scale");
+	this.dlgBoxDock.adSize.setCurValue([1,1,1]);
+	this.dlgBoxDock.adSize.setUpdate(1,this.dlgLayer);
+
+	//一级对话框的控件底板,0,0在左上角
+	this.dlgBox=this.dlgBoxDock.appendNewChild({
+		type:"shape",id:"dlgBox",pos:[-Math.floor(scrSize[0]/2),-Math.floor(scrSize[1]/2)],w:scrSize[0],h:scrSize[1],border_a:0,face_r:0,face_a:0,ui_event:1,
+		display:0
+	});
+
+	//二级对话框用来遮挡底层界面的蒙板:
+	this.pmtMask=this.pmtLayer.addHudItem({
+		type:"shape",id:"pmtMask",pos:[0,0,0],w:scrSize[0],h:scrSize[1],border_a:0,face_r:0,face_g:0,face_b:0,face_a:128,
+		display:0,fade_pos:[0,0,0],fade_size:1,fade:1,fade_alpha:0
+	});
+	//二级对话框用来做动画的底板:
+	this.pmtBoxDock=this.pmtLayer.addHudItem({
+		type:"shape",id:"pmtDock",pos:[Math.floor(scrSize[0]/2),Math.floor(scrSize[1]/2),0],w:scrSize[0],h:scrSize[1],border_a:0,face_g:255,face_a:0,anchor_h:1,anchor_v:1,ui_event:1,
+		display:0,fade:1,fade_alpha:0,fade_pos:[0,0,0],fade_size:1.0
+	});
+	//为2级对话框动画底板增加动画Mover
+	this.pmtBoxDock.adRot=this.pmtBoxDock.addAdTMFirst("rotate");
+	this.pmtBoxDock.adRot.setCurValue([-3.1415926535*0.52,0,0]);
+	this.pmtBoxDock.adRot.setFactor(0,0.5);
+	this.pmtBoxDock.adRot.setUpdate(1,this.pmtLayer);
+	this.pmtBoxDock.adSize=this.pmtBoxDock.addAdTMLast("scale");
+	this.pmtBoxDock.adSize.setFactor(0,0.5);
+	this.pmtBoxDock.adSize.setCurValue([1,1,1]);
+	this.pmtBoxDock.adSize.setUpdate(1,this.pmtLayer);
+
+	//2级对话框的控件底板,0,0在左上角
+	this.pmtBox=this.pmtBoxDock.appendNewChild({
+		type:"shape",id:"pmtBox",pos:[-Math.floor(scrSize[0]/2),-Math.floor(scrSize[1]/2),0],w:scrSize[0],h:scrSize[1],border_a:0,face_r:80,face_a:0,ui_event:1,
+		display:1
+	});
+
+	//几种对话框的参数【zz】
+	this.dlgInfos=[
+		{size:[this.scrSize[0],this.scrSize[1]],box:this.dlgBox,frame:"box_dlginner"},//0---全屏，商店用-dlg
+		{size:[880,620],box:this.dlgBox,frame:"dlgbox"},//1---大框，联盟用-dlg	960*540/854*480
+		{size:[700,560],box:this.dlgBox,frame:"dlgbox"},//2---中框，建筑用-dlg
+		{size:[560,400],box:this.pmtBox,frame:"dlgbox"},//3---小框，提示、确认用-pmt
+		{size:[520,460],box:this.dlgBox,frame:"dlgBox"},//4---设置界面
+		{size:[670,510],box:this.dlgBox,frame:"dlgBox"},//5---升级中界面
+		{size:[520,400],box:this.dlgBox,frame:"dlgBox"},//6---要兵界面
+	];
+
+	var list,n,i;
+	list=this.dynaStates;
+	n=list.length;
+	for(i=0;i<n;i++)
+	{
+		list[i].init(this);
+	}
+
+	this.loginTime = this.page.getCookie(cookieDomain,"loginTimes");
+	if(this.loginTime)
+		this.loginTime = parseInt(this.loginTime,10);
+	else
+		this.loginTime = 0;
+
+	if(window.PUR)
+		PUR.login(this.finishInit,this,this.finishInitByToken);
+	else
+		this.finishInit(1);
+
+};
+__Page.appEnv.finishInit = function(result)
+{
+	if(result)
+	{
+		this.switchState(this.page.uiLoading,this.page.logicLoading,{},1);
+		this.page.uiLoading.setText(this.page.STR.Logining,0);
+	}
+	else{
+		Dialogs.alert(STR.LoginPurError);
+		exitApp();
+	}
+};
+
+__Page.appEnv.finishInitByToken = function(result)
+{
+	if(result)
+	{
+		var token="",uid="";
+		if(window.ChannelType=="QH")
+		{
+			if(window.QHPlatform)
+			{
+				uid=QHPlatform.getUserId();
+				token=QHPlatform.getToken();
+			}
+		}else if(window.ChannelType=="CNlenovo")
+		{
+			if(window.LenovoPlatform)
+			{
+				uid=LenovoPlatform.getUserId();
+				token="lpsust="+LenovoPlatform.getToken()+"&realm="+LenovoPlatform.getRealm();
+			}
+		}else if(window.ChannelType=="CNwdj")
+		{
+			if(window.WandoujiaPlatform)
+			{
+				uid=WandoujiaPlatform.getUserId();
+				token=WandoujiaPlatform.getToken();
+				window.AppID=WandoujiaPlatform.getAppId();
+			}
+			window.ChannelType_byZFZX="wandoujia";
+		}
+
+		window.ChannelSign=token;
+		window.ChannelUid=uid;
+		DBOut("+++++finishInitByToken token="+token+" uid="+uid);
+		this.switchState(this.page.uiLoading,this.page.logicLoading,{},1);
+		this.page.uiLoading.setText(this.page.STR.Logining,0);
+	}
+	else{
+		Dialogs.alert(STR.LoginPurError);
+		exitApp();
+	}
+};
+
+__Page.appEnv.startLogin = function()
+{
+	//挂机检测点
+	this.initPlayTime(0,1,this.startLogin,this);
+	if(-1==this.ptVo.status)
+	{
+		DBOut("曾被踢下线，需要再次验证");
+		return;
+	}
+
+	var oUserVO = this.page.getCookie("Runtime","UserVO");
+	if(oUserVO)
+		oUserVO = fromJSON(oUserVO);
+	var cues = this.page.getCookie(cookieDomain,"loading_cues");
+	this.notFirstLogin = this.page.getCookie(cookieDomain,"notFirstLogin");
+
+	this.page.uiLoading.addCues(STR.CueText);
+
+	if(cues)
+	{
+		cues = fromJSON(cues);
+		this.page.uiLoading.addCues(cues);
+	}
+	if(oUserVO&&oUserVO.userId)
+	{
+		this.checkVo=oUserVO;
+		this.userId = oUserVO.userId;
+		this.checkId = oUserVO.checkId;
+		this.serverId = this.page.getCookie("Runtime","svrId");
+		this.serverId=this.serverId?parseInt(this.serverId,10):0;
+		this.loadJml();
+	}
+	else
+	{
+		this.page.uiLoading.setText(this.page.STR.Logining,3);
+		if(this.notFirstLogin)
+			this.login();
+		else{
+			if(window.NeedRegCode)
+			{
+				this.exRegCode();
+				return;
+			}
+			this.login();
+		}
+
+	}
+};
+
+__Page.appEnv.exRegCode=function()
+{
+	var code=Dialogs.getText(STR.InputRegCode);
+	if(!this.dwr)
+	{
+		this.dwr = new this.page.DWRBase(UserDWRUrl);
+		this.dwr.setPage(this.page);
+	}
+	this.newMsg(
+		["UserBean","useRegCode",code],
+		{cb:function(f){
+			if(f==1)
+				this.login();
+			else{
+				Dialogs.alert(STR.RegCodeOverdue);
+				setFrameout(1,this.exRegCode,this);
+			}
+		},cbobj:this,eh:function(err,msg){Dialogs.alert(msg);},ehobj:this}
+	);
+};
+
+__Page.appEnv.guideEmailLogin=function()
+{
+	var url=this.page.genPageURL("ui/dlg/dlg_setting.jml");
+	this.openPageDlg(url,"login");
+};
+
+__Page.appEnv.login = function()
+{
+	window.AppUdid=(window.PushService && window.PushService.getRemoteToken)?PushService.getRemoteToken():"";
+	var version = System.getProperty("AppVersion")+"0000000000000000";//底层版本号
+
+	this.version = this.page.getCookie(cookieDomain,"version");
+	if(this.version)
+		this.version = parseInt(this.version);
+	else
+		this.version = 30170;//游戏第一次发布时候的jml版本号
+
+	this.userId = System.getUserId();
+//	this.userId = 1016039;
+	var oUserVO = this.page.getCookie(cookieDomain,"email");
+	if(oUserVO)
+		oUserVO = fromJSON(oUserVO);
+	if(oUserVO&&oUserVO.email)
+	{
+		this.email = oUserVO.email;
+		this.password = oUserVO.password;
+	}
+	if(!this.dwr)
+	{
+		this.dwr = new this.page.DWRBase(UserDWRUrl);
+		this.dwr.setPage(this.page);
+	}
+//	this.email="zhouzheng@kongzhong.com";
+//	this.password="123";
+	if(this.email)
+	{
+		this.newMsg(
+			[
+				"UserBean","loginByEmailAndVersion3",
+				{email:this.email,password:this.password,phoneIMEI:Imei,channel:ChannelID,name:Identifier,mac:Macaddress,openUdid:OpenUdid,appUdid:AppUdid,jmlVersion:this.version,
+					gameVersion:window.KernelVersion,appToken:window.AppToken,adUdid:window.AdUdid,gameVersion2:window.AppVersion}
+			//	this.email,this.password,Imei,ChannelID,Identifier,Macaddress,OpenUdid,AppUdid,this.version,window.KernelVersion
+			],
+			{cb:this.onChargeLogin,cbobj:this,eh:this.onLoginError,ehobj:this}
+		);
+	}
+	else
+	{
+		if(window.ChannelType=="QH" || window.ChannelType=="CNlenovo" || window.ChannelType=="CNwdj")
+		{
+			this.registerUserAndLogin();
+		}else if(""==this.userId)
+		{
+			this.iTryLogin=1;
+			this.registerUser();
+		}
+		else
+		{
+			{
+				this.newMsg(
+					[
+						"UserBean","loginByVersion3",
+						{
+							userId:this.userId,password:Imei,phoneIMEI:Imei,channel:ChannelID,name:Identifier,mac:Macaddress,openUdid:OpenUdid,appUdid:AppUdid,jmlVersion:this.version,
+							gameVersion:window.KernelVersion,appToken:window.AppToken,adUdid:window.AdUdid,gameVersion2:window.AppVersion
+						}
+					//	this.userId,Imei,Imei,ChannelID,Identifier,Macaddress,OpenUdid,AppUdid,this.version,window.KernelVersion
+					],
+					{cb:this.onLogin,cbobj:this,eh:this.onLoginError,ehobj:this}
+				);
+			}
+		}
+	}
+};
+__Page.appEnv.registerUserAndLogin=function()
+{
+	this.iTryLogin=1;
+	this.newMsg(
+		[
+			"UserBean","regUserNew",
+			{
+				password:Imei,phoneNum:"",name:"",channel:ChannelID,deviceType:DeviceType+"@"+DeviceID,phoneIMEI:Imei,
+				desktopType:Desktop,reference:Reference,mac:Macaddress,openUdid:OpenUdid,appUdid:AppUdid,adUdid:window.AdUdid,appId:window.AppID,exinfo:window.AppExInfo,
+				channelType:window.ChannelType_byZFZX?window.ChannelType_byZFZX:window.ChannelType,channelId:window.ChannelUid,channelSign:window.ChannelSign,gameVersion:window.KernelVersion,jmlVersion:this.version,
+				appToken:window.AppToken,gameVersion2:window.AppVersion
+			}
+		],
+		{cb:this.onLogin,cbobj:this,eh:this.loginFail,ehobj:this}
+	);
+};
+
+__Page.appEnv.registerUser=function()
+{
+	this.newMsg(
+		[
+			"UserBean","regUser",
+			{
+				password:Imei,phoneNum:"",name:"",channel:ChannelID,deviceType:DeviceType+"@"+DeviceID,phoneIMEI:Imei,gameVersion:window.KernelVersion,
+				desktopType:Desktop,reference:Reference,mac:Macaddress,openUdid:OpenUdid,appUdid:AppUdid,appToken:window.AppToken,adUdid:window.AdUdid,
+				gameVersion2:window.AppVersion
+			}
+		],
+		{cb:this.onRegister,cbobj:this,eh:this.loginFail,ehobj:this}
+	);
+};
+__Page.appEnv.onRegister = function(vo)
+{
+	System.setDefaultUser(vo.userId.toString());
+	System.setPasswordS(Imei);
+	System.savePassword();
+	this.login();
+};
+__Page.appEnv.onLogin = function(vo)
+{
+	if(vo.errorMsg==-1)//要求用户用邮箱登陆
+	{
+		this.guideEmailLogin();
+		return;
+	};
+	//DBOut("++++++++++++onLogin="+toJSON(vo));
+	this.onChargeLogin(vo);
+};
+__Page.appEnv.onLoginError = function(err,msg)
+{
+	DBOut("++++++++++++onLoginError="+msg);
+	if(!this.notFirstLogin)
+	{
+		this.loginFail(err,msg);
+	}else if(this.iTryLogin)
+		this.loginFail(err,msg);
+	else
+	{
+		this.iTryLogin=1;
+		this.registerUser();
+	}
+};
+__Page.appEnv.loginFail = function(err,msg)
+{
+	this.reloadGame(this.page.STR.Error);
+};
+__Page.appEnv.onChargeLogin=function(vo)
+{
+	DBOut("onChargeLogin, err:"+vo.errorMsg+", sysStatus:"+vo.systemStatus);
+
+	if(window.AdSystem && vo.showAd)
+	{
+		window.AdSystem.init();
+		window.AdSystem.show(0);
+	}
+
+	//检测客户端版本是否需要强制升级
+	var version = System.getProperty("AppVersion")+"0000000000000000";
+	if(vo.desktopVersion && version<vo.desktopVersion)
+	{
+		if(vo.forceUpgradeFlag>0)
+		{
+			Dialogs.alert(this.page.STR.VersionLow);
+			shellExec(vo.desktopUrl);
+			return ;
+		}
+		var choose=Dialogs.prompt(vo.versionDetail?vo.versionDetail:this.page.STR.SuggestUpgrade);
+		if(choose)
+		{
+			shellExec(vo.desktopUrl);
+			return ;
+		}
+	}
+
+	this.loginTime=vo.checkId;
+	var key=System.genLoginString(vo.loginTime);
+	if(vo.errorMsg==-2 ||vo.errorMsg==-1)
+	{
+		this.page.setCookie(cookieDomain,"email","",1,1);
+		Dialogs.alert(this.page.STR.APUnMatch);
+		this.guideEmailLogin();
+		return;
+	}
+	this.closeDlg(null,null,0);
+	if(vo.systemStatus==3)
+	{
+		Dialogs.alert(this.page.STR.SystemMaintenance);
+		this.sureReloadGame();
+		return;
+	}else if(vo.systemStatus!=0)
+	{
+		DBOut("--------------up login error:"+vo.systemStatus);
+		Dialogs.alert(this.page.STR.SystemMaintenance);
+		this.sureReloadGame();
+		return;
+	}
+	if(!this.notFirstLogin)
+		this.page.setCookie(cookieDomain,"notFirstLogin","1",0);
+	window.DEBUGMODE=vo.debugFlag;//1:debug 0:非debug
+	this.page.setCookie("Runtime","DEBUGMODE",window.DEBUGMODE+"",0)
+	this.serverId = vo.serverId;
+	this.userId = vo.userId;
+	this.userName=vo.name;
+	this.checkId = vo.checkId;
+	this.userSession = vo.sessionId;
+	this.desktopType=vo.desktopType;
+	System.setDefaultUser(vo.userId.toString());
+
+
+	this.page.setCookie("Runtime","svrId",this.serverId+"",0);
+
+	this.page.setCookie("Runtime","UserVO",toJSON(vo),1000000,1);
+	this.page.setCookie("Runtime","Locality",vo.locality,1000000,1);
+	this.page.setCookie("Runtime","Servers",toJSON(vo.servers),0);
+	this.page.setCookie("Runtime","UserServers",toJSON(vo.userServers),0);
+
+	this.checkVo=vo;
+	var flag=this.checkVo.createRoleFlag;
+	if(flag)
+	{
+		this.onCheckVersion(vo);
+	}else{
+		this.loadJml();
+	}
+};
+__Page.appEnv.onCheckVersion = function(vo)
+{
+	var STR = this.page.STR;
+	if(vo.msgs)
+	{
+		this.page.uiLoading.addCues(vo.msgs);
+		this.page.setCookie(cookieDomain,"loading_cues",""+toJSON(vo.msgs),10000000);
+	}
+
+	this.needReload = false;
+	vo.coreFiles = []
+	this.page.setCookie("Runtime","updatefiles",""+vo.delFiles.files.length,10000000);
+	if(vo.delFiles.files.length)
+	{
+
+	}
+	this.page.logicLoading.loading(
+		{
+			preTxt:STR.Cleaning,
+			list:vo.delFiles.files,
+			cb:this.clearCache,
+			cbobj:this,
+			minpercent:6,
+			maxpercent:18
+		}
+	);
+	this.checkVo = vo;
+	this.clearNum = 0;
+};
+__Page.appEnv.clearCache = function(jmlURL)
+{
+	if(jmlURL)
+	{
+		System.clearCache(this.page.genPageURL(jmlURL));
+		if(this.arrayContains(coreList,jmlURL)>=0)
+		{
+			this.needReload = true;
+		}
+		else
+		{
+			var index = this.arrayContains(coreList2,jmlURL);
+			if(index>=0)
+				this.checkVo.coreFiles[index] = this.page.genPageURL(jmlURL);
+		}
+		setTimeout(0,this.page.logicLoading.stepIn,this.page.logicLoading);
+	}
+	else
+	{
+		if(this.checkVo.delFiles.version>this.version)
+			this.page.setCookie(cookieDomain,"version",""+this.checkVo.delFiles.version,10000000);
+		var i;
+		for(i=this.checkVo.coreFiles.length-1;i>=0;i--)
+		{
+			if(!this.checkVo.coreFiles[i])
+				this.checkVo.coreFiles.splice(i,1);
+		}
+		setFrameout(0,this.DownLoadCore,this);
+	}
+};
+<include check="0">"text/text_ui_"+window.LanguageStr+".js"</include>
+<include check="0">"app_env.jml"</include>
+<include check="0">"app_envx.js"</include>
+
+<include check="0">"ui/ui_loading.jml"</include>
+
+<include check="0">"logic/logic_loading.jml"</include>
+<include check="0">"logic/proxy/pxylogin.js"</include>
+
+<include check="0">"css_lib.jml"</include>
+<include check="0">"ui/state_base.js"</include>
+<include check="0">"ui/dlg/dlg_base.jml"</include>
+<include check="0">"ui/dlg/pmt_info.js"</include>
+<include check="0">"ui/state_logs.js"</include>

@@ -1,0 +1,8 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntMarine",level:1,num:6},
+	{wave:2,delaytime:250,edge:0,type:"UntMarine",level:1,num:6},
+	{wave:3,delaytime:400,edge:0,type:"UntSniper",level:1,num:4},
+	{wave:4,delaytime:300,edge:1,type:"UntMarine",level:1,num:6},
+	{wave:5,delaytime:450,edge:1,type:"UntMarine",level:1,num:6},
+	{wave:6,delaytime:500,edge:1,type:"UntSniper",level:1,num:4},
+]

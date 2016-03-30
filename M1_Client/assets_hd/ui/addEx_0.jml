@@ -1,0 +1,32 @@
+//For image: addEx_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("addEx_0_32.png"));
+	this.imgInfos["addEx_0_32"]={w:512,h:512};
+	this["btn_btmgnd"]={tex_u:275/512, tex_v:172/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmairgnd"]={tex_u:275/512, tex_v:284/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["pic_doublevip2"]={tex_u:1/512, tex_v:4/512, tex_w:174/512, tex_h:64/512, w:174, h:64, tex:this.imgList[id]};
+	this["pic_doublevip"]={tex_u:177/512, tex_v:4/512, tex_w:174/512, tex_h:64/512, w:174, h:64, tex:this.imgList[id]};
+	this["btn_backhome"]={tex_u:148/512, tex_v:124/512, tex_w:120/512, tex_h:120/512, w:120, h:120, tex:this.imgList[id]};
+	this["btn_btmpart"]={tex_u:275/512, tex_v:396/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmaddon"]={tex_u:387/512, tex_v:4/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmassemble"]={tex_u:387/512, tex_v:116/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_macon"]={tex_u:387/512, tex_v:228/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_macoff"]={tex_u:147/512, tex_v:252/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmgemfix"]={tex_u:147/512, tex_v:364/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["pic_double"]={tex_u:12/512, tex_v:483/512, tex_w:47/512, tex_h:26/512, w:47, h:26, tex:this.imgList[id]};
+	this["box_lottery"]={tex_u:273/512, tex_v:73/512, tex_w:94/512, tex_h:94/512, w:94, h:94, tex:this.imgList[id]};
+	this["mechLv_bg"]={tex_u:146/512, tex_v:74/512, tex_w:124/512, tex_h:44/512, w:124, h:44, tex:this.imgList[id]};
+	this["btn_btm4hour"]={tex_u:3/512, tex_v:116/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmbox"]={tex_u:3/512, tex_v:228/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["pic_part_body"]={tex_u:18/512, tex_v:457/512, tex_w:20/512, tex_h:14/512, w:20, h:14, tex:this.imgList[id]};
+	this["pic_part_leg"]={tex_u:42/512, tex_v:457/512, tex_w:20/512, tex_h:14/512, w:20, h:14, tex:this.imgList[id]};
+	this["btn_btm1hour"]={tex_u:3/512, tex_v:340/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["pic_lv6"]={tex_u:97/512, tex_v:460/512, tex_w:22/512, tex_h:31/512, w:22, h:31, tex:this.imgList[id]};
+	this["pic_limitsell"]={tex_u:3/512, tex_v:75/512, tex_w:138/512, tex_h:33/512, w:138, h:33, tex:this.imgList[id]};
+	this["btn_btmresidence"]={tex_u:387/512, tex_v:340/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["pic_lv7"]={tex_u:113/512, tex_v:412/512, tex_w:22/512, tex_h:31/512, w:22, h:31, tex:this.imgList[id]};
+}

@@ -1,0 +1,49 @@
+if(!__Page.showLogo)
+{
+	__Page.showLogo = {
+		page:__Page,
+	};
+	__Page.showLogo.loadConfig = function()
+	{
+	};
+	__Page.showLogo.enter = function(env,param)
+	{
+		this.env = env;
+		this.bg = this.env.bgLayer.addHudItem({
+			type:"shape",mod:0,pos:[0,0,0],w:hud_size[0],h:hud_size[1],face_r:0,face_b:0,face_g:0,face_a:255,
+		});
+		var url =this.page.genURL("assets/logo_cmcc.spl");
+		this.env.uiLayer.getAdvSpSys().loadFmURL(url);
+		var obj = this;
+		this.logo = this.env.uiLayer.addHudItem({
+			type:"sprite",
+			pos:[hud_size[0]>>1,hud_size[1]>>1,0],anchor_h:1,anchor_v:1,
+			exsp:"logo",
+			// onSpEvent:this.showEnd
+			onSpEvent:function(msg,frame){
+				obj.showEnd(msg,frame)
+			},
+		});
+		var ani = this.logo.addAdTMFirst("scale");
+		ani.startAni(3,[0.5,0.5,0],1);
+	};
+	__Page.showLogo.showEnd = function(msg,frame)
+	{
+		this.logo.setAutoFrame(0);
+		setTimeout(1000,this.leave,this);
+	};
+	__Page.showLogo.leave = function()
+	{
+		if(this.bg)
+		{
+			this.env.bgLayer.removeHudItem(this.bg);
+			this.bg = null;
+		}
+		if(this.logo)
+		{
+			this.env.uiLayer.removeHudItem(this.logo);
+			this.logo = null;
+		}
+		this.page.onExit();
+	};
+}

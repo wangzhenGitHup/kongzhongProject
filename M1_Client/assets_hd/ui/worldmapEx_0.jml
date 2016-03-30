@@ -1,0 +1,13 @@
+//For image: worldmapEx_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("worldmapEx_0_32.png"));
+	this.imgInfos["worldmapEx_0_32"]={w:512,h:1024};
+	this["pic_pve"]={tex_u:1/512, tex_v:4/1024, tex_w:510/512, tex_h:319/1024, w:510, h:319, tex:this.imgList[id]};
+	this["pic_olt"]={tex_u:1/512, tex_v:332/1024, tex_w:510/512, tex_h:319/1024, w:510, h:319, tex:this.imgList[id]};
+	this["arrow_down"]={tex_u:4/512, tex_v:660/1024, tex_w:32/512, tex_h:32/1024, w:32, h:32, tex:this.imgList[id]};
+	this["arrow_up"]={tex_u:44/512, tex_v:660/1024, tex_w:32/512, tex_h:32/1024, w:32, h:32, tex:this.imgList[id]};
+}

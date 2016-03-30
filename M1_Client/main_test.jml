@@ -1,0 +1,68 @@
+﻿<jml>
+<script>
+if (window.ErrorReporter)
+{
+    ErrorReporter.setURL("http://m1jslog.ko.cn:8180/jslog/jsError.jsp");
+}
+<import>"config.js"</import>
+<import>"config_test.jml"</import>
+<import>
+	window.LanguageStr="cn";
+	null
+</import>
+<import>"important.jml"</import>
+<import>"local.js"</import>
+<import>"ui/dlg/pmt_checker.js"</import>
+</script>
+<body>
+{
+	body:{
+		page_mode:"ui",w:Screen.w,h:Screen.h,align_v:"m",background:0x505050,img_repeat:"scale",
+		items:[
+			{type:"page",id:"load_page",x:0,y:0,w:"100%",h:0},
+			{
+				type:"3ddiv",id:"ui_3ddiv",x:0,y:0,w:Screen.w,h:Screen.h,
+				items:[
+					{
+						type:"3dlayer",id:"ui-layer",x:0,y:0,w:"100%",h:"100%",renderlist:100,top_layer:1,
+						hud_size:[ScreenW,ScreenH,0]
+					},
+					{
+						type:"3dlayer",id:"u-sub-layer",x:0,y:0,w:"100%",h:"100%",
+						hud_size:[ScreenW,ScreenH,1]
+					},
+					{
+					{
+						type:"3dlayer",id:"pmt-layer",x:0,y:0,w:"100%",h:"100%",
+						hud_size:[ScreenW,ScreenH,1]
+					},
+						type:"3dlayer",id:"u-pop-layer",x:0,y:0,w:"100%",h:"100%",renderlist:100,top_layer:0,frame_time:20,
+						hud_size:[960,640,1]
+					},
+					{
+						type:"3dlayer",id:"pop2-layer",x:0,y:0,w:"100%",h:"100%",renderlist:100,top_layer:0,frame_time:20,
+						hud_size:[960,640,0]
+					}
+				]
+			}
+		],
+		onFree:function()
+		{
+			//if(this.appEnv.dwr)this.appEnv.dwr.onFree();
+			audio.stopMusic();
+			//audio.stopDevice();
+		}
+	}
+}
+</body>
+<script>
+	__Page.initUI = function()
+	{
+		setUpdateSpeed("m");
+		this.appEnv.init();
+		addEventHandler("key",this,this.appEnv.onKey,this.appEnv);
+		addEventHandler("mouse",this,this.appEnv.onMouse,this.appEnv);
+	}
+	__Page.initUI();
+</script>
+</jml>

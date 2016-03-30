@@ -1,0 +1,59 @@
+﻿if(window.aisEnv.defLib && window.aisEnv.defLib.clanCupDomains && !window.aisEnv.defLib.clanCupDomains.inited)
+{
+	(function()
+	{
+		var defLib=window.aisEnv.defLib.clanCupDomains;
+		var textLib=window.aisEnv.textLib;
+		defLib.inited=1;
+		defLib["1"]={codeName:"1",x:867,y:211,star:1,name:textLib.clanCupDomainsName["1"],reward:{codeName:"Gem",num:200}};
+		defLib["2"]={codeName:"2",x:838,y:250,star:2,name:textLib.clanCupDomainsName["2"],reward:{codeName:"Gem",num:300}};
+		defLib["3"]={codeName:"3",x:870,y:293,star:3,name:textLib.clanCupDomainsName["3"],reward:{codeName:"Gem",num:800}};
+		defLib["4"]={codeName:"4",x:785,y:295,star:2,name:textLib.clanCupDomainsName["4"],reward:{codeName:"Gem",num:300}};
+		defLib["5"]={codeName:"5",x:746,y:330,star:4,name:textLib.clanCupDomainsName["5"],reward:{codeName:"Gem",num:2000}};
+		defLib["6"]={codeName:"6",x:668,y:264,star:2,name:textLib.clanCupDomainsName["6"],reward:{codeName:"Gem",num:300}};
+		defLib["7"]={codeName:"7",x:523,y:281,star:1,name:textLib.clanCupDomainsName["7"],reward:{codeName:"Gem",num:200}};
+		defLib["8"]={codeName:"8",x:665,y:316,star:1,name:textLib.clanCupDomainsName["8"],reward:{codeName:"Gem",num:200}};
+		defLib["9"]={codeName:"9",x:665,y:360,star:2,name:textLib.clanCupDomainsName["9"],reward:{codeName:"Gem",num:300}};
+		defLib["10"]={codeName:"10",x:557,y:328,star:1,name:textLib.clanCupDomainsName["10"],reward:{codeName:"Gem",num:200}};
+		defLib["11"]={codeName:"11",x:770,y:382,star:1,name:textLib.clanCupDomainsName["11"],reward:{codeName:"Gem",num:200}};
+		defLib["12"]={codeName:"12",x:686,y:421,star:2,name:textLib.clanCupDomainsName["12"],reward:{codeName:"Gem",num:300}};
+		defLib["13"]={codeName:"13",x:622,y:455,star:1,name:textLib.clanCupDomainsName["13"],reward:{codeName:"Gem",num:200}};
+		defLib["14"]={codeName:"14",x:750,y:440,star:2,name:textLib.clanCupDomainsName["14"],reward:{codeName:"Gem",num:300}};
+		defLib["15"]={codeName:"15",x:787,y:495,star:3,name:textLib.clanCupDomainsName["15"],reward:{codeName:"Gem",num:800}};
+		defLib["16"]={codeName:"16",x:844,y:454,star:4,name:textLib.clanCupDomainsName["16"],reward:{codeName:"Gem",num:2000}};
+		defLib["17"]={codeName:"17",x:718,y:496,star:1,name:textLib.clanCupDomainsName["17"],reward:{codeName:"Gem",num:200}};
+		defLib["18"]={codeName:"18",x:628,y:499,star:2,name:textLib.clanCupDomainsName["18"],reward:{codeName:"Gem",num:300}};
+		defLib["19"]={codeName:"19",x:874,y:555,star:2,name:textLib.clanCupDomainsName["19"],reward:{codeName:"Gem",num:300}};
+		defLib["20"]={codeName:"20",x:840,y:520,star:2,name:textLib.clanCupDomainsName["20"],reward:{codeName:"Gem",num:300}};
+		defLib["21"]={codeName:"21",x:760,y:550,star:1,name:textLib.clanCupDomainsName["21"],reward:{codeName:"Gem",num:200}};
+		defLib["22"]={codeName:"22",x:700,y:580,star:1,name:textLib.clanCupDomainsName["22"],reward:{codeName:"Gem",num:200}};
+		defLib["23"]={codeName:"23",x:630,y:550,star:3,name:textLib.clanCupDomainsName["23"],reward:{codeName:"Gem",num:800}};
+		defLib["24"]={codeName:"24",x:828,y:625,star:1,name:textLib.clanCupDomainsName["24"],reward:{codeName:"Gem",num:200}};
+		defLib["25"]={codeName:"25",x:768,y:600,star:2,name:textLib.clanCupDomainsName["25"],reward:{codeName:"Gem",num:300}};
+		defLib["26"]={codeName:"26",x:750,y:695,star:3,name:textLib.clanCupDomainsName["26"],reward:{codeName:"Gem",num:800}};
+		defLib["27"]={codeName:"27",x:670,y:630,star:1,name:textLib.clanCupDomainsName["27"],reward:{codeName:"Gem",num:200}};
+		defLib["28"]={codeName:"28",x:623,y:671,star:1,name:textLib.clanCupDomainsName["28"],reward:{codeName:"Gem",num:200}};
+		defLib["29"]={codeName:"29",x:648,y:754,star:3,name:textLib.clanCupDomainsName["29"],reward:{codeName:"Gem",num:800}};
+		defLib["30"]={codeName:"30",x:720,y:813,star:3,name:textLib.clanCupDomainsName["30"],reward:{codeName:"Gem",num:800}};
+		defLib["31"]={codeName:"31",x:920,y:657,star:2,name:textLib.clanCupDomainsName["31"],reward:{codeName:"Gem",num:300}};
+		defLib["32"]={codeName:"32",x:886,y:728,star:2,name:textLib.clanCupDomainsName["32"],reward:{codeName:"Gem",num:300}};
+		defLib["33"]={codeName:"33",x:577,y:815,star:1,name:textLib.clanCupDomainsName["33"],reward:{codeName:"Gem",num:200}};
+		defLib["34"]={codeName:"34",x:542,y:868,star:2,name:textLib.clanCupDomainsName["34"],reward:{codeName:"Gem",num:300}};
+		defLib["35"]={codeName:"35",x:545,y:628,star:1,name:textLib.clanCupDomainsName["35"],reward:{codeName:"Gem",num:200}};
+		defLib["36"]={codeName:"36",x:527,y:476,star:2,name:textLib.clanCupDomainsName["36"],reward:{codeName:"Gem",num:300}};
+		defLib["37"]={codeName:"37",x:520,y:538,star:3,name:textLib.clanCupDomainsName["37"],reward:{codeName:"Gem",num:800}};
+		defLib["38"]={codeName:"38",x:370,y:590,star:1,name:textLib.clanCupDomainsName["38"],reward:{codeName:"Gem",num:200}};
+		defLib["39"]={codeName:"39",x:273,y:623,star:1,name:textLib.clanCupDomainsName["39"],reward:{codeName:"Gem",num:200}};
+		defLib["40"]={codeName:"40",x:480,y:372,star:1,name:textLib.clanCupDomainsName["40"],reward:{codeName:"Gem",num:200}};
+		defLib["41"]={codeName:"41",x:466,y:300,star:1,name:textLib.clanCupDomainsName["41"],reward:{codeName:"Gem",num:200}};
+		defLib["42"]={codeName:"42",x:365,y:310,star:2,name:textLib.clanCupDomainsName["42"],reward:{codeName:"Gem",num:300}};
+		defLib["43"]={codeName:"43",x:316,y:187,star:1,name:textLib.clanCupDomainsName["43"],reward:{codeName:"Gem",num:200}};
+		defLib["44"]={codeName:"44",x:273,y:273,star:1,name:textLib.clanCupDomainsName["44"],reward:{codeName:"Gem",num:200}};
+		defLib["45"]={codeName:"45",x:152,y:237,star:3,name:textLib.clanCupDomainsName["45"],reward:{codeName:"Gem",num:800}};
+		defLib["46"]={codeName:"46",x:320,y:347,star:1,name:textLib.clanCupDomainsName["46"],reward:{codeName:"Gem",num:200}};
+		defLib["47"]={codeName:"47",x:400,y:403,star:1,name:textLib.clanCupDomainsName["47"],reward:{codeName:"Gem",num:200}};
+		defLib["48"]={codeName:"48",x:246,y:382,star:1,name:textLib.clanCupDomainsName["48"],reward:{codeName:"Gem",num:200}};
+		defLib["49"]={codeName:"49",x:106,y:329,star:1,name:textLib.clanCupDomainsName["49"],reward:{codeName:"Gem",num:200}};
+		defLib["50"]={codeName:"50",x:128,y:462,star:2,name:textLib.clanCupDomainsName["50"],reward:{codeName:"Gem",num:300}};
+	})();
+}

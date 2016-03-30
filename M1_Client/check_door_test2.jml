@@ -1,0 +1,81 @@
+<jml>
+<body>
+{body:{page_mode:"ui",w:Screen.w,h:Screen.h}}
+</body>
+<script>
+	if(System.getProperty("ChannelType")=="CMGC")
+	{
+		DBOut("test..........................");
+		DBOut("loading cmgc");
+		//打开cmcc界面
+		this.page = __Page;
+		var openPage = function(father,x,y,w,h,url)
+		{
+			var div = createItemByType("div");
+			father.appendChild(div);
+			div.applyCSS({x:x,y:y,w:w,h:h,clip:1,items:[
+					{type:"page",page_mode:"page",w:"100%",h:"100%",id:"App-Page",items:[{type:"text",text:"",ch_align:"c"}]}
+				]});
+			var newpage=div.getElementById("App-Page");
+				newpage.openURL(url);
+				return newpage;
+		}
+		var url = __Page.genURL("cmcc/cmcc_play.jml")
+		var cmccpage = openPage(__Page,0,0,"100%","100%",url);
+		this.cmccpagediv = cmccpage.getFather();
+		this.cmccpage = cmccpage;
+		var self = this;
+		var page = __Page;
+		cmccpage.onExit = function()
+		{
+			DBOut(self.cmccpagediv)
+			if(self.cmccpagediv)
+			{
+				self.cmccpagediv.getFather().removeChild(self.cmccpagediv);
+				self.cmccpagediv = null;
+				self.cmccpage = null;
+				switchApp(page.genPageURL("door_test2.jml"));
+			}
+		}
+	}else if(System.getProperty("ChannelType")=="CNTelecom"){
+        	DBOut("test..........................");
+		DBOut("loading CNTelecom");
+		this.page = __Page;
+		var openPage = function(father,x,y,w,h,url)
+		{
+			DBOut("222222222222222222222222222:" + url);
+			var div = createItemByType("div");
+			father.appendChild(div);
+			div.applyCSS({x:x,y:y,w:w,h:h,clip:1,items:[
+					{type:"page",page_mode:"page",w:"100%",h:"100%",id:"App-Page",items:[{type:"text",text:"",ch_align:"c"}]}
+				]});
+
+			var newpage=div.getElementById("App-Page");
+				newpage.openURL(url);
+				return newpage;
+		}
+		var url = __Page.genURL("cntelecom/cdicon.jml");
+		var cmccpage = openPage(__Page,0,0,"100%","100%",url);
+		this.cmccpagediv = cmccpage.getFather();
+		this.cmccpage = cmccpage;
+		var self = this;
+		var page = __Page;
+		cmccpage.onExit = function()
+		{
+			DBOut(self.cmccpagediv);
+			if(self.cmccpagediv)
+			{
+				self.cmccpagediv.getFather().removeChild(self.cmccpagediv);
+				self.cmccpagediv = null;
+				self.cmccpage = null;
+				switchApp(page.genPageURL("../door_test2.jml"));
+
+			}
+		}
+		setTimeout(1000,cmccpage.onExit,cmccpage);
+    }else
+	{
+	switchApp(__Page.genPageURL("door_test2.jml"));
+	}
+</script>
+</jml>

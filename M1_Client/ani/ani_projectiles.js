@@ -1,0 +1,42 @@
+{
+	name:"mortar_ball_1",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+	actions:[
+		{
+			name:"stay",subani:[
+				{name:"stay_1",weight:10,loop:1,dit_mode:10,sprite:"motar_ball1"},
+			]
+		},
+	]
+},
+{
+	name:"mortar_ball_2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+	actions:[
+		{
+			name:"stay",subani:[
+				{name:"stay_1",weight:10,loop:1,dit_mode:10,sprite:"motar_ball2"},
+			]
+		},
+	]
+},
+
+{
+	name:"cannon_ball_2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+	actions:[
+		{
+			name:"stay",subani:[
+				{name:"stay_1",weight:10,loop:1,dit_mode:10,sprite:"cannon_ball2"},
+			]
+		},
+	]
+},
+{
+	name:"rgun_ball",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+	actions:[
+		{
+			name:"stay",subani:[
+				{name:"stay_1",weight:10,loop:1,dit_mode:10,sprite:"rgun_ball"},
+			]
+		},
+	]
+},
+

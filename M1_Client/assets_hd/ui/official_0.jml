@@ -1,0 +1,10 @@
+//For image: official_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("official_0_32.png"));
+	this.imgInfos["official_0_32"]={w:128,h:64};
+	this["pic_official"]={tex_u:0/128, tex_v:0/64, tex_w:115/128, tex_h:50/64, w:115, h:50, tex:this.imgList[id]};
+}

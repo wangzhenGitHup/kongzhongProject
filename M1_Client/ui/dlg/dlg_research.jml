@@ -1,0 +1,8 @@
+﻿<jml>
+<import>"dlg_research.js"</import>
+<import>"dlg_research_info.js"</import>
+<script>
+DBOut("Dialog JML loaded.");
+__Page.gamePage.appEnv.onPageDlgOpen(__Page);
+</script>
+</jml>

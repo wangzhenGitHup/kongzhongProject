@@ -1,0 +1,22 @@
+﻿window.mainPath = "http://m1cnuptest.ko.cn/m1/door_test2.jml";
+window.UserCenter=__Page.getCookie("Runtime","UserCenter")?__Page.getCookie("Runtime","UserCenter"):"http://m1cnuptest.ko.cn:7001/UserCenter/dwr";
+window.GameSocketUrl=__Page.getCookie("Runtime","GameSocketUrl");
+window.GameDWRUrl=__Page.getCookie("Runtime","GameDWRUrl")?__Page.getCookie("Runtime","GameDWRUrl"):"http://host:port/game/dwr";//程序中动态就修改
+window.UserDWRUrl = "http://m1cnuptest.ko.cn:8080/UserServer/dwr";
+window.ClanDWRUrl = __Page.getCookie("Runtime","ClanDWRUrl")?__Page.getCookie("Runtime","ClanDWRUrl"):"http://m1cnuptest.ko.cn:7111/clan/dwr";
+window.ReplayDWRUrl="http://m1cnuptest.ko.cn:9201/game/dwr";
+window.NoticeDWRUrl="http://m1cnuptest.ko.cn:8080/UserServer/dwr";
+window.PurchaseUrl=__Page.getCookie("Runtime","PurchaseUrl")?__Page.getCookie("Runtime","PurchaseUrl"):"http://m1cnuc.ko.cn:7001/UserCenter/action/pay.jsp";
+
+window.ChatDWRUrl = ["http://211.100.96.79:9101/cn1xolchat/dwr","http://118.26.202.93:9101/cn1xolchat/dwr","http://118.26.202.94:9101/cn1xolchat/dwr"];
+
+window.DachengCbURL = ["http://211.100.96.79:9211/xol/servlet/dachengcharge","http://118.26.202.93:9211/xol/servlet/dachengcharge","http://118.26.202.94:9211/xol/servlet/dachengcharge"];
+window.BankDWRUrl = "http://bank.handmo.cn/bank/dwr";
+window.SZXCbURL = ["http://211.100.96.79:9211/xol/servlet/szxcharge","http://118.26.202.93:9211/xol/servlet/szxcharge","http://118.26.202.94:9211/xol/servlet/szxcharge"];
+window.JUNCbURL = ["http://211.100.96.79:9211/xol/servlet/juncharge","http://118.26.202.93:9211/xol/servlet/juncharge","http://118.26.202.94:9211/xol/servlet/juncharge"];
+window.ndpayCbURL = ["http://211.100.96.79:9211/xol/servlet/ndpaycharge","http://118.26.202.93:9221/xol/servlet/ndpaycharge","http://118.26.202.94:9231/xol/servlet/ndpaycharge"];
+window.ndpayOrderURL = "http://bank.handmo.cn/bank/orderBy91.jsp";
+window.taobaoCbURL = ["http://211.100.96.79:9211/xol/servlet/taobaocharge","http://118.26.202.93:9221/xol/servlet/taobaocharge","http://118.26.202.94:9231/xol/servlet/taobaocharge"];
+window.taobaoDWRUrl = "http://bank.handmo.cn/bank/dwr";
+window.DLCbURL = ["http://211.100.96.79:9211/xol/servlet/danglecharge","http://118.26.202.93:9221/xol/servlet/danglecharge","http://118.26.202.94:9231/xol/servlet/danglecharge"];
+UIBody.setCookie("Runtime","bTest2","1",0);

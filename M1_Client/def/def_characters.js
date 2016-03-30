@@ -1,0 +1,20 @@
+﻿<include check="0">"def/def_chr_worker.js"</include>
+<include check="0">"def/def_chr_normal.js"</include>
+{def_name:"Test_Tank",codename:"UntTank",level:1,type:2,sub_type:1,id:0,tile_w:0,tile_h:0,
+	core_w:1,core_h:1,ani_body:"chr_UntTank_01",ani_bg:"chr_UntTank_shadow",pos:[0,0,0],crash_to_die:1,
+	layer_bg:"gnd_shadow",layer_body:"gnd_objs",layer_ui:"gnd_ui",aisCodeName:"UntTank",
+	hp:{full:65,cur:65,},
+	move:{speed:0.05,fly:false,jump:0,},
+	combat:{sight:50,delay_time:10,reload_time:60,damage_per_sec:50,damage:30,damage_range:0,attack_range_max:3,perfer_target:9,perfer_dmg_mod:1,projectile:"",attack_air:0,attack_gnd:1,pos:[0.5,0,0.8],},
+	effect_jumpon:"jump_on",effect_jumpoff:"jump_off",efts_depoly:["unit_deploy_UntTank"],efts_crash:["unit_destroied_UntTank"],
+	efts_attack:["unit_UntTank_fire1"],efts_hit:["unit_UntTank_hit"],efts_onhit:["unit_hit"],efts_start_attack:[],
+},
+{
+	def_name:"Test_Mac",type:2,sub_type:1,id:0,tile_w:0,tile_h:0,core_w:1,core_h:1,
+	ed_size:0.5,ed_r:0,ed_attack:1,
+	ani_body:"chr_mac",ani_bg:"chr_tank_bg",
+	layer_bg:"gnd_shadow",layer_body:"gnd_objs",layer_ui:"gnd_ui",
+	hp:{full:100,cur:100,recover_speed:0},
+	move:{speed:0.02,attack_range_max:0.7,fly:0,jump:0},
+	_combat:{reload_time:30,attack_range_max:0.7,damage:3,perfer_dmg_mod:1.0,damage_range:0,perfer_target:1,attack_air:0,attack_gnd:1,projectile:null,},
+},

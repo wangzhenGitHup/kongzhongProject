@@ -1,0 +1,26 @@
+//For image: add2_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("add2_0_32.png"));
+	this.imgInfos["add2_0_32"]={w:512,h:512};
+	this["btn_btmresetall"]={tex_u:403/512, tex_v:4/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmgemrqstcd"]={tex_u:403/512, tex_v:116/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmreset"]={tex_u:403/512, tex_v:228/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["icon_discount80s"]={tex_u:250/512, tex_v:4/512, tex_w:116/512, tex_h:32/512, w:116, h:32, tex:this.imgList[id]};
+	this["icon_discount80m"]={tex_u:220/512, tex_v:42/512, tex_w:176/512, tex_h:51/512, w:176, h:51, tex:this.imgList[id]};
+	this["box_bg_brown"]={tex_u:217/512, tex_v:2/512, tex_w:30/512, tex_h:36/512, w:30, h:36, tex:this.imgList[id]};
+	this["btn_question_u"]={tex_u:218/512, tex_v:98/512, tex_w:60/512, tex_h:60/512, w:60, h:60, tex:this.imgList[id]};
+	this["btn_question_d"]={tex_u:282/512, tex_v:98/512, tex_w:60/512, tex_h:60/512, w:60, h:60, tex:this.imgList[id]};
+	this["arrow_blue_left"]={tex_u:228/512, tex_v:162/512, tex_w:72/512, tex_h:108/512, w:72, h:108, tex:this.imgList[id]};
+	this["arrow_blue_right"]={tex_u:228/512, tex_v:274/512, tex_w:72/512, tex_h:108/512, w:72, h:108, tex:this.imgList[id]};
+	this["pic_adways2"]={tex_u:2/512, tex_v:1/512, tex_w:212/512, tex_h:118/512, w:212, h:118, tex:this.imgList[id]};
+	this["pic_adways1"]={tex_u:116/512, tex_v:387/512, tex_w:79/512, tex_h:89/512, w:79, h:89, tex:this.imgList[id]};
+	this["btn_cubereloadfull"]={tex_u:403/512, tex_v:340/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmmultiatk"]={tex_u:3/512, tex_v:124/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmsingleatk"]={tex_u:115/512, tex_v:164/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_cubereload"]={tex_u:3/512, tex_v:236/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+	this["btn_btmitem"]={tex_u:115/512, tex_v:276/512, tex_w:105/512, tex_h:104/512, w:105, h:104, tex:this.imgList[id]};
+}

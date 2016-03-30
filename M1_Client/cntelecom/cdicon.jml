@@ -1,0 +1,44 @@
+<jml>
+<script>
+	var page = __Page;
+	var imglib = {};
+	imglib.init = function() {
+
+		this.textui = {tex_u:0/768, tex_v:0/512, tex_w:1024/1024, tex_h:512/512, w:768, h:512, tex:this.genPath("logo_cntelecom.png")};
+	};
+	imglib.genPath = function(file){
+		return page.genURL(file);
+	};
+	imglib.init();
+
+	function main(page) {
+		var layer = page.getElementById("ui-layer");
+
+    var cdicon = layer.addHudItem({
+      type:"icon",pos:[100,10,0],css:imglib.textui,
+      
+			val_full:100,val_cur:100,val_speed:0,
+			color_dr:64,color_dg:64,color_db:64,color_lr:255,color_lg:255,color_lb:255,color_la:128,
+    });
+	}
+</script>
+<body>
+	{
+		body:{
+			page_mode:"ui", w:"100%", h:"100%", background:0,
+			items:[
+				{type:"3ddiv", w:"100%", h:"100%", items:[
+					{
+						type:"3dlayer", id:"ui-layer",
+						x:0, y:0, w:"100%", h:"100%",
+						top_layer:1
+					}
+				]}
+			]
+		}
+	}
+</body>
+<script>
+	main(__Page);
+</script>
+</jml>

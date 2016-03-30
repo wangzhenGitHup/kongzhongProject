@@ -1,0 +1,7 @@
+<jml>
+<import>"dlg_switch_server.js"</import>
+<script>
+DBOut("Dialog JML loaded.");
+__Page.gamePage.appEnv.onPageDlgOpen(__Page);
+</script>
+</jml>

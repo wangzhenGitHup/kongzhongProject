@@ -1,0 +1,23 @@
+﻿	window.mainPath = __Page.genPageURL("door_local.jml");
+	window.UserCenter="http://localhost:8080/UserCenter/dwr";
+	window.GameSocketUrl = "localhost:10031";
+	window.GameDWRUrl=__Page.getCookie("Runtime","GameDWRUrl")?__Page.getCookie("Runtime","GameDWRUrl"):"http://host:port/UserCenter/dwr";//程序中动态就修改
+	window.GameDWRUrl="http://localhost:8080/UserCenter/dwr";
+	window.UserDWRUrl = "http://192.168.21.200:8080/UserServer/dwr/";
+	window.ClanDWRUrl = "http://localhost:8080/UserCenter/dwr/";
+	window.ReplayDWRUrl="http://localhost:8080/UserCenter/dwr";
+	window.NoticeDWRUrl="http://192.168.21.200:8080/UserServer/dwr";
+	window.PurchaseUrl="http://118.26.202.104:7001/UserCenter/action/pay.jsp";
+
+	window.ChatDWRUrl = ["http://localhost:8080/saol150_chat/dwr"];
+	window.DachengCbURL = ["http://localhost:8080/M1/servlet/dachengcharge","http://localhost:8080/M1/servlet/dachengcharge"];
+	window.SZXCbURL = ["http://localhost:8080/M1/servlet/szxcharge","http://localhost:8080/M1/servlet/szxcharge"];
+	window.JUNCbURL = ["http://localhost:8080/M1/servlet/juncharge","http://localhost:8080/M1/servlet/juncharge"];
+	window.ndpayCbURL = ["http://localhost:8080/M1/servlet/ndpaycharge","http://localhost:8080/M1/servlet/ndpaycharge"];
+	window.taobaoCbURL = ["http://localhost:8080/M1/servlet/taobaocharge","http://localhost:8080/M1/servlet/taobaocharge"];
+	window.taobaoDWRUrl = "http://218.241.227.88:8080/bank/dwr";
+	window.DLCbURL = ["http://localhost:8080/M1/servlet/danglecharge","http://localhost:8080/M1/servlet/danglecharge"];
+	window.coreList.push("main_local.jml");
+	window.coreList2.splice(1,0,"config_local.jml");
+	UIBody.setCookie("Runtime","bLocal","1",0);
+	window.DEBUGMODE=1;

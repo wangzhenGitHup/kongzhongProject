@@ -1,0 +1,15 @@
+if(!__Page.SubPage)
+{
+	__Page.SubPage = function(page){
+		this.env = null;
+		this.page = page;
+	};
+	__Page.SubPage.prototype.enter = function(env,param)
+	{
+	};
+	__Page.SubPage.prototype.leave = function()
+	{
+		this.env.bgLayer.removeAllChild();
+		this.env.uiLayer.removeAllChild();
+	};
+}

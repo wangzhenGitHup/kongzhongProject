@@ -1,0 +1,88 @@
+<jml>
+<script>
+<include check="0">"cmcc_env.js"</include>
+<include check="0">"sound_option.jml"</include>
+<include check="0">"showlogo.jml"</include>
+<include check="0">"load_img.jml"</include>
+</script>
+<body>
+{
+	body:{
+		page_mode:"ui",x:0, y:0, w:"100%",h:"100%",background:0x305080,color_a:20,
+		items:[
+			{
+				type:"3ddiv",x:0,y:0,w:"100%",h:"100%",
+				id:"3ddiv",
+				items:[
+					{
+						type:"3dlayer",id:"bg-layer",x:0,y:0,w:"100%",h:"100%",
+						hud_size:[Screen.w,Screen.h,1]
+					},
+					{
+						type:"3dlayer",id:"ui-layer",x:0,y:0,w:"100%",h:"100%",
+						renderlist:100,top_layer:1,
+						hud_size:[Screen.w,Screen.h,1]
+					}
+				]
+			}
+		],
+		onFree:function()
+		{
+			DBOut("cmcc onFree");
+			removeEventHandler("key", __Page);
+		}
+	}
+}
+</body>
+<script>
+__Page.initUI=function()
+{
+	if (!this.soundURL) {
+		this.soundURL = function(name) {
+			// DBOut("soundURL:" + name);
+			return this.genURL("audio/" + name + ".wav");
+		};
+	}
+	if (!this.playSound) {
+		this.playSound = function(name) {
+			DBOut("playSound:" + name);
+		};
+	}
+	if (!this.event) {
+		this.event = function(name){
+			DBOut("event:" + name);
+		};
+	}
+	this.cmccEnv.init();
+	// setTimeout(10, function() {
+		// DBOut("timeout");
+		// this.cmccEnv.layer.freeGame();
+		// this.cmccEnv.init(stageVO);
+	// }, this);
+	//removeEventHandler("key",this._page,this._page.uiEnv.onKey,this._page.uiEnv);
+	addEventHandler("key", __Page, this.cmccEnv.onKey, this.cmccEnv);
+	
+	this.pause = function() {
+		return this.cmccEnv.layer.pause();
+	}
+	this.pauseNoShape = function(){
+		return this.cmccEnv.layer.pause();
+	}
+	this.isPause = function() {
+		return this.cmccEnv.layer.isPause();
+	}
+	this.resume = function() {
+		this.cmccEnv.uiLayer.makeTop();
+		return this.cmccEnv.layer.resume();
+	}
+	this.resumeNoShape = function(){
+		this.cmccEnv.uiLayer.makeTop();
+		return this.cmccEnv.layer.resume();
+	}
+	if(this.initUIDone){
+		this.initUIDone();
+	};
+};
+__Page.initUI();
+</script>
+</jml>

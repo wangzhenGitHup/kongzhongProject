@@ -1,0 +1,157 @@
+if(!window.STR)
+window.STR = {};
+__Page.STR=window.STR;
+__Page.STR.APUnMatch = "Account or password is incorrect!";
+__Page.STR.Cleaning = "Clear cache";
+__Page.STR.ClearCacheCue = "Confirm to clear cache?";
+__Page.STR.Downloading = "Updating";
+__Page.STR.LoadUC = "Allocating to a server";
+__Page.STR.LoadCity="Loading fort info";
+__Page.STR.InitCity="Initializing";
+__Page.STR.Error = "System error! Check your internet connection and try again.";
+__Page.STR.FileUpdate = "Files are being updated. Please wait!";
+__Page.STR.FileUpdateMore = "A lot of files are being updated. This will take a bit longer!";
+__Page.STR.Logining = "Loading";
+__Page.STR.Relogin = "Confirm to login again?!";
+__Page.STR.VersionLow = "This version is not compatible. Please download the new one!";
+__Page.STR.UseExistingAccount="Use existing account to login?";
+__Page.STR.InputAccountPwd="Input account and password: ";
+__Page.STR.Account="Account: ";
+__Page.STR.Password="Password: ";
+__Page.STR.SystemMaintenance="The server is under maintenance, please try again later!";
+__Page.STR.PopupAttack="Your fort is under attack. System will load your game data automatically.";
+__Page.STR.SysFull="Server is full!! Please try again later.";
+__Page.STR.CityDataError="Sorry, game data error. Please contact us.\n pf_support@kongzhong.com";
+__Page.STR.CueText=[
+"Protecting the fort and looting resources are your main goals!",
+"Upgrade your defensive buildings to improve your defense power!",
+"Lost Medals in battle? Purchase Force Field in Shop to protect your fort from attacks.",
+"Carry out research in R&D Center to increase your troop capability.",
+"Upgrade Gold Mine to increase Gold output.",
+"The higher the level of Parade Ground, the more soldiers you can have.",
+"Walls are the shields to slow enemy movements. Upgrade them to increase their HP.",
+"The defensive buildings cannot attack invaders when they are being upgraded.",
+"Gold Mine and Energy Driller will stop production while being upgraded.",
+"You will not lose all of your resources even when all buildings are destroyed.",
+"Defense is just as important as attack.",
+"Gunners will attack the building closest to them.",
+"Snipers will try to demolish all targets in their attack range.",
+"A Bio-sapper's favorite target is resource. They only want to loot.",
+"Bio-sappers will inflict double damage to resource buildings.",
+"Barbettes and Gunner Towers are the favorite targets for Bomb Sweepers.",
+"Set the Bombers to destroy walls first.",
+"Bombers sacrifice themselves to clear a path for our army.",
+"Heli primarily attacks the opponent's defensive buildings.",
+"Helis, being in the air, will never be attacked by Barbettes and Missile Silos.",
+"Helis, being in the air, will never be attacked by Barbettes and Mortar.",
+"Nurses are the favorite target for Gunner Towers and Rocket Launchers.",
+"Inferno can spits fire on troops on the ground and in the sky.",
+"No one knows who built KK.",
+"With heavy armors, KK can survive Mine Trap explosions.",
+"Barbettes can only attack troops on the ground.",
+"Missile Silos can only inflict damage to troops on the ground.",
+"Missile Silos inflict splash damage to enemies.",
+"Mortar can only inflict damage to troops on the ground.",
+"Mortar inflict splash damage to enemies.",
+"Missile Batteries attack all enemies within its range.",
+"Missile Batteries can destroy troops on the ground and in the sky.",
+"Prism Tower will fire upon enemies when they approach.",
+"Prism Towers can attack invaders on the ground and in the sky.",
+"Passive traps, like Super Bombs, will blow up only when enemies are near.",
+"Remove Stones, Trunks and Trees and get a chance to find free Gems.",
+"Who attacked your fort when you were offline? Check Battle Report for details.",
+"You can replay battles in the Battle Report.",
+"You will get 1 star by demolishing an opponent's HQ.",
+"Troops in Alliance building will help you defend against enemies.",
+"Troops in Parade Ground cannot protect your fort as defense forces.",
+"Your won't lose your troops when Parade Grounds are destroyed.",
+"You cannot find those forts protected by a Force Field.",
+"Free Force Field? It depends on how many of your buildings were destroyed.",
+"If all buildings in your fort were destroyed, you will get a longer protection.",
+"The Force Field will disappear when you attack other players.",
+"The Force Field will not disappear if you attack enemies in single player mode.",
+"You will get extra resources by completing stages in single player mode.",
+"When you are victorious, you will loot a portion of your enemy's Medals.",
+"Complete achievements to claim free Gems.",
+"Upgrade HQ to unlock more buildings and higher levels.",
+"Buy the Alliance construction in the Shop and build it to create an alliance.",
+"Ask allies for help in the Alliance building.",
+"Deploy the reinforcement troops to defend against invaders or attack another fort.",
+"Ask your alien friends for help! They will attack units or buildings.",
+"Learn the healing skill from your alien friends to recover your wounded troops.",
+"The Warrior Burst skill increases the speed and attack power of your troops.",
+"Jump Skill will let our troops jump over walls to attack the opponent's fort.",
+"Check options in the settings tab.",
+"Enhance the capability of your troops by researching technologies in the R&D Center.",
+"You can check the attack power of your troops or defensive buildings in info page.",
+"Research does take some time. Please be patient.",
+"Parade Grounds, Alliance building and Storages will keep working while being upgraded.",
+"Tap on an empty area for your battle units.",
+"You will be the final victor when you receive 1 star in the invasion.",
+"Email us to report any inappropriate comments in chat.",
+"Please be considerate when making comments in the chat room.",
+"You cannot take revenge on players that you attack first.",
+"The battle will automatically end when all your troops are wiped out.",
+"Upgrading HQ will allow you to activate the ultimate weapon: the Mega Laser",
+"The Mega Laser can attack all battle units but range is diminished against air targets.",
+"It will be an advantage to build the Mega Laser. Trust me, it is really powerful!",
+"The Mega Laser can switch attacking mode to all battle units except air forces.",
+"You can boost your Gold Mines and Energy Drillers when they have reached Lv.5.",
+"You can rush the process in Satellite Station by using Gems.",
+"Not enough powerful troops for battle? Use Gems to speed up training in Barracks.",
+"Please put the alien skills and troops to good use.",
+"Build an M-Works so that we can crank out some Mech units.",
+"Upper attack and lower mobility sections can only be assembled in M-Assembly.",
+"Attack section determines the target and damage of Mech unit.",
+"Mobility section determines the speed of the Mech unit.",
+"Enhance all the mech parts to improve the Mech unit.",
+"Upgraded Mech units perform better in battles.",
+"Add modules on M-Unit to get extra features and abilities.",
+"Modules can be upgraded or transformed by joining.",
+"Want more control over the M-Unit? You need a Control module.",
+"Special module can make M-Unit get extra satellite support in the battles.",
+"The higher number of medals, the better the extra rewards.",
+"M-Unit, an extraordinary fighting machine!",
+"Upgrading M-Units costs Power Cubes. You can receive them from winning battles.",
+"Too little Power Cubes? On the bright side, they cannot be looted by others!",
+"You can get rare modules from Pocket Fort events. Go get it now!",
+"Mech Units include ordinary units and advanced units.",
+"Blade can attack single enemy at close range. It has balanced HP and damage.",
+"Spirit part can target single enemy from long distances but its HP is low.",
+"Typhoon part can target enemies in a certain area and it has high HP.",
+"Typhoon unit can be rewarded double resources in drawing rewards.",
+];
+__Page.STR.Day="d";
+__Page.STR.Hour="h";
+__Page.STR.Minute="m";
+__Page.STR.Second="s";
+__Page.STR.InputRegCode="Input registration code:";
+__Page.STR.RegCodeOverdue="Registration code is invalid or has expired.";
+__Page.STR.NeedNet="Internet connection is required.";
+__Page.STR.LoginPurError="Sorry, cannot connect with the server. Game will close!";
+__Page.STR.SuggestUpgrade="You are running an old version. We strongly suggest you update the game for better gameplay. Update now?";
+
+(function() {
+var re_test = /\$\w+\$/;
+var re_replace = /\$(\w+)\$/g;
+function load(strings) {
+var key, text;
+for (key in strings) {
+text = strings[key];
+if (re_test.test(text)) {
+strings[key] = new getText(text);
+}
+}
+};
+
+function getText(str){
+this.str = str;
+}
+
+getText.prototype.toString = function(args){
+return args?this.str.replace(re_replace, function(word, key) {
+return args[key] != null? args[key]: word;
+}):this.str;
+};
+load(__Page.STR);
+})();

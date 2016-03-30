@@ -1,0 +1,78 @@
+﻿if(!__Page.logicLoading)
+{
+	__Page.logicLoading = {};
+}
+	__Page.logicLoading.init = function(env)
+	{
+		this.env = env;
+		this.page = env.page;
+		this._start = 0;
+	};
+	__Page.logicLoading.start = function()
+	{
+		this._loading = false;
+		this._start = 1;
+	};
+	__Page.logicLoading.loading = function(data)
+	{
+		this._loading = true;
+		this.data = data;
+		this.env.curUI.setText(data.preTxt+"0%",data.minpercent);
+		if(this.data.list)
+		{
+			this.clearNum = -1;
+			this.env.uLayer.setFrameout(0,this.stepIn,this);
+		}
+		else
+		{
+			this.clearNum = 0;
+		}
+	};
+	__Page.logicLoading.end = function()
+	{
+		this._loading = false;
+		this._start = 0;
+		this.data = null;
+		this.clearNum = 0;
+	};
+	__Page.logicLoading.onMouse = function(event,key,x,y,penSize,way)
+	{
+		return 1;
+	};
+	__Page.logicLoading.onKey = function(msg,key,way,extra)
+	{
+		return 0;
+	};
+	__Page.logicLoading.stepIn = function()
+	{
+		this.clearNum++;
+		var percent;
+		if(this.data.list)
+		{
+			if(this.data.list.length)
+				percent = this.clearNum*100/this.data.list.length;
+			else
+				percent = 100;
+		}
+		else
+			percent = this.clearNum*100/this.data.steps;
+		var percent2 = percent*(this.data.maxpercent-this.data.minpercent)/100+this.data.minpercent;
+		this.env.curUI.setText(this.data.preTxt+Math.floor(percent)+"%",percent2);
+		if(this.data.cb)
+		{
+			var args = [];
+			var i;
+			for(i=0;i<arguments.length;i++)
+			{
+				args.push(arguments[i]);
+			}
+			if(this.data.list)
+			{
+				if(this.clearNum<this.data.list.length)
+					args.unshift(this.data.list[this.clearNum]);
+			}
+			else
+				args.unshift(this.clearNum==this.data.steps);
+			this.data.cb.apply(this.data.cbobj?this.data.cbobj:this,args);
+		}
+	};

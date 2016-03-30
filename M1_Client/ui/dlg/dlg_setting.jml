@@ -1,0 +1,11 @@
+﻿<jml>
+<import>"dlg_setting.js"</import>
+<import>"dlg_account.js"</import>
+<import>"dlg_account_band.js"</import>
+<import>"dlg_account_login.js"</import>
+<import>"dlg_account_reset.js"</import>
+<script>
+DBOut("Dialog JML loaded.");
+__Page.gamePage.appEnv.onPageDlgOpen(__Page);
+</script>
+</jml>

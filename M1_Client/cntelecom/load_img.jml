@@ -1,0 +1,24 @@
+(function(pkg){
+	var texs = {};
+	pkg.imgLib = texs;
+	loader(texs,"assets/",function(){
+		<include check="0">"assets/sound_option_0.jml"</include>
+	});
+	function loader(texs,path,loadfunction){
+		var page = pkg;
+		var imglib,i;
+		imglib = {
+			genPath:function(file){
+				return page.genPageURL(path+file);
+			}
+		};
+		loadfunction.call(imglib);
+		delete imglib.imgInfos;
+		delete imglib.imgList;
+		delete imglib.genPath;
+		for (i in imglib) {
+			if (texs[i]) DBOut("Warning! texs.[" + i + "] exist.");
+			texs[i] = imglib[i];
+		}
+	};
+})(__Page);

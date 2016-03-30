@@ -1,0 +1,162 @@
+﻿if(!__Page.audioObject)
+{
+	__Page.audioObject =
+	{
+		option:{sound:1,music:1,volume:[128,128]},
+		page:__Page,
+		curMusicURL:"",
+		preMusicURL:"",
+		music:null,
+		soundNames:[
+			"btn_click",
+			"diamonds_collect",
+			"alli_effect",
+			"exp_levelup",
+			"coin_collect",
+			"fuel_collect",
+			"get_giftbag",
+			"A_break",
+			"par_level_up",
+			"com_fail",
+			"com_success",
+			"boxclick",
+			"bigreward",
+			"card_shake",
+			"card_flash"
+		],
+		musicNames:{
+		//	battle:["battle_01.wav","battle_02.wav"],
+		//	city:["city_04.wav","city_05.wav","city_06.wav","city_07.wav"],
+		//	loading:["loading_01.wav"],
+		//	map:["map_01.wav","map_02.wav","map_03.wav"]
+			beAttack:["ur_village_is_getting_smacky"],
+		},
+		_init:false
+	};
+	__Page.audioObject.init = function(env)
+	{
+		this.env = env;
+		this._init = true;
+		var option = this.page.getCookie(cookieDomain,"option");
+		if(option)
+			this.option = fromJSON(option);
+		else
+			this.page.setCookie(cookieDomain,"option",toJSON(this.option),0);
+		DBOut(option);
+		var flag=this.page.getCookie("Runtime","audio");
+		if(!flag)
+		{
+			audio.resetDevice({rate:22050});
+			audio.startDevice();
+			this.page.setCookie("Runtime","audio","1",0);
+		}
+		audio.setGroupEnable(0,this.option.sound);
+		audio.setGroupEnable(1,this.option.music);
+		audio.setMusicEnable(this.option.music);
+		var i,name;
+		for(i=0;i<this.soundNames.length;i++)
+		{
+			name = this.soundNames[i];
+			this[name] = new JGXAudioItem();
+			this[name].load(this.genFileURL(name));
+		}
+	};
+	__Page.audioObject.setSound = function()
+	{
+		var status=this.option.sound?0:1;
+		audio.setGroupEnable(0,status);
+		this.option.sound=status;
+		this.page.setCookie(cookieDomain,"option",toJSON(this.option),0);
+		return status;
+	};
+	__Page.audioObject.setMusic = function()
+	{
+		var status=this.option.music?0:1;
+		audio.setGroupEnable(1,status);
+		audio.setMusicEnable(status);
+		this.option.music=status;
+		this.page.setCookie(cookieDomain,"option",toJSON(this.option),0);
+		return status;
+	};
+	__Page.audioObject.playMp3 = function(name,loop)
+	{
+		audio.playMusic({src:this.page.genPageURL("sfx/"+name+".mp3"),loop:loop?-1:0});
+	};
+	__Page.audioObject.genFileURL = function(name)
+	{
+		return this.page.genPageURL("sfx/"+name+".wav");
+	};
+	__Page.audioObject.genSoundURL = function(name)
+	{
+		return this.page.genPageURL("sound/"+name+".wav");
+	};
+	__Page.audioObject.genMusicURL = function(name)
+	{
+		var files = this.musicNames[name];
+		if(!(files&&files.length))
+		{
+			return "";
+		}
+		var filename = files.length==1?files[0]:files[Math.floor(Math.random()*files.length)];
+	//	return this.page.genPageURL("music/"+filename);
+		return this.genFileURL(filename);
+	};
+	__Page.audioObject.getVolume = function(group)
+	{
+		return this.option.volume[group];
+	};
+	__Page.audioObject.setVolume = function(group,volume)
+	{
+		audio.setGroupVolume(group,volume);
+		this.option.volume[group] = volume;
+		this.page.setCookie(cookieDomain,"option",toJSON(this.option),1000000);
+	};
+	__Page.audioObject.playSound = function(name)
+	{
+	//	DBOut(name+" "+this[name]);
+		if(name&&this.option.volume[0])
+			audio.playItem(this[name],this.option.volume[0]);
+	};
+	__Page.audioObject.playMusic = function(name,loop)
+	{
+		if(name)
+		{
+			if(!(loop || 0==loop))
+				loop=-1;
+			if(this.music)
+			{
+				audio.stop(this.music);
+				this.music = null;
+				this.musicItem = null;
+			}
+			else if(this.musicItem)
+			{
+				this.musicItem.onLoad = null;
+			}
+			this.preMusicURL = this.curMusicURL;
+			var music = new JGXAudioItem();
+			var self = this;
+			music.onLoad = function()
+			{
+				audio.setGroup(1);
+				self.music = audio.playItemEx(this,{loop:loop,priority:255,volume:self.option.volume[1]});
+				audio.setGroup(0);
+			};
+			music.onLoadError = function()
+			{
+				DBOut("playMusic onLoadError:"+self.genMusicURL(name));
+			};
+			music.load(this.genMusicURL(name));
+			this.musicItem = music; // 防止 JGXAudioItem 被 gc
+			this.curMusicURL = name;
+		}
+	};
+	__Page.audioObject.backMusic = function()
+	{
+		if(this.preMusicURL)
+		{
+			this.playMusic(this.preMusicURL);
+			this.preMusicURL = "";
+		}
+	};
+}

@@ -1,0 +1,19 @@
+﻿var reg = "[^\\u2e80-\\u9fbb|\\u0021-\\u007e|\\u00a1-\\u00ff|\\uac00-\\ud7ff|\\uf900-\\ufaff]";
+if(b.match(reg)) { print("yes"); } else { print("no"); }
+var r=new RegExp("a","g");
+var re=/!#!/g;
+b="!#!asdf!#!adsf!#asdf";
+b.replace(re,"***");
+
+var fun=function(str){
+	var reg, exReg, strA, strB, i, j, list, have;
+	//过滤特殊分隔符 #!#
+//	exReg = /#!#/g;
+//	str = str.replace(exReg, "***");
+//	print("str1="+str);
+	//过滤非法字符
+	reg = /[^\u2e80-\u9fbb\u0021-\u007e\u00a1-\u00ff\uac00-\ud7ff\uf900-\ufaff]/g;
+	str = str.replace(reg, "*");
+	print("str2="+str);
+}
+fun("!");

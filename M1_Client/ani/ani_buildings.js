@@ -1,0 +1,3693 @@
+{//主基地-1
+	name:"bld_TownHall_01_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_01_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_01_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_01_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+		null,//constructing
+		null,//working
+		null,//attack
+		null,//store1
+		null,//store2
+		null,//store3
+	]
+},
+{//主基地-1 --- trt
+	name:"bld_TownHall_01_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-2
+	name:"bld_TownHall_02_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_02_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_02_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_02_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-2 --- trt
+	name:"bld_TownHall_02_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_TownHall_02_trt001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-3
+	name:"bld_TownHall_03_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_03_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_03_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_03_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-3 --- trt
+	name:"bld_TownHall_03_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_TownHall_03_trt001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-4
+	name:"bld_TownHall_04_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_04_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_04_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_04_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-4 --- trt
+	name:"bld_TownHall_04_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_TownHall_04_trt001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-5
+	name:"bld_TownHall_05_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_05_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_05_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_05_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-5 --- trt
+	name:"bld_TownHall_05_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_TownHall_05_trt001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-6
+	name:"bld_TownHall_06_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_06_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_06_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_06_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-6 --- trt
+	name:"bld_TownHall_06_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_TownHall_06_trt001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-7
+	name:"bld_TownHall_07_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_07_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_07_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_07_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-7 --- trt
+	name:"bld_TownHall_07_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_TownHall_07_trt001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-8
+	name:"bld_TownHall_08_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_08_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_08_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_08_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-8 --- trt
+	name:"bld_TownHall_08_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-9
+	name:"bld_TownHall_09_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_09_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_09_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_09_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-9 --- trt
+	name:"bld_TownHall_09_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//主基地-10
+	name:"bld_TownHall_10_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay1",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_10_base001"},
+			{name:"stay2",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_10_base002"},
+			{name:"stay3",weight:10,loop:2,dit_mode:0,sprite:"bld_TownHall_10_base003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//主基地-10 --- trt
+	name:"bld_TownHall_10_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TownHall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"},]},
+	]
+},
+{//金矿-1
+	name:"bld_GoldMine_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_01_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_01_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_01_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-2
+	name:"bld_GoldMine_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_02_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_02_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_02_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-3
+	name:"bld_GoldMine_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_03_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-4
+	name:"bld_GoldMine_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_04_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_04_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_04_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_04_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-5
+	name:"bld_GoldMine_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_05_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_05_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_05_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_05_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-6
+	name:"bld_GoldMine_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_06_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_06_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_06_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_06_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-7
+	name:"bld_GoldMine_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_07_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_07_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_07_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_07_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-8
+	name:"bld_GoldMine_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_08_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_08_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_08_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_08_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-9
+	name:"bld_GoldMine_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_09_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_09_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_09_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_09_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-10
+	name:"bld_GoldMine_10",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_10_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_10_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_10_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_10_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-11
+	name:"bld_GoldMine_11",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay002"},]},
+		null,//store3
+	]
+},
+{//金矿-12
+	name:"bld_GoldMine_12",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldMine_11_stay002"},]},
+		null,//store3
+	]
+},
+{//油井-1
+	name:"bld_OilWell_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_01_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_01_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_01_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_01_stay003"},]},
+	]
+},
+{//油井-2
+	name:"bld_OilWell_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_02_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_02_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_02_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_02_stay003"},]},
+	]
+},
+{//油井-3
+	name:"bld_OilWell_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_03_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_03_stay003"},]},
+	]
+},
+{//油井-4
+	name:"bld_OilWell_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_04_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_04_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_04_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_04_stay003"},]},
+	]
+},
+{//油井-5
+	name:"bld_OilWell_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_05_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_05_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_05_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_05_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_05_stay003"},]},
+	]
+},
+{//油井-6
+	name:"bld_OilWell_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_06_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_06_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_06_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_06_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_06_stay003"},]},
+	]
+},
+{//油井-7
+	name:"bld_OilWell_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_07_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_07_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_07_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_07_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_07_stay003"},]},
+	]
+},
+{//油井-8
+	name:"bld_OilWell_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_08_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_08_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_08_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_08_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_08_stay003"},]},
+	]
+},
+{//油井-9
+	name:"bld_OilWell_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_09_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_09_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_09_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_09_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_09_stay003"},]},
+	]
+},
+{//油井-10
+	name:"bld_OilWell_10",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_10_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_10_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_10_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_10_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_10_stay003"},]},
+	]
+},
+{//油井-11
+	name:"bld_OilWell_11",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay003"},]},
+	]
+},
+{//油井-12
+	name:"bld_OilWell_12",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilWell.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilWell_11_stay003"},]},
+	]
+},
+{//能量块工厂-1
+	name:"bld_CubeWork_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeWork.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_01_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_01_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_01_stay002"},]},
+		null,//store3
+	]
+},
+{//能量块工厂-2
+	name:"bld_CubeWork_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeWork.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_02_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_02_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_02_stay002"},]},
+		null,//store3
+	]
+},
+{//能量块工厂-3
+	name:"bld_CubeWork_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeWork.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay002"},]},
+		null,//store3
+	]
+},
+{//能量块工厂-4
+	name:"bld_CubeWork_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeWork.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeWork_03_stay002"},]},
+		null,//store3
+	]
+},
+{//金库-1
+	name:"bld_GoldVault_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_01_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_01_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_01_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_01_stay003"},]},
+	]
+},
+
+{//金库-2
+	name:"bld_GoldVault_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_02_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_02_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_02_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_02_stay003"},]},
+	]
+},
+
+{//金库-3
+	name:"bld_GoldVault_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_03_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_03_stay003"},]},
+	]
+},
+{//金库-4
+	name:"bld_GoldVault_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_04_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_04_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_04_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_04_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_04_stay003"},]},
+	]
+},
+{//金库-5
+	name:"bld_GoldVault_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_05_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_05_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_05_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_05_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_05_stay003"},]},
+	]
+},
+{//金库-6
+	name:"bld_GoldVault_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_06_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_06_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_06_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_06_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_06_stay003"},]},
+	]
+},
+{//金库-7
+	name:"bld_GoldVault_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_07_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_07_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_07_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_07_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_07_stay003"},]},
+	]
+},
+{//金库-8
+	name:"bld_GoldVault_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_08_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_08_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_08_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_08_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_08_stay003"},]},
+	]
+},
+{//金库-9
+	name:"bld_GoldVault_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_09_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_09_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_09_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_09_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_09_stay003"},]},
+	]
+},
+{//金库-10
+	name:"bld_GoldVault_10",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_10_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_10_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_10_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_10_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_10_stay003"},]},
+	]
+},
+{//金库-11
+	name:"bld_GoldVault_11",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay003"},]},
+	]
+},
+{//金库-12
+	name:"bld_GoldVault_12",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_GoldVault.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_GoldVault_11_stay003"},]},
+	]
+},
+{//油库-1
+	name:"bld_OilTank_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_01_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_01_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_01_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_01_stay003"},]},
+	]
+},
+{//油库-2
+	name:"bld_OilTank_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_02_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_02_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_02_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_02_stay003"},]},
+	]
+},
+{//油库-3
+	name:"bld_OilTank_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_03_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_03_stay003"},]},
+	]
+},
+{//油库-4
+	name:"bld_OilTank_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_04_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_04_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_04_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_04_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_04_stay003"},]},
+	]
+},
+{//油库-5
+	name:"bld_OilTank_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_05_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_05_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_05_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_05_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_05_stay003"},]},
+	]
+},
+{//油库-6
+	name:"bld_OilTank_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_06_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_06_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_06_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_06_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_06_stay003"},]},
+	]
+},
+{//油库-7
+	name:"bld_OilTank_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_07_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_07_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_07_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_07_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_07_stay003"},]},
+	]
+},
+{//油库-8
+	name:"bld_OilTank_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_08_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_08_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_08_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_08_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_08_stay003"},]},
+	]
+},
+{//油库-9
+	name:"bld_OilTank_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_09_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_09_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_09_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_09_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_09_stay003"},]},
+	]
+},
+{//油库-10
+	name:"bld_OilTank_10",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_10_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_10_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_10_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_10_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_10_stay003"},]},
+	]
+},
+{//油库-11
+	name:"bld_OilTank_11",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay003"},]},
+	]
+},
+{//油库-12
+	name:"bld_OilTank_12",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_OilTank.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash006"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_OilTank_11_stay003"},]},
+	]
+},
+{//能量块仓库-1
+	name:"bld_CubeCan_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeCan.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_01_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_01_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_01_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_01_stay003"},]},
+	]
+},
+
+{//能量块仓库-2
+	name:"bld_CubeCan_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeCan.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_02_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_02_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_02_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_02_stay003"},]},
+	]
+},
+
+{//能量块仓库-3
+	name:"bld_CubeCan_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeCan.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay003"},]},
+	]
+},
+{//能量块仓库-4
+	name:"bld_CubeCan_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_CubeCan.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash004"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay002"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_CubeCan_03_stay003"},]},
+	]
+},
+{//工人小屋
+	name:"bld_WorkerHut_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_WorkerHut.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_WorkerHut_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]}
+	]
+},
+{//敌人主基地-1
+	name:"bld_GoblinMainBuilding_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/NPC_Building.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoblinMainBuilding_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//敌人工人小屋-1
+	name:"bld_GoblinHut_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/NPC_Building.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_GoblinHut_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash008"},]},
+	]
+},
+{//训兵营-1
+	name:"bld_Barrack_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_01_work001"},]},
+	]
+},
+{//训兵营-2
+	name:"bld_Barrack_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_02_work001"},]},
+	]
+},
+{//训兵营-3
+	name:"bld_Barrack_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_03_work001"},]},
+	]
+},
+{//训兵营-4
+	name:"bld_Barrack_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_04_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_04_work001"},]},
+	]
+},
+{//训兵营-5
+	name:"bld_Barrack_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_05_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_05_work001"},]},
+	]
+},
+{//训兵营-6
+	name:"bld_Barrack_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_06_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_06_work001"},]},
+	]
+},
+{//训兵营-7
+	name:"bld_Barrack_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_07_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_07_work001"},]},
+	]
+},
+{//训兵营-8
+	name:"bld_Barrack_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_08_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_08_work001"},]},
+	]
+},
+{//训兵营-9
+	name:"bld_Barrack_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_09_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_09_work001"},]},
+	]
+},
+{//训兵营-10
+	name:"bld_Barrack_10",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Barrack.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_10_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Barrack_10_work001"},]},
+	]
+},
+{//屯兵场-1
+	name:"bld_Camp_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_01_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-2
+	name:"bld_Camp_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_02_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-3
+	name:"bld_Camp_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_03_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-4
+	name:"bld_Camp_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-5
+	name:"bld_Camp_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_05_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-6
+	name:"bld_Camp_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_06_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-7
+	name:"bld_Camp_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_07_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-8
+	name:"bld_Camp_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_08_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//屯兵场-9
+	name:"bld_Camp_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Camp.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Camp_08_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//科研中心-1
+	name:"bld_TechLab_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_01_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_01_work001"},]},
+	]
+},
+{//科研中心-2
+	name:"bld_TechLab_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_02_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_02_work001"}]},
+	]
+},
+{//科研中心-3
+	name:"bld_TechLab_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_03_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_03_work001"}]},
+	]
+},
+{//科研中心-4
+	name:"bld_TechLab_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_04_work001"}]},
+	]
+},
+{//科研中心-5
+	name:"bld_TechLab_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_05_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_05_work001"}]},
+	]
+},
+{//科研中心-6
+	name:"bld_TechLab_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_06_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_06_work001"}]},
+	]
+},
+{//科研中心-7
+	name:"bld_TechLab_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_07_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_07_work001"}]},
+	]
+},
+{//科研中心-8
+	name:"bld_TechLab_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_08_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_08_work001"}]},
+	]
+},
+{//科研中心-9
+	name:"bld_TechLab_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_TechLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_08_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_TechLab_08_work001"}]},
+	]
+},
+{//核武中心-1
+	name:"bld_SpellLab_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_SpellLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_01_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_01_work001"}]},
+	]
+},
+{//核武中心-2
+	name:"bld_SpellLab_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_SpellLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_02_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_02_work001"}]},
+	]
+},
+{//核武中心-3
+	name:"bld_SpellLab_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_SpellLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_03_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_03_work001"}]},
+	]
+},
+{//核武中心-4
+	name:"bld_SpellLab_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_SpellLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_04_work001"}]},
+	]
+},
+{//核武中心-5
+	name:"bld_SpellLab_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_SpellLab.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"bld_SpellLab_04_work001"}]},
+	]
+},
+{//联盟城堡-1
+	name:"bld_ClanBld_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_ClanBld.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_ClanBld_01_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//联盟城堡-2
+	name:"bld_ClanBld_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_ClanBld.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_ClanBld_02_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//联盟城堡-3
+	name:"bld_ClanBld_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_ClanBld.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_ClanBld_03_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//联盟城堡-4
+	name:"bld_ClanBld_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_ClanBld.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_ClanBld_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//联盟城堡-5
+	name:"bld_ClanBld_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_ClanBld.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_ClanBld_05_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//联盟城堡-6
+	name:"bld_ClanBld_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_ClanBld.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_ClanBld_05_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+//*******************************************
+//防御建筑:
+{//墙-1
+	name:"bld_Wall_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_01_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_01_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_01_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_01_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-2
+	name:"bld_Wall_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_02_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_02_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_02_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_02_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-3
+	name:"bld_Wall_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_03_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_03_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_03_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_03_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-4
+	name:"bld_Wall_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_04_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_04_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_04_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_04_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-5
+	name:"bld_Wall_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_05_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_05_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_05_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_05_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-6
+	name:"bld_Wall_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_06_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_06_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_06_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_06_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-7
+	name:"bld_Wall_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_07_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_07_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_07_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_07_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-8
+	name:"bld_Wall_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_08_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_08_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_08_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_08_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-9
+	name:"bld_Wall_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_09_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_09_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_09_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_09_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-10
+	name:"bld_Wall_10",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_10_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_10_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_10_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_10_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//墙-11
+	name:"bld_Wall_11",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Wall.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay_one",subani:[{name:"stay_one",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_11_one"}]},
+		{name:"stay_x",subani:[{name:"stay_x",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_11_x"}]},
+		{name:"stay_y",subani:[{name:"stay_y",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_11_y"}]},
+		{name:"stay_xy",subani:[{name:"stay_xy",weight:10,loop:1,dit_mode:0,sprite:"bld_Wall_11_xy"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//Cannon-底座-1
+	name:"bld_Cannon_01_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_01_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-1
+	name:"bld_Cannon_01_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_01_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-2
+	name:"bld_Cannon_02_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_02_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-2
+	name:"bld_Cannon_02_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_02_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-3
+	name:"bld_Cannon_03_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_03_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-3
+	name:"bld_Cannon_03_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_03_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-4
+	name:"bld_Cannon_04_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_04_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-4
+	name:"bld_Cannon_04_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_04_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-5
+	name:"bld_Cannon_05_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_05_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-5
+	name:"bld_Cannon_05_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_05_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-6
+	name:"bld_Cannon_06_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_06_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-6
+	name:"bld_Cannon_06_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_06_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-7
+	name:"bld_Cannon_07_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_07_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-7
+	name:"bld_Cannon_07_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_07_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-8
+	name:"bld_Cannon_08_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_08_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-8
+	name:"bld_Cannon_08_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_08_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-9
+	name:"bld_Cannon_09_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_09_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-9
+	name:"bld_Cannon_09_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_09_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-10
+	name:"bld_Cannon_10_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_10_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-10
+	name:"bld_Cannon_10_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_10_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-11
+	name:"bld_Cannon_11_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_11_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-11
+	name:"bld_Cannon_11_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_11_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-12
+	name:"bld_Cannon_12_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_12_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-12
+	name:"bld_Cannon_12_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_12_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-13
+	name:"bld_Cannon_13_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_12_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-13
+	name:"bld_Cannon_13_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_12_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//Cannon-底座-14
+	name:"bld_Cannon_14_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Cannon_12_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//Cannon-头部-14
+	name:"bld_Cannon_14_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Cannon.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Cannon_12_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-1
+	name:"bld_Tower_01_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_01_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-1
+	name:"bld_Tower_01_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_01_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-2
+	name:"bld_Tower_02_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_02_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-2
+	name:"bld_Tower_02_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_02_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-3
+	name:"bld_Tower_03_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_03_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-3
+	name:"bld_Tower_03_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_03_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-4
+	name:"bld_Tower_04_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_04_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-4
+	name:"bld_Tower_04_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_04_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-5
+	name:"bld_Tower_05_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_05_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-5
+	name:"bld_Tower_05_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_05_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-6
+	name:"bld_Tower_06_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_06_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-6
+	name:"bld_Tower_06_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_06_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-7
+	name:"bld_Tower_07_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_07_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-7
+	name:"bld_Tower_07_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_07_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-8
+	name:"bld_Tower_08_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_08_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-8
+	name:"bld_Tower_08_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_08_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-9
+	name:"bld_Tower_09_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_09_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-9
+	name:"bld_Tower_09_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_09_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-10
+	name:"bld_Tower_10_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_10_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-10
+	name:"bld_Tower_10_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_10_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-11
+	name:"bld_Tower_11_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_11_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-11
+	name:"bld_Tower_11_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_11_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//炮塔---底座-12
+	name:"bld_Tower_12_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Tower_11_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+	]
+},
+{//炮塔---头部-12
+	name:"bld_Tower_12_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Tower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_Tower_11_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-1
+	name:"bld_RocketTower_01_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_01_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-1
+	name:"bld_RocketTower_01_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_01_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-2
+	name:"bld_RocketTower_02_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_02_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-2
+	name:"bld_RocketTower_02_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_02_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-3
+	name:"bld_RocketTower_03_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_03_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-3
+	name:"bld_RocketTower_03_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_03_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-4
+	name:"bld_RocketTower_04_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_04_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-4
+	name:"bld_RocketTower_04_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_04_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-5
+	name:"bld_RocketTower_05_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_05_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-5
+	name:"bld_RocketTower_05_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_05_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-6
+	name:"bld_RocketTower_06_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_06_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-6
+	name:"bld_RocketTower_06_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_06_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-7
+	name:"bld_RocketTower_07_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_07_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-7
+	name:"bld_RocketTower_07_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_07_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-8
+	name:"bld_RocketTower_08_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_08_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-8
+	name:"bld_RocketTower_08_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_08_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RocketTower---底座-9
+	name:"bld_RocketTower_09_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RocketTower_08_base001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RocketTower---头部-9
+	name:"bld_RocketTower_09_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RocketTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RocketTower_08_trt013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//LaserTower-1
+	name:"bld_LaserTower_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_01_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_01_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_01_attack001"}]},
+	]
+},
+{//LaserTower-2
+	name:"bld_LaserTower_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_02_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_02_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_02_attack001"}]},
+	]
+},
+{//LaserTower-3
+	name:"bld_LaserTower_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_03_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_03_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_03_attack001"}]},
+	]
+},
+{//LaserTower-4
+	name:"bld_LaserTower_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_04_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_04_attack001"}]},
+	]
+},
+{//LaserTower-5
+	name:"bld_LaserTower_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_05_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_05_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_05_attack001"}]},
+	]
+},
+{//LaserTower-6
+	name:"bld_LaserTower_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_06_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_06_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_06_attack001"}]},
+	]
+},
+{//LaserTower-7
+	name:"bld_LaserTower_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_07_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_07_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_07_attack001"}]},
+	]
+},
+{//LaserTower-8
+	name:"bld_LaserTower_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_LaserTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_07_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_LaserTower_07_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"bld_LaserTower_07_attack001"}]},
+	]
+},
+{//AATower-1
+	name:"bld_AATower_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_01_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_01_stay001"}]},
+	]
+},
+{//AATower-2
+	name:"bld_AATower_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_02_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_02_stay001"}]},
+	]
+},
+{//AATower-3
+	name:"bld_AATower_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_03_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_03_stay001"}]},
+	]
+},
+{//AATower-4
+	name:"bld_AATower_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_04_stay001"}]},
+	]
+},
+{//AATower-5
+	name:"bld_AATower_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_05_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_05_stay001"}]},
+	]
+},
+{//AATower-6
+	name:"bld_AATower_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay_1",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_06_stay001"},
+			{name:"stay_2",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_06_stay002"},
+			{name:"stay_3",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_06_stay003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_06_stay001"}]},
+	]
+},
+{//AATower-7
+	name:"bld_AATower_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay_1",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_07_stay001"},
+			{name:"stay_2",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_07_stay002"},
+			{name:"stay_3",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_07_stay003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_07_stay001"}]},
+	]
+},
+{//AATower-8
+	name:"bld_AATower_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay_1",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_08_stay001"},
+			{name:"stay_2",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_08_stay002"},
+			{name:"stay_3",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_08_stay003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_08_stay001"}]},
+	]
+},
+{//AATower-9
+	name:"bld_AATower_09",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_AATower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay_1",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_08_stay001"},
+			{name:"stay_2",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_08_stay002"},
+			{name:"stay_3",weight:10,loop:2,dit_mode:0,sprite:"bld_AATower_08_stay003"},
+		]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_AATower_08_stay001"}]},
+	]
+},
+{//Motar-1
+	name:"bld_Motar_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_01_stay001"}]},
+	]
+},
+{//Motar-2
+	name:"bld_Motar_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_02_stay001"}]},
+	]
+},
+{//Motar-3
+	name:"bld_Motar_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_03_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_03_stay001"}]},
+	]
+},
+{//Motar-4
+	name:"bld_Motar_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_04_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_04_stay001"}]},
+	]
+},
+{//Motar-5
+	name:"bld_Motar_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_05_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_05_stay001"}]},
+	]
+},
+{//Motar-6
+	name:"bld_Motar_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_06_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_06_stay001"}]},
+	]
+},
+{//Motar-7
+	name:"bld_Motar_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_07_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_07_stay001"}]},
+	]
+},
+{//Motar-8
+	name:"bld_Motar_08",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Motar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_07_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash003"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Motar_07_stay001"}]},
+	]
+},
+{//RGunTower---底座-对地-1
+	name:"bld_RGunTower_01_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_01_base1001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_01_base1001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_01_base2001"},]},
+		null,//store3
+	]
+},
+{//RGunTower---头部-对地-1
+	name:"bld_RGunTower_01_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_01_trt1013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower---底座-对空-1
+	name:"bld_RGunTower_01_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_01_base2001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RGunTower---头部-对空-1
+	name:"bld_RGunTower_01_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_01_trt2013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower-1
+	name:"bld_RGunTower_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_01_stay001"}]},
+	]
+},
+{//RGunTower---底座-对地-2
+	name:"bld_RGunTower_02_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_02_base1001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_02_base1001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_02_base2001"},]},
+		null,//store3
+	]
+},
+{//RGunTower---头部-对地-2
+	name:"bld_RGunTower_02_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_01_trt1013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower---底座-对空-2
+	name:"bld_RGunTower_02_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_02_base2001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RGunTower---头部-对空-2
+	name:"bld_RGunTower_02_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_01_trt2013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower-2
+	name:"bld_RGunTower_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_02_stay001"}]},
+	]
+},
+{//RGunTower---底座-对地-3
+	name:"bld_RGunTower_03_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_03_base1001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_03_base1001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_03_base2001"},]},
+		null,//store3
+	]
+},
+{//RGunTower---头部-对地-3
+	name:"bld_RGunTower_03_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_03_trt1013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower---底座-对空-3
+	name:"bld_RGunTower_03_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_03_base2001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RGunTower---头部-对空-3
+	name:"bld_RGunTower_03_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_03_trt2013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower-3
+	name:"bld_RGunTower_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_03_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_03_stay001"}]},
+	]
+},
+{//RGunTower---底座-对地-4
+	name:"bld_RGunTower_04_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base1001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base1001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base2001"},]},
+		null,//store3
+	]
+},
+{//RGunTower---头部-对地-4
+	name:"bld_RGunTower_04_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_04_trt1013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower---底座-对空-4
+	name:"bld_RGunTower_04_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base2001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RGunTower---头部-对空-4
+	name:"bld_RGunTower_04_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_04_trt2013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower-4
+	name:"bld_RGunTower_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_04_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_stay001"}]},
+	]
+},
+{//RGunTower---底座-对地-5
+	name:"bld_RGunTower_05_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base1001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base1001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base2001"},]},
+		null,//store3
+	]
+},
+{//RGunTower---头部-对地-5
+	name:"bld_RGunTower_05_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_04_trt1013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower---底座-对空-5
+	name:"bld_RGunTower_05_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_base2001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//RGunTower---头部-对空-5
+	name:"bld_RGunTower_05_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_04_trt2013"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//RGunTower-5
+	name:"bld_RGunTower_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_RGunTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:9,sprite:"bld_RGunTower_04_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"bld_RGunTower_04_stay001"}]},
+	]
+},
+{//钻石矿-1
+	name:"bld_DiamondMine_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_DiamondMine.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_DiamondMine_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_DiamondMine_01_stay001"},]},
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_DiamondMine_01_stay001"},]},
+		{name:"store2",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_DiamondMine_01_stay001"},]},
+		{name:"store3",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_DiamondMine_01_stay001"},]},
+	]
+},
+{//格纳库
+	name:"bld_Hangar_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Hangar.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Hangar_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_Hangar_01_stay001"},]},
+	]
+},
+{//机甲工厂-1
+	name:"bld_MechFactory_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_MechFactory.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_01_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_01_work001"},]},
+		null,//attack
+		null,
+		null,
+		null,//store3
+	]
+},
+{//机甲工厂-2
+	name:"bld_MechFactory_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_MechFactory.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_02_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_02_work001"},]},
+		null,//attack
+		null,
+		null,
+		null,//store3
+	]
+},
+{//机甲工厂-3
+	name:"bld_MechFactory_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_MechFactory.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_03_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_03_work001"},]},
+		null,//attack
+		null,
+		null,
+		null,//store3
+	]
+},
+{//机甲工厂-4
+	name:"bld_MechFactory_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_MechFactory.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_04_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_04_work001"},]},
+		null,//attack
+		null,
+		null,
+		null,//store3
+	]
+},
+{//机甲工厂-5
+	name:"bld_MechFactory_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_MechFactory.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_04_stay001"},]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash005"},]},
+		null,//constructing
+		{name:"working",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"bld_MechFactory_04_work001"},]},
+		null,//attack
+		null,
+		null,
+		null,//store3
+	]
+},
+{//防御哨岗-1
+	name:"bld_Fort_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Fort.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Fort_01_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//防御哨岗-2
+	name:"bld_Fort_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Fort.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Fort_02_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//防御哨岗-3
+	name:"bld_Fort_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Fort.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Fort_03_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//防御哨岗-4
+	name:"bld_Fort_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Fort.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Fort_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//防御哨岗-5
+	name:"bld_Fort_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_Fort.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_Fort_04_stay001"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash007"},]},
+	]
+},
+{//InfernoTower---底座-单体攻击-1
+	name:"bld_InfernoTower_01_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"},]},
+		null,//store3
+	]
+},
+{//InfernoTower---头部-单体攻击-1
+	name:"bld_InfernoTower_01_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-全体攻击-1
+	name:"bld_InfernoTower_01_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_02_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//InfernoTower---头部-全体攻击-1
+	name:"bld_InfernoTower_01_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt2"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-单体攻击-2
+	name:"bld_InfernoTower_02_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"},]},
+		null,//store3
+	]
+},
+{//InfernoTower---头部-单体攻击-2
+	name:"bld_InfernoTower_02_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-全体攻击-2
+	name:"bld_InfernoTower_02_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_02_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//InfernoTower---头部-全体攻击-2
+	name:"bld_InfernoTower_02_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt2"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-单体攻击-3
+	name:"bld_InfernoTower_03_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"},]},
+		null,//store3
+	]
+},
+{//InfernoTower---头部-单体攻击-3
+	name:"bld_InfernoTower_03_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-全体攻击-3
+	name:"bld_InfernoTower_03_base2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_02_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+	]
+},
+{//InfernoTower---头部-全体攻击-3
+	name:"bld_InfernoTower_03_trt2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt2"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-1
+	name:"bld_InfernoMechTower_01_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"},]},
+		null,//store3
+	]
+},
+{//InfernoTower---头部-1
+	name:"bld_InfernoMechTower_01_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-2
+	name:"bld_InfernoMechTower_02_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"},]},
+		null,//store3
+	]
+},
+{//InfernoTower---头部-2
+	name:"bld_InfernoMechTower_02_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//InfernoTower---底座-3
+	name:"bld_InfernoMechTower_03_base",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_crash002"}]},
+		null,//constructing
+		null,//working
+		null,//attack
+		{name:"store1",subani:[{name:"store",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_base1"},]},
+		null,//store3
+	]
+},
+{//InfernoTower---头部-3
+	name:"bld_InfernoMechTower_03_trt",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_InfernoTower.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_InfernoTower_01_trt1"}]},
+		{name:"crashed",subani:[{name:"crash",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//*******************************************
+//0级建筑
+{//
+	name:"bld_Camp_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_TownHall_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_OilWell_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_OilTank_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_GoldMine_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_GoldVault_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_Barrack_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_TechLab_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_Cannon_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_Tower_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_RocketTower_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_AATower_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_Motar_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_ClanBld_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_LaserTower_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_SpellLab_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_RGunTower_01_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{//
+	name:"bld_DiamondMine_00",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_lv0"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+//*******************************************
+//陷阱:
+{//地雷
+	name:"bld_Mine_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/trap.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Mine_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Mine_crash"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Mine_01_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"trap_Mine_01_stay001"}]},
+	]
+},
+{//弹板
+	name:"bld_Ejector_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/trap.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Ejector_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Ejector_crash"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Ejector_01_attack1001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"trap_Ejector_01_attack1001"}]},
+	]
+},
+{//超级炸弹
+	name:"bld_Superbomb_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/trap.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Superbomb_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Superbomb_crash"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Superbomb_01_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"trap_Superbomb_01_stay001"}]},
+	]
+},
+{//防空炸弹
+	name:"bld_Airbomb_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/trap.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Airbomb_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Airbomb_crash"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Airbomb_01_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"trap_Airbomb_01_stay001"}]},
+	]
+},
+{//EMP地雷
+	name:"bld_EMPMine_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/trap.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_EMPMine_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_EMPMine_crash"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"trap_EMPMine_01_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"trap_EMPMine_01_stay001"}]},
+	]
+},
+{//
+	name:"bld_Halloweenbomb_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/trap.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Mine_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+		null,
+		null,
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:0,sprite:"trap_Mine_01_stay001"}]},
+		null,
+		null,
+		null,
+		{name:"hide",subani:[{name:"hide",weight:10,loop:0,dit_mode:0,sprite:"bld_none"}]},
+		{name:"show",subani:[{name:"show",weight:10,loop:0,dit_mode:0,sprite:"trap_Mine_01_stay001"}]},
+	]
+},
+//*******************************************
+//障碍物:
+//{//树
+//	name:"bld_PineTree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_PineTree_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//树
+	name:"bld_Conifers_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Conifers_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_LargeStone_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_LargeStone_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Megalithic_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Megalithic_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_LargeStone_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_LargeStone_02_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Megalithic_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Megalithic_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SmallStone_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SmallStone_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SmallStone_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SmallStone_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SmallStone_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SmallStone_03_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SmallStone_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SmallStone_04_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SquareBush_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SquareBush_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Bush_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Bush_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SquareTree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SquareTree_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Tree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Tree_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SquareTree_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SquareTree_02_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Tree_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Tree_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_TreeTrunk_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_TreeTrunk_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Trunk_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Trunk_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_TreeTrunk_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_TreeTrunk_02_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Trunk_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Trunk_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Mushrooms_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Mushrooms_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Grave_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Grave_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_FallenTree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_FallenTree_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_RoundTree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_RoundTree_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_StonePillar_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_StonePillar_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Pillars_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Pillars_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SharpStone_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SharpStone_01_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Kistler_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Kistler_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SharpStone_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SharpStone_02_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Kistler_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Kistler_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SharpStone_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SharpStone_03_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Kistler_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Kistler_03_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SharpStone_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SharpStone_04_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Kistler_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Kistler_04_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//{//
+//	name:"bld_SharpStone_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_SharpStone_05_stay001"}]},
+//		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+//	]
+//},
+{//
+	name:"bld_Kistler_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Kistler_05_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Xmastree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Xmastree_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_CandyCane01_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_CandyCane_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_CandyCane02_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_CandyCane_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Balloon_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Balloon_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Snowman_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Snowman_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_YellowXmasTree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_YellowXmasTree_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Mammon_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Mammon_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Firework_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Firework_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Lantern_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Lantern_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_LuckyBag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_LuckyBag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Giftbox_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Giftbox_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Oneyear_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/obstacles.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_Oneyear_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//******************************************************************
+//****************装饰物********************************************
+{//
+	name:"bld_BarbarianStatue_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_BarbarianStatue_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Torch_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_Torch_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_GoblinPole_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_GoblinPole_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_WhiteFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_WhiteFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SkullFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_SkullFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Flowerbox1_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_Flowerbox1_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Flowerbox2_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_Flowerbox2_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_Windmeter_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_Windmeter_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_DownArrowFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_DownArrowFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_UpArrowFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_UpArrowFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SkullAltar_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_SkullAltar_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_USAFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_USAFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_CanadaFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_CanadaFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ItaliaFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ItaliaFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_GermanyFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_GermanyFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_FinlandFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_FinlandFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SpainFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_SpainFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_FranceFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_FranceFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_GBRFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_GBRFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_BrazilFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_BrazilFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SwedenFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_SwedenFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ChinaFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ChinaFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_NorwayFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_NorwayFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ThailandFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ThailandFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_IndiaFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_IndiaFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_AustraliaFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_AustraliaFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SouthKoreaFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_SouthKoreaFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_JapanFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_JapanFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_TurkeyFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_TurkeyFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_IndonesiaFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_IndonesiaFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_NetherlandsFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_NetherlandsFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_PhilippinesFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_PhilippinesFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_SingaporeFlag_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_SingaporeFlag_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_PEKKAStatue_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_PEKKAStatue_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_RedXmasTree_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_RedXmasTree_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_XmasBox_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_XmasBox_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+
+{//
+	name:"bld_ClanWarsAward_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward2_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_02_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward3_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay003"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward4_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay004"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward5_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay005"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward6_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay006"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward7_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay007"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward8_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay008"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward9_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay009"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+{//
+	name:"bld_ClanWarsAward_2_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/decorates.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"dec_ClanWarsAward_01_stay002"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_none"}]},
+	]
+},
+//******************************************************************
+{
+	name:"3dnode",type:"node",node:page.genPageURL("mesh/bigbombmac.j3d"),
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,frame_start:10,frame_num:40}]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,frame_start:0,frame_num:30}]}
+	]
+},
+{
+	name:"bld_docks",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"good_1x1",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_green_1x1"}]},
+		{name:"good_2x2",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_green_2x2"}]},
+		{name:"good_3x3",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_green_3x3"}]},
+		{name:"good_4x4",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_green_4x4"}]},
+		{name:"good_5x5",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_green_5x5"}]},
+		{name:"bad_1x1",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_red_1x1"}]},
+		{name:"bad_2x2",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_red_2x2"}]},
+		{name:"bad_3x3",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_red_3x3"}]},
+		{name:"bad_4x4",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_red_4x4"}]},
+		{name:"bad_5x5",subani:[{name:"1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_red_5x5"}]},
+	]
+},
+{
+	name:"bld_bg2x2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_2x2"}]}
+	]
+},
+{
+	name:"bld_bg3x3",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_3x3"}]}
+	]
+},
+{
+	name:"bld_bg4x4",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_4x4"}]},
+	]
+},
+{
+	name:"bld_bg5x5",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_5x5"}]}
+	]
+},
+{
+	name:"bld_bg_5",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_5"}]}
+	]
+},
+{
+	name:"obs_bg2x2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_bg_2x2"}]}
+	]
+},
+{
+	name:"obs_bg3x3",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_bg_3x3"}]}
+	]
+},
+{
+	name:"bld_bg2x2_2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_2x2_2"}]}
+	]
+},
+{
+	name:"bld_bg3x3_2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_3x3_2"}]}
+	]
+},
+{
+	name:"bld_bg4x4_2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_4x4_2"}]},
+	]
+},
+{
+	name:"bld_bg5x5_2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_5x5_2"}]}
+	]
+},
+{
+	name:"bld_bg_5_2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_bg_5_2"}]}
+	]
+},
+{
+	name:"obs_bg2x2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_bg_2x2"}]}
+	]
+},
+{
+	name:"obs_bg3x3",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"obs_bg_3x3"}]}
+	]
+},
+//{
+//	name:"chilun1",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chilun1"}]}
+//	]
+//},
+//{
+//	name:"chilun2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+//	actions:[
+//		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chilun2"}]}
+//	]
+//},
+{
+	name:"startbuild2",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"startbuild2"}]}
+	]
+},
+{
+	name:"startbuild3",type:"sprite",libs:[page.genPageURL(window.imgPath+"/fx/fx2.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"startbuild3"}]}
+	]
+},
+{//
+	name:"bld_ClanHud_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/bld_ClanHud.spl"),page.genPageURL(window.imgPath+"/buildings/bld_crash.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:0,dit_mode:0,sprite:"bld_ClanHud_01_stay001"}]},
+		{name:"crashed",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"bld_crash001"}]},
+	]
+},
+{
+	name:"pokerlight",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/pokerlight.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:0,dit_mode:0,sprite:"pokerlight"}]}
+	]
+},

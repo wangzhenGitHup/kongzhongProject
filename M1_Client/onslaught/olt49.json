@@ -1,0 +1,15 @@
+[
+	{wave:3,delaytime:100,edge:0,type:"UntAvenger",level:3,num:1},
+	{wave:4,delaytime:150,edge:1,type:"UntAvenger",level:3,num:1},
+	{wave:5,delaytime:200,edge:2,type:"UntAvenger",level:3,num:1},
+	{wave:6,delaytime:250,edge:3,type:"UntAvenger",level:3,num:1},
+	{wave:3,delaytime:300,edge:0,type:"UntAvenger",level:3,num:1},
+	
+	{wave:3,delaytime:100,edge:1,type:"UntAvenger",level:3,num:1},
+	{wave:4,delaytime:150,edge:2,type:"UntAvenger",level:3,num:1},
+	{wave:5,delaytime:200,edge:3,type:"UntAvenger",level:3,num:1},
+	{wave:6,delaytime:250,edge:0,type:"UntAvenger",level:3,num:1},
+	{wave:3,delaytime:100,edge:1,type:"UntAvenger",level:3,num:1},
+	
+	
+]

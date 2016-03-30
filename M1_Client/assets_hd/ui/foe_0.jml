@@ -1,0 +1,16 @@
+//For image: foe_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("foe_0_32.png"));
+	this.imgInfos["foe_0_32"]={w:256,h:128};
+	this["box_clan_rank5"]={tex_u:148/256, tex_v:26/128, tex_w:16/256, tex_h:44/128, w:16, h:44, tex:this.imgList[id]};
+	this["pic_foe"]={tex_u:169/256, tex_v:27/128, tex_w:78/256, tex_h:42/128, w:78, h:42, tex:this.imgList[id]};
+	this["pic_repaired"]={tex_u:3/256, tex_v:25/128, tex_w:138/256, tex_h:69/128, w:138, h:69, tex:this.imgList[id]};
+	this["pic_atk_foe"]={tex_u:2/256, tex_v:2/128, tex_w:60/256, tex_h:20/128, w:60, h:20, tex:this.imgList[id]};
+	this["pic_atk_force"]={tex_u:66/256, tex_v:2/128, tex_w:60/256, tex_h:20/128, w:60, h:20, tex:this.imgList[id]};
+	this["pic_atk_normal"]={tex_u:130/256, tex_v:2/128, tex_w:60/256, tex_h:20/128, w:60, h:20, tex:this.imgList[id]};
+	this["pic_atk_revenge"]={tex_u:194/256, tex_v:2/128, tex_w:60/256, tex_h:20/128, w:60, h:20, tex:this.imgList[id]};
+}

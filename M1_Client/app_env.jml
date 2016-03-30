@@ -1,0 +1,1543 @@
+﻿//*********************************************************
+//游戏界面环境*********************************************
+//*********************************************************
+//if(__Page.appEnv)
+{
+	__Page.appEnv.DownLoadCore = function()
+	{
+		if(this.checkVo.coreFiles.length)
+		{
+			this.page.logicLoading.loading(
+				{
+					preTxt:this.page.STR.Downloading,
+					steps:this.checkVo.coreFiles.length,
+					cb:this.onDownLoadCore,
+					cbobj:this,
+					minpercent:19,
+					maxpercent:22
+				}
+			);
+			this.downloadStub=System.download(this.checkVo.coreFiles,this.page.logicLoading.stepIn,this.page.logicLoading);
+		}
+		else
+			this.DownLoad();
+	};
+	__Page.appEnv.onDownLoadCore = function(finish,error,url)
+	{
+		if(finish)
+		{
+			this.downloadStub=null;
+			setFrameout(0,this.DownLoad,this);
+		}
+	};
+	__Page.appEnv.DownLoad = function()
+	{
+		var list = [],i,j,filename,found;
+		for(i=0;i<jmlList.length;i++)
+		{
+			list.push(this.page.genPageURL(jmlList[i]));
+		}
+		for(i=0;i<defList.length;i++)
+		{
+			list.push(this.page.genPageURL(defList[i]));
+		}
+		for(i=0;i<this.checkVo.delFiles.files.length;i++)
+		{
+			filename = this.checkVo.delFiles.files[i];
+			found = false;
+			for(j=0;j<jmlList.length;j++)
+			{
+				if(jmlList[j]==filename)
+				{
+					found = true;
+					break;
+				}
+			}
+			if(!found)
+			{
+				for(j=0;j<defList.length;j++)
+				{
+					if(defList[j]==filename)
+					{
+						found = true;
+						break;
+					}
+				}
+			}
+			if(!found)
+				list.push(this.page.genPageURL(filename));
+		}
+		if(!list.length)
+		{
+			this.loadJml();
+			return;
+		}
+		this.page.logicLoading.loading(
+			{
+				preTxt:this.page.STR.Downloading,
+				steps:list.length,
+				cb:this.onDownLoad,
+				cbobj:this,
+				minpercent:23,
+				maxpercent:40
+			}
+		);
+		this.downloadStub=System.download(list,this.page.logicLoading.stepIn,this.page.logicLoading);
+	};
+	__Page.appEnv.onDownLoad = function(finish,error,url)
+	{
+		DBOut("+++++++++++onDownLoad "+finish+"="+url);
+		if(finish)
+		{
+			this.downloadStub=null;
+			if(this.needReload)
+			{
+				this.page.setCookie("Runtime","servers",""+toJSON(this.servers),10000000);
+				this.page.setCookie("Runtime","GameDWRUrl","",0);
+				this.layer.resGC();
+				this.dlgLayer.resGC();
+				this.pmtLayer.resGC();
+				switchApp(this.page.genPageURL(mainPath));
+			}
+			else
+				setFrameout(0,this.loadJml,this);
+		}
+	};
+	__Page.appEnv.loadJml = function()
+	{
+
+	//----------------------------------------------
+	var bug=this.page.getCookie("M1-bug","20140226");
+	if(!bug)
+	{
+		this.page.setCookie("M1-bug","20140226","1",0);
+		var channels=
+		{"118105100":1,
+		"118107400":1,
+		"118101520":1,
+		"118101030":1,
+		"118101510":1,
+		"118101050":1,
+		"118100370":1,
+		"118104500":1,
+		"118101740":1,
+		"118101810":1,
+		"118101380":1,
+		"118102520":1,
+		"118100080":1,
+		"118103190":1,
+		"118101450":1,
+		"118103220":1,
+		"118102160":1,
+		"118104140":1,
+		"118104120":1,
+		"118104130":1,
+		"118101610":1,
+		"118101580":1,
+		"118102630":1,
+		"118102640":1,
+		"118102650":1,
+		"118102660":1,
+		"118102670":1,
+		"118102680":1,
+		"118102690":1,
+		"118102710":1,
+		"118102720":1,
+		"118102730":1,
+		"118102740":1,
+		"118102750":1,
+		"118102760":1,
+		"118102834":1,
+		"118102844":1,
+		"118102854":1,
+		"118102864":1,
+		"118102784":1,
+		"118102824":1,
+		"118102774":1,
+		"118102794":1,
+		"118102884":1,
+		"118102894":1,
+		"118102914":1,
+		"118102924":1,
+		"118102934":1,
+		"118102944":1,
+		"118102954":1,
+		"118102964":1,
+		"118102974":1,
+		"118102984":1,
+		"118102994":1,
+		"118103024":1,
+		"114102530":1,
+		"118103044":1,
+		"118103034":1,
+		"118103054":1,
+		"118103064":1,
+		"118103074":1,
+		"118103084":1,
+		"118103094":1,
+		"118103114":1,
+		"118103124":1,
+		"114102324":1,
+		"118102324":1,
+		"114101354":1,
+		"114102530":1,
+		"114102590":1,
+		"114102540":1,
+		"114102560":1,
+		"114102570":1,
+		"114102580":1,
+		"114102314":1,
+		"114102334":1,
+		"114102344":1,
+		"114102354":1,
+		"114102364":1,
+		"114102394":1,
+		"114102424":1,
+		"114102434":1,
+		"114102374":1,
+		"114102384":1,
+		"114102444":1,
+		"114102454":1,
+		"114102464":1,
+		"114102474":1,
+		"114102494":1,
+		"118102194":1,
+		"118102094":1,
+		"118102184":1,
+		"118102620":1,
+		"114102550":1,
+		"118103164":1,
+		"118103214":1,
+		"118103174":1,
+		"118103264":1,
+		"118103314":1,
+		"118103434":1,
+		"118103414":1,
+		"118103424":1,
+		"118103464":1,
+		"118103444":1,
+		"118103234":1,
+		"118103244":1,
+		"118103254":1,
+		"118103494":1,
+		"118103514":1,
+		"118103524":1,
+		"118103534":1,
+		"118103544":1,
+		"118103454":1,
+		"118103654":1,
+		"118103630":1,
+		"118101894":1,
+		"118101884":1,
+		"118100204":1,
+		"118100694":1,
+		"118100844":1,
+		"118101064":1,
+		"118101214":1,
+		"118101244":1,
+		"118101254":1,
+		"118103684":1,
+		"118103714":1,
+		"118103724":1,
+		"118103734":1,
+		"118103774":1,
+		"118103794":1,
+		"118103814":1,
+		"118103824":1,
+		"118103834":1,
+		"118103844":1,
+		"118103854":1,
+		"118103864":1
+		};
+		if(channels[window.ChannelID])
+		{
+			var clearFile=[
+				"assets_hd/buildings/bld_AATower_img3_32.png",
+				"assets_hd/buildings/bld_AATower_img4_32.png",
+				"assets_hd/buildings/bld_AATower_img5_32.png",
+				"assets_hd/buildings/bld_AATower_img6_32.png",
+				"assets_hd/buildings/bld_AATower_img7_32.png",
+				"assets_hd/buildings/bld_Barrack_img10_32.png",
+				"assets_hd/buildings/bld_Barrack_img4_32.png",
+				"assets_hd/buildings/bld_Barrack_img5_32.png",
+				"assets_hd/buildings/bld_Barrack_img6_32.png",
+				"assets_hd/buildings/bld_Barrack_img7_32.png",
+				"assets_hd/buildings/bld_Barrack_img8_32.png",
+				"assets_hd/buildings/bld_Barrack_img9_32.png",
+				"assets_hd/buildings/bld_Camp_img3_32.png",
+				"assets_hd/buildings/bld_Camp_img4_32.png",
+				"assets_hd/buildings/bld_Camp_img5_32.png",
+				"assets_hd/buildings/bld_Camp_img6_32.png",
+				"assets_hd/buildings/bld_Camp_img7_32.png",
+				"assets_hd/buildings/bld_Cannon_img4_32.png",
+				"assets_hd/buildings/bld_Cannon_img5_32.png",
+				"assets_hd/buildings/bld_Cannon_img6_32.png",
+				"assets_hd/buildings/bld_Cannon_img7_32.png",
+				"assets_hd/buildings/bld_Cannon_img8_32.png",
+				"assets_hd/buildings/bld_Cannon_img9_32.png",
+				"assets_hd/buildings/bld_ClanBld_img2_32.png",
+				"assets_hd/buildings/bld_ClanBld_img3_32.png",
+				"assets_hd/buildings/bld_ClanBld_img4_32.png",
+				"assets_hd/buildings/bld_CubeCan_img1_32.png",
+				"assets_hd/buildings/bld_CubeCan_img2_32.png",
+				"assets_hd/buildings/bld_CubeWork_img1_32.png",
+				"assets_hd/buildings/bld_CubeWork_img2_32.png",
+				"assets_hd/buildings/bld_Fort_img1_32.png",
+				"assets_hd/buildings/bld_Fort_img2_32.png",
+				"assets_hd/buildings/bld_Fort_img3_32.png",
+				"assets_hd/buildings/bld_GoldMine_img10_32.png",
+				"assets_hd/buildings/bld_GoldMine_img4_32.png",
+				"assets_hd/buildings/bld_GoldMine_img5_32.png",
+				"assets_hd/buildings/bld_GoldMine_img6_32.png",
+				"assets_hd/buildings/bld_GoldMine_img7_32.png",
+				"assets_hd/buildings/bld_GoldMine_img8_32.png",
+				"assets_hd/buildings/bld_GoldMine_img9_32.png",
+				"assets_hd/buildings/bld_GoldVault_img10_32.png",
+				"assets_hd/buildings/bld_GoldVault_img4_32.png",
+				"assets_hd/buildings/bld_GoldVault_img5_32.png",
+				"assets_hd/buildings/bld_GoldVault_img6_32.png",
+				"assets_hd/buildings/bld_GoldVault_img7_32.png",
+				"assets_hd/buildings/bld_GoldVault_img8_32.png",
+				"assets_hd/buildings/bld_GoldVault_img9_32.png",
+				"assets_hd/buildings/bld_Hangar_img0_32.png",
+				"assets_hd/buildings/bld_LaserTower_img4_32.png",
+				"assets_hd/buildings/bld_LaserTower_img5_32.png",
+				"assets_hd/buildings/bld_LaserTower_img6_32.png",
+				"assets_hd/buildings/bld_MechFactory_img0_32.png",
+				"assets_hd/buildings/bld_Motar_img4_32.png",
+				"assets_hd/buildings/bld_OilTank_img10_32.png",
+				"assets_hd/buildings/bld_OilTank_img4_32.png",
+				"assets_hd/buildings/bld_OilTank_img5_32.png",
+				"assets_hd/buildings/bld_OilTank_img6_32.png",
+				"assets_hd/buildings/bld_OilTank_img7_32.png",
+				"assets_hd/buildings/bld_OilTank_img8_32.png",
+				"assets_hd/buildings/bld_OilTank_img9_32.png",
+				"assets_hd/buildings/bld_OilWell_img4_32.png",
+				"assets_hd/buildings/bld_OilWell_img5_32.png",
+				"assets_hd/buildings/bld_RGunTower_img3_32.png",
+				"assets_hd/buildings/bld_RGunTower_img4_32.png",
+				"assets_hd/buildings/bld_RocketTower_img4_32.png",
+				"assets_hd/buildings/bld_SpellLab_img3_32.png",
+				"assets_hd/buildings/bld_SpellLab_img4_32.png",
+				"assets_hd/buildings/bld_TechLab_img1_32.png",
+				"assets_hd/buildings/bld_Tower_img4_32.png",
+				"assets_hd/buildings/bld_Tower_img5_32.png",
+				"assets_hd/buildings/bld_Tower_img6_32.png",
+				"assets_hd/buildings/bld_Tower_img7_32.png",
+				"assets_hd/buildings/bld_Tower_img8_32.png",
+				"assets_hd/buildings/bld_TownHall_img10_32.png",
+				"assets_hd/buildings/bld_TownHall_img4_32.png",
+				"assets_hd/buildings/bld_TownHall_img5_32.png",
+				"assets_hd/buildings/bld_TownHall_img6_32.png",
+				"assets_hd/buildings/bld_TownHall_img7_32.png",
+				"assets_hd/buildings/bld_TownHall_img8_32.png",
+				"assets_hd/buildings/bld_TownHall_img9_32.png",
+				"assets_hd/buildings/bld_Wall_img4_32.png",
+				"assets_hd/buildings/bld_Wall_img5_32.png",
+				"assets_hd/buildings/bld_Wall_img6_32.png",
+				"assets_hd/buildings/bld_Wall_img7_32.png",
+				"assets_hd/buildings/decorates_img0_32.png",
+				"assets_hd/buildings/decorates_img1_32.png",
+				"assets_hd/buildings/decorates_img2_32.png",
+				"assets_hd/buildings/decorates_img3_32.png",
+				"assets_hd/buildings/decorates_img4_32.png",
+				"assets_hd/buildings/decorates_img5_32.png",
+				"assets_hd/buildings/decorates_img6_32.png",
+				"assets_hd/buildings/decorates_img7_32.png",
+				"assets_hd/buildings/decorates_img8_32.png",
+				"assets_hd/buildings/decorates_img9_32.png",
+				"assets_hd/buildings/motar_img0.png",
+				"assets_hd/buildings/obstacles_img4_32.png",
+				"assets_hd/buildings/obstacles_img5_32.png",
+				"assets_hd/buildings/obstacles_img6_32.png",
+				"assets_hd/buildings/obstacles_img7_32.png",
+				"assets_hd/buildings/pokerlight_img0_32.png",
+				"assets_hd/buildings/search.spl",
+				"assets_hd/buildings/search1.spl",
+				"assets_hd/buildings/search1_img0_32.png",
+				"assets_hd/buildings/search_img0_32.png",
+				"assets_hd/gnd/pic_env_01_32.pvr",
+				"assets_hd/gnd/pic_env_02_32.pvr",
+				"assets_hd/gnd/pic_pve_01_32.pvr",
+				"assets_hd/gnd/pic_pve_02_32.pvr",
+				"assets_hd/icon/bg_tier1_32.png",
+				"assets_hd/icon/bg_tier2_32.png",
+				"assets_hd/icon/bg_tier3_32.png",
+				"assets_hd/icon/bg_tier4_32.png",
+				"assets_hd/icon/btn_box_32.png",
+				"assets_hd/icon/btn_tieba_32.png",
+				"assets_hd/icon/icon_ach_bindemail64_32.png",
+				"assets_hd/icon/icon_ach_mechstrengthen64_32.png",
+				"assets_hd/icon/icon_badge1064_32.png",
+				"assets_hd/icon/icon_badge1164_32.png",
+				"assets_hd/icon/icon_badge1264_32.png",
+				"assets_hd/icon/icon_badge1364_32.png",
+				"assets_hd/icon/icon_badge1464_32.png",
+				"assets_hd/icon/icon_badge1564_32.png",
+				"assets_hd/icon/icon_badge1664_32.png",
+				"assets_hd/icon/icon_badge1764_32.png",
+				"assets_hd/icon/icon_badge1864_32.png",
+				"assets_hd/icon/icon_badge1964_32.png",
+				"assets_hd/icon/icon_badge2064_32.png",
+				"assets_hd/icon/icon_badge2164_32.png",
+				"assets_hd/icon/icon_badge2264_32.png",
+				"assets_hd/icon/icon_badge2364_32.png",
+				"assets_hd/icon/icon_badge2464_32.png",
+				"assets_hd/icon/icon_badge2564_32.png",
+				"assets_hd/icon/icon_badge264_32.png",
+				"assets_hd/icon/icon_badge2664_32.png",
+				"assets_hd/icon/icon_badge2764_32.png",
+				"assets_hd/icon/icon_badge2864_32.png",
+				"assets_hd/icon/icon_badge2964_32.png",
+				"assets_hd/icon/icon_badge3064_32.png",
+				"assets_hd/icon/icon_badge3164_32.png",
+				"assets_hd/icon/icon_badge3264_32.png",
+				"assets_hd/icon/icon_badge3364_32.png",
+				"assets_hd/icon/icon_badge3464_32.png",
+				"assets_hd/icon/icon_badge3564_32.png",
+				"assets_hd/icon/icon_badge364_32.png",
+				"assets_hd/icon/icon_badge3664_32.png",
+				"assets_hd/icon/icon_badge3764_32.png",
+				"assets_hd/icon/icon_badge3864_32.png",
+				"assets_hd/icon/icon_badge3964_32.png",
+				"assets_hd/icon/icon_badge4064_32.png",
+				"assets_hd/icon/icon_badge464_32.png",
+				"assets_hd/icon/icon_badge564_32.png",
+				"assets_hd/icon/icon_badge664_32.png",
+				"assets_hd/icon/icon_badge764_32.png",
+				"assets_hd/icon/icon_badge864_32.png",
+				"assets_hd/icon/icon_badge964_32.png",
+				"assets_hd/icon/icon_cap_speed64_32.png",
+				"assets_hd/icon/icon_chr_UntDoctor128_32.png",
+				"assets_hd/icon/icon_chr_UntDoctor512_32.png",
+				"assets_hd/icon/icon_chr_UntGolem128_32.png",
+				"assets_hd/icon/icon_chr_UntGolem512_32.png",
+				"assets_hd/icon/icon_chr_UntGolemite512_32.png",
+				"assets_hd/icon/icon_chr_UntMinion512_32.png",
+				"assets_hd/icon/icon_chr_UntRider128_32.png",
+				"assets_hd/icon/icon_chr_UntRider512_32.png",
+				"assets_hd/icon/icon_chr_UntUAV128_32.png",
+				"assets_hd/icon/icon_chr_UntUAV512_32.png",
+				"assets_hd/icon/icon_control64_32.png",
+				"assets_hd/icon/icon_daily_battle_star264_32.png",
+				"assets_hd/icon/icon_daily_battle_star2_1064_32.png",
+				"assets_hd/icon/icon_daily_battle_star2_464_32.png",
+				"assets_hd/icon/icon_daily_battle_star2_564_32.png",
+				"assets_hd/icon/icon_daily_battle_star2_664_32.png",
+				"assets_hd/icon/icon_daily_battle_star2_764_32.png",
+				"assets_hd/icon/icon_daily_battle_star2_864_32.png",
+				"assets_hd/icon/icon_daily_battle_star2_964_32.png",
+				"assets_hd/icon/icon_daily_battle_star64_32.png",
+				"assets_hd/icon/icon_daily_battle_star_1064_32.png",
+				"assets_hd/icon/icon_daily_battle_star_364_32.png",
+				"assets_hd/icon/icon_daily_battle_star_464_32.png",
+				"assets_hd/icon/icon_daily_battle_star_564_32.png",
+				"assets_hd/icon/icon_daily_battle_star_664_32.png",
+				"assets_hd/icon/icon_daily_battle_star_764_32.png",
+				"assets_hd/icon/icon_daily_battle_star_864_32.png",
+				"assets_hd/icon/icon_daily_battle_star_964_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_1064_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_264_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_364_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_464_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_564_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_664_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_764_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_864_32.png",
+				"assets_hd/icon/icon_daily_loot_elixir_964_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_1064_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_264_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_364_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_464_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_564_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_664_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_764_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_864_32.png",
+				"assets_hd/icon/icon_daily_loot_gold_964_32.png",
+				"assets_hd/icon/icon_donate_gem128_32.png",
+				"assets_hd/icon/icon_donate_res128_32.png",
+				"assets_hd/icon/icon_gemPack10256_32.png",
+				"assets_hd/icon/icon_gemPack11256_32.png",
+				"assets_hd/icon/icon_gemPack12256_32.png",
+				"assets_hd/icon/icon_gemPack13256_32.png",
+				"assets_hd/icon/icon_gemPack14256_32.png",
+				"assets_hd/icon/icon_gemPack9256_32.png",
+				"assets_hd/icon/icon_goldcard264_32.png",
+				"assets_hd/icon/icon_goldcard64_32.png",
+				"assets_hd/icon/icon_goldcardg64_32.png",
+				"assets_hd/icon/icon_kill64_32.png",
+				"assets_hd/icon/icon_landown64_32.png",
+				"assets_hd/icon/icon_landwar64_32.png",
+				"assets_hd/icon/icon_notice_cz128_32.png",
+				"assets_hd/icon/icon_notice_gr128_32.png",
+				"assets_hd/icon/icon_notice_gz128_32.png",
+				"assets_hd/icon/icon_notice_jj128_32.png",
+				"assets_hd/icon/icon_notice_lt128_32.png",
+				"assets_hd/icon/icon_notice_tb128_32.png",
+				"assets_hd/icon/icon_notice_wb128_32.png",
+				"assets_hd/icon/icon_notice_wh128_32.png",
+				"assets_hd/icon/icon_notice_wx128_32.png",
+				"assets_hd/icon/icon_notice_xs1128_32.png",
+				"assets_hd/icon/icon_notice_xs2128_32.png",
+				"assets_hd/icon/icon_notice_xs3128_32.png",
+				"assets_hd/icon/icon_notice_xs4128_32.png",
+				"assets_hd/icon/icon_notice_xs5128_32.png",
+				"assets_hd/icon/icon_notice_xt128_32.png",
+				"assets_hd/icon/icon_notice_zy128_32.png",
+				"assets_hd/icon/icon_res_clanexp64_32.png",
+				"assets_hd/icon/icon_res_clanpoint64_32.png",
+				"assets_hd/icon/icon_res_cube128_32.png",
+				"assets_hd/icon/icon_res_cube64_32.png",
+				"assets_hd/icon/icon_res_cuttime64_32.png",
+				"assets_hd/icon/icon_res_gem128_32.png",
+				"assets_hd/icon/icon_res_gold128_32.png",
+				"assets_hd/icon/icon_res_oil128_32.png",
+				"assets_hd/icon/icon_skill64_32.png",
+				"assets_hd/icon/icon_star64_32.png",
+				"assets_hd/icon/icon_starmt64_32.png",
+				"assets_hd/icon/icon_Tec_DefenseUp64_32.png",
+				"assets_hd/icon/icon_Tec_ResourceMax64_32.png",
+				"assets_hd/icon/icon_Tec_TownHallHP64_32.png",
+				"assets_hd/icon/icon_Tec_TrainingSpeed64_32.png",
+				"assets_hd/icon/icon_Tec_TrapUp64_32.png",
+				"assets_hd/icon/mark_charge_64_32.png",
+				"assets_hd/icon/mark_empty_64_32.png",
+				"assets_hd/icon/mark_fakeflag64_32.png",
+				"assets_hd/icon/mark_residence64_32.png",
+				"assets_hd/icon/par_body01_01_b_32.png",
+				"assets_hd/icon/par_body01_01_m_32.png",
+				"assets_hd/icon/par_body01_02_b_32.png",
+				"assets_hd/icon/par_body01_02_m_32.png",
+				"assets_hd/icon/par_body01_03_b_32.png",
+				"assets_hd/icon/par_body01_03_m_32.png",
+				"assets_hd/icon/par_body01_32.png",
+				"assets_hd/icon/par_body02_01_b_32.png",
+				"assets_hd/icon/par_body02_01_m_32.png",
+				"assets_hd/icon/par_body02_02_b_32.png",
+				"assets_hd/icon/par_body02_02_m_32.png",
+				"assets_hd/icon/par_body02_03_b_32.png",
+				"assets_hd/icon/par_body02_03_m_32.png",
+				"assets_hd/icon/par_body02_04_b_32.png",
+				"assets_hd/icon/par_body02_04_m_32.png",
+				"assets_hd/icon/par_body02_32.png",
+				"assets_hd/icon/par_body03_01_b_32.png",
+				"assets_hd/icon/par_body03_01_m_32.png",
+				"assets_hd/icon/par_body03_02_b_32.png",
+				"assets_hd/icon/par_body03_02_m_32.png",
+				"assets_hd/icon/par_body03_03_b_32.png",
+				"assets_hd/icon/par_body03_03_m_32.png",
+				"assets_hd/icon/par_body03_32.png",
+				"assets_hd/icon/par_body04_01_b_32.png",
+				"assets_hd/icon/par_body04_01_m_32.png",
+				"assets_hd/icon/par_body04_02_b_32.png",
+				"assets_hd/icon/par_body04_02_m_32.png",
+				"assets_hd/icon/par_body04_03_b_32.png",
+				"assets_hd/icon/par_body04_03_m_32.png",
+				"assets_hd/icon/par_body04_32.png",
+				"assets_hd/icon/par_body05_01_b_32.png",
+				"assets_hd/icon/par_body05_01_m_32.png",
+				"assets_hd/icon/par_body05_02_b_32.png",
+				"assets_hd/icon/par_body05_02_m_32.png",
+				"assets_hd/icon/par_body05_03_b_32.png",
+				"assets_hd/icon/par_body05_03_m_32.png",
+				"assets_hd/icon/par_body05_04_b_32.png",
+				"assets_hd/icon/par_body05_04_m_32.png",
+				"assets_hd/icon/par_body05_32.png",
+				"assets_hd/icon/par_body06_01_b_32.png",
+				"assets_hd/icon/par_body06_01_m_32.png",
+				"assets_hd/icon/par_body06_02_b_32.png",
+				"assets_hd/icon/par_body06_02_m_32.png",
+				"assets_hd/icon/par_body06_03_b_32.png",
+				"assets_hd/icon/par_body06_03_m_32.png",
+				"assets_hd/icon/par_body06_32.png",
+				"assets_hd/icon/par_body07_01_b_32.png",
+				"assets_hd/icon/par_body07_01_m_32.png",
+				"assets_hd/icon/par_body07_02_b_32.png",
+				"assets_hd/icon/par_body07_02_m_32.png",
+				"assets_hd/icon/par_body07_03_b_32.png",
+				"assets_hd/icon/par_body07_03_m_32.png",
+				"assets_hd/icon/par_body07_32.png",
+				"assets_hd/icon/par_body08_01_b_32.png",
+				"assets_hd/icon/par_body08_01_m_32.png",
+				"assets_hd/icon/par_body08_02_b_32.png",
+				"assets_hd/icon/par_body08_02_m_32.png",
+				"assets_hd/icon/par_body08_03_b_32.png",
+				"assets_hd/icon/par_body08_03_m_32.png",
+				"assets_hd/icon/par_body08_32.png",
+				"assets_hd/icon/par_body09_01_b_32.png",
+				"assets_hd/icon/par_body09_01_m_32.png",
+				"assets_hd/icon/par_body09_02_b_32.png",
+				"assets_hd/icon/par_body09_02_m_32.png",
+				"assets_hd/icon/par_body09_03_b_32.png",
+				"assets_hd/icon/par_body09_03_m_32.png",
+				"assets_hd/icon/par_body09_32.png",
+				"assets_hd/icon/par_leg01_01_b_32.png",
+				"assets_hd/icon/par_leg01_01_m_32.png",
+				"assets_hd/icon/par_leg01_02_b_32.png",
+				"assets_hd/icon/par_leg01_02_m_32.png",
+				"assets_hd/icon/par_leg01_03_b_32.png",
+				"assets_hd/icon/par_leg01_03_m_32.png",
+				"assets_hd/icon/par_leg02_02_b_32.png",
+				"assets_hd/icon/par_leg02_02_m_32.png",
+				"assets_hd/icon/par_leg02_03_b_32.png",
+				"assets_hd/icon/par_leg02_03_m_32.png",
+				"assets_hd/icon/par_leg03_01_b_32.png",
+				"assets_hd/icon/par_leg03_01_m_32.png",
+				"assets_hd/icon/par_leg03_02_b_32.png",
+				"assets_hd/icon/par_leg03_02_m_32.png",
+				"assets_hd/icon/par_leg03_03_b_32.png",
+				"assets_hd/icon/par_leg03_03_m_32.png",
+				"assets_hd/icon/par_leg03_04_b_32.png",
+				"assets_hd/icon/par_leg03_04_m_32.png",
+				"assets_hd/icon/par_leg04_02_b_32.png",
+				"assets_hd/icon/par_leg04_02_m_32.png",
+				"assets_hd/icon/par_leg04_03_b_32.png",
+				"assets_hd/icon/par_leg04_03_m_32.png",
+				"assets_hd/icon/par_leg05_02_b_32.png",
+				"assets_hd/icon/par_leg05_02_m_32.png",
+				"assets_hd/icon/par_leg05_03_b_32.png",
+				"assets_hd/icon/par_leg05_03_m_32.png",
+				"assets_hd/icon/par_leg06_01_b_32.png",
+				"assets_hd/icon/par_leg06_01_m_32.png",
+				"assets_hd/icon/par_leg06_02_b_32.png",
+				"assets_hd/icon/par_leg06_02_m_32.png",
+				"assets_hd/icon/par_leg06_03_b_32.png",
+				"assets_hd/icon/par_leg06_03_m_32.png",
+				"assets_hd/icon/plu_comup_01_32.png",
+				"assets_hd/icon/plu_comup_02_32.png",
+				"assets_hd/icon/plu_comup_03_32.png",
+				"assets_hd/icon/plu_comup_04_32.png",
+				"assets_hd/icon/plu_L1_01_32.png",
+				"assets_hd/icon/plu_L1_02_32.png",
+				"assets_hd/icon/plu_L1_03_32.png",
+				"assets_hd/icon/plu_L2_01_32.png",
+				"assets_hd/icon/plu_L2_02_32.png",
+				"assets_hd/icon/plu_L2_03_32.png",
+					"assets_hd/icon/plu_L3_01_32.png",
+					"assets_hd/icon/plu_L3_02_32.png",
+					"assets_hd/icon/plu_L3_03_32.png",
+					"assets_hd/icon/plu_L3_04_32.png",
+					"assets_hd/icon/plu_L3_05_32.png",
+					"assets_hd/icon/plu_L3_06_32.png",
+					"assets_hd/icon/plu_L3_07_32.png",
+					"assets_hd/icon/plu_L4_01_32.png",
+					"assets_hd/icon/plu_L4_02_32.png",
+					"assets_hd/icon/plu_L4_03_32.png",
+					"assets_hd/icon/plu_L4_04_32.png",
+					"assets_hd/icon/plu_L4_05_32.png",
+					"assets_hd/icon/plu_L4_06_32.png",
+					"assets_hd/icon/plu_L4_07_32.png",
+					"assets_hd/icon/plu_L4_08_32.png",
+					"assets_hd/icon/plu_L4_09_32.png",
+					"assets_hd/icon/plu_L4_10_32.png",
+					"assets_hd/icon/plu_L5_01_32.png",
+					"assets_hd/icon/plu_L5_02_32.png",
+					"assets_hd/icon/plu_L5_03_32.png",
+					"assets_hd/icon/plu_L5_04_32.png",
+					"assets_hd/icon/plu_L5_05_32.png",
+					"assets_hd/icon/plu_L5_06_32.png",
+					"assets_hd/icon/plu_L5_07_32.png",
+					"assets_hd/icon/plu_L5_08_32.png",
+					"assets_hd/icon/plu_L6_01_32.png",
+					"assets_hd/icon/plu_L6_02_32.png",
+					"assets_hd/icon/plu_L6_03_32.png",
+					"assets_hd/icon/plu_L6_04_32.png",
+					"assets_hd/icon/plu_L6_05_32.png",
+					"assets_hd/icon/plu_L6_06_32.png",
+					"assets_hd/icon/plu_L6_07_32.png",
+					"assets_hd/icon/plu_L6_08_32.png",
+					"assets_hd/icon/plu_L6_09_32.png",
+					"assets_hd/icon/plu_L6_10_32.png",
+					"assets_hd/icon/plu_L7_01_32.png",
+					"assets_hd/icon/plu_L7_02_32.png",
+					"assets_hd/icon/plu_L7_03_32.png",
+					"assets_hd/icon/plu_L7_04_32.png",
+					"assets_hd/icon/plu_L7_05_32.png",
+					"assets_hd/icon/plu_L7_06_32.png",
+					"assets_hd/icon/plu_L7_07_32.png",
+					"assets_hd/icon/plu_L7_08_32.png",
+					"assets_hd/icon/plu_L7_09_32.png",
+					"assets_hd/icon/plu_L8_01_32.png",
+					"assets_hd/icon/plu_L8_02_32.png",
+					"assets_hd/icon/plu_L8_03_32.png",
+					"assets_hd/icon/plu_L8_04_32.png",
+					"assets_hd/icon/plu_L8_05_32.png",
+					"assets_hd/icon/plu_L8_06_32.png",
+					"assets_hd/icon/plu_L8_07_32.png",
+					"assets_hd/icon/plu_L8_08_32.png",
+					"assets_hd/icon/plu_L8_09_32.png",
+					"assets_hd/icon/plu_L9_01_32.png",
+					"assets_hd/icon/plu_L9_02_32.png",
+					"assets_hd/icon/plu_L9_03_32.png",
+					"assets_hd/icon/plu_L9_04_32.png",
+					"assets_hd/icon/plu_L9_05_32.png",
+					"assets_hd/icon/plu_L9_06_32.png",
+					"assets_hd/icon/plu_L9_07_32.png",
+					"assets_hd/icon/plu_L9_08_32.png",
+					"assets_hd/icon/plu_L9_09_32.png",
+					"assets_hd/icon/plu_L9_10_32.png",
+					"assets_hd/icon/plu_L9_11_32.png",
+					"assets_hd/ui/loading_0_32_dx.png",
+					"assets_hd/ui/loading_0_dx.jml",
+					"assets_hd/units/chr_UntAvenger_img1_32.png",
+					"assets_hd/units/chr_UntAvenger_img2_32.png",
+					"assets_hd/units/chr_UntAvenger_img3_32.png",
+					"assets_hd/units/chr_UntCyber_img1_32.png",
+					"assets_hd/units/chr_UntCyber_img2_32.png",
+					"assets_hd/units/chr_UntCyber_img3_32.png",
+					"assets_hd/units/chr_UntDoctor_img1_32.png",
+					"assets_hd/units/chr_UntDoctor_img2_32.png",
+					"assets_hd/units/chr_UntGolem_img1_32.png",
+					"assets_hd/units/chr_UntGolem_img2_32.png",
+					"assets_hd/units/chr_UntHacker_img2_32.png",
+					"assets_hd/units/chr_UntHacker_img3_32.png",
+					"assets_hd/units/chr_UntHealer_img0_32.png",
+					"assets_hd/units/chr_UntHealer_img1_32.png",
+					"assets_hd/units/chr_UntHealer_img2_32.png",
+					"assets_hd/units/chr_UntHealer_img3_32.png",
+					"assets_hd/units/chr_UntMarine_img2_32.png",
+					"assets_hd/units/chr_UntMarine_img3_32.png",
+					"assets_hd/units/chr_UntPEKKA_img0_32.png",
+					"assets_hd/units/chr_UntPEKKA_img1_32.png",
+					"assets_hd/units/chr_UntPEKKA_img2_32.png",
+					"assets_hd/units/chr_UntPEKKA_img3_32.png",
+					"assets_hd/units/chr_UntRider_img1_32.png",
+					"assets_hd/units/chr_UntRider_img2_32.png",
+					"assets_hd/units/chr_UntSniper_img2_32.png",
+					"assets_hd/units/chr_UntSniper_img3_32.png",
+					"assets_hd/units/chr_UntTank_img2_32.png",
+					"assets_hd/units/chr_UntTank_img3_32.png",
+					"assets_hd/units/chr_UntTNTMac_img1_32.png",
+					"assets_hd/units/chr_UntTNTMac_img2_32.png",
+					"assets_hd/units/chr_UntTNTMac_img3_32.png",
+					"assets_hd/units/chr_UntUAV_img1_32.png",
+					"assets_hd/units/chr_UntUAV_img2_32.png",
+					"assets_hd/units/chr_Worker_01_img0_32.png",
+					"assets_hd/units/par_body01_img0_32.png",
+					"assets_hd/units/par_body01_img1_32.png",
+					"assets_hd/units/par_body01_img2_32.png",
+					"assets_hd/units/par_body02_img0_32.png",
+					"assets_hd/units/par_body02_img1_32.png",
+					"assets_hd/units/par_body02_img2_32.png",
+					"assets_hd/units/par_body02_img3_32.png",
+					"assets_hd/units/par_body03_img0_32.png",
+					"assets_hd/units/par_body03_img1_32.png",
+					"assets_hd/units/par_body03_img2_32.png",
+					"assets_hd/units/par_body04_img0_32.png",
+					"assets_hd/units/par_body04_img1_32.png",
+					"assets_hd/units/par_body04_img2_32.png",
+					"assets_hd/units/par_body05_img0_32.png",
+					"assets_hd/units/par_body05_img1_32.png",
+					"assets_hd/units/par_body05_img2_32.png",
+					"assets_hd/units/par_body05_img3_32.png",
+					"assets_hd/units/par_body06_img0_32.png",
+					"assets_hd/units/par_body06_img1_32.png",
+					"assets_hd/units/par_body06_img2_32.png",
+					"assets_hd/units/par_body07_img0_32.png",
+					"assets_hd/units/par_body07_img1_32.png",
+					"assets_hd/units/par_body07_img2_32.png",
+					"assets_hd/units/par_body08_img0_32.png",
+					"assets_hd/units/par_body08_img1_32.png",
+					"assets_hd/units/par_body08_img2_32.png",
+					"assets_hd/units/par_body09_img0_32.png",
+					"assets_hd/units/par_body09_img1_32.png",
+					"assets_hd/units/par_body09_img2_32.png",
+					"assets_hd/units/par_leg01_img0_32.png",
+					"assets_hd/units/par_leg01_img1_32.png",
+					"assets_hd/units/par_leg01_img2_32.png",
+					"assets_hd/units/par_leg02_img0_32.png",
+					"assets_hd/units/par_leg02_img1_32.png",
+					"assets_hd/units/par_leg03_img0_32.png",
+					"assets_hd/units/par_leg03_img1_32.png",
+					"assets_hd/units/par_leg03_img2_32.png",
+					"assets_hd/units/par_leg03_img3_32.png",
+					"assets_hd/units/par_leg04_img0_32.png",
+					"assets_hd/units/par_leg04_img1_32.png",
+					"assets_hd/units/par_leg05_img0_32.png",
+					"assets_hd/units/par_leg05_img1_32.png",
+					"assets_hd/units/par_leg06_img0_32.png",
+					"assets_hd/units/par_leg06_img1_32.png",
+					"assets_hd/units/par_leg06_img2_32.png",
+					"assets_hd/units/tank_img0.png",
+					"assets_hd/units/tank_img0_32.png"
+					];
+			for(var i=0;i<clearFile.length;i++)
+			{
+				System.clearCache(this.page.genPageURL(clearFile[i]));
+			}
+		}
+	}
+//------------------------------------------------------
+
+		var flag=this.checkVo.createRoleFlag;
+		if(flag)
+		{
+			//有城了
+			this.loginGameServer();//Mark add 连接UC
+		}else{
+			//去新手指引
+//			this.loginGameServer();//需要修改
+//			return;
+			var flag=this.page.getCookie("M1-guide","bGuideBattle");
+			if(flag || (System.getProperty("LowMemory")=="yes"))
+			{
+				this.page.setCookie("Runtime","StartGame","GuideLoad",0);
+				switchApp(this.page.genPageURL("ui_guide.jml"));
+			}else{
+				var npcName="guideBattle";
+				var data={};
+				this.page.appEnv.loadFile(UIBody.genPageURL("levels/"+npcName+".json"),function(levelVO){
+					this.page.setCookie("M1-guide","bGuideBattle","1",0);
+					data.oppCity={Gold:100,Oil:100,level:1,name:"Mark",instances:levelVO};
+
+					this.page.setCookie("Runtime","BattleStage",toJSON(data),0);
+					this.page.setCookie("Runtime","StartGame","GuideBattle",0);
+					switchApp(this.page.genPageURL("ui_guideBattle.jml"));
+				},this);
+			}
+			if(window.AdSystem)
+			{
+				AdSystem.hide();
+				if(AdSystem.free)AdSystem.free();
+			}
+		}
+	};
+
+	__Page.appEnv.loginGameServer = function()
+	{
+		this.page.uiLoading.setText(this.page.STR.LoadUC,96);
+
+		var i,n,k=0,svr;
+		if(this.checkVo.servers)
+		{
+			n=this.checkVo.servers.length;
+			for(i=0;i<n;i++)
+			{
+				svr=this.checkVo.servers[i];
+				if(svr.id==this.serverId && svr.status==0)
+				{
+					k=1;
+					window.UserCenter="http://"+svr.url+"/UserCenter/dwr";
+					this.page.setCookie("Runtime","UserCenter",window.UserCenter,0);
+					window.PurchaseUrl="http://"+svr.url+"/UserCenter/action/pay.jsp";
+					this.page.setCookie("Runtime","PurchaseUrl",window.PurchaseUrl,0);
+					window.ClanDWRUrl=svr.clanUrl;
+					this.page.setCookie("Runtime","ClanDWRUrl",window.ClanDWRUrl,0);
+					window.ConfigDefPath=(svr.id==0)?"logic/def/":"logic/def"+svr.id+"/";
+					this.page.setCookie("Runtime","ConfigDefPath",window.ConfigDefPath,0);
+					break;
+				}
+			}
+		}
+		if(!k && !UIBody.getCookie("Runtime","bLocal"))
+		{
+			this.showPmtDlg(this.page.pmtInfo,0,{title:"",info:STR.SysFull,align:1,
+			pmtFunc:function(){
+				this.sureReloadGame();
+			},pmtObj:this,pmtParam:null});
+			return;
+		}
+
+		this.dwr = new this.page.DWRBase(window.UserCenter);
+		this.dwr.setPage(this.page);
+		this.newMsg(["M1UserCenterDwr","login",this.userId,this.userName,this.loginTime,0],{cb:function(svrVO){
+			if(!svrVO)
+			{
+				this.showPmtDlg(this.page.pmtInfo,0,{title:"",info:STR.SysFull,align:1,
+				pmtFunc:function(){
+					this.sureReloadGame();
+				},pmtObj:this,pmtParam:null});
+				return;
+			}else
+				this.loginGame(svrVO);
+		},cbobj:this});
+	};
+
+	__Page.appEnv.loginGame = function(svrVO)
+	{
+		//this.page.logicLoading.stepIn();
+
+		this.page.uiLoading.setText(this.page.STR.LoadCity,98);
+
+		if(!svrVO)
+		{
+			DBOut("++++loginGameServer error!!!");
+			this.sureReloadGame();
+			return;
+		}
+		window.GameSocketUrl=svrVO.host+":"+svrVO.port;
+		window.GameDWRUrl=window.GameDWRUrl.replace(/host/,svrVO.host);
+		window.GameDWRUrl=window.GameDWRUrl.replace(/port/,svrVO.port);
+		this.page.setCookie("Runtime","GameDWRUrl",window.GameDWRUrl,0);
+		this.page.setCookie("Runtime","GameSocketUrl",window.GameSocketUrl,0);
+		DBOut("+++game host:"+(svrVO.host+":"+svrVO.port));
+		this.dwr = new this.page.DWRBase(svrVO.host+":"+svrVO.port);
+
+		this.dwr.setPage(this.page);
+
+		var reqvo=[this.userId,1,"",0,0,0];
+		this.dwr.initSocket();
+		this.dwr.login(reqvo.join("!#"),this.startGame,this,1);
+	};
+	__Page.appEnv.startGame = function(vo,error,exInfo)
+	{
+		//vo=pxyLogin.convert(vo);
+		//DBOut("--convertloginvo="+toJSON(vo));
+		if(error==1)
+		{
+			this.page.uiLoading.setText(this.page.STR.InitCity,100);
+			this.showSearchAni(function(){
+				this.page.setCookie("Runtime","UserVO","",1,1);
+				//this.page.setCookie("Runtime","Save",toJSON(vo),0);
+				this.saveCityVO(vo,"Save");
+				this.page.setCookie("Runtime","StartGame","Load",0);
+				this.layer.resGC();
+				this.dlgLayer.resGC();
+				this.pmtLayer.resGC();
+				switchApp(this.page.genPageURL("ui_ais.jml"));
+				if(window.AdSystem)
+				{
+					AdSystem.hide();
+					if(AdSystem.free)AdSystem.free();
+				}
+			},this);
+		}else if(error==2){
+			if(this.page.uiLoading)
+				this.page.uiLoading.showPopAttack(vo+1000,this.loginGameServer,this);
+			else
+				Dialogs.alert(STR.PopupAttack);
+			return;
+		}else if(error==6){
+			this.showPmtDlg(this.page.pmtInfo,0,{title:"",info:STR.CityDataError,align:1,
+			pmtFunc:function(){
+				this.sureReloadGame();
+			},pmtObj:this,pmtParam:null});
+		}else{
+			//Dialogs.alert("login error "+vo.error+":"+exInfo);
+			this.showPmtDlg(this.page.pmtInfo,0,{title:"",info:exInfo,align:1,
+			pmtFunc:function(){
+				this.sureReloadGame();
+			},pmtObj:this,pmtParam:null});
+		}
+	};
+	__Page.appEnv.showSearchAni=function(fun,obj)
+	{
+		var appEnv=this;
+		if(!this.cloudAdd)
+		{
+			var layer=appEnv.uPopLayer;
+			var layer2=appEnv.uPop2Layer;
+			var box=layer.addHudItem({
+				type:"shape",id:"search",pos:[0,0,0],w:appEnv.scrSize[0],h:appEnv.scrSize[1],face_a:0,border_a:0,ui_event:1,fade:1,fade_size:1,fade_alpha:0,
+				//items:{type:"key",id:"blocker",pos:[0,0,0],w:appEnv.scrSize[0],h:appEnv.scrSize[1],key:0,ui_event:1,}
+			});
+			this.cloudL=box.appendNewChild({type:"sprite",id:"item_sp",exsp:"fog",pos:[960>>1,640>>1,0],onSpEvent:this.onEvent,w:Screen.w+100,h:Screen.h+100});
+			this.uav=box.appendNewChild({type:"sprite",id:"item_sp",exsp:"uav4putong",pos:[1270+150,320,0],fade:1,fade_alpha:1,fade_size:1,fade_pos:[0-100,320,0],display:0});
+			this.uav.onFadeDone=function()
+			{
+				if(fun && obj)fun.call(obj);
+			};
+			var imgLib=this.page.imgLib;
+			if(!this.loadBgHud)
+			{
+				this.loadBgHud=layer2.addHudItem({type:"icon",css:imgLib.pic_radar,pos:[appEnv.scrSize[0]>>1,appEnv.scrSize[1]-imgLib.pic_radar.h-10,0],anchor_v:1,anchor_h:1,filter:1,display:0,
+					fade:1,fade_size:1,fade_alpha:0,fade_pos:[appEnv.scrSize[0]>>1,appEnv.scrSize[1]-imgLib.pic_radar.h-10+3,0],//w:Math.floor(imgLib.pic_radar.w*960/Screen.w),h:Math.floor(imgLib.pic_radar.h*640/Screen.h),
+					items:[
+					{type:"icon",id:"load",css:imgLib.pic_radar_light,anchor_v:1,anchor_h:1,filter:1,},//w:Math.floor(imgLib.pic_radar_light.w*960/Screen.w),h:Math.floor(imgLib.pic_radar_light.h*640/Screen.h)
+					{type:"icon",css:imgLib.pic_wreaths,anchor_v:1,anchor_h:1,filter:1,display:1}
+					]});
+				this.loadHud=this.loadBgHud.getItemById("load");
+				this.addRotate_z(this.loadHud);
+			}
+		}
+		this.loadBgHud.setDisplay(0);
+		var t=20;
+		setFrameout(t-5,function(){
+			this.uav.fadeIn(60+80,0);
+			setFrameout(5,function(){
+				//this.loadBgHud.setDisplay(1);
+				this.loadBgHud.fadeIn(46);
+			},this);
+		},this)
+	};
+	__Page.appEnv.onEvent=function(event, frame)
+	{
+		if(event==-6)
+		{
+			this.setAutoFrame(0);
+			if(this.loadBgHud)this.loadBgHud.setDisplay(0);
+		}
+	};
+	__Page.appEnv.switchState = function(ui,logic,data,now)
+	{
+		if(this.state==this.STATE_NORMAL)
+		{
+			this.nextUI = ui;
+			this.nextLogic = logic;
+			this.stateData = data;
+			if(now)
+				this._switchState();
+			else
+				setTimeout(0,this._switchState,this);
+		}
+	}
+	__Page.appEnv._switchState = function()
+	{
+		//TODO: code this:
+		if(this.curUI)
+		{
+			this.curLogic.end();
+			this.curUI.leave(this.nextUI);
+		}
+		var preUI = this.curUI;
+		this.curUI = this.nextUI;
+		this.curLogic = this.nextLogic;
+		this.curUI.enter(preUI,this.curLogic);
+		this.curLogic.start(this.stateData);
+		this.nextUI = null;
+		this.nextLogic = null;
+		this.stateData = null;
+		this.state = this.STATE_SWITCH;
+		setFrameout(normalFadeInTime,function(){this.state = this.STATE_NORMAL;},this);
+	};
+
+	__Page.appEnv.onKey = function(msg,key,way,extra)
+	{
+		if(this.state==this.STATE_NORMAL)
+		{
+			var i,module;
+
+			if(way==1&&msg==1)
+			{
+				if(key==-7)
+				{
+					if(window.PUR)
+					{
+						if(PUR.exitGame())
+							return 1;
+					}
+					if(Dialogs.prompt(this.textLib.AskExit))
+					{
+						if(this.dwr)this.dwr.onFree();
+						exitApp();
+					}
+					return 1;
+				}
+			}
+
+			if(way==1&&msg==1)
+			{
+				var keyInfo = this.keys[key];
+				if(keyInfo&&keyInfo.act)
+				{
+					var params = [key];
+					if(keyInfo.params)
+						params.push.apply(params,keyInfo.params);
+					keyInfo.act.apply(keyInfo.actobj?keyInfo.actobj:this,params);
+					return 1;
+				}
+			}
+			if (this.curPmt)
+			{
+				return this.curPmt.onKey(msg, key, way, extra);
+			}
+			if (this.curDlg)
+			{
+				this.curDlg.onKey(msg, key, way, extra);
+			}
+			if(this.curLogic)
+			{
+				if(this.curLogic.onKey(msg,key,way,extra))
+					return 1;
+			}
+			if(this.curUI)
+			{
+				if(this.curUI.onKey(msg,key,way,extra))
+					return 1;
+			}
+		}
+		return 0;
+	};
+	__Page.appEnv.onMouse = function(event,key,x,y,penSize,way)
+	{
+		var xx=x/Screen.w*ScreenW_;
+		var yy=y/Screen.h*ScreenH_;
+		if(way==1)
+		{
+			switch(key)
+			{
+				case 0:
+					if(this._mouseDown)
+						return 0;
+					else
+					{
+						this._mouseDown = true;
+						this.oldX = x;
+						this.oldY = y;
+					}
+					break;
+				case 1:
+					break;
+				case 2:
+					if(this._mouseDown)
+						this._mouseDown = false;
+					else
+						return 0;
+					break;
+			}
+		}
+		if(this.state==this.STATE_NORMAL)
+		{
+			if(way==1&&x>=0&&x<=Screen.w&&y>=0&&y<=Screen.h)
+			{
+				var i;
+				if(this.curLogic)
+				{
+					if(this.curLogic.onMouse(event,key,x,y,penSize,way))
+						return 1;
+				}
+			}
+
+		}
+		return 0;
+	};
+
+	__Page.appEnv.flashItem = function(timer,item)
+	{
+		if(item.f)
+			item.fadeOut(timer,0);
+		else
+			item.fadeIn(timer,0);
+		item.f = !item.f;
+		item.flash = setFrameout(timer,function(){this.flashItem(timer,item);},this);
+	};
+	__Page.appEnv.stopFlash = function(item)
+	{
+		if(item.flash)
+		{
+			clearTimeout(item.flash);
+			item.flash = null;
+		}
+		if(item.f)
+		{
+			item.fadeOut(1,0);
+			item.f = !item.f;
+		}
+	};
+	__Page.appEnv.newMsg = function(params,meta)
+	{
+		if(meta&&meta.retryTime&&!meta.storeParams)
+		{
+			meta.curr = 1;
+			meta.storeParams = [];
+			meta.storeParams = meta.storeParams.concat(params);
+		}
+		params.push(this.normalMeta(meta));
+		return this.dwr.DWRCall.apply(this.dwr,params);
+	};
+	__Page.appEnv.newGetMsg = function(instanceId,messageId,params,meta)
+	{
+		return this.newMsg(["DwrKing","getMsg",[{instanceId:instanceId,messageId:messageId,message:params}]],meta);
+	};
+	__Page.appEnv.newSetMsg = function(groupId,instanceId,messageId,params,type,meta)
+	{
+		var now = this.page.Game.getTime();
+		var gameMessage = {userId:this.userId,groupId:groupId,instanceId:instanceId,messageType:messageId,body:params,messageTime:now};//,type:type?type:0
+		if(this.page.moduleQuest)
+			this.page.moduleQuest.resetQuests();
+		var i,msgEx = "";
+
+		return this.dwr.seqCall("M1Dwr","setMessage",gameMessage,this.normalMeta(meta));
+	};
+	__Page.appEnv.normalMeta = function(meta)
+	{
+		var self = this;
+		return {
+			callback:function(backinfo)
+			{
+				if(meta&&meta.cb&&typeof(backinfo)!="undefined")
+				{
+					var vo;
+					if(backinfo && backinfo.vojson)
+						vo = fromJSON(backinfo.vojson);
+					else
+						vo = backinfo;
+					meta.cb.call(meta.cbobj?meta.cbobj:this,vo);
+				}
+			},
+			exceptionHandler:function(err,msg)
+			{
+				if(meta)
+				{
+					if(meta.retryTime)
+					{
+						if(meta.curr<=meta.retryTime)
+						{
+							meta.curr++;
+							setFrameout(0,
+								function()
+								{
+									var params = [];
+									params = params.concat(meta.storeParams);
+									var newdwr = this.newMsg(params,meta);
+									if(meta.rtcb)
+										meta.rtcb.call(meta.rtcbobj?meta.rtcbobj:this,newdwr);
+								}
+							,self);
+							return;
+						}
+					}
+					else if(meta.eh)
+					{
+						meta.eh.call(meta.ehobj?meta.ehobj:this,err,msg);
+						return;
+					}
+				}
+				DBOut(self.page.STR.Error+"("+msg+")");
+
+				Dialogs.alert(self.page.STR.Error);
+				self.sureReloadGame();
+			}
+		};
+	};
+
+	__Page.appEnv.arrayContains = function(array,obj)
+	{
+		var i;
+		for(i=0;i<array.length;i++)
+		{
+			if(array[i]==obj)
+				return i;
+		}
+		return -1;
+	};
+	__Page.appEnv.reloadGame = function(msg,cb,cbobj)
+	{
+		//this.confirmBoard.show(msg?msg:this.page.STR.NetworkError,"",this.sureReloadGame,this,cb,cbobj);
+		if(Dialogs.prompt(msg?msg:this.page.STR.Error))
+		{
+			this.sureReloadGame();
+		}else{
+			if(cb && cbobj)cb.call(cbobj);
+		}
+	};
+	__Page.appEnv.sureReloadGame = function()
+	{
+		if(this.dwr)this.dwr.onFreeSocket();
+		this.page.setCookie("Runtime","UserVO","",1,1);
+		this.page.setCookie("Runtime","GameDWRUrl","",0);
+		switchApp(mainPath);
+	};
+
+	__Page.appEnv.hudIn=function(hud,t,fun,obj,param)
+	{
+		if(!hud)
+		{
+			DBOut("hudIn item is null!!!");
+			return;
+		}
+		if(!hud.getDisplay() || hud.onOut)
+		{
+			hud.fadeIn(t,0);
+			hud.onOut=0;
+		}
+		hud.onFadeDone=function(act)
+		{
+			if(act && fun && obj){
+				setFrameout(0,function(){
+					fun.call(obj,param);
+					fun=null;
+					obj=null;
+				},this);
+			}else{
+
+			}
+		}
+	};
+	__Page.appEnv.hudOut=function(hud,t,fun,obj,param)
+	{
+		if(!hud)
+		{
+			DBOut("hudOut item is null!!!");
+			return;
+		}
+		hud.onOut=1;
+		if(hud.getDisplay())
+		{
+			hud.fadeOut(t,0);
+		}
+		hud.onFadeDone=function(act)
+		{
+			if(!act && fun && obj){//fadeOut之后不能立刻删除该控件
+				setFrameout(0,function(){
+					fun.call(obj,param);
+					fun=null;
+					obj=null;
+				},this);
+			}else{
+
+			}
+		}
+	};
+	//--------------------------------------------------------------------------
+	//与对1级话框相关的函数
+	//--------------------------------------------------------------------------
+	{
+		//显示、切换至指定对话框
+		__Page.appEnv.switchDlg=function(dlg,now,param)
+		{
+			DBOut("appEnv.switchDlg:"+(dlg?dlg.name:"null"));
+			if(dlg && this.nextDlg==dlg)
+				return;
+			if(this.curDlg==dlg)
+				return;
+			this.nextDlg=dlg;
+			this.dlgParam=param;
+			if(now)
+			{
+				this._switchDlg();
+			}
+			else
+			{
+				this._switchDlg();
+			//	this.layer.setTimeout(0,this._switchDlg,this);
+			}
+		};
+
+		//关闭对话框并切换至指定的State
+		__Page.appEnv.closeDlg=function(state,param,now)
+		{
+			DBOut("appEnv.closeDlg");
+			if(this.curDlg && this.curDlg.closeItem)
+				this.curDlg.closeItem.setEnabled(0);
+			this.switchDlg(null,now,null);
+			if(state)
+			{
+				this.switchState(state,now,param);
+			}
+		};
+
+		__Page.appEnv._switchDlg=function()
+		{
+			DBOut("appEnv._switchDlg, cur:"+(this.curDlg?this.curDlg.name:"null")+", next:"+(this.nextDlg?this.nextDlg.name:"null"));
+			var old=this.curDlg;
+			var dlg=this.nextDlg;
+			if(old)
+			{
+				old.leave(dlg);
+				if(old.dlgPage)
+				{
+					old.dlgPage.dlgUsage=0;
+				}
+			}
+			else
+			{
+				if(!this.curDlg)
+				{
+					DBOut("will de-maketop dlgLayer");
+					//if(this.page.stateCity && !this.dlgLayer.isTop())
+					if(!this.dlgLayer.isTop())
+					{
+						//this.page.stateCity.pauseLUDT();
+						this.dlgLayer.makeTop();
+					}
+					this.dlgLayer.setDisplay(1);
+					this.dlgBox.setDisplay(1);
+					this.dlgBoxDock.adRot.setCurValue([-3.1415926535*0.52,0,0]);
+					this.dlgBoxDock.adSize.setCurValue([1,1,1]);
+					this.dlgBoxDock.adRot.startAni(1,[0,0,0],0);
+					this.dlgBoxDock.adSize.startAni(1,[1,1,1],0);
+					this.hudIn(this.dlgMask,10);
+				}
+			}
+			this.curDlg=dlg;
+			if(dlg)
+			{
+				dlg.enter(old,this.dlgParam);
+				this.nextDlg=null;
+			}
+			else
+			{
+				setFrameout(0,function(){
+					if(!this.curDlg && !this.curPmt && this.page.vwHomeStage && this.page.vwHomeStage.addBtmBtns)
+						this.page.vwHomeStage.addBtmBtns();
+				},this)
+				this.dlgBoxDock.adSize.startAni(1,[1,0,1],0);
+				this.dlgLayer.setFrameout(10,function(){this.dlgBoxDock.adSize.startAni(1,[0,0,1],0);},this);
+				this.dlgLayer.setFrameout(20,this._dlgClosed,this);
+				this.dlgMask.fadeOut(10,0);
+			}
+		};
+
+		__Page.appEnv._dlgClosed=function()
+		{
+			var i,n,list;
+			if(this.nextPageDlgURL)
+			{
+				this.openPageDlg(this.nextPageDlgURL,this.nextPageDlgParam);
+				this.nextPageDlgURL=null;
+				this.nextPageDlgParam=null;
+			}
+			else
+			{
+				if(!this.curPmt)//【zz】添加判断
+					this.layer.makeTop();
+				else
+					this.pmtLayer.makeTop();
+				this.dlgLayer.setDisplay(0);
+				this.dlgBox.setDisplay(0);
+				if(this.page.stateCity)
+				{
+					this.page.stateCity.resumeLUDT();
+				}
+			}
+			if(this.dlgBox)//【zz】修改
+			{
+//				this.dlgBoxDock.removeChild(this.dlgBox);
+				this.dlgBox.removeAllChild();
+			}
+//			this.dlgBox=this.dlgBoxDock.appendNewChild({
+//				type:"shape",id:"dlgBox",pos:[-this.scrSize[0]/2,-this.scrSize[1]/2,0],w:this.scrSize[0],h:this.scrSize[1],border_a:0,face_a:0,ui_event:1,
+//				display:0
+//			});
+			list=this.subDlgPages;
+			n=list.length;
+			for(i=0;i<n;i++)
+			{
+				DBOut("Will close dialog's page");
+				if(list[i].dlgUsage<1)
+				{
+					this.page.removeChild(list[i]);
+					list.splice(i,1);
+					i--;n--;
+				}
+			}
+		};
+
+		//打开一个以Page形式存在JML文件里的对话框
+		__Page.appEnv.openPageDlg=function(url,param)
+		{
+			var subpage;
+			var page;
+			if(this.curDlg)//当前已经打开了一个对话框了……
+			{
+				this.nextPageDlgURL=url;
+				this.nextPageDlgParam=param;
+				this.closeDlg();
+				return;
+			}
+			page=this.page;
+			subpage=createItemByType("page");
+			page.appendChild(subpage);
+			subpage.gamePage=page;
+			this.pageDlgParam=param;
+			this.subDlgPages.push(subpage);
+			subpage.openURL(url);
+			subpage.dlgUsage=1;
+			this.hudIn(this.dlgMask,10);
+			if(this.page.vwHomeStage && this.page.vwHomeStage.clearBtmBtns)
+				this.page.vwHomeStage.clearBtmBtns();
+			//TOOD: Show loading mark:
+		};
+
+		__Page.appEnv.onPageDlgOpen=function(subpage)
+		{
+			var dlg;
+			DBOut("subPageOpened!");
+			dlg=subpage.pageDialog;
+			if(dlg)
+			{
+				dlg.dlgPage=subpage;
+				dlg.init(this);
+				this.nextDlg=dlg;
+				this.dlgParam=this.pageDlgParam;
+				this.layer.setTimeout(0,this._switchDlg,this);
+			}
+			//TODO: Hide loading mark:
+		}
+	}
+
+	__Page.appEnv.getBindEmail=function()
+	{
+		var cookie=this.page.getCookie(cookieDomain,"email");
+		if(cookie)
+			return cookie;
+		else
+			return null;
+	};
+
+	__Page.appEnv.getTextSize=function(text,font,wrap,w,h)
+	{
+		var hud=this.pmtLayer.addHudItem({type:"text",pos:[0,0,0],w:w?w:100,h:h?h:100,text:text,font_size:font,wrap:wrap?wrap:0,display:0});
+		var size={w:hud.getTextW(),h:hud.getTextH()};
+		this.pmtLayer.removeHudItem(hud);
+		return size;
+	};
+
+	__Page.appEnv.saveCityVO=function(vo,name)
+	{
+		var bld=vo.instances;
+		vo.instances=[];
+		this.page.setCookie("Runtime",name,toJSON(vo),0);
+		this.page.setCookie("Runtime",name+"Bld",toJSON(bld),0);
+		vo.instances=bld;
+	};
+
+	__Page.appEnv.getCityVO=function(name)
+	{
+		var saveTxt=this.page.getCookie("Runtime",name);
+		if(saveTxt)
+		{
+			saveTxt=fromJSON(saveTxt);
+			var bld=this.page.getCookie("Runtime",name+"Bld");
+			if(bld)
+			{
+				bld=fromJSON(bld);
+			}
+			saveTxt.instances=bld;
+		}else{
+			saveTxt=this.page.getCookie("COC",name);
+			if(saveTxt)
+			{
+				saveTxt=fromJSON(saveTxt);
+			}
+		}
+		return saveTxt;
+	};
+	__Page.appEnv.addRotate_z=function(div,s)
+	{
+		if(!div)return;
+		if(!div.rotatezAni)div.rotatezAni = div.addAdTMFirst("rotate");
+		if(!s)s=0.2;
+		div.rotatezAni.startAni(2,[0,0,s],0);
+	};
+
+	__Page.appEnv.loadFile=function(path,fun,obj)
+	{
+		var path,stub;
+		stub=this.page.loadFileText(path);
+		stub.onLoad=this.includeFile;
+		stub.onError=this.includeFileError;
+		stub.state=this;
+		stub.state.path=path;
+		stub.state.fun=fun;
+		stub.state.obj=obj;
+	};
+
+	__Page.appEnv.includeFile=function()
+	{
+		var self=this.state;
+		var text;
+		text="(function(page){return "+this.getText()+";})()";
+		text=eval(text);
+		DBOut("====text="+text);
+		if(self.fun && self.obj)
+			self.fun.call(self.obj,text);
+
+	};
+	__Page.appEnv.includeFileError=function()
+	{
+		var self=this.state;
+		DBOut("+++++loadFile error:"+self.path);
+	};
+}

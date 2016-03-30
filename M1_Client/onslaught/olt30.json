@@ -1,0 +1,5 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntPEKKA",level:1,num:1},
+	{wave:2,delaytime:200,edge:1,type:"UntPEKKA",level:1,num:1},
+	{wave:3,delaytime:300,edge:2,type:"UntPEKKA",level:1,num:1},
+]

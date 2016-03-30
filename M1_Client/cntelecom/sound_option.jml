@@ -1,0 +1,73 @@
+﻿if(!__Page.soundOption)
+{
+	__Page.soundOption = {
+			page:__Page,
+		};
+	__Page.soundOption.loadConfig = function()
+	{
+		this.btnW = 56;
+		this.btnH = 28;
+		this.hspace = 5;
+		this.vspace = 5;
+		var imgLib = this.page.imgLib;
+		this.btnCSS = {ui_event:1,display:1,fillter:1,css:imgLib.subpage_btn_u,w:this.btnW,h:this.btnH,
+				state_up:imgLib.subpage_btn_u,
+				state_down:imgLib.subpage_btn_d,
+			};
+	};
+	__Page.soundOption.enter = function(env,param)
+	{
+		this.env = env;
+		this.loadConfig();
+		DBOut("enter")
+		this.num = 111;
+		this.bg = this.env.bgLayer.addHudItem({
+			type:"icon",css:this.page.imgLib.sound_option_bg,w:ScreenW,h:ScreenH
+		});
+		var key = -101;
+		this.env.keys[""+key] = {act:this.turnOn,actobj:this};
+		this.turnOnbtn=this.env.uiLayer.addHudItem({
+			type:"key",key:key,pos:[this.hspace,ScreenH-this.btnH-this.hspace,0],css:this.btnCSS,
+			items:[{type:"text",pos:[this.btnW>>1,this.btnH>>1,0],w:this.btnW,h:this.btnH,anchor_h:1,anchor_v:1,align_h:1,align_v:1,text:"是"}]
+		});
+		key -= 1;
+		this.env.keys[""+key] = {act:this.turnOff,actobj:this};
+		this.turnOffbtn=this.env.uiLayer.addHudItem({
+			type:"key",key:key,pos:[ScreenW-this.btnW-this.vspace,ScreenH-this.btnH-this.hspace,0],css:this.btnCSS,
+			items:[{type:"text",pos:[this.btnW>>1,this.btnH>>1,0],w:this.btnW,h:this.btnH,anchor_h:1,anchor_v:1,align_h:1,align_v:1,text:"否"}]
+		});
+	};
+	__Page.soundOption.leave = function()
+	{
+		if(this.bg)
+		{
+			this.env.bgLayer.removeHudItem(this.bg);
+			this.bg = null;
+		}
+		if(this.turnOnbtn)
+		{
+			this.env.uiLayer.removeHudItem(this.turnOnbtn);
+			this.turnOnbtn = null;
+		}
+		if(this.turnOffbtn)
+		{
+			this.env.uiLayer.removeHudItem(this.turnOffbtn);
+			this.turnOffbtn = null;
+		}
+		//this.page.onExit();
+		if(this.page.showLogo)
+			this.page.showLogo.enter(this.env);
+		else
+			this.page.onExit();
+	};
+	__Page.soundOption.turnOn = function()
+	{
+		this.env.soundOption("on");
+		this.leave();
+	};
+	__Page.soundOption.turnOff = function()
+	{
+		this.env.soundOption("off");
+		this.leave();
+	};
+}

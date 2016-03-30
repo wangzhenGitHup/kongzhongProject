@@ -1,0 +1,14 @@
+//For image: battleEx_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("battleEx_0_32.png"));
+	this.imgInfos["battleEx_0_32"]={w:512,h:512};
+	this["olt_tip"]={tex_u:2/512, tex_v:1/512, tex_w:508/512, tex_h:125/512, w:508, h:125, tex:this.imgList[id]};
+	this["pic_extra_bg"]={tex_u:2/512, tex_v:130/512, tex_w:164/512, tex_h:140/512, w:164, h:140, tex:this.imgList[id]};
+	this["pic_loot"]={tex_u:2/512, tex_v:275/512, tex_w:164/512, tex_h:210/512, w:164, h:210, tex:this.imgList[id]};
+	this["pic_cube_bg"]={tex_u:169/512, tex_v:129/512, tex_w:150/512, tex_h:166/512, w:150, h:166, tex:this.imgList[id]};
+	this["pic_loot_back"]={tex_u:170/512, tex_v:299/512, tex_w:164/512, tex_h:210/512, w:164, h:210, tex:this.imgList[id]};
+}

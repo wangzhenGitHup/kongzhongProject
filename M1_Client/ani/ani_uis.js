@@ -1,0 +1,31 @@
+{
+	name:"hpbar",type:"bar",libs:[page.genPageURL(window.imgPath+"/ui/ui.spl")],
+	auto_hide:1,show_time:100,hide_factor:0.05,
+	image_dock:"hpbar_dock",image_bar:"hpbar_bar",w:72,h:20,bar_x:2,bar_y:2,show_mode:1,
+	color_segs:[
+		{val:0.6,color_r:0,color_g:255,color_b:0,color_a:255},
+		{val:0.4,color_r:255,color_g:255,color_b:0,color_a:255},
+		{val:0.2,color_r:200,color_g:100,color_b:0,color_a:255},
+		{val:0,color_r:200,color_g:0,color_b:0,color_a:255}
+	]
+},
+{
+	name:"mark_movebld",type:"sprite",libs:[page.genPageURL(window.imgPath+"/buildings/buildings.spl")],
+	actions:[
+		{name:"dir_1",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"ui_mark_dit_1"}]},
+		{name:"dir_2",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"ui_mark_dit_2"}]},
+		{name:"dir_3",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"ui_mark_dit_3"}]},
+		{name:"dir_4",subani:[{name:"stay",weight:10,loop:1,dit_mode:0,sprite:"ui_mark_dit_4"}]},
+	]
+},
+{
+	name:"foehpbar",type:"bar",libs:[page.genPageURL(window.imgPath+"/ui/ui.spl")],
+	auto_hide:0,show_time:100,hide_factor:0.05,
+	image_dock:"hpbar_dock",image_bar:"hpbar_bar",w:72,h:20,bar_x:2,bar_y:2,show_mode:1,
+	color_segs:[
+		{val:0.6,color_r:51,color_g:153,color_b:255,color_a:255},
+		{val:0.4,color_r:51,color_g:153,color_b:255,color_a:255},
+		{val:0.2,color_r:51,color_g:153,color_b:255,color_a:255},
+		{val:0,color_r:51,color_g:153,color_b:255,color_a:255}
+	]
+},

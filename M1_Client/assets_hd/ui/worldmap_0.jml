@@ -1,0 +1,16 @@
+//For image: worldmap_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("worldmap_0_32.png"));
+	this.imgInfos["worldmap_0_32"]={w:512,h:1024};
+	this["pic_closebg"]={tex_u:4/512, tex_v:3/1024, tex_w:96/512, tex_h:89/1024, w:96, h:89, tex:this.imgList[id]};
+	this["pic_dot"]={tex_u:459/512, tex_v:3/1024, tex_w:10/512, tex_h:10/1024, w:10, h:10, tex:this.imgList[id]};
+	this["pic_level_d"]={tex_u:108/512, tex_v:36/1024, tex_w:55/512, tex_h:55/1024, w:55, h:55, tex:this.imgList[id]};
+	this["pic_level_g"]={tex_u:172/512, tex_v:4/1024, tex_w:55/512, tex_h:55/1024, w:55, h:55, tex:this.imgList[id]};
+	this["pic_level_u"]={tex_u:236/512, tex_v:4/1024, tex_w:55/512, tex_h:55/1024, w:55, h:55, tex:this.imgList[id]};
+	this["pic_pve_star"]={tex_u:108/512, tex_v:4/1024, tex_w:24/512, tex_h:24/1024, w:24, h:24, tex:this.imgList[id]};
+	this["pic_searchbg"]={tex_u:4/512, tex_v:100/1024, tex_w:448/512, tex_h:640/1024, w:448, h:640, tex:this.imgList[id]};
+}

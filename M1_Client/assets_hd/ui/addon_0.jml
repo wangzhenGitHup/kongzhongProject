@@ -1,0 +1,20 @@
+//For image: addon_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("addon_0_32.png"));
+	this.imgInfos["addon_0_32"]={w:1024,h:1024};
+	this["bg_addon"]={tex_u:4/1024, tex_v:3/1024, tex_w:800/1024, tex_h:346/1024, w:800, h:346, tex:this.imgList[id]};
+	this["btn_btmfindbox"]={tex_u:811/1024, tex_v:4/1024, tex_w:105/1024, tex_h:104/1024, w:105, h:104, tex:this.imgList[id]};
+	this["pic_joint_empty"]={tex_u:811/1024, tex_v:115/1024, tex_w:122/1024, tex_h:122/1024, w:122, h:122, tex:this.imgList[id]};
+	this["pic_joint_rotate"]={tex_u:812/1024, tex_v:244/1024, tex_w:128/1024, tex_h:128/1024, w:128, h:128, tex:this.imgList[id]};
+	this["pic_enhance"]={tex_u:3/1024, tex_v:354/1024, tex_w:554/1024, tex_h:179/1024, w:554, h:179, tex:this.imgList[id]};
+	this["pic_getbox"]={tex_u:3/1024, tex_v:538/1024, tex_w:554/1024, tex_h:179/1024, w:554, h:179, tex:this.imgList[id]};
+	this["pic_getboxbig"]={tex_u:3/1024, tex_v:722/1024, tex_w:554/1024, tex_h:179/1024, w:554, h:179, tex:this.imgList[id]};
+	this["pic_treasurcovere"]={tex_u:562/1024, tex_v:377/1024, tex_w:276/1024, tex_h:142/1024, w:276, h:142, tex:this.imgList[id]};
+	this["pic_treasure"]={tex_u:561/1024, tex_v:522/1024, tex_w:294/1024, tex_h:204/1024, w:294, h:204, tex:this.imgList[id]};
+	this["pic_goldlight"]={tex_u:561/1024, tex_v:729/1024, tex_w:246/1024, tex_h:174/1024, w:246, h:174, tex:this.imgList[id]};
+	this["pic_joint_bg"]={tex_u:812/1024, tex_v:732/1024, tex_w:168/1024, tex_h:168/1024, w:168, h:168, tex:this.imgList[id]};
+}

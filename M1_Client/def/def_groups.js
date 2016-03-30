@@ -1,0 +1,14 @@
+﻿{id:0,name:"User Buildings",attack_groups:[3,2,11,13],move_block_groups:[],hpbar_def:"hpbar"},
+{id:1,name:"User Units",attack_groups:[13,3,2,11],move_block_groups:[],hpbar_def:"hpbar"},
+{id:2,name:"Foe Buildings",attack_groups:[1,0,10,12],move_block_groups:[],hpbar_def:"hpbar"},
+{id:3,name:"Foe Units",attack_groups:[12,1,0,10],move_block_groups:[],hpbar_def:"foehpbar"},
+{id:4,name:"Damage Spell",attack_groups:[13,3,2,11],move_block_groups:[],hpbar_def:"hpbar"},//伤害魔法
+{id:5,name:"Useful Spell",attack_groups:[12,0,1,10],move_block_groups:[],hpbar_def:"hpbar"},//加血魔法
+{id:6,name:"Foe Spell",attack_groups:[1,0],move_block_groups:[],hpbar_def:"hpbar"},
+{id:7,name:"User Projectile",attack_groups:[3,2],move_block_groups:[],hpbar_def:"hpbar"},
+{id:8,name:"Foe Projectile",attack_groups:[1,0],move_block_groups:[],hpbar_def:"hpbar"},
+{id:9,name:"Scene Items",attack_groups:[],move_block_groups:[],hpbar_def:"hpbar"},
+{id:10,name:"User Healer",attack_groups:[12,0,1,10],move_block_groups:[],hpbar_def:"hpbar"},
+{id:11,name:"Foe Healer",attack_groups:[13,2,3,11],move_block_groups:[],hpbar_def:"foehpbar"},
+{id:12,name:"User Hanger",attack_groups:[13,2,3,11],move_block_groups:[],hpbar_def:"hpbar"},
+{id:13,name:"Foe Hanger",attack_groups:[12,0,1,10],move_block_groups:[],hpbar_def:"foehpbar"},

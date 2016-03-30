@@ -1,0 +1,17 @@
+﻿<jml>
+<body>
+{body:{page_mode:"ui",w:Screen.w,h:Screen.h}}
+</body>
+<script>
+	if(System.getProperty("LowMemory")!="yes")
+	{
+		//if (System.setResResetMode)
+		//	System.setResResetMode(1);
+		//if (System.setPageCacheMode)
+		//	System.setPageCacheMode(1);
+		//if (System.setCodeSegCacheEnabled && System.getProperty("DeviceType")=="IPHONE")
+	  //  System.setCodeSegCacheEnabled(1);
+	 }
+	switchApp(__Page.genPageURL("main.jml"));
+</script>
+</jml>

@@ -1,0 +1,86 @@
+﻿//---------------------------------------------------------------------------
+//链表类型
+if(!window.aisTypes.link)
+{
+	//TODO:这个是不是应该是函数?
+	window.aisTypes.link=function()
+	{
+		this.pre=null;
+		this.next=null;
+	};
+
+	window.aisTypes.link.addNext=function(item)
+	{
+		item.pre=this;
+		item.next=this.next;
+		if(this.next)
+		{
+			this.next.pre=item;
+		}
+		this.next=item;
+	};
+
+	//---------------------------------------------------------------------------
+	window.aisTypes.link.addLast=function(item)
+	{
+		var cur;
+		cur=this;
+		while(cur.next)
+		{
+			cur=cur.next;
+		}
+		cur.next=item;
+		item.pre=cur;
+		item.next=null;
+	};
+
+	//---------------------------------------------------------------------------
+	window.aisTypes.link.remove=function()
+	{
+		if(this.pre)
+			this.pre.next=this.next;
+		if(this.next)
+			this.next.pre=this.pre;
+		this.pre=null;
+		this.next=null;
+	};
+
+	//---------------------------------------------------------------------------
+	window.aisTypes.link._addLinkToObj=function(host,pname)
+	{
+		if(host[pname])
+		{
+			host[pname].addLast(this);
+		}
+		else
+		{
+			host[pname]=this;
+			this.next=null;
+			this.pre=null;
+		}
+	};
+
+	//---------------------------------------------------------------------------
+	window.aisTypes.link._removeLinkFmObj=function(host,pname)
+	{
+		if(host[pname]==this)
+		{
+			host[pname]=this.next;
+			this.remove();
+		}
+		else
+		{
+			var cur;
+			cur=host[pname].next;
+			while(cur)
+			{
+				if(cur==this)
+				{
+					this.remove();
+					return;
+				}
+				cur=cur.next;
+			}
+		}
+	};
+}

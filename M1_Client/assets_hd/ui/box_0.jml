@@ -1,0 +1,13 @@
+//For image: box_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("box_0_32.png"));
+	this.imgInfos["box_0_32"]={w:1024,h:512};
+	this["pic_box_bg"]={tex_u:4/1024, tex_v:3/512, tex_w:800/1024, tex_h:426/512, w:800, h:426, tex:this.imgList[id]};
+	this["pic_box_normal"]={tex_u:812/1024, tex_v:4/512, tex_w:96/1024, tex_h:96/512, w:96, h:96, tex:this.imgList[id]};
+	this["pic_box_rare"]={tex_u:809/1024, tex_v:105/512, tex_w:110/1024, tex_h:110/512, w:110, h:110, tex:this.imgList[id]};
+	this["pic_box_sel"]={tex_u:811/1024, tex_v:219/512, tex_w:106/1024, tex_h:106/512, w:106, h:106, tex:this.imgList[id]};
+}

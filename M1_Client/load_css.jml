@@ -1,0 +1,21 @@
+﻿if(!__Page.cssLib)
+{
+	__Page.cssLib={};
+	__Page.cssLib.page=__Page;
+	__Page.cssLib.initSteps = 0;
+}
+__Page.cssLib.initSteps++;
+__Page.cssLib["genPath_"+(__Page.cssLib.initSteps-1)] = function(pName)
+{
+	return this.page.genPageURL(imgPath+"/ui/"+pName);
+};
+__Page.cssLib["init_"+(__Page.cssLib.initSteps-1)] = function()
+{
+	this.genPath = this["genPath_"+(this.initSteps-1)];
+	this["normal_btn"] = {w:112,h:42,frame_image:this.genPath("confirm_btn_u.png"),frame_size:[36,42,40,0],align_h:"c",align_v:"m"};
+	this["normal_txt"] = {wrap:0,font_size:14,color_r:255,color_g:255,color_b:196,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255};
+	this["protect_txt"] = {wrap:0,font_size:14,color_r:171,color_g:247,color_b:14,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255};
+	this["member_txt"] = {wrap:0,font_size:14,color_r:103,color_g:204,color_b:255,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255};
+	this.genPath = null;
+};
+__Page.cssLib["init_"+(__Page.cssLib.initSteps-1)]();

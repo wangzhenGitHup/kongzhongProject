@@ -1,0 +1,128 @@
+﻿{
+	controlCD:40*20,allskillCD:40*3,
+	skill:{
+		Lightning:{type:"Lightning",baseGem:5,incGem:10,skillCD:40*20},
+		Heal:{type:"Heal",baseGem:5,incGem:10,skillCD:40*25},
+		VVirus:{type:"VVirus",baseGem:5,incGem:10,skillCD:40*25},
+	},
+	oppunits:[
+		{wave:1,delaytime:100,edge:2,type:"UntMarine",level:3,num:8},
+		{wave:2,delaytime:101,edge:3,type:"UntMarine",level:3,num:8},
+		{wave:3,delaytime:102,edge:2,type:"UntMarine",level:3,num:8},
+		{wave:4,delaytime:103,edge:3,type:"UntMarine",level:3,num:8},
+		
+		{wave:5,delaytime:104,edge:2,type:"UntMarine",level:3,num:8},
+		{wave:6,delaytime:105,edge:3,type:"UntMarine",level:3,num:8},
+		{wave:7,delaytime:106,edge:2,type:"UntMarine",level:3,num:8},
+		{wave:8,delaytime:107,edge:3,type:"UntMarine",level:3,num:8},
+		
+		{wave:9,delaytime:400,edge:2,type:"UntCyber",level:3,num:3},
+		{wave:10,delaytime:401,edge:3,type:"UntCyber",level:3,num:3},
+		{wave:11,delaytime:402,edge:2,type:"UntCyber",level:3,num:3},
+		{wave:12,delaytime:403,edge:3,type:"UntCyber",level:3,num:3},
+		
+		{wave:13,delaytime:820,edge:-1,type:"UntCyber",level:3,num:3},
+		{wave:14,delaytime:821,edge:-1,type:"UntCyber",level:3,num:3},
+		{wave:15,delaytime:822,edge:-1,type:"UntCyber",level:3,num:3},
+		{wave:16,delaytime:823,edge:-1,type:"UntCyber",level:3,num:3},
+		{wave:17,delaytime:840,edge:-1,type:"UntSniper",level:3,num:3},
+		{wave:18,delaytime:841,edge:-1,type:"UntSniper",level:3,num:3},
+		{wave:19,delaytime:842,edge:-1,type:"UntSniper",level:3,num:3},
+		{wave:20,delaytime:843,edge:-1,type:"UntSniper",level:3,num:3},
+		{wave:21,delaytime:844,edge:-1,type:"UntSniper",level:3,num:3},
+		{wave:22,delaytime:845,edge:-1,type:"UntSniper",level:3,num:3},
+		{wave:23,delaytime:846,edge:-1,type:"UntSniper",level:3,num:3},
+		{wave:24,delaytime:847,edge:-1,type:"UntSniper",level:3,num:3},
+		
+		
+		
+		
+		{wave:25,delaytime:1040,edge:-1,type:"UntHacker",level:3,num:6},
+		{wave:26,delaytime:1041,edge:-1,type:"UntHacker",level:3,num:6},
+		{wave:27,delaytime:1042,edge:-1,type:"UntHacker",level:3,num:6},
+		{wave:28,delaytime:1043,edge:-1,type:"UntHacker",level:3,num:6},
+		{wave:29,delaytime:1044,edge:-1,type:"UntHacker",level:3,num:6},
+		{wave:30,delaytime:1045,edge:-1,type:"UntHacker",level:3,num:6},
+		{wave:31,delaytime:1046,edge:-1,type:"UntHacker",level:3,num:6},
+		{wave:32,delaytime:1047,edge:-1,type:"UntHacker",level:3,num:6},
+		
+		//掉落波
+		{wave:33,delaytime:1450,edge:-1,type:"UntCyber",level:6,num:1},
+		
+		{wave:34,delaytime:2400,edge:2,type:"UntMarine",level:3,num:8},
+		{wave:35,delaytime:2401,edge:3,type:"UntMarine",level:3,num:8},
+		{wave:36,delaytime:2402,edge:2,type:"UntMarine",level:3,num:8},
+		{wave:37,delaytime:2403,edge:3,type:"UntMarine",level:3,num:8},
+		{wave:38,delaytime:2404,edge:3,type:"UntTNTMac",level:3,num:10},
+		{wave:39,delaytime:2405,edge:3,type:"UntTNTMac",level:3,num:10},
+		{wave:40,delaytime:2406,edge:3,type:"UntTNTMac",level:3,num:10},
+		
+		{wave:41,delaytime:2500,edge:-1,type:"UntMarine",level:3,num:4},
+		{wave:42,delaytime:2501,edge:-1,type:"UntMarine",level:3,num:4},
+		{wave:43,delaytime:2502,edge:-1,type:"UntMarine",level:3,num:4},
+		{wave:44,delaytime:2503,edge:-1,type:"UntMarine",level:3,num:4},
+		{wave:45,delaytime:2504,edge:-1,type:"UntMarine",level:3,num:4},
+		{wave:46,delaytime:2505,edge:-1,type:"UntMarine",level:3,num:4},
+		{wave:47,delaytime:2506,edge:-1,type:"UntMarine",level:3,num:4},
+		{wave:48,delaytime:2507,edge:-1,type:"UntMarine",level:3,num:4},
+		
+		{wave:49,delaytime:2700,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:50,delaytime:2701,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:51,delaytime:2702,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:52,delaytime:2703,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:53,delaytime:2704,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:54,delaytime:2705,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:55,delaytime:2706,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:56,delaytime:2707,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:57,delaytime:2708,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:58,delaytime:2709,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:59,delaytime:2710,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:60,delaytime:2711,edge:-1,type:"UntTank",level:3,num:3},
+		
+		{wave:61,delaytime:3000,edge:-1,type:"UntCyber",level:3,num:3},
+		{wave:62,delaytime:3000,edge:-1,type:"UntCyber",level:3,num:2},
+		{wave:63,delaytime:3000,edge:-1,type:"UntCyber",level:3,num:2},
+		{wave:64,delaytime:3000,edge:-1,type:"UntCyber",level:3,num:2},
+		//掉落波
+		{wave:65,delaytime:4000,edge:-1,type:"UntPEKKA",level:1,num:1},
+		
+		
+		{wave:66,delaytime:4800,edge:-1,type:"UntSniper",level:3,num:8},
+		{wave:67,delaytime:4801,edge:-1,type:"UntSniper",level:3,num:8},
+		{wave:68,delaytime:4802,edge:-1,type:"UntSniper",level:3,num:8},
+		{wave:69,delaytime:4803,edge:-1,type:"UntSniper",level:3,num:8},
+		{wave:70,delaytime:4804,edge:-1,type:"UntSniper",level:3,num:8},
+		{wave:71,delaytime:4805,edge:-1,type:"UntSniper",level:3,num:8},
+		{wave:72,delaytime:4806,edge:-1,type:"UntSniper",level:3,num:8},
+		{wave:73,delaytime:4807,edge:-1,type:"UntSniper",level:3,num:8},
+		
+		{wave:74,delaytime:4808,edge:-1,type:"UntTank",level:3,num:4},
+		{wave:75,delaytime:4809,edge:-1,type:"UntTank",level:3,num:4},
+		{wave:76,delaytime:4810,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:77,delaytime:4811,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:78,delaytime:4812,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:79,delaytime:4813,edge:-1,type:"UntTank",level:3,num:3},
+		{wave:80,delaytime:4814,edge:-1,type:"UntTank",level:3,num:3},
+		
+		{wave:81,delaytime:5000,edge:-1,type:"UntHacker",level:3,num:3},
+		{wave:82,delaytime:5001,edge:-1,type:"UntHacker",level:3,num:3},
+		{wave:83,delaytime:5002,edge:-1,type:"UntHacker",level:3,num:3},
+		{wave:84,delaytime:5003,edge:-1,type:"UntHacker",level:3,num:3},
+		{wave:85,delaytime:5004,edge:-1,type:"UntHacker",level:3,num:3},
+		{wave:86,delaytime:5005,edge:-1,type:"UntHacker",level:3,num:3},
+		{wave:87,delaytime:5006,edge:-1,type:"UntHacker",level:3,num:3},
+		{wave:88,delaytime:5007,edge:-1,type:"UntHacker",level:3,num:3},
+		
+		{wave:89,delaytime:5200,edge:1,type:"UntMarine",level:3,num:3},
+		{wave:90,delaytime:5201,edge:1,type:"UntMarine",level:3,num:3},
+		{wave:91,delaytime:5202,edge:1,type:"UntMarine",level:3,num:3},
+		{wave:92,delaytime:5203,edge:1,type:"UntMarine",level:3,num:3},
+		{wave:93,delaytime:5204,edge:1,type:"UntMarine",level:3,num:3},
+		{wave:94,delaytime:5205,edge:1,type:"UntMarine",level:3,num:3},
+		
+		//掉落波
+		{wave:95,delaytime:5400,edge:-1,type:"UntPEKKA",level:1,num:1},
+		
+	],
+	
+}

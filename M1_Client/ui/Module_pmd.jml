@@ -1,0 +1,193 @@
+﻿if(!__Page.modulePmd)
+{
+	__Page.modulePmd = function(page)
+	{
+		if(page)
+		{
+			this._init = 0;
+			this.env = null;
+			this.page = page;
+		}
+	};
+	__Page.modulePmd.initPropertys = function()
+	{
+		this.msgs = [];
+		this._in = 0;
+		this._roll = 0;
+		this._move = 0;
+		if(this.fo)
+			clearTimeout(this.fo);
+		this.fo = null;
+		if(this.msgBar)
+		{
+			if(this.msgTxt&&this.msgTxt._ani)
+			{
+				//this.msgTxt.stopAni();
+				this.msgTxt._ani = 0;
+			}
+			this.pmdHud.removeChild(this.msgBar);
+		}
+		this.msgBar = null;
+		this.msgTxt = null;
+	};
+	__Page.modulePmd.loadConfigs = function(w,h)
+	{
+		this.barW = w;
+		this.barH = h;
+		this.msgH = 16;
+		//this.barPos = [0,bgSpaceU+2,0];
+		//this.barFadePos = [0,bgSpaceU-(this.barH>>1),0];
+		this.rollDit = 2;
+		this.incidence = 1;
+		this.rollSpeed = 1;//2;//px per frame
+	};
+	__Page.modulePmd.start = function(div,w,h)
+	{
+		this.initPropertys();
+		this.loadConfigs(w,h);
+		this.pmdHud=div;
+		var env = this.env;
+		this.msgBar = div.appendNewChild(
+			{
+				type:"div3x3",id:"pmd",pos:[-w>>1,-h>>1,0],display:1,fade:1,//anchor_v:1,
+				fade_pos:[0,0,0],filter:1,fade_size:1,w:this.barW,h:this.barH
+			}
+		);
+	};
+
+	__Page.modulePmd.moveInDone = function()
+	{
+		this.fo = null;
+		this._move = 0;
+		this._in = 1;
+		this.rollMsg();
+	};
+	__Page.modulePmd.moveOutDone = function()
+	{
+		this.fo = null;
+		this._move = 0;
+		this._in = 0;
+		if(this.msgs.length)
+			this.moveInDone();
+	};
+	__Page.modulePmd.addMsgs = function(msgs)
+	{
+		var i;
+		for(i=0;i<msgs.length;i++)
+		{
+			this.addMsg(msgs[i]);
+		}
+	};
+	__Page.modulePmd.addMsg = function(msg)
+	{
+		this.msgs.push(msg);
+		if(!this._in)
+			this.moveInDone();
+	};
+	__Page.modulePmd.rollMsg = function()
+	{
+		if(this.msgs.length)
+		{
+			var pos = [0,0,0],tgtpos = [0,0,0],wrap = 0,dis = 0,time = 0;
+			switch(this.rollDit)
+			{
+				case 0://L->R
+					tgtpos = [this.barW,0,0];
+					break;
+				case 1://U->D
+					tgtpos = [0,this.barH,0];
+					wrap = 1;
+					break;
+				case 2://R->L
+					pos = [this.barW,0,0];
+					break;
+				case 3://D->U
+					pos = [0,this.barH,0];
+					wrap = 1;
+					break;
+			}
+			var msg=this.analyzingColor(this.msgs[0].msg);
+			if(this.msgTxt)
+			{
+				this.msgTxt.setTextEx(this.getColorTextCSS(msg));	
+			//	this.msgTxt.setText(this.msgs[0].msg);
+			}
+			else
+			{
+				var css = {
+					type:"text",text:this.msgs[0].msg,pos:pos,
+					//dotcut:1 超出给定w或h自动裁剪变。。。
+					color_r:255,color_g:255,color_b:255,color_a:255,font_size:FS.L,wrap:wrap
+				};
+				if(this.rollDit==0||this.rollDit==2)
+				{
+					css.h = this.barH;
+					css.align_v = 1;
+				}
+				else
+					css.w = this.barW;
+				this.msgTxt = this.msgBar.appendNewChild(css);
+				this.msgTxt.setTextEx(this.getColorTextCSS(msg));
+			//	this.msgTxt.setText(this.msgs[0].msg);
+			}
+			switch(this.rollDit)
+			{
+				case 0://L->R
+					pos[0] -= this.msgTxt.getTextW();
+					dis = tgtpos[0]-pos[0];
+					break;
+				case 1://U->D
+					pos[1] -= this.msgTxt.getTextH();
+					dis = tgtpos[1]-pos[1];
+					break;
+				case 2://R->L
+					tgtpos[0] -= this.msgTxt.getTextW();
+					dis = pos[0]-tgtpos[0];
+					break;
+				case 3://D->U
+					tgtpos[1] -= this.msgTxt.getTextH();
+					dis = pos[1]-tgtpos[1];
+					break;
+			}
+			time = Math.ceil(dis/this.rollSpeed);
+			this.msgTxt.setPos(pos);
+			if(time)
+			{
+				var self = this;
+				this.msgTxt._ani = 1;
+				this.msgTxt.startAniEx(tgtpos,1.0,1.0,time);
+				this.msgTxt.onAniDone = function()
+				{
+					self.rollMsgDone();
+				};
+			}
+			else
+				this.rollMsgDone();
+		}
+		else
+			this.moveOutDone();
+	};
+	__Page.modulePmd.rollMsgDone = function()
+	{
+		this.msgTxt._ani = 0;
+		this.msgs.splice(0,1);
+		this.rollMsg();
+	};
+	__Page.modulePmd.analyzingColor=function(msg)
+	{
+		if(!msg)return [];
+		return msg.split("$");
+	};
+	__Page.modulePmd.getColorTextCSS=function(msg)
+	{
+		if(!msg || !msg.length)return [];
+		if(msg.length==1)return [{text:msg[0],r:255,g:255,b:255}];
+		var i,color,vo=[];
+		for(i=0;i<msg.length;i+=2)
+		{
+			if(!msg[i+1])break;
+			vo.push({text:msg[i+1],css:fromJSON(msg[i])});
+		}
+		return vo;
+	};
+}

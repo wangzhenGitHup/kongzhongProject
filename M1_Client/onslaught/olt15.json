@@ -1,0 +1,5 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntCyber",level:1,num:3},
+	{wave:2,delaytime:350,edge:1,type:"UntCyber",level:1,num:3},
+	{wave:3,delaytime:550,edge:3,type:"UntCyber",level:1,num:3},
+]

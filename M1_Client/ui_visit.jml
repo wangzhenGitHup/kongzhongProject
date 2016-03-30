@@ -1,0 +1,182 @@
+﻿<jml>
+<import>"config.js"</import>
+<import>UIBody.getCookie("Runtime","bLocal")?"config_local.jml":""</import>
+<import>UIBody.getCookie("Runtime","bTest")?"config_test.jml":""</import>
+<import>UIBody.getCookie("Runtime","bTest2")?"config_test2.jml":""</import>
+<import>
+	window.LanguageStr="cn";
+	window.ConfigDefPath = UIBody.getCookie("Runtime","ConfigDefPath")?UIBody.getCookie("Runtime","ConfigDefPath"):"logic/def/";
+	null
+</import>
+<import>"img_lib.jml"</import>
+<import>"css_lib.jml"</import>
+
+<import>"logic/ais_env.js"</import>
+<import>"logic/ais_types.js"</import>
+<import>"logic/ais_links.js"</import>
+<import>"logic/ais_obj.js"</import>
+<import>"logic/ais_objhash.js"</import>
+<import>"logic/ais_value.js"</import>
+<import>"logic/ais_opfactor.js"</import>
+<import>"logic/ais_feature.js"</import>
+<import>"logic/ais_power.js"</import>
+<import>"logic/ais_task.js"</import>
+<import>"logic/ais_tech.js"</import>
+<import>"logic/ais_buff.js"</import>
+<import>"logic/ais_bldworker.js"</import>
+<import>"logic/ais_storage.js"</import>
+<import>"logic/ais_substorage.js"</import>
+<import>"logic/ais_achvmnt.js"</import>
+
+<import>"logic/ais_city.js"</import>
+<import>"logic/ais_king.js"</import>
+<import>"logic/ais_building.js"</import>
+
+<import>"logic/ais_dailyTasks.js"</import>
+<import>"logic/ais_craft.js"</import>
+
+//建筑物:
+<import>"logic/bld/ais_bld_automine.js"</import>
+<import>"logic/bld/ais_bld_diamondmine.js"</import>
+<import>"logic/bld/ais_bld_storage.js"</import>
+<import>"logic/bld/ais_bld_workerhut.js"</import>
+<import>"logic/bld/ais_bld_workshop.js"</import>
+<import>"logic/bld/ais_bld_techlab.js"</import>
+<import>"logic/bld/ais_bld_deco.js"</import>
+<import>"logic/coc/ais_bld_ammogun.js"</import>
+<import>"logic/bld/ais_bld_clan.js"</import>
+<import>"logic/bld/ais_bld_macshop.js"</import>
+<import>"logic/bld/ais_bld_garage.js"</import>
+
+//COC专用:
+<import>"logic/coc/ais_clanmessage.js"</import>
+<import>"logic/coc/ais_coc_city.js"</import>
+<import>"logic/coc/ais_coc_king.js"</import>
+
+//Defs:
+<import>"logic/def/aistxt_bld_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_unit_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_achvmnt_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_prdct_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_spell_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_npcs_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_vipPrivilege_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_macpart_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_addon_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_box_"+window.LanguageStr+".js"</import>
+<import>"logic/def/aistxt_clantec_"+window.LanguageStr+".js"</import>
+<import>window.ConfigDefPath+"aisdef_bld.js"</import>
+<import>"logic/def/aisdef_res.js"</import>
+<import>window.ConfigDefPath+"aisdef_unit.js"</import>
+<import>"logic/def/aisdef_feature.js"</import>
+<import>window.ConfigDefPath+"aisdef_tech.js"</import>
+<import>window.ConfigDefPath+"aisdef_spell.js"</import>
+<import>window.ConfigDefPath+"aisdef_buff.js"</import>
+<import>window.ConfigDefPath+"aisdef_globals.js"</import>
+<import>"logic/def/aisdef_achvmnt.js"</import>
+<import>"logic/def/aisdef_npcs.js"</import>
+<import>"logic/def/aisdef_DailyTasks.js"</import>
+<import>"logic/def/aisdef_vipPrivilege.js"</import>
+<import>window.ConfigDefPath+"aisdef_macpart.js"</import>
+<import>window.ConfigDefPath+"aisdef_addon.js"</import>
+<import>"logic/def/aisdef_compound.js"</import>
+<import>"logic/def/aisdef_box.js"</import>
+<import>"logic/def/aisdef_clan.js"</import>
+<import>"logic/def/aisdef_item.js"</import>
+
+<import>"logic/ais_viewconnect.js"</import>
+
+<import>"logic/ais_game.js"</import>
+
+<import>"app_env.js"</import>
+<import>"ui/dlg/dlg_base.jml"</import>
+<import>"text/text_ui_"+window.LanguageStr+".js"</import>
+<import>"ui/state_base.js"</import>
+<import>"ui/state_home.js"</import>
+<import>"ui/vw_aishomestage.js"</import>
+<import>"ui/vw_homebld.js"</import>
+<import>"ui/vw_actorfarmer.js"</import>
+<import>"ui/vw_actorcraft.js"</import>
+<import>"ui/state_logs.js"</import>
+<import>"ui/dlg/pmt_info.js"</import>
+<import>"ui/dlg/pmt_choose.js"</import>
+<import>"ui/dlg/pmt_checker.js"</import>
+
+<import>"dwr.jml"</import>
+<import>"logic/aisnetwork.js"</import>
+<import>"logic/proxy/pxyBattleCom.js"</import>
+<import>"logic/proxy/pxylogin.js"</import>
+
+<body>
+{
+	body:{
+		page_mode:"ui",w:"100%",h:"100%",align_v:"m",background:0xffffff,
+		items:[
+			{
+				type:"3ddiv",x:0,y:0,w:"100%",h:"100%",
+				items:[
+					{
+						type:"3dlayer",id:"ui-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[Screen.w,Screen.h,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"dlg-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[Screen.w,Screen.h,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"dlg-layer2",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[Screen.w,Screen.h,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"act-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[960,640,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"act2-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[960,640,0],
+						frame_time:25,
+					},
+				]
+			},
+			{type:"page",id:"gamepage",x:0,y:0,w:"100%",h:"100%"}
+		],
+		onFree:function()
+		{
+			if(window.aisNTEngine)window.aisNTEngine.onFree();
+			audio.stopMusic();
+			//audio.stopDevice();
+		}
+	}
+}
+</body>
+
+<script>
+__Page.initApp=function()
+{
+	setUpdateSpeed("h");
+
+	this.appEnv.init();
+	if(this.audioObject && this.audioObject._init)
+	{
+		this.audioObject.playMp3("city_01",-1);
+	}
+	addEventHandler("key", __Page, this.appEnv.onKey, this.appEnv);
+};
+
+__Page.initApp();
+
+</script>
+</jml>

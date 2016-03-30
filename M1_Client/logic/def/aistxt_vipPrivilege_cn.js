@@ -1,0 +1,31 @@
+﻿if(window.aisEnv.textLib)
+{
+	(function()
+	{
+		var textLib=window.aisEnv.textLib;
+		textLib.vipPrivilegeName={
+			viplv1:"资源特供",
+			viplv2:"时尚精选",
+			viplv3:"防守大礼",
+			viplv4:"特价专享",
+			viplv5:"旗舰顶配",
+			viplv6:"青铜达人",
+			viplv7:"白银特典",
+			viplv8:"黄金礼遇",
+			viplv9:"铂金尊享",
+		};
+		textLib.vipPrivilegeInfo={
+			vipWallNum:"可布置额外<num1>块城墙！",
+			vipMineNum:"可布置额外<num1>个地雷！",
+			vipEjectorNum:"可布置额外<num1>个引雷器！",
+			vipSuperbombNum:"可布置额外<num1>个超级炸弹！",
+			vipResCrit:"收取资源时有<num2>%的几率获得额外<num1>%的产出！",
+			vipBattleWaitTime:"每次进攻前观察时间延长<num1>秒！",
+			vipLimitedSalesGold:"每日尊享<num2>金矿5折特卖！",
+			vipLimitedSalesElixir:"每日尊享<num2>能源5折特卖！",
+			vipRequestUnitsWaitTime:"联盟请求支援冷却时间缩短<num1>分钟！",
+			vipTrainTimeDiscount:"立即完成训练需要消耗的钻石为<num1>折！",
+			vipBLDTimeDiscount:"立即完成建设需要消耗的钻石为<num1>折！",
+		};
+	})();
+}

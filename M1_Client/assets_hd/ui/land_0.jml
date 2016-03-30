@@ -1,0 +1,14 @@
+//For image: land_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("land_0_32.png"));
+	this.imgInfos["land_0_32"]={w:512,h:512};
+	this["pic_waropen"]={tex_u:4/512, tex_v:2/512, tex_w:416/512, tex_h:347/512, w:416, h:347, tex:this.imgList[id]};
+	this["pic_aim"]={tex_u:2/512, tex_v:356/512, tex_w:196/512, tex_h:112/512, w:196, h:112, tex:this.imgList[id]};
+	this["pic_land_own"]={tex_u:202/512, tex_v:354/512, tex_w:116/512, tex_h:60/512, w:116, h:60, tex:this.imgList[id]};
+	this["btn_land"]={tex_u:203/512, tex_v:419/512, tex_w:106/512, tex_h:50/512, w:106, h:50, tex:this.imgList[id]};
+	this["btn_land_own"]={tex_u:315/512, tex_v:419/512, tex_w:106/512, tex_h:50/512, w:106, h:50, tex:this.imgList[id]};
+}

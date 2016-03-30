@@ -1,0 +1,29 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntCyber",level:1,num:2},
+	{wave:2,delaytime:250,edge:0,type:"UntCyber",level:1,num:1},
+	{wave:3,delaytime:400,edge:0,type:"UntCyber",level:1,num:1},
+	{wave:4,delaytime:500,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:5,delaytime:530,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:6,delaytime:560,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:7,delaytime:100,edge:1,type:"UntCyber",level:1,num:2},
+	{wave:8,delaytime:250,edge:1,type:"UntCyber",level:1,num:1},
+	{wave:9,delaytime:400,edge:1,type:"UntCyber",level:1,num:1},
+	{wave:10,delaytime:500,edge:1,type:"UntHacker",level:1,num:3},
+	{wave:11,delaytime:530,edge:1,type:"UntHacker",level:1,num:3},
+	{wave:12,delaytime:560,edge:1,type:"UntHacker",level:1,num:3},
+	
+
+	{wave:13,delaytime:400,edge:0,type:"UntSniper",level:2,num:2},
+	{wave:14,delaytime:430,edge:0,type:"UntSniper",level:2,num:2},
+	{wave:15,delaytime:460,edge:0,type:"UntSniper",level:2,num:2},
+
+
+	{wave:16,delaytime:400,edge:1,type:"UntSniper",level:2,num:2},
+	{wave:17,delaytime:430,edge:1,type:"UntSniper",level:2,num:2},
+	{wave:18,delaytime:460,edge:1,type:"UntSniper",level:2,num:2},
+
+
+	{wave:19,delaytime:400,edge:3,type:"UntSniper",level:2,num:2},
+	{wave:20,delaytime:430,edge:3,type:"UntSniper",level:2,num:2},
+	{wave:21,delaytime:460,edge:3,type:"UntSniper",level:2,num:2},
+]

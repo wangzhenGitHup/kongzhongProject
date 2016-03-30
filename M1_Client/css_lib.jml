@@ -1,0 +1,1821 @@
+﻿
+__Page.cssLib={page:__Page}
+__Page.initCSSLib=function()
+{
+	var page=this;
+	var imgLib=this.imgLib;
+
+	//**************************************************************************
+	//各种界面按钮**************************************************************
+	//**************************************************************************
+	{
+		//--------------------------------------------------------------------------
+		//开发调试用临时按钮
+		this.cssLib.btnDebug={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(text,pos,w,keyid)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				return {
+					type:"key",pos:pos,id:"BtnDebug_"+text,css:cssLib.boxSolid,w:w,h:50,key:keyid,anchor_h:1,anchor_v:1,ui_event:1,button:1,down_scale:0.95,
+					color_r:0,color_g:0,color_b:0,color_a:80,
+					state_up:{css:cssLib.boxSolid,mode3x3:1,w:w,h:50},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:cssLib.boxSolid,mode3x3:1,color_r:200,color_g:200,color_b:100,w:w,h:50},
+					state_gray:{css:cssLib.boxSolid,mode3x3:1,w:w,h:50},
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					items:[
+						{
+							type:"text",pos:[0,0,0],w:w,h:50,text:text,font_size:24,align_h:1,align_v:1,anchor_h:1,anchor_v:1,
+							color_r:255,color_g:255,color_b:255,color_a:255,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255,
+						}
+					],
+					setText:this.setText
+				};
+			},
+			create:function(box,text,pos,w,key)
+			{
+				return box.appendNewChild(this.createCSS(text,pos,w,key));
+			},
+			setText:function(text)
+			{
+				this.firstChild().setText(text);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//标准带文字的按钮
+		this.cssLib.btnStdText={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,w,text,bad,keyid)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				var page=this.page;
+				return {
+					"type":"key","id":"Button","pos":pos,w:w,h:80,"css":imgLib.btn_green_u,key:keyid,mode3x3:1,"anchor_h":1,"anchor_v":1,"ui_event":1,"color_a":255,button:1,down_scale:0.9,
+					"size3x3":[28,0,28,0],"uv3x3":[28/1024,0,28/1024,0],
+					state_up:{"css":imgLib.btn_green_u,mode3x3:1,w:w,h:80,"size3x3":[28,0,28,0],"uv3x3":[28/1024,0,28/1024,0],},
+					state_down:{"css":imgLib.btn_green_d,mode3x3:1,w:w-8,h:80-8,"size3x3":[28,0,28,0],"uv3x3":[28/1024,0,28/1024,0],},
+					state_gray:{"css":imgLib.btn_green_g,mode3x3:1,w:w,h:80,"size3x3":[28,0,28,0],"uv3x3":[28/1024,0,28/1024,0],},
+					items:[
+						cssLib.textFineBig.createCSS([0,0,0],text,w,80,1,1,1,1,bad?[255,0,0]:[255,255,255]),
+					],
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					page:page,
+					setText:this.setText
+				};
+			},
+			create:function(box,pos,w,num,bad,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,w,num,bad,key));
+			},
+			setText:function(text,bad)
+			{
+				var url;
+				this.firstChild()._setText(text);
+				if(bad)
+				{
+					this.setEnabled(0);
+					this.firstChild().setColor(255,0,0,255);
+				}
+				else
+				{
+					this.setEnabled(1);
+					this.firstChild().setColor(255,255,255,255);
+				}
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//需要资源的按钮
+		this.cssLib.btnResGo={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,h:80,
+			createCSS:function(pos,w,res,num,bad,keyid,vip,h)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				var page=this.page;
+				var url, pic;
+				h=h?h:this.h;
+				url=page.genPageURL(window.imgPath+"/icon/icon_res_"+res+"64_32.png");
+				pic=imgLib.getImg("btn_green_u"),picW=w,picH=pic.h;
+
+				if(!vip)vip=0;
+				var vipPic=imgLib.getImg("pic_VIP"+vip),vipW=46,vipH=vipPic.h*vipW/vipPic.w;
+
+				return {
+					type:"key",id:"BtnResGO",pos:pos,w:w,h:h,css:imgLib.btn_green_u,key:keyid,mode3x3:1,anchor_h:1,anchor_v:1,ui_event:1,color_a:255,button:1,down_scale:0.95,
+					state_up:{css:imgLib.btn_green_u,mode3x3:1,w:w,h:h,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:imgLib.btn_green_d,mode3x3:1,w:w,h:h,},
+					state_gray:{css:imgLib.btn_green_g,mode3x3:1,w:w,h:h,},
+					items:[
+						{type:"icon",pos:[-picW/2+vipW/2-5,-picH/2+vipH/2-7,0],css:vipPic,w:vipW,h:vipH,anchor_h:1,anchor_v:1,display:vip?1:0},
+						{id:"num",css:cssLib.textFineBig.createCSS([0,0,0],""+num,w-140,h,1,1,2,1,bad?[255,0,0]:[255,255,255])},
+						{type:"icon",id:"ResIcon",pos:[Math.floor(w/2-70),0,0],w:64,h:64,tex:url,tex_u:0,tex_v:0,tex_w:1,tex_h:1,anchor_h:0,anchor_v:1}
+					],
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					page:page,
+					setResNum:this.setResNum
+				};
+			},
+			create:function(box,pos,w,res,num,bad,key,vip,h)
+			{
+				return box.appendNewChild(this.createCSS(pos,w,res,num,bad,key,vip,h));
+			},
+			setResNum:function(res,num,bad)
+			{
+				var url;
+				this.getItemById("num")._setText(""+num);
+				url=page.genPageURL(window.imgPath+"/icon/icon_res_"+res+"64_32.png");
+				if(bad)
+				{
+					this.getItemById("num").setColor(255,0,0,255);
+				}
+				else
+				{
+					this.getItemById("num").setColor(255,255,255,255);
+				}
+				this.getItemById("ResIcon").setTexURL(url);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//需要资源的按钮（包含item）
+		this.cssLib.btnResListGo={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,h:80,
+			createCSS:function(pos,w,res,num,bad,keyid,h)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				var page=this.page;
+				var css;
+				var url, pic;
+				h=h?h:this.h;
+				url=page.genPageURL(window.imgPath+"/icon/icon_res_"+res+"64_32.png");
+				pic=imgLib.getImg("btn_green_u"),picW=w,picH=pic.h;
+				
+				css={
+					type:"key",id:"BtnResGO",pos:pos,w:w,h:h,css:imgLib.btn_green_u,key:keyid,mode3x3:1,anchor_h:1,anchor_v:1,ui_event:1,color_a:255,button:1,down_scale:0.95,
+					state_up:{css:imgLib.btn_green_u,mode3x3:1,w:w,h:h,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:imgLib.btn_green_d,mode3x3:1,w:w,h:h,},
+					state_gray:{css:imgLib.btn_green_g,mode3x3:1,w:w,h:h,},
+					items:[
+						{id:"num",css:cssLib.textFineBig.createCSS([0,0,0],""+num,w-140,h,1,1,2,1,bad?[255,0,0]:[255,255,255])},
+						{type:"icon",id:"ResIcon",pos:[Math.floor(w/2-70),0,0],w:64,h:64,tex:url,tex_u:0,tex_v:0,tex_w:1,tex_h:1,anchor_h:0,anchor_v:1}
+					],
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					page:page,
+					setResNum:this.setResNum
+				};
+				return css;
+			},
+			create:function(box,pos,w,res,num,bad,key,h)
+			{
+				return box.appendNewChild(this.createCSS(pos,w,res,num,bad,key,h));
+			},
+			setResNum:function(res,num,bad,reqs)
+			{
+				var imgLib=this.page.imgLib;
+				var cssLib=this.page.cssLib;
+				var url;
+				this.getItemById("num")._setText(""+num);
+				url=page.genPageURL(window.imgPath+"/icon/icon_res_"+res+"64_32.png");
+				if(bad)
+				{
+					this.getItemById("num").setColor(255,0,0,255);
+				}
+				else
+				{
+					this.getItemById("num").setColor(255,255,255,255);
+				}
+				this.getItemById("ResIcon").setTexURL(url);
+				var reqField=this.getItemById("reqs");
+				if(reqField)
+					this.removeChild(reqField);
+				var i,css,w,h,numTxtW,resIcon,icon,pos=[];
+				w=230;
+				this.setStateStyle(0,{css:imgLib.btn_green_u,mode3x3:1,w:w,h:h});
+				this.setStateStyle(1,{css:imgLib.btn_green_d,mode3x3:1,w:w,h:h});
+				this.setStateStyle(2,{css:imgLib.btn_green_g,mode3x3:1,w:w,h:h});
+				resIcon=this.getItemById("ResIcon");
+				resIcon.setPos([45,0,0]);
+				this.getItemById("num").setPos([0,0,0]);
+				if(reqs && reqs.length)
+				{
+					numTxtW=40;
+					this.getItemById("num").setPos([0-reqs.length*(numTxtW+64+5)/2,0,0]);
+					pos=[45-reqs.length*(numTxtW+64+5)/2,0,0];
+					resIcon.setPos(pos);
+					
+					// DBOut("pos="+toJSON(pos))
+					css={type:"icon",id:"reqs",pos:[pos[0]+resIcon.getW()+5,0,0],w:reqs.length*(numTxtW+64+5),h:this.getH(),anchor_v:1,items:[]};
+					h=this.getH();
+					for(i=0;i<reqs.length;i++)
+					{
+						css.items.push({id:"num",css:cssLib.textFineBig.createCSS([0+i*(numTxtW+64+5),0,0],reqs[i].num,numTxtW,this.getH(),0,1,2,1,reqs[i].bad?[255,0,0,255]:[255,255,255,255])});
+						icon=imgLib.getIcon("icon_"+reqs[i].type+"_32");
+						icon.w=icon.h=64;
+						css.items.push({type:"icon",id:"icon",pos:[i*(numTxtW+64+5)+numTxtW+32,0,0],css:icon,anchor_h:1,anchor_v:1})
+						w+=numTxtW+64+5;
+					}
+					// this.setW(w);
+					this.setStateStyle(0,{css:imgLib.btn_green_u,mode3x3:1,w:w,h:h});
+					this.setStateStyle(1,{css:imgLib.btn_green_d,mode3x3:1,w:w,h:h});
+					this.setStateStyle(2,{css:imgLib.btn_green_g,mode3x3:1,w:w,h:h});
+					this.appendNewChild(css);
+				}
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//创建新建筑的确定按钮
+		this.cssLib.btnNewBldOk={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"key",pos:pos,css:imgLib.btn_bld_pos_ok_u,key:keyid,anchor_h:1,anchor_v:1,id:"BtnBldOK",ui_event:1,color_a:255,button:1,down_scale:0.95,
+					state_up:{css:imgLib.btn_bld_pos_ok_u,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:imgLib.btn_bld_pos_ok_d},
+					state_gray:{css:imgLib.btn_bld_pos_ok_g},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			},
+			create:function(box,pos,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,key));
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//创建新建筑的取消按钮
+		this.cssLib.btnNewBldCancel={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"key",pos:pos,css:imgLib.btn_bld_pos_no_u,key:keyid,anchor_h:1,anchor_v:1,id:"BtnBldCancel",ui_event:1,color_a:255,button:1,down_scale:0.95,
+					state_up:{css:imgLib.btn_bld_pos_no_u,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:imgLib.btn_bld_pos_no_d},
+					state_gray:{css:imgLib.btn_bld_pos_no_u,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			},
+			create:function(box,pos,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,key));
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//金矿的收取按钮
+		this.cssLib.btnHarvestGold={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_gold,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",ui_event:1,filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_gold,},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_gold,color_a:180},
+//					state_gray:{css:imgLib.mark_gold,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//金矿的满仓收取按钮
+		this.cssLib.btnHarvestGoldFull={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_gold_full,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_gold_full,},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_gold_full,color_a:180},
+//					state_gray:{css:imgLib.mark_gold_full,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//油矿的收取按钮
+		this.cssLib.btnHarvestOil={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_oil,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",ui_event:1,filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_oil},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_oil,color_a:180},
+//					state_gray:{css:imgLib.mark_oil,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//油矿的满仓收取按钮
+		this.cssLib.btnHarvestOilFull={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_oil_full,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",ui_event:1,filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_oil_full,},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_oil_full,color_a:180},
+//					state_gray:{css:imgLib.mark_oil_full,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//能量块的收取按钮
+		this.cssLib.btnHarvestCube={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_cube,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",ui_event:1,filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_oil},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_oil,color_a:180},
+//					state_gray:{css:imgLib.mark_oil,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//能量块的满仓收取按钮
+		this.cssLib.btnHarvestCubeFull={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_cube_full,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",ui_event:1,filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_oil_full,},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_oil_full,color_a:180},
+//					state_gray:{css:imgLib.mark_oil_full,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//钻石矿的收取按钮
+		this.cssLib.btnHarvestGem={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_gem,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",ui_event:1,filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_oil},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_oil,color_a:180},
+//					state_gray:{css:imgLib.mark_oil,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//钻石矿的满仓收取按钮
+		this.cssLib.btnHarvestGemFull={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"icon",pos:pos,css:imgLib.mark_gem_full,key:keyid,anchor_h:1,anchor_v:2,id:"BtnCancel",ui_event:1,filter:1,button:1,down_scale:0.95,
+//					state_up:{css:imgLib.mark_oil_full,},audio:this.page.audioObject.genFileURL("btn_click"),
+//					state_down:{css:imgLib.mark_oil_full,color_a:180},
+//					state_gray:{css:imgLib.mark_oil_full,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//训练停滞的提示
+		this.cssLib.btnTrainFull={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_train_full,key:keyid,anchor_h:1,anchor_v:2,id:"TrainFull",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//barrack空闲的提示
+		this.cssLib.btnBarrackFree={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_barrack_free,key:keyid,anchor_h:1,anchor_v:2,id:"BarrackFree",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//spell空闲的提示
+		this.cssLib.btnSpellFree={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_spell_free,key:keyid,anchor_h:1,anchor_v:2,id:"SpellFree",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//tech空闲的提示
+		this.cssLib.btnTechFree={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_tech_free,key:keyid,anchor_h:1,anchor_v:2,id:"TechFree",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//clan空闲的提示
+		this.cssLib.btnClanFree={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_clan_free,key:keyid,anchor_h:1,anchor_v:2,id:"ClanFree",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//伪装库的标示
+		this.cssLib.fakeFlag={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,tex:page.genURL(window.imgPath+"/icon/mark_fakeflag64_32.png"),tex_u:0, tex_v:0, tex_w:1, tex_h:1, w:64, h:64,key:keyid,anchor_h:1,anchor_v:2,id:"fakeFlag",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//电磁炮充能的标示
+		this.cssLib.chargeFalg={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,tex:page.genURL(window.imgPath+"/icon/mark_charge_64_32.png"),tex_u:0, tex_v:0, tex_w:1, tex_h:1, w:64, h:64,key:keyid,anchor_h:1,anchor_v:2,id:"chargeFalg",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//电磁炮子弹为空的标示
+		this.cssLib.emptyFlag={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,tex:page.genURL(window.imgPath+"/icon/mark_empty_64_32.png"),tex_u:0, tex_v:0, tex_w:1, tex_h:1, w:64, h:64,key:keyid,anchor_h:1,anchor_v:2,id:"emptyFlag",filter:1,};
+			}
+		};
+
+
+		//--------------------------------------------------------------------------
+		//防御哨岗的驻扎标示
+		this.cssLib.residenceFalg={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,tex:page.genURL(window.imgPath+"/icon/mark_residence64_32.png"),tex_u:0, tex_v:0, tex_w:1, tex_h:1, w:64, h:64,key:keyid,anchor_h:1,anchor_v:2,id:"residenceFalg",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//产出建筑满的提示
+		this.cssLib.btnPrdFull={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_full,key:keyid,anchor_h:1,anchor_v:2,id:"PrdFull",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//礼包提示
+		this.cssLib.btnHaveGifts={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_gifts,key:keyid,anchor_h:1,anchor_v:2,id:"HaveGifts",filter:1,};
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//公告提示
+		this.cssLib.btnHaveNotices={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {type:"icon",pos:pos,css:imgLib.mark_notice,key:keyid,anchor_h:1,anchor_v:2,id:"HaveNotices",filter:1,};
+			}
+		};
+
+
+		//--------------------------------------------------------------------------
+		//商店按钮
+		this.cssLib.btnShop={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"key",pos:pos,css:imgLib.btn_shop,key:keyid,anchor_h:1,anchor_v:1,id:"BtnShop",ui_event:1,button:1,down_scale:0.95,
+					state_up:{css:imgLib.btn_shop,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:imgLib.btn_shop,color_a:180,w:imgLib.btn_shop.w,h:imgLib.btn_shop.h},
+					state_gray:{css:imgLib.btn_shop,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			},
+			create:function(box,pos,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,key));
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//主界面按钮【zz】
+		this.cssLib.btnMain={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,key,pic,id)
+			{
+				var imgLib=this.imgLib;
+				var keyPic=imgLib[pic];
+				if(!keyPic){
+					keyPic=imgLib.getIcon(pic);
+					keyPic.w=64;
+					keyPic.h=64;
+				}
+				if(!id)
+					id="Btn_"+pic;
+				return {
+					type:"key",pos:pos,css:keyPic,key:key,anchor_h:1,anchor_v:1,id:id,ui_event:1,button:1,down_scale:0.95,
+					state_up:{css:keyPic,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:keyPic,color_a:180,w:keyPic.w,h:keyPic.h},
+					state_gray:{css:keyPic,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					items:[
+					//	{type:"icon",pos:[0,0,0],css:keyPic,anchor_h:1,anchor_v:1}
+					]
+				};
+			},
+			create:function(box,pos,key,pic,id)
+			{
+				return box.appendNewChild(this.createCSS(pos,key,pic,id));;
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//关闭对话框按钮
+		this.cssLib.btnCloseDlg={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid,pic)
+			{
+				var imgLib=this.imgLib;
+				var picU, picD, picG;
+				if(!pic){
+					picU=imgLib.getImg("btn_close_u");
+					picD=imgLib.getImg("btn_close_d");
+					picG=imgLib.getImg("btn_close_d");
+				}else{
+					picU=imgLib.getImg(pic+"_u");
+					picD=imgLib.getImg(pic+"_d");
+					picG=imgLib.getImg(pic+"_d");
+				}
+				return {
+					type:"key",pos:pos,css:picU,key:keyid,anchor_h:1,anchor_v:1,id:"BtnClose",ui_event:1,button:1,down_scale:0.95,
+					state_up:{css:picU,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:picD,color_a:180,},
+					state_gray:{css:picD,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			},
+			create:function(box,pos,key,pic)
+			{
+				return box.appendNewChild(this.createCSS(pos,key,pic));
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//返回对话框按钮
+		this.cssLib.btnBackDlg={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"key",pos:pos,css:imgLib.btn_back_u,key:keyid,anchor_h:1,anchor_v:1,id:"BtnBack",ui_event:1,button:1,down_scale:0.95,
+					state_up:{css:imgLib.btn_back_u,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:imgLib.btn_back_d,color_a:180,w:imgLib.btn_back_u.w,h:imgLib.btn_back_u.h},
+					state_gray:{css:imgLib.btn_back_d,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0
+				};
+			},
+			create:function(box,pos,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,key));
+			}
+		};
+
+		//-------------------------------------------------------------------------
+		//普通按钮：底图+文字
+		this.cssLib.normalBtn=
+		{
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,key,btn,text,w,h,fs,uvInfo)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				var pic;
+				if(0==btn)pic="btn_green_";
+				else if(1==btn)pic="btn_red_";
+				else if(2==btn)pic="btn_blue_";
+				var cssU=imgLib.getImg(pic+"u");
+				var cssD=imgLib.getImg(pic+"d");
+				var cssG=imgLib.getImg(pic+"g");
+				if(2==btn)cssG=imgLib.getImg(pic+"d");
+				var icon=imgLib.getImg(pic+"u");
+				var btnW=w?w:icon.w, btnH=h?h:icon.h;
+				var uv3x3=[0,0,0,0], size3x3=[0,0,0,0];
+				if(cssU.uv3x3)uv3x3=cssU.uv3x3;
+				if(cssU.size3x3)size3x3=cssU.size3x3;
+				if(uvInfo && uvInfo.uv3x3)uv3x3=uvInfo.uv3x3;
+				if(uvInfo && uvInfo.size3x3)size3x3=uvInfo.size3x3;
+				return {
+					type:"key",pos:pos,w:btnW,h:btnH,css:icon,key:key,mode3x3:1,anchor_h:1,anchor_v:1,id:"normalBtn",ui_event:1,filter:1,button:1,down_scale:0.95,
+					state_up:{css:cssU,mode3x3:1,w:btnW,h:btnH,uv3x3:uv3x3,size3x3:size3x3},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:cssD,mode3x3:1,w:btnW,h:btnH,uv3x3:uv3x3,size3x3:size3x3},
+					state_gray:{css:cssG,mode3x3:1,w:btnW,h:btnH,uv3x3:uv3x3,size3x3:size3x3},
+					items:[
+						{css:cssLib.textFineMid.createCSS([0,0,0],text,w,h,1,1,1,1,null,0),font_size:fs?fs:FS.FM}
+					],
+					setText:function(text)
+					{
+						this.firstChild()._setText(text);
+					},
+					_setEnabled:this._setEnabled
+				};
+			},
+			create:function(box,pos,key,pic,text,w,h,fs,size3x3)
+			{
+				return box.appendNewChild(this.createCSS(pos,key,pic,text,w,h,fs,size3x3));
+			},
+			_setEnabled:function(enable)
+			{
+				if(0==enable)
+				{
+					this.firstChild()._setColor(255,0,0,255);
+				}
+				else
+				{
+					this.firstChild()._setColor(255,255,255,255);
+				}
+			}
+		};
+
+		//-------------------------------------------------------------------------
+		//图片按钮
+		this.cssLib.picBtn=
+		{
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,key,pic,text,w,h,fs)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				var cssU=pic;
+				var cssD=pic;
+				var cssG=pic;
+				var btnW=w?w:pic.w, btnH=h?h:pic.h;
+				return {
+					type:"key",pos:pos,w:btnW,h:btnH,css:pic,key:key,mode3x3:1,anchor_h:1,anchor_v:1,id:"picBtn",ui_event:1,filter:1,button:1,down_scale:0.95,
+					state_up:{css:cssU,mode3x3:1,w:btnW,h:btnH},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:cssD,mode3x3:1,w:btnW,h:btnH},
+					state_gray:{css:cssG,mode3x3:1,w:btnW,h:btnH,color_a:160},
+					items:[
+						{css:cssLib.textFineMid.createCSS([0,0,0],text,w,h,1,1,1,1,null,0),font_size:fs?fs:FS.FM}
+					],
+					setText:function(text)
+					{
+						this.firstChild()._setText(text);
+					},
+					_setEnabled:this._setEnabled
+				};
+			},
+			create:function(box,pos,key,pic,text,w,h,fs)
+			{
+				return box.appendNewChild(this.createCSS(pos,key,pic,text,w,h,fs));
+			},
+			_setEnabled:function(enable)
+			{
+				if(0==enable)
+				{
+					this.firstChild()._setColor(255,0,0,255);
+				}
+				else
+				{
+					this.firstChild()._setColor(255,255,255,255);
+				}
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//提示对话框确认按钮
+		this.cssLib.btnDlgOK={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				return {
+					css:cssLib.normalBtn.createCSS(pos,keyid,0,this.page.appEnv.textLib["OK"])
+				};
+			},
+			create:function(box,pos,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,key));
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//提示对话框取消按钮
+		this.cssLib.btnDlgCancel={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				return {
+					css:cssLib.normalBtn.createCSS(pos,keyid,1,this.page.appEnv.textLib["Cancel"])
+				};
+			},
+			create:function(box,pos,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,key));
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//信息按钮
+		this.cssLib.btnInfo={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,keyid)
+			{
+				var btnImg=this.imgLib["btn_info"];
+				var btnSize=40,bcSize=btnSize+24;
+				return {
+					type:"key",pos:pos,id:"InfoBtn",w:bcSize,h:bcSize,key:keyid,anchor_h:1,anchor_v:1,ui_event:1,button:1,down_scale:0.95,
+					state_up:{w:bcSize,h:bcSize,},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{w:bcSize,h:bcSize,color_a:180,},state_gray:{w:bcSize,h:bcSize,color_a:64},
+					display:1,fade:1,fade_size:1,fade_alpha:0,items:[
+						{type:"icon",pos:[0,0,0],anchor_h:1,anchor_v:1,css:imgLib.getImg("btn_info"),w:btnSize,h:btnSize}
+					]
+				};
+			},
+			create:function(box,pos,key)
+			{
+				return box.appendNewChild(this.createCSS(pos,key));
+			}
+		};
+
+		//-------------------------------------------------------------------------
+		//商店分类按钮, 组合式
+		this.cssLib.btnShopFolder=
+		{
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,key,pic,text,hudId)
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+				return {
+					type:"key",pos:pos,w:280,h:236,css:imgLib.box_shopitem,key:key,mode3x3:1,anchor_h:1,anchor_v:1,id:hudId,ui_event:1,filter:1,button:1,down_scale:0.95,
+					state_up:{css:imgLib.box_shopitem,mode3x3:1,w:280,h:236},audio:this.page.audioObject.genFileURL("btn_click"),
+					state_down:{css:imgLib.box_shopitem,mode3x3:1,w:280,h:236},
+					state_gray:{css:imgLib.box_shopitem_g,mode3x3:1,w:280,h:236},
+					items:[
+						{type:"icon",id:"back_light",pos:[0,-10,0],css:imgLib.pic_backlight,anchor_h:1,anchor_v:1,w:250,h:200,filter:1,color_a:150},
+						{type:"icon",id:"item_pic",pos:[0,-10,0],css:pic,anchor_h:1,anchor_v:1},
+						{type:"icon",id:"label",pos:[0,78,0],css:imgLib.box_shoplabel,w:290,mode3x3:1,anchor_h:1,anchor_v:1},
+						cssLib.textFineMid.createCSS([0,78,0],text,280,30,1,1,1,1),
+					],fade:1,fade_alpha:0,fade_size:0.5,
+					onClick:this.onClick
+				};
+			},
+			create:function(box,pos,key,pic,text,hudId)
+			{
+				return box.appendNewChild(this.createCSS(pos,key,pic,text,hudId));
+			},
+			onClick:function(msg,way)
+			{
+				if(way==0)
+				{
+					if(msg==0)
+					{
+						//TODO: StartAni
+						var pos=[0,0,0];
+						this.getPos(pos);
+						this.startAniEx(pos,0.9,1,0,3);
+					}
+					else if(msg==1)
+					{
+						//TODO: StartAni
+						var pos=[0,0,0];
+						this.getPos(pos);
+						this.startAniEx(pos,1,1,0,3);
+					}
+				}
+				return 0;
+			}
+		};
+
+		//-------------------------------------------------------------------------
+		//图片+文字
+		this.cssLib.iconText=
+		{
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,pic,text,type,color,font,offsetY)//文字位置type:0右，1中，2左
+			{
+				var imgLib=this.imgLib;
+				var cssLib=this.cssLib;
+			//	var icon=imgLib.getIcon(pic,64);
+				font=font?font:20;
+				offsetY=offsetY?offsetY:0;
+				var icon=pic;
+				var iconX=icon.w/2, dt=3;
+				var ah=0, txtX=icon.w+dt,txtW=90-icon.w;
+				if(1==type){
+					ah=1;
+					txtX=iconX;
+				}else if(2==type){
+					ah=2;
+					var _txtW=this.page.appEnv.getTextSize(text+"",font,0).w;//14,20,40
+					txtX=_txtW;
+					iconX=_txtW+iconX+dt;
+				}else if(0==type){
+					ah=0;
+					var _txtW=this.page.appEnv.getTextSize(text+"",font,0).w;//14,20,40
+					txtX=0;
+					txtW=_txtW;
+					iconX=txtW+iconX+dt;
+				}
+				return {
+					type:"shape",id:"iconText",pos:pos,w:90,h:icon.h,anchor_h:0,anchor_v:1,items:[
+						{type:"icon",id:"icon",pos:[iconX,0,0],anchor_h:1,anchor_v:1,css:icon},
+					//	{type:"text",id:"text",pos:[txtX,0,0],anchor_h:ah,anchor_v:1,align_h:ah,align_v:1,w:90-icon.w,h:icon.h,text:text+"",font_size:20,color_r:0,color_g:0,color_b:0,color_a:200}
+						{id:"text",css:cssLib.textFineSmall.createCSS([txtX-1,0+offsetY,0],text+"",txtW,icon.h,ah,1,ah,1,color?color:null),font_size:font}//14
+					],
+					lineType:type,
+					resetPos:this.resetPos,_setText:this._setText
+				};
+			},
+			create:function(box,pos,key,pic,text,type,color,font)
+			{
+				var item=box.appendNewChild(this.createCSS(pos,pic,text,type,color));
+				if(2==type)
+					item.resetPos();
+				return item;
+			},
+			resetPos:function()//根据文字实际宽度重设控件坐标
+			{
+				var pos=[];
+				var icon=this.getItemById("icon");
+				var text=this.getItemById("text");
+				var txtW=text.getTextW();
+				text.getPos(pos);
+				text.setPos([txtW,pos[1],0]);
+				var iconW=icon.getW();
+				icon.setPos([txtW+iconW/2,pos[1],0]);
+			},
+			_setText:function(txt)
+			{
+				this.getItemById("text")._setText(txt);
+			}
+		};
+
+		//-------------------------------------------------------------------------
+		//成就按钮, 组合式
+		<include check="0">"ui/css/css_btnAchvmnt.js"</include>
+
+		//-------------------------------------------------------------------------
+		//商店建筑商品按钮, 组合式
+		<include check="0">"ui/css/css_shopblditem.js"</include>
+
+		//-------------------------------------------------------------------------
+		//商店金钱商品按钮, 组合式【zz】
+		<include check="0">"ui/css/css_shopgemitem.js"</include>
+
+		//-------------------------------------------------------------------------
+		//商店代币商品按钮, 组合式【zz】
+		<include check="0">"ui/css/css_shopspecialitem.js"</include>
+
+		//-------------------------------------------------------------------------
+		//建筑物信息按钮, 非组合式
+		<include check="0">"ui/css/css_btnBtmInfo.js"</include>
+
+		//-------------------------------------------------------------------------
+		//建筑物升级按钮, 组合式
+		<include check="0">"ui/css/css_btnBtmUpgrade.js"</include>
+
+		//-------------------------------------------------------------------------
+		//雇佣unit按钮, 非组合式
+		<include check="0">"ui/css/css_btnBtmTrain.js"</include>
+
+		//-------------------------------------------------------------------------
+		//收取资源按钮, 非组合式
+		<include check="0">"ui/css/css_btnBtmHarvest.js"</include>
+
+		//-------------------------------------------------------------------------
+		//取消建造/升级按钮, 非组合式
+		<include check="0">"ui/css/css_btnBtmAbtBuild.js"</include>
+
+		//-------------------------------------------------------------------------
+		//研究升级的按钮, 非组合式:
+		<include check="0">"ui/css/css_btnBtmSpell.js"</include>
+
+		//-------------------------------------------------------------------------
+		//制造魔法的按钮, 非组合式:
+		<include check="0">"ui/css/css_btnBtmResearch.js"</include>
+
+		//-------------------------------------------------------------------------
+		//加速资源的按钮, 非组合式:
+		<include check="0">"ui/css/css_btnBtmBstRes.js"</include>
+
+		//-------------------------------------------------------------------------
+		//移除障碍物的按钮, 非组合式:
+		<include check="0">"ui/css/css_btnBtmRemove.js"</include>
+
+		//-------------------------------------------------------------------------
+		//移除所有墓碑的按钮, 非组合式:
+		<include check="0">"ui/css/css_btnBtmGraveRemove.js"</include>
+
+		//-------------------------------------------------------------------------
+		//使用钻石完成建造的按钮, 组合式:
+		<include check="0">"ui/css/css_btnBtmGemDone.js"</include>
+
+		//-------------------------------------------------------------------------
+		//选择一行墙:
+		<include check="0">"ui/css/css_btnBtmSelRow.js"</include>
+
+		//-------------------------------------------------------------------------
+		//打开机甲零件界面, 非组合式:
+		<include check="0">"ui/css/css_btnBtmPart.js"</include>
+
+		//-------------------------------------------------------------------------
+		//打开机甲模块界面, 非组合式:
+		<include check="0">"ui/css/css_btnBtmAddOn.js"</include>
+
+		//-------------------------------------------------------------------------
+		//打开组装机甲界面, 非组合式:
+		<include check="0">"ui/css/css_btnBtmAssemble.js"</include>
+
+		//-------------------------------------------------------------------------
+		//打开组装机甲界面, 非组合式:
+		<include check="0">"ui/css/css_btnBtmStatusMac.js"</include>
+
+		//-------------------------------------------------------------------------
+		//打开组装机甲界面, 非组合式:
+		<include check="0">"ui/css/css_btnBtmMacGemFixDone.js"</include>
+
+		//-------------------------------------------------------------------------
+		//打开抽宝箱界面, 非组合式:
+		<include check="0">"ui/css/css_btnBtmBox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//打开抽宝箱界面, 非组合式:
+		<include check="0">"ui/css/css_btnBtmItem.js"</include>
+
+		//-------------------------------------------------------------------------
+		//研究科技的按钮, 组合式:
+		<include check="0">"ui/css/css_btnResearch.js"</include>
+
+		//-------------------------------------------------------------------------
+		//训练单位的按钮, 组合式:
+		<include check="0">"ui/css/css_btnTrainUnit.js"</include>
+
+		//-------------------------------------------------------------------------
+		//制造魔法的按钮, 组合式:
+		<include check="0">"ui/css/css_btnMakeSpell.js"</include>
+
+		//制造魔法的按钮, 组合式:
+		<include check="0">"ui/css/css_btnMakePart.js"</include>
+
+		//制造魔法的按钮, 组合式:
+		<include check="0">"ui/css/css_btnChoosePart.js"</include>
+
+		//-------------------------------------------------------------------------
+		//训练中单位的按钮, 组合式:
+		<include check="0">"ui/css/css_btnTraining.js"</include>
+
+		//-------------------------------------------------------------------------
+		//训练中单位的按钮, 组合式:
+		<include check="0">"ui/css/css_btnMakingPrt.js"</include>
+
+		//-------------------------------------------------------------------------
+		//用于部署的战斗单位/法术的按钮, 组合式:
+		<include check="0">"ui/css/css_btnBattleUnit.js"</include>
+
+		//-------------------------------------------------------------------------
+		//战斗中玩家信息
+		<include check="0">"ui/css/css_lvbar.js"</include>
+
+		//-------------------------------------------------------------------------
+		//联盟中心
+		<include check="0">"ui/css/css_btnBtmClan.js"</include>
+
+		//-------------------------------------------------------------------------
+		//请求援军
+		<include check="0">"ui/css/css_btnBtmRqstForce.js"</include>
+
+		//-------------------------------------------------------------------------
+		//装载炮弹
+		<include check="0">"ui/css/css_btnBtmAmmoReload.js"</include>
+
+		//-------------------------------------------------------------------------
+		//切换防守模式
+		<include check="0">"ui/css/css_btnBtmSwitchMode.js"</include>
+
+		//-------------------------------------------------------------------------
+		//防御哨岗-驻扎
+		<include check="0">"ui/css/css_btnBtmResidence.js"</include>
+
+		//-------------------------------------------------------------------------
+		//开启障碍物类宝箱
+		<include check="0">"ui/css/css_btnBtmOpenBox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//礼包
+		<include check="0">"ui/css/css_btnBtmGift.js"</include>
+		//-------------------------------------------------------------------------
+		//公告
+		<include check="0">"ui/css/css_btnBtmNotice.js"</include>
+
+		//联盟徽章
+		<include check="0">"ui/css/css_clanFlag.js"</include>
+
+		//减少建筑物建造/升级时间
+		<include check="0">"ui/css/css_btnBtmCutConstructTime.js"</include>
+		<include check="0">"ui/css/css_btnBtmCutCstTime.js"</include>
+
+		//-------------------------------------------------------------------------
+		//重置陷阱的按钮, 非组合式:
+		<include check="0">"ui/css/css_btnBtmReset.js"</include>
+		<include check="0">"ui/css/css_btnBtmResetAll.js"</include>
+	}
+
+	//**************************************************************************
+	//各种界面框体**************************************************************
+	//**************************************************************************
+	{
+		//--------------------------------------------------------------------------
+		//对话框的标题栏
+		this.cssLib.dlgTitleBox={css:imgLib.box_dlgtitle,w:240.00,mode3x3:1,filter:1};
+
+		//--------------------------------------------------------------------------
+		//非全屏对话框的背景
+		this.cssLib.dlgFrameBox={css:imgLib.box_dlgbox,w:240.00,mode3x3:1,filter:1};
+
+		//--------------------------------------------------------------------------
+		//暗框:
+		this.cssLib.boxDark={css:imgLib.box_dark,w:240.00,mode3x3:1,filter:1};
+
+		//--------------------------------------------------------------------------
+		//色框:
+		this.cssLib.boxSolid={css:imgLib.box_solid,w:240.00,mode3x3:1,filter:1};
+
+		//--------------------------------------------------------------------------
+		//资源框:
+		this.cssLib.resBox={css:imgLib.box_resboxMirror,w:240.00,mode3x3:1,filter:1};
+
+		//--------------------------------------------------------------------------
+		//经验框【zz】:
+		this.cssLib.expBox={css:imgLib.box_resbox,w:240.00,mode3x3:1,filter:1};
+
+		//--------------------------------------------------------------------------
+		//排队箭头:
+		this.cssLib.picQueue={css:imgLib.pic_queue,w:400.00,mode3x3:1,filter:1};
+
+		//-------------------------------------------------------------------------
+		//建筑头顶建造进度条
+		<include check="0">"ui/css/css_busybar.js"</include>
+
+		//-------------------------------------------------------------------------
+		//建筑头顶生产进度条
+		<include check="0">"ui/css/css_mfcbar.js"</include>
+
+		//-------------------------------------------------------------------------
+		//经验条【zz】:
+		<include check="0">"ui/css/css_expbar.js"</include>
+
+		//-------------------------------------------------------------------------
+		//资源条:
+		<include check="0">"ui/css/css_resbar.js"</include>
+
+		//-------------------------------------------------------------------------
+		//奖章条【zz】:
+		<include check="0">"ui/css/css_medalbox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//时间碎片条:
+		<include check="0">"ui/css/css_cuttimebox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//建筑信息界面的状态条【zz】:
+		<include check="0">"ui/css/css_statusbar.js"</include>
+
+		//-------------------------------------------------------------------------
+		//建筑工人条:
+		<include check="0">"ui/css/css_builderbox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//钻石条【zz】:
+		<include check="0">"ui/css/css_gembox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//代币条【zz】:
+		<include check="0">"ui/css/css_tokenbox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//免战牌条:
+		<include check="0">"ui/css/css_shieldbox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//土豪金卡标示:
+		<include check="0">"ui/css/css_thbox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//仓库详情box:
+		<include check="0">"ui/css/css_boxstore.js"</include>
+		<include check="0">"ui/css/css_boxstore_clan.js"</include>
+		<include check="0">"ui/css/css_boxstore_unit.js"</include>
+
+		//-------------------------------------------------------------------------
+		//解锁box【zz】:
+		<include check="0">"ui/css/css_boxunlock.js"</include>
+
+		//-------------------------------------------------------------------------
+		//库中单位【zz】:
+		<include check="0">"ui/css/css_btnStoreUnit.js"</include>
+
+		//-------------------------------------------------------------------------
+		//成就进度条【zz】:
+		<include check="0">"ui/css/css_achvmntbar.js"</include>
+
+		//-------------------------------------------------------------------------
+		//竖排菜单【zz】:
+		<include check="0">"ui/css/css_menubox.js"</include>
+
+		//-------------------------------------------------------------------------
+		//战斗倒计时:
+		<include check="0">"ui/css/css_battleTime.js"</include>
+		//抢夺资源条:
+		<include check="0">"ui/css/css_lootbar.js"</include>
+		//抢夺荣誉值
+		<include check="0">"ui/css/css_medalBTbox.js"</include>
+
+	}
+
+
+	//**************************************************************************
+	//各种文字样式**************************************************************
+	//**************************************************************************
+	{
+		//--------------------------------------------------------------------------
+		//大号带阴影的文字
+		this.cssLib.textFineBig={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				wrap=wrap?wrap:0;
+				return {
+					type:"text",pos:[pos[0],pos[1],0],font_size:40,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,
+					edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,shadow:1,shadow_r:0,shadow_g:0,shadow_b:0,shadow_a:180,shadow_x:1,shadow_y:3,
+					color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,text:text+"",wrap:wrap,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					_setText:this._setText,_setColor:this._setColor,__setColor:this.__setColor
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+			_setText:function(text)
+			{
+				this.setText(text);
+			},
+			_setColor:function(r,g,b,a)
+			{
+				this.setColor(r,g,b,a);
+			},
+			__setColor:function(color)
+			{
+				this.setColor.apply(this,color);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//中号号带阴影的文字
+		this.cssLib.textFineMid={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				wrap=wrap?wrap:0;
+				return {
+					type:"text",pos:[pos[0],pos[1],0],font_size:24,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,
+					edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,shadow:1,shadow_r:0,shadow_g:0,shadow_b:0,shadow_a:180,shadow_x:1,shadow_y:2,
+					color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,text:text+"",wrap:wrap,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					_setText:this._setText,_setColor:this._setColor,__setColor:this.__setColor
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+			_setText:function(text)
+			{
+				this.setText(text);
+			},
+			_setColor:function(r,g,b,a)
+			{
+				this.setColor(r,g,b,a);
+			},
+			__setColor:function(color)
+			{
+				this.setColor.apply(this,color);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//小号号带阴影的文字
+		this.cssLib.textFineSmall={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				wrap=wrap?wrap:0;
+				return {
+					type:"text",pos:[pos[0],pos[1],0],font_size:14,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,
+					edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,shadow:1,shadow_r:0,shadow_g:0,shadow_b:0,shadow_a:180,shadow_x:1,shadow_y:2,
+					color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,text:text+"",wrap:wrap,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					_setText:this._setText,_setColor:this._setColor,__setColor:this.__setColor
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+			_setText:function(text)
+			{
+				this.setText(text);
+			},
+			_setColor:function(r,g,b,a)
+			{
+				this.setColor(r,g,b,a);
+			},
+			__setColor:function(color)
+			{
+				this.setColor.apply(this,color);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//大号带阴影的score文字
+		this.cssLib.textScoreBig={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				wrap=wrap?wrap:0;
+				return {
+					type:"txt_score",pos:[pos[0],pos[1],0],font_size:40,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,
+					edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,shadow:1,shadow_r:0,shadow_g:0,shadow_b:0,shadow_a:180,shadow_x:1,shadow_y:3,
+					color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,wrap:wrap,
+					score:text,value_type:1,digit:2,digi_gap:1,show_add:0,grow:1/25,fake_zero:0,//prefix:"前缀",postfix:"后缀",text:text,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					_setText:this._setText,
+					_setScore:this._setScore,
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+			_setText:function(text)
+			{
+				this.setText(text);
+			},
+			_setScore:function(score)
+			{
+				this.setScore(score);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//中号号带阴影的score文字
+		this.cssLib.textScoreMid={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				wrap=wrap?wrap:0;
+				return {
+					type:"txt_score",pos:[pos[0],pos[1],0],font_size:24,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,
+					edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,shadow:1,shadow_r:0,shadow_g:0,shadow_b:0,shadow_a:180,shadow_x:1,shadow_y:2,
+					color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,wrap:wrap,
+					score:text,value_type:1,digit:1,show_add:0,grow:0.25,fake_zero:0,//prefix:"前缀",postfix:"后缀",text:text,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					_setText:this._setText,
+					_setScore:this._setScore,
+					_setShowScore:this._setShowScore,
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+			_setText:function(text)
+			{
+				this.setText(text);
+			},
+			_setScore:function(score)
+			{
+				this.setScore(score);
+			},
+			_setShowScore:function(score)
+			{
+				this.setShowScore(score);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//小号号带阴影的score文字
+		this.cssLib.textScoreSmall={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				wrap=wrap?wrap:0;
+				return {
+					type:"txt_score",pos:[pos[0],pos[1],0],font_size:14,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,
+					edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,shadow:1,shadow_r:0,shadow_g:0,shadow_b:0,shadow_a:180,shadow_x:1,shadow_y:2,
+					color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,wrap:wrap,
+					score:text,value_type:1,digit:1,show_add:0,grow:0.25,fake_zero:0,//prefix:"前缀",postfix:"后缀",text:text,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					_setText:this._setText,
+					_setScore:this._setScore,
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+			_setText:function(text)
+			{
+				this.setText(text);
+			},
+			_setScore:function(score)
+			{
+				this.setScore(score);
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//大号不带阴影的文字
+		this.cssLib.textBig={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"text",pos:pos,font_size:40,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,wrap:wrap,
+					edge:0,edge_r:0,edge_g:0,edge_b:0,edge_a:100,color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,text:text,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+		};
+
+		//--------------------------------------------------------------------------
+		//中号不带阴影的文字
+		this.cssLib.textMid={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"text",pos:pos,font_size:20,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,wrap:wrap,
+					edge:0,edge_r:0,edge_g:0,edge_b:0,edge_a:100,color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,text:text,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+		};
+
+		//--------------------------------------------------------------------------
+		//小号不带阴影的文字
+		this.cssLib.textSmall={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				var imgLib=this.imgLib;
+				return {
+					type:"text",pos:pos,font_size:14,anchor_h:kh,anchor_v:kv,align_h:ah,align_v:av,w:w,h:h,wrap:wrap,
+					edge:0,edge_r:0,edge_g:0,edge_b:0,edge_a:100,color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,text:text,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color,wrap)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color,wrap));
+			},
+		};
+	}
+
+		//--------------------------------------------------------------------------
+		//中号号带阴影的文字
+		this.cssLib.scoreFineMid={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			createCSS:function(pos,text,w,h,kh,kv,ah,av,color)
+			{
+				var imgLib=this.imgLib;
+				return {
+					"type":"txt_score","pos":[pos[0],pos[1],0],font_size:20,"anchor_h":kh,"anchor_v":kv,align_h:ah,align_v:av,w:w,h:h,
+					edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,shadow:1,shadow_r:0,shadow_g:0,shadow_b:0,shadow_a:180,shadow_x:1,shadow_y:2,
+					color_r:color?color[0]:255,color_g:color?color[1]:255,color_b:color?color[2]:255,color_a:255,wrap:0,digit:3,digi_gap:1,
+					display:1,fade:1,fade_size:1,fade_alpha:0,
+					_setPrefix:this._setPrefix,
+					_setPostfix:this._setPostfix,
+					_setModifer:this._setModifer,
+					bindToValue:this.bindToValue,
+					_getScore:this._getScore,
+				};
+			},
+			create:function(box,pos,text,w,h,kh,kv,ah,av,color)
+			{
+				return box.appendNewChild(this.createCSS(pos,text,w,h,kh,kv,ah,av,color));
+			},
+			_setPrefix:function(text)
+			{
+				this.setPreFix(text);
+			},
+			_setPostfix:function(text)
+			{
+				this.setPostFix(text);
+			},
+			_setModifer:function(baseVal,factor)
+			{
+				this.setBaseScore(baseVal);
+				this.setScoreFactor(factor);
+			},
+			bindToValue:function(obj,chn)
+			{
+				obj.bindToHud(this,chn);
+			},
+			_getScore:function()
+			{
+				return this.getScore();
+			}
+		};
+
+		//--------------------------------------------------------------------------
+		//输入框
+		this.cssLib.inputBox={
+			cssLib:this.cssLib,
+			imgLib:this.imgLib,
+			page:this,
+			createCSS:function(pos,w,h,keyid,tip,text,max,pwd,dot)
+			{
+				var imgLib=this.imgLib;
+				var textLib=this.page.appEnv.textLib;
+				return {type:"div3x3",id:"inputBox",pos:pos,w:w,h:h,css:imgLib.getImg("box_chat_input"),anchor_h:0,anchor_v:1,ui_event:1,
+					items:[
+						{type:"key",pos:[0,0,0],w:w,h:h,anchor_h:0,anchor_v:1,key:keyid,button:1,ui_event:1,state_up:{w:w,h:h},audio:this.page.audioObject.genFileURL("btn_click"),},
+						{type:"text",id:"txt",pos:[8,3,0],w:w,h:h,anchor_h:0,anchor_v:1,align_h:0,align_v:1,text:text,color_r:60,color_g:60,color_b:60,color_a:160,font_size:FS.S}
+					],
+					textStr:text,maxStrLen:max,pwd:pwd,tipStr:tip,
+					onInput:function()
+					{
+					//	var textLib=this.page.appEnv.textLib
+						var maxStrLen=this.maxStrLen;
+						var txtItem=this.getItemById("txt");
+						var txt,txtTip,txtDefault;//, textLib=this.page.appEnv.textLib;
+					//	DBOut(Dialogs.asyncInputLine);
+						txtTip=this.tipStr?this.tipStr:this.textStr;
+						if(1 || !Dialogs.asyncInputLine)
+						{
+							if(!pwd)
+								txt=Dialogs.getText(txtTip,"",0,Dialogs.ANY);
+							else
+								txt=Dialogs.getText(txtTip,"",0,Dialogs.PASSWORD);
+						}
+//						else
+//						{
+//							Dialogs.asyncInputLine(this.textStr, textLib["OK"], textLib["Cancel"], function(code, text)
+//							{
+//								if(code)
+//								{
+//									txt=text;
+//								}
+//							}, this);
+//						}
+						if(txt)
+						{
+							if(txt.length>maxStrLen)
+							{
+								txt=txt.substr(0,maxStrLen);
+							}
+						//	this.setText(txt);
+						}
+						return txt;
+					},
+					setError:function(txt)
+					{
+						var txtItem=this.getItemById("txt");
+						txtItem.setText(txt);
+						txtItem.setColor(200,50,50,200);
+					},
+					_setText:function(txt)
+					{
+						var txtItem=this.getItemById("txt");
+						txtItem.setText(txt);
+						txtItem.setColor(0,0,0,200);
+					}
+				};
+			},
+			create:function(box,pos,w,h,keyid,text,max,pwd,dot,tip)
+			{
+				var item=box.appendNewChild(this.createCSS(pos,w,h,keyid,text,max,pwd,dot,tip));
+				item.txtItem=item.getItemById("txt");
+				return item;
+			}
+		};
+
+	this.cssLib.multiList={//可创建复杂的listbox
+		createCSS:function(pos,w,h,keyid,itemW,itemH,subW,subH,arrange,total)
+		{
+			if(!itemW || !itemH || !subW || !subH)
+			{
+				DBOut("size error!!!");
+				return;
+			}
+			var subNum=Math.floor(itemW/subW), subGap=0, mode=0;
+			if(subNum<1){
+				DBOut("****** cssLib.multiList size error ******");
+			//	return;
+			}else if(1==subNum){
+				mode=1;//正常
+			}else if(!arrange){//这样写条件判断语句是否有问题？
+				mode=2;//纵排，子项横排子控件
+				subGap=Math.floor((itemW-subW*subNum)/(subNum+1));
+			}else if(1==arrange){
+				mode=3;//横排，子项纵排子控件
+				subGap=Math.floor((itemH-subH*subNum)/(subNum+1));
+			}
+			var subX=Math.floor((itemW-subW*subNum)/2), subY=Math.floor((itemH-subH*subNum)/2);
+			this.mode=mode, this.itemW=itemW, this.itemH=itemH, this.subW=subW, this.subH=subH, this.total=total, this.subGap=subGap;
+			this.itemNum=Math.ceil(total/subNum), this.subNum=subNum, this.subX=subX, this.subY=subY;
+			var css={type:"listbox",id:"lbx",pos:pos,w:w,h:h,anchor_h:0,anchor_v:0,ui_event:1,sub_event:1,kye:keyid,
+				arrange:arrange,end_gap:0,move_gap:20,fast_scroll:1,show_fx:0,show_align:0,hot_check:1,//hot_item:0,
+				item_alpha_up:1.0,item_alpha_down:1.0,item_alpha_check:1.0,item_alpha_dimmed:1.0,
+				item_size_up:1.0,item_size_down:1.0,item_size_check:1.0,item_size_dimmed:1.0,
+				item_w:itemW,item_h:itemH,tick_event:1,onMoveTick:function(){},
+				display:1,fade:1,fade_size:1,fade_alpha:0,clip:0,subNum:subNum,line_items:[],
+				//
+				mode:mode,itemW:itemW,itemH:itemH,subW:subW,subH:subH,subX:subX,subY:subY,total:total,curIdx:0,subGap:subGap,
+				_addItem:this._addItem, update:this.update, findItem:this.findItem
+			};
+			return css;
+		},
+		create:function(box,pos,w,h,keyid,itemW,itemH,subW,subH,arrange,total)//arrange: 列表的滚动方向。0 为纵向滚动，1 为横向滚动。默认为 0 。
+		{
+			var hud=box.appendNewChild(this.createCSS(pos,w,h,keyid,itemW,itemH,subW,subH,arrange,total));
+			return hud;
+		},
+		_addItem:function(idx,itemCSS)
+		{
+			if(1==this.mode)
+			{
+				var index=this.addItem(itemCSS);
+				hud=this.itemAt(index);
+			}
+			else
+			{
+				var itemIdx=Math.floor(idx/this.subNum);
+				var subIdx=idx%this.subNum;
+				if(!this.itemAt(itemIdx))
+				{
+					this.addItem({type:"icon",pos:[0,0,0],w:this.itemW,h:this.itemH,anchor_h:0,anchor_v:0,ui_event:1});
+				}
+				var x, y;
+				if(2==this.mode)//纵排，子项横排子控件
+				{
+					x=this.subGap*(subIdx+1)+subIdx*this.subW;//+this.subX;
+					y=0;
+				}
+				else if(3==this.mode)//横排，子项纵排子控件
+				{
+					x=0;
+					y=this.subGap*(subIdx+1)+subIdx*this.subH;//+this.subY;
+				}
+				if(itemCSS.pos && itemCSS.pos.length)
+				{
+					x+=itemCSS.pos[0];
+					y+=itemCSS.pos[1];
+				}
+				else
+				{
+					if(itemCSS.x)
+						x+=itemCSS.x;
+					if(itemCSS.y)
+						y+=itemCSS.y;
+				}
+				hud=this.itemAt(itemIdx).appendNewChild({id:"sub"+subIdx,pos:[x,y,0],css:itemCSS});
+			}
+			this.curIdx++;
+			return hud;
+		},
+		update:function(listVO)
+		{
+		//	DBOut("lbx update, vos="+listVO+" mode:"+this.mode);
+			var num=this.getItemNum();
+			var cnt=listVO.length;
+			var i, item, vo;
+			if(1==this.mode)
+			{
+				for(i=0; i<num; i++)
+				{
+					vo=listVO[i];
+					item=this.itemAt(i);
+					if(item && item.update)
+					{
+						item.update(vo);
+					}
+				}
+			}
+			else
+			{
+				var itemIdx, subIdx, hud;
+				for(i=0; i<cnt; i++)
+				{
+					vo=listVO[i];
+					itemIdx=Math.floor(i/this.subNum);
+					subIdx=i%this.subNum;
+					hud=this.itemAt(itemIdx);
+					item=hud.getItemById("sub"+subIdx);
+				//	DBOut(item+" === "+item.update);
+					if(item && item.update)
+					{
+						item.update(vo);
+					}
+				}
+			}
+		},
+		findItem:function(idx)
+		{
+			var itemIdx, subIdx, hud, item;
+			itemIdx=Math.floor(idx/this.subNum);
+			subIdx=idx%this.subNum;
+			hud=this.itemAt(itemIdx);
+			item=hud.getItemById("sub"+subIdx);
+			return {item:item,idx:itemIdx};
+		}
+	};
+
+	this.cssLib.genPoints=function(pos1,pos2,minSeg,retList)
+	{
+		var dx,dy,r,ditx,dity,nx,ny,cx,cy,rn;
+		dx=pos2[0]-pos1[0];
+		dy=pos2[1]-pos1[1];
+		r=Math.sqrt(dx*dx+dy*dy);
+		ditx=dx/r;
+		dity=dy/r;
+		nx=dity;ny=-ditx;
+		cx=dx/2;cy=dy/2;
+		rn=Math.random()*r*0.25;
+		cx+=nx*rn;cy+=ny*rn;
+		retList.push([pos1[0]+cx,pos1[1]+cy,0]);
+		if(r>minSeg || r<20)
+		{
+			this.genPoints(pos1,[pos1[0]+cx,pos1[1]+cy],minSeg,retList);
+			this.genPoints([pos1[0]+cx,pos1[1]+cy],pos2,minSeg,retList);
+		}
+	};
+	//--------------------------------------------------------------------------
+	//为编辑器增加CSS
+	if(window.addCSSObj)//在这里添加编辑器可以选择的CSS
+	{
+	}
+};
+__Page.initCSSLib();

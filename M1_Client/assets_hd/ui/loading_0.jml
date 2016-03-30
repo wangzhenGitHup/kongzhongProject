@@ -1,0 +1,16 @@
+//For image: loading_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("loading_0_32.png"));
+	this.imgInfos["loading_0_32"]={w:1024,h:1024};
+	this["logo"]={tex_u:2/1024, tex_v:1/1024, tex_w:475/1024, tex_h:213/1024, w:475, h:213, tex:this.imgList[id]};
+	this["box_dlgbox"]={tex_u:481/1024, tex_v:3/1024, tex_w:46/1024, tex_h:50/1024, w:46, h:50, tex:this.imgList[id]};
+	this["loading_tips"]={tex_u:484/1024, tex_v:60/1024, tex_w:40/1024, tex_h:40/1024, w:40, h:40, tex:this.imgList[id]};
+	this["box_dlgcontent"]={tex_u:529/1024, tex_v:1/1024, tex_w:38/1024, tex_h:38/1024, w:38, h:38, tex:this.imgList[id]};
+	this["loading_bar_obj"]={tex_u:569/1024, tex_v:3/1024, tex_w:22/1024, tex_h:17/1024, w:22, h:17, tex:this.imgList[id]};
+	this["loading_bar_bar"]={tex_u:1/1024, tex_v:219/1024, tex_w:470/1024, tex_h:50/1024, w:470, h:50, tex:this.imgList[id]};
+	this["loading_bg"]={tex_u:4/1024, tex_v:276/1024, tex_w:960/1024, tex_h:640/1024, w:960, h:640, tex:this.imgList[id]};
+}

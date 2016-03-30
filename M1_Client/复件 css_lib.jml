@@ -1,0 +1,120 @@
+﻿
+	this.cssLib.multiList={
+		createCSS:function(pos,w,h,keyid,itemW,itemH,itemCSS,arrange,listVO)
+		{
+			var subW=itemCSS.w, subH=itemCSS.h, subNum=0;
+			subNum=Math.floor(itemW/subW);
+			if(1<subNum){
+				DBOut("****** cssLib.multiList size error ******");
+			}else if(1==subNum){
+				this.mode=1;//正常
+			}else if(!arrange){//这样写条件判断语句是否有问题？
+				this.mode=2;//纵排，子项横排子控件
+			}else if(1==arrange){
+				this.mode=3;//横排，子项纵排子控件
+			}
+			this.itemW=itemW, this.itemH=itemH, this.subW=subW, this.subH=subH, this.listVO=listVO, this.itemCSS=itemCSS;
+			this.subNum=subNum, this.itemNum=Math.ceil(listVO.length/subNum);
+			var css={type:"listbox",id:"lbx",pos:pos,w:w,h:h,anchor_h:0,anchor_v:0,ui_event:1,sub_event:1,kye:keyid,
+				arrange:arrange,end_gap:0,move_gap:20,fast_scroll:1,show_fx:0,hot_check:1,//hot_item:0,
+				item_alpha_up:1.0,item_alpha_down:1.0,item_alpha_check:1.0,item_alpha_dimmed:1.0,
+				item_size_up:1.0,item_size_down:1.0,item_size_check:1.0,item_size_dimmed:1.0,
+				item_w:itemW,item_h:itemH,tick_event:1,onMoveTick:function(){},
+				display:1,fade:1,fade_size:1,fade_alpha:0,clip:1,subNum:subNum,line_items:[],
+				//
+				mode:this.mode,itemW:itemW,itemH:itemH,subW:subW,subH:subH,listVO:listVO,itemCSS:itemCSS,
+				getItemsCSS:this.getItemsCSS, getItemCSS:this.getItemCSS, getSubItemCSS:this.getSubItemCSS,
+				_addItem:this._addItem, _addItems:this._addItems,
+				update:this.update, updateSub:this.updateSub,
+			};
+			return css;
+		},
+		create:function(box,pos,w,h,keyid,itemW,itemH,itemCSS,arrange,listVO)//arrange: 列表的滚动方向。0 为纵向滚动，1 为横向滚动。默认为 0 。
+		{
+			var hud=box.appendNewChild(this.createCSS(pos,w,h,keyid,itemW,itemH,itemCSS,arrange,listVO));
+			hud._addItems(listVO,itemCSS);
+			return hud;
+		},
+		getItemsCSS:function(listVO,itemCSS)
+		{
+			var i, items=[], vos=[];
+			for(i=0; i<listVO.length; i++)
+			{
+				if(1==this.mode)
+					items.push(this.getItemCSS(listVO[i],itemCSS));
+				else
+				{
+					vos=listVO.slice(i,i+this.subNum);
+					items.push(this.getSubItemCSS(i,itemCSS));
+				}
+				i+=(this.subNum-1);
+			}
+			return items;
+		},
+		getItemCSS:function(vo,itemCSS)
+		{
+			if(1==this.mode)
+				return itemCSS.createCSS(vo);
+		},
+		getSubItemCSS:function(idx,itemCSS)
+		{
+			var listVO=this.listVO;
+			var i, x, y, items=[], vos=[];
+//			for(i=0; i<this.subNum; i++)
+//			{
+//				vos.push(listVO[idx+i]);
+//			}
+			vos=listVO.slice(idx,idx+this.subNum);
+			for(i=0; i<vos.length; i++)
+			{
+				if(2==this.mode)//纵排，子项横排子控件
+				{
+					x=i*this.subW;
+					y=0;
+				}
+				else if(3==this.mode)//横排，子项纵排子控件
+				{
+					x=0;
+					y=i*this.subH;
+				}
+				items.push({id:"sub"+i,pos:[x,y,0],css:itemCSS.createCSS(vos[i])});
+			}
+			var css={type:"icon",pos:[0,0,0],w:this.itemW,h:this.itemH,anchor_h:0,anchor_v:0,ui_event:1,items:items};
+			return css;
+		},
+		_addItem:function()
+		{
+			
+		},
+		_addItems:function(listVO,itemCSS)
+		{
+			var items=this.getItemsCSS(listVO,itemCSS);
+			this.addItems(items);
+		},
+		update:function(listVO)
+		{
+			var num=this.getItemNum();
+			var i, item, vo;
+			for(i=0; i<num; i++)
+			{
+				item=this.itemAt(i);
+				if(item && item.update)
+				{
+					item.update(vo);
+				}
+			}
+		},
+		updateSub:function(listVO)
+		{
+			var num=this.getFather().subNum;
+			var i, item, vo;
+			for(i=0; i<num; i++)
+			{
+				item=this.getItemById("sub"+i);
+				if(item && item.update)
+				{
+					item.update(vo);
+				}
+			}
+		},
+	};

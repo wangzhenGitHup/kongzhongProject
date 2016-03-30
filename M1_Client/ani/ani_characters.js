@@ -1,0 +1,1082 @@
+﻿{//农民
+	name:"chr_Farmer",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_Farmer.spl")],
+	actions:[
+		{name:"stay",subani:[
+			{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_Farmer_01_stay001"},
+			{name:"stay_2",weight:10,loop:1,dit_mode:0,sprite:"chr_Farmer_01_work1001"},
+			{name:"stay_3",weight:10,loop:1,dit_mode:7,sprite:"chr_Farmer_01_work2001"},
+		]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_Farmer_01_walk001"},]},
+		null,//attack
+		{name:"work",subani:[
+			{name:"work_1",weight:10,loop:1,dit_mode:0,sprite:"chr_Farmer_01_work1001"},
+			{name:"work_2",weight:10,loop:1,dit_mode:7,sprite:"chr_Farmer_01_work2001"},
+		]},
+		null,//cheer
+	]
+},
+{//工人
+	name:"chr_Worker",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_Worker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_Worker_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_Worker_01_walk001"},]},
+		null,//attack
+		{name:"work",subani:[
+			{name:"work_1",weight:10,loop:1,dit_mode:7,sprite:"chr_Worker_01_work1001"},
+			{name:"work_2",weight:10,loop:1,dit_mode:7,sprite:"chr_Worker_01_work2001"},
+		]},
+		null,//cheer
+	]
+},
+{//海盗-1
+	name:"chr_Pirate_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_Pirate.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_Pirate_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_Pirate_01_walk001"},]},
+		{name:"attack",subani:[
+			{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_Pirate_01_attack1001"},
+			{name:"attack_2",weight:10,loop:0,dit_mode:7,sprite:"chr_Pirate_01_attack2001"},
+		]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_Pirate_01_cheer1001"},]},
+	]
+},
+{//敢死队-1
+	name:"chr_UntMarine_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntMarine.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMarine_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMarine_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_01_cheer1001"},]},
+	]
+},
+{//敢死队-2
+	name:"chr_UntMarine_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntMarine.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMarine_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMarine_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_01_cheer1001"},]},
+	]
+},
+{//敢死队-3
+	name:"chr_UntMarine_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntMarine.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMarine_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMarine_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_02_cheer1001"},]},
+	]
+},
+{//敢死队-4
+	name:"chr_UntMarine_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntMarine.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMarine_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMarine_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_02_cheer1001"},]},
+	]
+},
+{//敢死队-5
+	name:"chr_UntMarine_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntMarine.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMarine_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMarine_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_03_cheer1001"},]},
+	]
+},
+{//敢死队-6
+	name:"chr_UntMarine_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntMarine.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMarine_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMarine_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_04_cheer1001"},]},
+	]
+},
+{//敢死队-7
+	name:"chr_UntMarine_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntMarine.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMarine_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMarine_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMarine_04_cheer1001"},]},
+	]
+},
+{//狙击菁英-1
+	name:"chr_UntSniper_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntSniper.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntSniper_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntSniper_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_01_cheer1001"},]},
+	]
+},
+{//狙击菁英-2
+	name:"chr_UntSniper_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntSniper.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntSniper_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntSniper_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_01_cheer1001"},]},
+	]
+},
+{//狙击菁英-3
+	name:"chr_UntSniper_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntSniper.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntSniper_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntSniper_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_02_cheer1001"},]},
+	]
+},
+{//狙击菁英-4
+	name:"chr_UntSniper_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntSniper.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntSniper_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntSniper_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_02_cheer1001"},]},
+	]
+},
+{//狙击菁英-5
+	name:"chr_UntSniper_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntSniper.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntSniper_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntSniper_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_03_cheer1001"},]},
+	]
+},
+{//狙击菁英-6
+	name:"chr_UntSniper_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntSniper.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntSniper_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntSniper_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_04_cheer1001"},]},
+	]
+},
+{//狙击菁英-7
+	name:"chr_UntSniper_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntSniper.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntSniper_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntSniper_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntSniper_04_cheer1001"},]},
+	]
+},
+{//掠夺工兵-1
+	name:"chr_UntHacker_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHacker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHacker_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntHacker_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_01_cheer1001"},]},
+	]
+},
+{//掠夺工兵-2
+	name:"chr_UntHacker_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHacker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHacker_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntHacker_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_01_cheer1001"},]},
+	]
+},
+{//掠夺工兵-3
+	name:"chr_UntHacker_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHacker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHacker_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntHacker_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_02_cheer1001"},]},
+	]
+},
+{//掠夺工兵-4
+	name:"chr_UntHacker_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHacker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHacker_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntHacker_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_02_cheer1001"},]},
+	]
+},
+{//掠夺工兵-5
+	name:"chr_UntHacker_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHacker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHacker_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntHacker_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_03_cheer1001"},]},
+	]
+},
+{//掠夺工兵-6
+	name:"chr_UntHacker_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHacker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHacker_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntHacker_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_04_cheer1001"},]},
+	]
+},
+{//掠夺工兵-7
+	name:"chr_UntHacker_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHacker.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHacker_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntHacker_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHacker_04_cheer1001"},]},
+	]
+},
+{//防爆大汉-1
+	name:"chr_UntCyber_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntCyber.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntCyber_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntCyber_01_attack2001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_01_cheer1001"},]},
+	]
+},
+{//防爆大汉-2
+	name:"chr_UntCyber_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntCyber.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntCyber_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntCyber_01_attack2001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_01_cheer1001"},]},
+	]
+},
+{//防爆大汉-3
+	name:"chr_UntCyber_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntCyber.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntCyber_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntCyber_02_attack2001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_02_cheer1001"},]},
+	]
+},
+{//防爆大汉-4
+	name:"chr_UntCyber_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntCyber.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntCyber_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntCyber_02_attack2001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_02_cheer1001"},]},
+	]
+},
+{//防爆大汉-5
+	name:"chr_UntCyber_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntCyber.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntCyber_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntCyber_03_attack2001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_03_cheer1001"},]},
+	]
+},
+{//防爆大汉-6
+	name:"chr_UntCyber_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntCyber.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntCyber_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntCyber_04_attack2001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_04_cheer1001"},]},
+	]
+},
+{//防爆大汉-7
+	name:"chr_UntCyber_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntCyber.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntCyber_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntCyber_04_attack2001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntCyber_04_cheer1001"},]},
+	]
+},
+{//自走炸弹人-1
+	name:"chr_UntTNTMac_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTNTMac.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTNTMac_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTNTMac_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_01_cheer1001"},]},
+	]
+},
+{//自走炸弹人-2
+	name:"chr_UntTNTMac_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTNTMac.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTNTMac_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTNTMac_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_01_cheer1001"},]},
+	]
+},
+{//自走炸弹人-3
+	name:"chr_UntTNTMac_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTNTMac.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTNTMac_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTNTMac_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_02_cheer1001"},]},
+	]
+},
+{//自走炸弹人-4
+	name:"chr_UntTNTMac_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTNTMac.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTNTMac_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTNTMac_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_02_cheer1001"},]},
+	]
+},
+{//自走炸弹人-5
+	name:"chr_UntTNTMac_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTNTMac.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTNTMac_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTNTMac_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_03_cheer1001"},]},
+	]
+},
+{//自走炸弹人-6
+	name:"chr_UntTNTMac_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTNTMac.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTNTMac_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTNTMac_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_04_cheer1001"},]},
+	]
+},
+{//自走炸弹人-7
+	name:"chr_UntTNTMac_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTNTMac.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTNTMac_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTNTMac_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTNTMac_04_cheer1001"},]},
+	]
+},
+{//投弹直升机-1
+	name:"chr_UntChop_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntChop.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_01_cheer1001"},]},
+	]
+},
+{//投弹直升机-2
+	name:"chr_UntChop_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntChop.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_01_cheer1001"},]},
+	]
+},
+{//投弹直升机-3
+	name:"chr_UntChop_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntChop.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_02_cheer1001"},]},
+	]
+},
+{//投弹直升机-4
+	name:"chr_UntChop_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntChop.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_02_cheer1001"},]},
+	]
+},
+{//投弹直升机-5
+	name:"chr_UntChop_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntChop.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_03_cheer1001"},]},
+	]
+},
+{//投弹直升机-6
+	name:"chr_UntChop_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntChop.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_04_cheer1001"},]},
+	]
+},
+{//投弹直升机-7
+	name:"chr_UntChop_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntChop.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntChop_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntChop_04_cheer1001"},]},
+	]
+},
+{//光能猎手-1
+	name:"chr_UntTank_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTank_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTank_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_01_cheer1001"},]},
+	]
+},
+{//光能猎手-2
+	name:"chr_UntTank_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTank_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTank_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_01_cheer1001"},]},
+	]
+},
+{//光能猎手-3
+	name:"chr_UntTank_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTank_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTank_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_02_cheer1001"},]},
+	]
+},
+{//光能猎手-4
+	name:"chr_UntTank_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTank_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTank_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_02_cheer1001"},]},
+	]
+},
+{//光能猎手-5
+	name:"chr_UntTank_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTank_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTank_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_03_cheer1001"},]},
+	]
+},
+{//光能猎手-6
+	name:"chr_UntTank_06",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTank_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTank_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_04_cheer1001"},]},
+	]
+},
+{//光能猎手-7
+	name:"chr_UntTank_07",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntTank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntTank_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:4,sprite:"chr_UntTank_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntTank_04_cheer1001"},]},
+	]
+},
+{//战地护士-1
+	name:"chr_UntHealer_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHealer.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHealer_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntHealer_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_01_cheer1001"},]},
+	]
+},
+{//战地护士-2
+	name:"chr_UntHealer_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHealer.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHealer_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntHealer_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_02_cheer1001"},]},
+	]
+},
+{//战地护士-3
+	name:"chr_UntHealer_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHealer.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHealer_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntHealer_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_03_cheer1001"},]},
+	]
+},
+{//战地护士-4
+	name:"chr_UntHealer_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHealer.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHealer_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntHealer_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_04_cheer1001"},]},
+	]
+},
+{//战地护士-5
+	name:"chr_UntHealer_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntHealer.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntHealer_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntHealer_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntHealer_04_cheer1001"},]},
+	]
+},
+{//地狱火-1
+	name:"chr_UntAvenger_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntAvenger.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntAvenger_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntAvenger_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_01_cheer1001"},]},
+	]
+},
+{//地狱火-2
+	name:"chr_UntAvenger_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntAvenger.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntAvenger_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntAvenger_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_02_cheer1001"},]},
+	]
+},
+{//地狱火-3
+	name:"chr_UntAvenger_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntAvenger.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntAvenger_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntAvenger_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_03_cheer1001"},]},
+	]
+},
+{//地狱火-4
+	name:"chr_UntAvenger_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntAvenger.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntAvenger_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntAvenger_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_04_cheer1001"},]},
+	]
+},
+{//地狱火-5
+	name:"chr_UntAvenger_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntAvenger.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntAvenger_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntAvenger_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvenger_04_cheer1001"},]},
+	]
+},
+{//超级地狱火-1
+	name:"chr_UntAvengerDX_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntAvenger.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvengerdx_05_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntAvengerdx_05_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntAvengerdx_05_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntAvengerdx_05_cheer1001"},]},
+	]
+},
+{//霸王机甲-1
+	name:"chr_UntPEKKA_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntPEKKA.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntPEKKA_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntPEKKA_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_01_cheer001"},]},
+	]
+},
+{//霸王机甲-2
+	name:"chr_UntPEKKA_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntPEKKA.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntPEKKA_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntPEKKA_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_02_cheer001"},]},
+	]
+},
+{//霸王机甲-3
+	name:"chr_UntPEKKA_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntPEKKA.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntPEKKA_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntPEKKA_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_03_cheer001"},]},
+	]
+},
+{//霸王机甲-4
+	name:"chr_UntPEKKA_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntPEKKA.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntPEKKA_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntPEKKA_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_04_cheer001"},]},
+	]
+},
+{//霸王机甲-5
+	name:"chr_UntPEKKA_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntPEKKA.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_04_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntPEKKA_04_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntPEKKA_04_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntPEKKA_04_cheer001"},]},
+	]
+},
+{//无人机-1
+	name:"chr_UntUAV_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntUAV.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntUAV_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntUAV_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_01_cheer1001"},]},
+	]
+},
+{//无人机-2
+	name:"chr_UntUAV_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntUAV.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntUAV_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntUAV_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_01_cheer1001"},]},
+	]
+},
+{//无人机-3
+	name:"chr_UntUAV_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntUAV.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntUAV_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntUAV_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_02_cheer1001"},]},
+	]
+},
+{//无人机-4
+	name:"chr_UntUAV_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntUAV.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntUAV_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntUAV_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_02_cheer1001"},]},
+	]
+},
+{//无人机-5
+	name:"chr_UntUAV_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntUAV.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntUAV_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntUAV_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntUAV_03_cheer1001"},]},
+	]
+},
+{//大镖客-1
+	name:"chr_UntRider_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntRider.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntRider_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntRider_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_01_cheer1001"},]},
+	]
+},
+{//大镖客-2
+	name:"chr_UntRider_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntRider.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntRider_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntRider_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_01_cheer1001"},]},
+	]
+},
+{//大镖客-3
+	name:"chr_UntRider_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntRider.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntRider_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntRider_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_02_cheer1001"},]},
+	]
+},
+{//大镖客-4
+	name:"chr_UntRider_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntRider.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntRider_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntRider_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_02_cheer1001"},]},
+	]
+},
+{//大镖客-5
+	name:"chr_UntRider_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntRider.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntRider_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntRider_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntRider_03_cheer1001"},]},
+	]
+},
+{//泰坦-1
+	name:"chr_UntGolem_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntGolem.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntGolem_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntGolem_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_01_cheer1001"},]},
+	]
+},
+{//泰坦-2
+	name:"chr_UntGolem_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntGolem.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntGolem_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntGolem_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_01_cheer1001"},]},
+	]
+},
+{//泰坦-3
+	name:"chr_UntGolem_03",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntGolem.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntGolem_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntGolem_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_02_cheer1001"},]},
+	]
+},
+{//泰坦-4
+	name:"chr_UntGolem_04",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntGolem.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntGolem_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntGolem_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_02_cheer1001"},]},
+	]
+},
+{//泰坦-5
+	name:"chr_UntGolem_05",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntGolem.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_03_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntGolem_03_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntGolem_03_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntGolem_03_cheer1001"},]},
+	]
+},
+{//博士-1
+	name:"chr_UntDoctor_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntDoctor.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntDoctor_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntDoctor_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntDoctor_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntDoctor_01_cheer1001"},]},
+		{name:"summon",subani:[{name:"summon_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntDoctor_01_summon1001"},]},
+	]
+},
+{//博士-2
+	name:"chr_UntDoctor_02",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntDoctor.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntDoctor_02_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntDoctor_02_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntDoctor_02_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntDoctor_02_cheer1001"},]},
+		{name:"summon",subani:[{name:"summon_1",weight:10,loop:1,dit_mode:7,sprite:"chr_UntDoctor_02_summon1001"},]},
+	]
+},
+{//小恶魔-1
+	name:"chr_UntMinion_01",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/chr_UntDoctor.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMinion_01_stay001"},]},
+		null,//crashed
+		{name:"move",subani:[{name:"move_1",weight:10,loop:1,dit_mode:4,sprite:"chr_UntMinion_01_walk001"},]},
+		{name:"attack",subani:[{name:"attack_1",weight:10,loop:0,dit_mode:7,sprite:"chr_UntMinion_01_attack1001"},]},
+		null,//work
+		{name:"cheer",subani:[{name:"cheer_1",weight:10,loop:1,dit_mode:0,sprite:"chr_UntMinion_01_cheer1001"},]},
+	]
+},
+
+{
+	name:"chr_tank_bg",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/tank.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"chr_tank_bg"},]}
+	]
+},
+{
+	name:"chr_UntMarine_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntMarine"},]}
+	]
+},
+{
+	name:"chr_UntSniper_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntSniper"},]}
+	]
+},
+{
+	name:"chr_UntHacker_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntHacker"},]}
+	]
+},
+{
+	name:"chr_UntCyber_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntCyber"},]}
+	]
+},
+{
+	name:"chr_UntTNTMac_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntTNTMac"},]}
+	]
+},
+{
+	name:"chr_UntChop_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntChop"},]}
+	]
+},
+{
+	name:"chr_UntTank_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntTank"},]}
+	]
+},
+{
+	name:"chr_UntHealer_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntHealer"},]}
+	]
+},
+{
+	name:"chr_UntAvenger_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntAvenger"},]}
+	]
+},
+{
+	name:"chr_UntAvengerDX_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntAvenger"},]}
+	]
+},
+{
+	name:"chr_UntPEKKA_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntPEKKA"},]}
+	]
+},
+{
+	name:"chr_UntUAV_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntUAV"},]}
+	]
+},
+{
+	name:"chr_UntRider_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntRider"},]}
+	]
+},
+{
+	name:"chr_UntGolem_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntGolem"},]}
+	]
+},
+{
+	name:"chr_UntGolemite_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntGolemite"},]}
+	]
+},
+{
+	name:"chr_UntDoctor_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntDoctor"},]}
+	]
+},
+{
+	name:"chr_UntMinion_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_UntMinion"},]}
+	]
+},
+{
+	name:"chr_Worker_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_Worker"},]}
+	]
+},
+{
+	name:"chr_Farmer_shadow",type:"sprite",libs:[page.genPageURL(window.imgPath+"/units/buildings.spl")],
+	actions:[
+		{name:"stay",subani:[{name:"stay_1",weight:10,loop:1,dit_mode:0,sprite:"shadow_Farmer"},]}
+	]
+},

@@ -1,0 +1,78 @@
+[
+	{wave:3,delaytime:300,edge:0,type:"UntTNTMac",level:5,num:50},
+	{wave:3,delaytime:300,edge:1,type:"UntTNTMac",level:5,num:50},
+	{wave:3,delaytime:300,edge:2,type:"UntTNTMac",level:5,num:50},
+	{wave:3,delaytime:300,edge:3,type:"UntTNTMac",level:5,num:50},
+	
+	
+	{wave:4,delaytime:800,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:800,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:800,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:800,edge:3,type:"UntHacker",level:5,num:5},
+	
+	{wave:4,delaytime:820,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:820,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:820,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:820,edge:3,type:"UntHacker",level:5,num:5},
+	
+		{wave:4,delaytime:840,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:840,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:840,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:840,edge:3,type:"UntHacker",level:5,num:5},
+	
+		{wave:4,delaytime:860,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:860,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:800,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:860,edge:3,type:"UntHacker",level:5,num:5},
+	
+		{wave:4,delaytime:880,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:880,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:880,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:880,edge:3,type:"UntHacker",level:5,num:5},
+	
+		{wave:4,delaytime:900,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:900,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:900,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:900,edge:3,type:"UntHacker",level:5,num:5},
+	
+		{wave:4,delaytime:920,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:920,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:920,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:920,edge:3,type:"UntHacker",level:5,num:5},
+	
+		{wave:4,delaytime:960,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:960,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:960,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:960,edge:3,type:"UntHacker",level:5,num:5},
+	
+	{wave:4,delaytime:1100,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1100,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1100,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1100,edge:3,type:"UntHacker",level:5,num:5},
+	
+	{wave:4,delaytime:1120,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1120,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1120,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1120,edge:3,type:"UntHacker",level:5,num:5},
+	
+	{wave:4,delaytime:1140,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1140,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1140,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1140,edge:3,type:"UntHacker",level:5,num:5},
+	
+	{wave:4,delaytime:1160,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1160,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1160,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1160,edge:3,type:"UntHacker",level:5,num:5},
+	
+	{wave:4,delaytime:1180,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1180,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1180,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1180,edge:3,type:"UntHacker",level:5,num:5},
+	
+	{wave:4,delaytime:1200,edge:0,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1200,edge:1,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1200,edge:2,type:"UntHacker",level:5,num:5},
+	{wave:4,delaytime:1200,edge:3,type:"UntHacker",level:5,num:5},
+	
+]

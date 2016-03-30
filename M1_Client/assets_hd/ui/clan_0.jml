@@ -1,0 +1,15 @@
+//For image: clan_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("clan_0_32.png"));
+	this.imgInfos["clan_0_32"]={w:1024,h:256};
+	this["pic_clan_tech"]={tex_u:3/1024, tex_v:2/256, tex_w:826/1024, tex_h:116/256, w:826, h:116, tex:this.imgList[id]};
+	this["pic_clan_up"]={tex_u:833/1024, tex_v:2/256, tex_w:110/1024, tex_h:52/256, w:110, h:52, tex:this.imgList[id]};
+	this["btn_btmatk"]={tex_u:835/1024, tex_v:60/256, tex_w:105/1024, tex_h:104/256, w:105, h:104, tex:this.imgList[id]};
+	this["pic_clan_top"]={tex_u:2/1024, tex_v:124/256, tex_w:459/1024, tex_h:79/256, w:459, h:79, tex:this.imgList[id]};
+	this["pic_land_menu"]={tex_u:466/1024, tex_v:124/256, tex_w:308/1024, tex_h:88/256, w:308, h:88, tex:this.imgList[id]};
+	this["pic_landwar"]={tex_u:778/1024, tex_v:169/256, tex_w:195/1024, tex_h:62/256, w:195, h:62, tex:this.imgList[id]};
+}

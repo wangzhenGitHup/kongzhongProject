@@ -1,0 +1,47 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntCyber",level:5,num:4},
+	{wave:1,delaytime:120,edge:0,type:"UntCyber",level:5,num:4},
+	{wave:1,delaytime:120,edge:0,type:"UntCyber",level:5,num:4},
+	
+	{wave:3,delaytime:300,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:4,delaytime:350,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:5,delaytime:400,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:5,num:4},
+	
+	{wave:3,delaytime:300,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:4,delaytime:350,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:5,delaytime:400,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:5,num:4},
+	
+	{wave:3,delaytime:300,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:4,delaytime:350,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:5,delaytime:400,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:5,num:4},
+	{wave:6,delaytime:450,edge:0,type:"UntMarine",level:5,num:4},
+	
+	{wave:3,delaytime:500,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:4,delaytime:550,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:5,delaytime:600,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:6,delaytime:650,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:6,delaytime:650,edge:0,type:"UntSniper",level:5,num:4},
+	
+	{wave:3,delaytime:500,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:4,delaytime:550,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:5,delaytime:600,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:6,delaytime:650,edge:0,type:"UntSniper",level:5,num:4},
+	{wave:6,delaytime:650,edge:0,type:"UntSniper",level:5,num:4},
+	
+	{wave:3,delaytime:500,edge:0,type:"UntChop",level:5,num:2},
+	{wave:4,delaytime:550,edge:0,type:"UntChop",level:5,num:2},
+	{wave:5,delaytime:600,edge:0,type:"UntChop",level:5,num:2},
+	{wave:5,delaytime:600,edge:0,type:"UntChop",level:5,num:2},
+	{wave:5,delaytime:600,edge:0,type:"UntChop",level:5,num:2},
+	
+	
+	{wave:3,delaytime:500,edge:0,type:"UntTNTMac",level:5,num:2},
+	{wave:4,delaytime:550,edge:0,type:"UntTNTMac",level:5,num:2},
+	{wave:5,delaytime:600,edge:0,type:"UntTNTMac",level:5,num:2},
+	{wave:6,delaytime:650,edge:0,type:"UntTNTMac",level:5,num:2},
+]

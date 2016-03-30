@@ -1,0 +1,226 @@
+﻿//if(!__Page.DWRBase)
+{
+	__Page.DWRBase = function(path)
+	{
+		this.sDWRPath = path;
+		this.preDWRPath = null;
+		this.oCheckTimer = null;
+		this.iCheckSeq = 0;
+		this.oCheckDWR = null;
+		this.pause = false;
+		this.aCodeList = [];
+		this.kick = 0;
+		this.oDWRPage = null;
+		this.session = null;
+		this.Hdlrs = {};
+		this.iGameCallSeq = 0;
+		this.sendSeqCalls = {};
+		this._update = null;
+		this.updateInterval = 5*1000;
+		this.retryInterval = 15*1000;
+		//-----socket----
+		this.DC=null;
+		this.msgs=[];
+		this.times=0;
+		this.MAXTIMES=2;
+	};
+	__Page.DWRBase.prototype.setPage = function(page)
+	{
+		this.oDWRPage = page;
+	};
+	__Page.DWRBase.prototype.setSession = function(session)
+	{
+		this.session = session;
+	};
+	__Page.DWRBase.prototype.DWRCall = function()
+	{
+		var args = [];
+		var i;
+		for(i=0; i<arguments.length; i++){
+			args[i] = arguments[i];
+		}
+		args.unshift(this.sDWRPath);
+		DWREngine.setPage(this.oDWRPage);
+		if(this.session)
+			this.oDWRPage.setSession(this.session);
+		DBOut(toJSON(args));
+		return DWREngine.executeCall.apply(DWREngine,args);
+	};
+	__Page.DWRBase.prototype.seqCall = function()
+	{
+		var args = [];
+		var i;
+		var seqId = this.iGameCallSeq;
+		for(i=0; i<arguments.length; i++){
+			args[i] = arguments[i];
+		}
+		args.splice(2,0,this.iGameCallSeq++);
+		args.unshift(this.sDWRPath);
+		DWREngine.setPage(this.oDWRPage);
+		if(this.session)
+			this.oDWRPage.setSession(this.session);
+		DBOut(toJSON(args));
+		var meta = args.pop();
+		var self = this;
+		args.push({
+			callback:function(backinfo)
+			{
+				DBOut("+++++++callback="+toJSON(backinfo));
+				delete self.sendSeqCalls[""+seqId];
+				meta.callback(backinfo);
+			},
+			exceptionHandler:function(err,msg)
+			{
+				if(msg!="Network error."&&msg!="Network error"&&msg.indexOf("Server return wrong status code:")!=0&&msg.indexOf("Http returned none-200 error:")!=0)
+				{
+					delete self.sendSeqCalls[""+seqId];
+					meta.exceptionHandler(err,msg);
+				}
+			}
+		});
+		var dwr = DWREngine.executeCall.apply(DWREngine,args);
+		this.sendSeqCalls[""+seqId] = {time:new Date().getTime(),retry:0,args:args,dwr:dwr};
+		if(!this._update)
+			this.update();
+		return dwr;
+	};
+	__Page.DWRBase.prototype.update = function()
+	{
+		this._update = null;
+		var i,j=0,seqcall,meta;
+		var now = new Date().getTime();
+		for(i in this.sendSeqCalls)
+		{
+			seqcall = this.sendSeqCalls[i];
+			if(now-seqcall.time>=this.retryInterval)
+			{
+				seqcall.retry++;
+				seqcall.time = now;
+				if(seqcall.retry>=1)
+				{
+					meta = seqcall.args[seqcall.args.length-1];
+					meta.exceptionHandler("",UIBody.STR.Error);
+				}
+				else
+				{
+					DWREngine.setPage(this.oDWRPage);
+					if(this.session)
+						this.oDWRPage.setSession(this.session);
+					DWREngine.executeCall.apply(DWREngine,seqcall.args);
+				}
+			}
+			j++;
+		}
+		if(j)
+			this._update = setTimeout(this.updateInterval,this.update,this);
+	};
+	__Page.DWRBase.prototype.initSocket = function()
+	{
+		this.DC=System.createDataChannel("M1"+this.sDWRPath);
+		this.DC.setEventHandler(this.dcEvent,this);
+		this.DC.setCallback(this.dcCallbak,this);
+		DBOut("---DWRBase connect url="+this.sDWRPath);
+		this.loginURL=this.sDWRPath;
+		this.DC.connect(this.loginURL);
+	};
+
+	__Page.DWRBase.prototype.dcEvent = function(status)
+	{
+		var self=this;
+		if (-1 == status)
+		{
+			self.isConnected=0;
+			this.dcReconnect();
+			Dialogs.alert("disconnect!");
+		}
+		else if (1 == status)
+		{
+			self.isConnected=1;
+			self.times=0;
+			self.send();
+			//Dialogs.alert("Connected!");
+		}
+	};
+
+	__Page.DWRBase.prototype.dcCallbak = function()
+	{
+		var dc=this.DC;
+		var vo = dc.readStr();
+		DBOut("dcCallbak="+vo);
+		vo=fromJSON(vo);
+		if(this.cbkFun && this.cbkObj)
+		{
+			if(this.cbkFun[vo.messageType] && this.cbkObj[vo.messageType])
+			this.cbkFun[vo.messageType].call(this.cbkObj[vo.messageType],vo.data,vo.error,vo.exInfo);
+		}
+		//Dialogs.alert("dcCallbak="+vo);
+		/*
+		switch(vo.msg)
+		{
+			case "login":
+			break;
+		}
+		*/
+	};
+	__Page.DWRBase.prototype.dcReconnect = function()
+	{
+		if(this.DC)
+		{
+			this.DC.close();
+			this.DC=null;
+		}
+		if(this.times<this.MAXTIMES)
+		{
+			this.initSocket();
+			this.times++;
+		}else{
+			Dialogs.alert("disconnect!");
+		}
+	};
+	__Page.DWRBase.prototype.login =function(reqvo,cbk,obj,messageType)
+	{
+		DBOut("---login reqvo="+reqvo);
+		if(!this.cbkFun)this.cbkFun=[];
+		if(!this.cbkObj)this.cbkObj=[];
+		this.cbkFun[messageType]=cbk;
+		this.cbkObj[messageType]=obj;
+		if(this.isConnected)
+		{
+			this.msgs.push(reqvo);
+			this.send();
+		}else{
+			this.msgs.push(reqvo);
+		}
+	};
+	__Page.DWRBase.prototype.send =function()
+	{
+		for(var i=0;i<this.msgs.length;i++)
+		{
+			if(this.isConnected)
+			{
+				this.DC.packStr(this.msgs[i]);
+				this.DC.send();
+			}else{
+				this.msgs.splice(0,i+1);
+				return;
+			}
+		}
+		this.msgs=[];
+	};
+	__Page.DWRBase.prototype.onFree =function()
+	{
+		if(this.DC)
+		{
+			//this.DC.close();
+			this.DC.setEventHandler();
+			this.DC.setCallback();
+			this.isConnected=0;
+		}
+	};
+	__Page.DWRBase.prototype.onFreeSocket=function()
+	{
+		DBOut("++++dwr file socket colose++++");
+		if(this.DC)
+			this.DC.close();
+	};
+}

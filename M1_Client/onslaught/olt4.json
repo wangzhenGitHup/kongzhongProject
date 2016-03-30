@@ -1,0 +1,5 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntMarine",level:1,num:5},
+	{wave:2,delaytime:250,edge:0,type:"UntMarine",level:1,num:5},
+	{wave:2,delaytime:350,edge:0,type:"UntMarine",level:1,num:4},
+]

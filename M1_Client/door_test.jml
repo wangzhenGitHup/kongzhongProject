@@ -1,0 +1,14 @@
+﻿<jml>
+<body>
+{body:{page_mode:"ui",w:Screen.w,h:Screen.h}}
+</body>
+<script>
+	if (System.setResResetMode)
+		System.setResResetMode(1);
+	if (System.setPageCacheMode)
+		System.setPageCacheMode(1);
+	if (System.setCodeSegCacheEnabled)
+    System.setCodeSegCacheEnabled(1);
+	switchApp(__Page.genPageURL("main_test.jml"));
+</script>
+</jml>

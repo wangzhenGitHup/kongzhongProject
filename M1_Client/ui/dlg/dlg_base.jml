@@ -1,0 +1,407 @@
+﻿if(!__Page.dlgBase)
+{
+	__Page.dlgBase=function(page,appEnv,dlgType)
+	{
+		if(appEnv)
+		{
+			this.dlgPage=page;
+			this.appEnv=appEnv;
+			this.page=appEnv.page;
+
+			this.name="dlgBase";
+			this.viewId="dlgBase";
+
+			this.dlgType=dlgType;
+			this.loaded=0;
+		}
+	};
+	__Page.dlgBase.prototype.loadConfig=function()
+	{
+		if(this.loaded)
+			return;
+		this.loaded=1;
+
+		var imgLib=this.page.imgLib;
+		var cssLib=this.page.cssLib;
+		var appEnv=this.appEnv;
+
+		var dt=this.dt=4;//控件间的间隙
+		//dlg:对话框的大背景
+		var dlgW=this.dlgW;
+		var dlgH=this.dlgH;
+		var dlgX=this.dlgX=Math.floor((appEnv.scrSize[0]-this.dlgW)/2);
+		var dlgY=this.dlgY=Math.floor((appEnv.scrSize[1]-this.dlgH)/2);
+		var pic=imgLib.getImg("box_dlgbox");
+		this.dlgFrameCSS={id:"dlgFrame",type:"div3x3",pos:[dlgX,dlgY,0],css:pic,w:dlgW,h:dlgH,ui_event:1,fade:1,fade_pos:[dlgX,dlgY,0],fade_size:1,fade_alpha:1};
+		var dlgInner=this.dlgInner=[pic.mgL/2,pic.mgU/2];
+		//关闭按钮
+		pic=imgLib.getImg("btn_close_u");
+		var closeBtnW=this.closeBtnW=pic.w;
+		var closeBtnH=this.closeBtnH=pic.h;
+		var closeBtnX=this.closeBtnX=dlgW-dlgInner[0]-closeBtnW/2;
+		var closeBtnY=this.closeBtnY=dlgInner[1]+closeBtnH/2;
+		//返回按钮
+		pic=imgLib.getImg("btn_back_u");
+		var backBtnW=this.backBtnW=pic.w;
+		var backBtnH=this.backBtnH=pic.h;
+		var backBtnX=this.backBtnX=dlgInner[0]+backBtnW/2;
+		var backBtnY=this.backBtnY=closeBtnY;//dlgInner[1]+backBtnH/2;
+		//对话框标题
+		var titleW=this.titleW=dlgW;
+		var titleH=this.titleH=closeBtnH;
+		var titleX=this.titleX=dlgW/2;
+		var titleY=this.titleY=closeBtnY;
+		//对话框实际控件区域
+		pic=imgLib.getImg("box_solid");
+		var contentX=this.contentY=dlgInner[0];
+		var contentY=this.contentX=dlgInner[1]+titleH;
+		var contentW=this.contentW=dlgW-contentX*2;
+		var contentH=this.contentH=dlgH-contentY-dlgInner[1]-6;
+		this.contentFieldCSS={id:"contentField",type:"div3x3",pos:[contentX,contentY,0],css:pic,w:contentW,h:contentH,ui_event:1,fade:1,fade_pos:[contentX,contentY,0],fade_size:1,fade_alpha:0};
+		var contentInner=this.contentInner=[pic.mgL,pic.mgU];
+	};
+	__Page.dlgBase.prototype.init=function(appEnv)
+	{
+		this.page.keyStateUtil.call(this);
+		//DBOut(this.name+".init: "+appEnv);
+
+		var dlgInfo=this.appEnv.dlgInfos[this.dlgType];
+		this.dlgW=dlgInfo.size[0];
+		this.dlgH=dlgInfo.size[1];
+		this.dlgBox=dlgInfo.box;
+		this.loadConfig();
+
+		var imgLib=this.page.imgLib;
+		var cssLib=this.page.cssLib;
+		var appEnv=this.appEnv;
+		var textLib=appEnv.textLib;
+		var keyid=0;
+
+		this.dlgFrame=this.dlgBox.appendNewChild({
+			type:"icon",id:"dlgFrame",css:[this.dlgFrameCSS],
+			items:[
+				{type:"key",id:"dlgCloseKey",pos:[-this.dlgX,-this.dlgY,0],w:appEnv.scrSize[0],h:appEnv.scrSize[1],key:appEnv.appKeys.dlgClose,ui_event:1,audio:this.page.audioObject.genFileURL("btn_click"),},
+				{type:"icon",id:"dlgCloseBlocker",pos:[0,0,0],w:this.dlgW,h:this.dlgH,key:0,ui_event:1,block_touch:1}
+			]
+		});
+		this.closeItem=this.dlgFrame.getItemById("dlgCloseKey");
+		//对话框标题:
+		this.dlgTitle=cssLib.textFineBig.create(this.dlgFrame,[this.titleX,this.titleY,0],textLib["Battle Shop"],this.titleW,this.titleH,1,1,1,1);
+		//内容区域
+		this.contentField=this.dlgFrame.appendNewChild({css:[this.contentFieldCSS]});
+		this.cntBox=this.contentField;
+		//关闭对话框的按钮:
+		this.btnCloseKeyId=keyid=appEnv.appKeys.btnClose;
+		this.btnClose=cssLib.btnCloseDlg.create(this.dlgFrame,[this.closeBtnX,this.closeBtnY,0],keyid);
+		this.regKeyVO(keyid,this,this.onCloseClk);
+		//返回对话框的按钮:
+		this.btnBackKeyId=keyid=appEnv.hudKeys.getKey(this);
+		this.btnBack=cssLib.btnBackDlg.create(this.dlgFrame,[this.backBtnX,this.backBtnY,0],keyid);
+		this.btnBack.setDisplay(0);
+		this.regKeyVO(keyid,this,this.onBackClk);
+		this.boxW=this.dlgW;
+		this.boxH=this.dlgH;
+	};
+	__Page.dlgBase.prototype.enter=function(preState,vo)
+	{
+		DBOut("dlg "+this.name+" enter!!!");
+		this.infoVO=vo;
+		if(vo)
+		{
+
+		}
+	};
+	__Page.dlgBase.prototype.leave=function(nextState)
+	{
+		DBOut("dlg "+this.name+" leave!!!");
+	};
+	__Page.dlgBase.prototype.addKey=function(hud,cb,cbobj)
+	{
+		var key=this.appEnv.hudKeys.getKey(this);
+		hud.setKey(key);
+		if(!cbobj)cbobj=this;
+		this.regKeyVO(key,cbobj,cb);
+	};
+
+	//--------------------------------------------------------------------------
+	//按键处理函数
+	//--------------------------------------------------------------------------
+	__Page.dlgBase.prototype.onKey=function(msg,key,way,extra)
+	{
+		var ret;
+//		if(1==way)
+//			DBOut(this.name+".onKey: msg="+msg+", key="+key+", way="+way+" ,extra="+extra);
+		if(1==way && (1==msg || 2==msg))
+		{
+			DBOut(this.name+".onKey: key="+key+", msg="+msg+", extra="+extra);
+		}
+		ret=this.autoOnKey(msg,key,way,extra);
+		if(ret)
+			return ret;
+		//DO other stuffs:
+	};
+	__Page.dlgBase.prototype.onCloseClk=function(msg,key,way,extra)
+	{
+		if(msg==1 && way==1)
+		{
+			this.appEnv.closeDlg(null,null,0);
+		}
+	};
+	__Page.dlgBase.prototype.onBackClk=function(msg,key,way,extra)
+	{
+		if(msg==1 && way==1)
+		{
+			this.appEnv.switchDlg(this,0,null);
+		}
+	};
+	__Page.dlgBase.prototype.onOkClk=function(msg,key,way,extra)
+	{
+		if(msg==1 && way==1)
+		{
+			this.appEnv.closeDlg(null,null,0);
+		}
+	};
+
+	//--------------------------------------------------------------------------
+	//触摸处理函数
+	//--------------------------------------------------------------------------
+	__Page.dlgBase.prototype.onTouch=function()
+	{
+
+	};
+	__Page.dlgBase.prototype.onMouse=function(msg,key,x,y,penSize,way)
+	{
+		return;
+		//msg总是0，penSize总是1，way总是0和1
+		//key：移动时为1、摁下为0、抬起为2变1
+		if(x<this.dlgX || y<this.dlgY || x>this.dlgX+this.dlgW || y>this.dlgY+this.dlgH)
+			return;
+	//	DBOut("key="+key+", x="+x+", y="+y+", way="+way+", msg="+msg+", penSize="+penSize);
+		if(0==key)
+		{
+			if(this.menuItem)
+			{
+				var pos=[];
+				this.menuItem.getPos(pos);
+				this.menuItem.getFather().removeChild(this.menuItem);
+				this.menuItem=null;
+			}
+		}
+	};
+}
+
+if(!__Page.pmtBase)
+{
+	__Page.pmtBase=function(page,appEnv,dlgType,subType)//subType: 0-X掉(info)   1-X掉、确认   2-确认、取消(choose)
+	{
+		if(appEnv)
+		{
+			appEnv.page.dlgBase.call(this,page,appEnv,dlgType);
+			this.pmtPage=page;
+			this.subType=subType;
+		}
+	};
+	__Page.pmtBase.prototype=new __Page.dlgBase();
+	__Page.pmtBase.prototype.loadConfig=function()
+	{
+		this.page.dlgBase.prototype.loadConfig.call(this);
+	};
+	__Page.pmtBase.prototype.init=function(appEnv)
+	{
+	//	if(this.inited)return;
+	//	this.inited=1;
+		this.page.dlgBase.prototype.init.call(this,appEnv);
+		this.pmtBox=this.dlgBox;
+		this.pmtFrame=this.dlgFrame;
+		this.pmtFrame.setId("pmtFrame");
+		this.pmtFrame.setDisplay(0);
+		this.pmtTitle=this.dlgTitle;
+		//this.cntBox=this.cntBox;
+
+		if(this.initInfoBox)
+		{
+			this.initInfoBox();
+		}
+	};
+	__Page.pmtBase.prototype.initBox=function()
+	{
+		this.infoText=this.page.cssLib.textFineMid.create(this.cntBox,[this.contentW/2,this.contentInner[1],0],"Info text!",this.contentW-46,this.contentH-20,1,0,0,0,[255,255,255],1);
+
+		var keyid, appEnv=this.appEnv, cssLib=this.page.cssLib, imgLib=this.page.imgLib;
+		this.btnH=imgLib.getImg("btn_green_u").h;
+		if(1==this.subType)
+		{
+			this.btnX_ok=this.contentW/2;
+			this.btnY_ok=this.contentH-50;
+			//确认按钮:
+			keyid=this.appEnv.hudKeys.getKey(this);
+			this.btnOK=cssLib.btnDlgOK.create(this.cntBox,[this.btnX_ok,this.btnY_ok,0],keyid);
+			this.regKeyVO(keyid,this,this.onOkClk);
+		}
+		else if(2==this.subType)
+		{
+			this.btnClose.setDisplay(0);
+			this.btnGap=90;
+			this.btnX_ok=this.contentW/2-this.btnGap;
+			this.btnY_ok=this.contentH-50;
+			this.btnX_cancel=this.contentW/2+this.btnGap;
+			this.btnY_cancel=this.contentH-50;
+			//取消按钮:
+			keyid=appEnv.appKeys.pmtCancel;
+			this.btnCancel=cssLib.btnDlgCancel.create(this.cntBox,[this.btnX_ok,this.btnY_ok,0],keyid);
+			this.btnCancel.setId("BtnPmt_Cancel");
+			this.regKeyVO(keyid,this,this.onCloseClk);
+			//确认按钮:
+			keyid=appEnv.appKeys.pmtOk;
+			this.btnOK=cssLib.btnDlgOK.create(this.cntBox,[this.btnX_cancel,this.btnY_cancel,0],keyid);
+			this.btnOK.setId("BtnPmt_OK");
+			this.regKeyVO(keyid,this,this.onOkClk);
+		}
+	};
+	__Page.pmtBase.prototype.enter=function(preState,vo)
+	{
+		var appEnv=this.appEnv;
+		var page=this.page;
+
+		this.initBox();
+
+		var txtw,txth,boxw,boxh,showPos,fadePos;
+		DBOut("pmt "+this.name+" enter!!!");
+		this.pmtVO=vo;
+		if(vo)
+		{
+			if(vo.force)
+			{
+				this.btnClose.setDisplay(0);
+				this.closeItem.setKey(0);
+			}
+
+			this.infoText._setText(vo.info);
+			this.pmtTitle._setText(vo.title);
+			txth=this.infoText.getTextH();
+			if(vo.icon)
+			{
+				//带图标的:
+			//	this.infoPic.setTexURL(vo.icon);
+				//设置尺寸坐标
+			}
+			else if(vo.info)
+			{
+				//设置尺寸:
+			//	DBOut("txth: "+txth);
+				boxh=txth+40+this.btnH;
+				boxh=boxh<160?160:boxh;
+				this.resetPmtSize({h:boxh});
+			}
+		}
+		appEnv.hudIn(this.pmtFrame,10);
+	};
+	__Page.pmtBase.prototype.leave=function(nextState)
+	{
+		DBOut("pmt "+this.name+" leave!!!");
+		this.pmtFrame.getItemById("dlgCloseKey").setKey(0);
+		this.btnClose.setKey(0);
+		var appEnv=this.appEnv;
+		appEnv.hudOut(this.pmtFrame,20);
+	//	this.pmtVO=null;
+		this.cntBox.removeAllChild();
+	//	this.inited=0;
+		if(this.leaveInfoBox)
+		{
+			this.leaveInfoBox(nextState);
+		}
+
+		this.pmtFrame.getFather().removeChild(this.pmtFrame);
+	};
+//	__Page.pmtBase.prototype.reloadState=function(state,param)
+//	{
+//		DBOut("reloadState==============");
+//		var appEnv=this.appEnv;
+//		appEnv.pmtBoxDock.adSize.startAni(1,[1,0,1],0);
+//		appEnv.pmtLayer.setFrameout(5,function(){appEnv.pmtBoxDock.adSize.startAni(1,[0,0,1],0);},appEnv);
+//		appEnv.pmtLayer.setFrameout(5,appEnv._pmtClosed,appEnv);
+//		appEnv.pmtMask.fadeOut(5,0);
+//		setFrameout(15,function(){this.enter(this,param);},this)
+//	};
+	__Page.pmtBase.prototype.resetPmtSize=function(vo)
+	{
+		DBOut("resetPmtSize "+toJSON(vo));
+		var appEnv=this.appEnv;
+		var page=this.page;
+
+		var boxw=this.cntBox.getW(), boxh=this.cntBox.getH();
+		if(vo.w)
+		{
+			boxw=vo.w;
+			this.contentW=boxw;
+			this.boxW=this.contentW+this.dlgInner[0]*2;
+			this.pmtFrame.setW(this.boxW);
+			this.cntBox.setW(this.contentW);
+		}
+		if(vo.h)
+		{
+			boxh=vo.h;
+		//	boxh=txth+40+this.btnH;
+		//	boxh=boxh<160?160:boxh;
+			this.contetnH=boxh;
+			this.boxH=this.contetnH+this.titleH+this.dlgInner[1]*2+6;
+			this.pmtFrame.setH(this.boxH);
+			this.cntBox.setH(this.contetnH);
+		}
+		//设置坐标:
+		var showPos=[
+			Math.floor((appEnv.scrSize[0]-this.pmtFrame.getW())/2),
+			Math.floor((appEnv.scrSize[1]-this.pmtFrame.getH())/2),
+			0
+		];
+		this.pmtFrame.setShowPos(showPos);
+		var fadePos=showPos;
+		this.pmtFrame.setFadePos(fadePos);
+
+		this.pmtFrame.getItemById("dlgCloseKey").setPos([-showPos[0],-showPos[1],0]);
+		this.pmtFrame.getItemById("dlgCloseBlocker").setH(this.pmtFrame.getH());
+		this.pmtFrame.getItemById("dlgCloseBlocker").setW(this.pmtFrame.getW());
+	//	this.pmtFrame.getItemById("dlgCloseBlocker").setStateStyle(0,{w:this.pmtFrame.getW(),h:this.pmtFrame.getH()});
+		this.btnPos_l=[boxw/2-this.btnGap,boxh-45,0];
+		this.btnPos_r=[boxw/2+this.btnGap,boxh-45,0];
+		this.btnPos_m=[boxw/2,boxh-50,0];
+		if(1==this.subType)
+		{
+			this.btnOK.setPos(this.btnPos_m);
+		}
+		else if(2==this.subType)
+		{
+			this.btnCancel.setPos(this.btnPos_l);
+			this.btnOK.setPos(this.btnPos_r);
+		}
+	};
+	//--------------------------------------------------------------------------
+	//按键处理函数
+	//--------------------------------------------------------------------------
+	__Page.pmtBase.prototype.onKey=function(msg,key,way,extra)
+	{
+		this.page.dlgBase.prototype.onKey.call(this,msg,key,way,extra);
+	};
+	__Page.pmtBase.prototype.onCloseClk=function(msg,key,way,extra)
+	{
+		if(1==way && 1==msg)
+		{
+			this.appEnv.closePmtDlg(null,null,0);
+		}
+	};
+	__Page.pmtBase.prototype.onOkClk=function(msg,key,way,extra)
+	{
+		if(1==way && 1==msg)
+		{
+			this.appEnv.closePmtDlg(null,null,0);
+		}
+	};
+
+	//--------------------------------------------------------------------------
+	//触摸处理函数
+	//--------------------------------------------------------------------------
+	__Page.pmtBase.prototype.onTouch=function()
+	{
+
+	};
+}

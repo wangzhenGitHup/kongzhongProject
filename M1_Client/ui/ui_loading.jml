@@ -1,0 +1,289 @@
+﻿if(!__Page.uiLoading)
+{
+	__Page.uiBase=function(env)
+	{
+		if(env)
+		{
+			this.env = env;
+			this.page = env.page;
+			this.logic = null;
+			this.preLogic = null;
+			this.keys = {};
+			this.listkeys = {};
+			this.baseKey = -(keyConfig.env.base+keyConfig.ui.base);
+		}
+	};
+	__Page.uiLoading = new __Page.uiBase();
+}
+	__Page.uiLoading.loadConfig = function()
+	{
+		var img = this.env.img;
+		var w = ScreenW;
+		var h = ScreenH;
+		this.loadingBgImg = img.getImgByName("loading_bg");
+		this.loadingBgCSS = {pos:[w>>1,h>>1,0],css:this.loadingBgImg,filter:1,anchor_h:1,anchor_v:1,ui_event:1};
+		if(w>this.loadingBgImg.w)
+			this.loadingBgCSS.w = w;
+		if(h>this.loadingBgImg.h)
+			this.loadingBgCSS.h = h;
+		this.titleImg = img.getImgByName("logo");
+		this.titleCSS = {
+			pos:[-(w>>1),-(h>>1),0],css:this.titleImg,fade:1,filter:1,fade_size:3,fade_alpha:0,display:1,
+			//anchor_h:1, anchor_v:1,fade_pos:[0,-155+this.titleImg.h*2,0]
+		};
+		this.officialImg = img.getImgByName("pic_official");
+		this.officialCSS = {
+			pos:[(w>>1),(h>>1),0],css:this.officialImg,fade:1,filter:1,fade_size:3,fade_alpha:0,display:1,
+			anchor_h:2, anchor_v:2,//fade_pos:[0,-155+this.titleImg.h*2,0]
+		};
+
+		this.loadingBarImg = img.getImgByName("loading_bar_bar");
+		this.loadingBarCSS = {
+			pos:[-(this.loadingBarImg.w>>1),(ScreenH>>1)-130,0],css:this.loadingBarImg,fade:1,filter:1,fade_size:1,fade_alpha:1,
+			fade_pos:[-(this.loadingBarImg.w>>1),(ScreenH>>1)-130],ui_event:1,
+		};
+		this.loadingObjImg = img.getImgByName("loading_bar_obj");
+		this.loadingObjCSS = {
+			pos:[23,13,0],css:this.loadingObjImg,w:0,
+			maxw:this.loadingBarImg.w-this.loadingBarImg.size3x3[0]-this.loadingBarImg.size3x3[2]
+		};
+		this.loadingTxtCSS = {
+			pos:[this.loadingBarImg.w>>1,(this.loadingBarImg.h>>1)-5,0],
+			w:this.loadingObjCSS.maxw,h:this.loadingObjImg.h,anchor_h:1,anchor_v:1,
+			color_r:255,color_g:255,color_b:255,color_a:255,font_size:20,wrap:0,align_v:1,align_h:1,
+			f:0,fade:1,filter:1,fade_size:0.95,fade_alpha:0,fade_pos:[this.loadingBarImg.w>>1,(this.loadingBarImg.h>>1)-5,0],
+			edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255
+		};
+		this.cueTxtBgCSS = {
+			pos:[this.loadingBarCSS.pos[0],this.loadingBarCSS.pos[1]+this.loadingBarImg.h,0],css:img.getImgByName("loading_tips"),
+			w:this.loadingBarImg.w,h:img.getImgByName("loading_tips").h,
+			anchor_h:0,align_v:0,color_r:255,color_g:255,color_b:255,color_a:255,filter:1,
+		};
+		this.cueTxtCSS = {
+			pos:[0,this.cueTxtBgCSS.pos[1],0],anchor_h:1,align_v:1,align_h:1,wrap:0,
+			w:ScreenW,h:this.cueTxtBgCSS.h,color_r:255,color_g:255,color_b:255,color_a:255,font_size:26,filter:1,
+			edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255
+		};
+		this.cueTxtCSS2 = {
+			pos:[0,this.cueTxtCSS.pos[1]+this.cueTxtCSS.h+3+5,0],anchor_h:1,align_v:1,align_h:1,wrap:0,
+			w:ScreenW,h:20,color_r:255,color_g:255,color_b:255,color_a:255,font_size:26,filter:1,
+			edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255
+		};
+		this.verTxtCSS = {
+			pos:[-w/2+5,h/2-5,0],anchor_h:0,anchor_v:2,align_0:1,align_v:1,wrap:0,
+			w:w,h:20,color_r:255,color_g:255,color_b:255,color_a:255,font_size:26,filter:1,
+			edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255
+		};
+
+		this.getPopHudCSS=function(txt,time)
+		{
+			var boximg=img.getImgByName("box_dlgbox")
+				return {
+				pos:[ScreenW>>1,ScreenH>>1,0],css:boximg,w:ScreenW>>1,h:ScreenH>>1,anchor_h:1,anchor_v:1,
+				fade:1,filter:1,fade_size:1,fade_alpha:1,fade_pos:[ScreenW>>1,ScreenH>>1,0],ui_event:1,items:[
+					{type:"div3x3",pos:[0,20,0],css:img.getImgByName("box_dlgcontent"),w:(ScreenW>>1)-boximg.size3x3[0]*2,h:(ScreenH>>1)-40-boximg.size3x3[3]-boximg.size3x3[1],anchor_h:1,anchor_v:1},
+					{type:"text",pos:[0,-40,0],text:txt,anchor_h:1,align_v:1,align_h:1,w:(ScreenW>>1)-boximg.size3x3[0]*4,wrap:1,h:40,color_r:255,color_g:255,color_b:255,color_a:255,font_size:20,filter:1,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255},
+					{
+						type:"txt_score",id:"Text-Cur",pos:[0,40,0],font_size:40,w:100,h:50,align_h:1,align_v:1,anchor_h:1,anchor_v:1,
+						edge:1,egde_r:0,edge_g:0,edge_b:0,edge_a:255,color_r:255,color_g:241,color_b:211,
+						timer:6,time_pause:0,time_val:time,count_down:1,msec:0,symb_d:STR.Day,symb_dm:STR.Day,symb_h:STR.Hour,symb_m:STR.Minute,symb_s:STR.Second
+					},
+				]
+			}
+		};
+		this.attachLayer = this.env.uLayer;
+	};
+	__Page.uiLoading.init = function(env)
+	{
+		if(!env)
+			return;
+		env.page.uiBase.call(this,env);
+		this.loadConfig();
+		//this.keys[""+this.baseKey] = {act:this.refresh};
+		//this.keys[""+(this.baseKey-1)] = {act:this.clearCache};
+
+		this.loadingBG = this.attachLayer.addHudItem(
+			{
+				type:"icon",css:this.loadingBgCSS,display:0,
+				items:
+				[
+					{type:"icon",css:this.titleCSS},
+					{
+						type:"div3x3",css:this.loadingBarCSS,
+						items:
+						[
+							{type:"div3x3",css:this.loadingObjCSS},
+							{type:"text",css:this.loadingTxtCSS,text:""},
+						]
+					},
+					{type:"icon",css:this.cueTxtBgCSS},
+					{type:"text",css:this.cueTxtCSS,text:"",id:"cueTxt"},
+					{type:"text",css:this.cueTxtCSS2,text:STR.NeedNet},
+					{type:"icon",css:this.officialCSS},
+					{type:"text",css:this.verTxtCSS,text:"Ver "+(window.AppVersion||"1.10")}
+				]
+			}
+		);
+		var self;
+		this.title = this.loadingBG.firstChild();
+
+		this.bar = this.title.getNextItem();
+		this.barObj = this.bar.firstChild();
+		this.loadingTxt = this.barObj.getNextItem();
+		this.cueTxt = this.loadingBG.getItemById("cueTxt");
+
+		this.title.ani = this.title.addAdTMFirst("rotate");
+		this.title.ani.owner=this.title;
+		var self = this;
+		this.title.ani.onAniDone = function() {
+			DBOut("Ani done.");
+			setFrameout(3,function(){this.env.startLogin();},self);
+		};
+	};
+	__Page.uiLoading.enter = function(preui,logic)
+	{
+		this.logic = logic;
+		if(!this.loadingBG)return;
+		this.loadingBG.setDisplay(1);
+		this.bar.fadeIn(normalFadeInTime,0);
+		this.env.flashItem(30,this.loadingTxt);
+		this.page.audioObject.playMp3("loading",1);
+		//this.title.ani.setCurValue([Math.PI/2,Math.PI/2,-Math.PI/2]); // 初始旋转角度
+		//this.title.ani.startAni(2, [-Math.PI/(36*2),-Math.PI/(36*2),Math.PI/(36*2)],36);
+		//this.title.fadeIn(36);
+
+		setFrameout(3,function(){this.env.startLogin();},this);
+		if(System.setFullScreenLoadingImage)
+			System.setFullScreenLoadingImage("res://logo/white.png");
+		if(System.setLoadingImage)
+			System.setLoadingImage("res://logo/loading.png", 1, 0xFFFFFF);
+
+	};
+	__Page.uiLoading.leave = function(nextui)
+	{
+		if(this.fo)
+		{
+			clearTimeout(this.fo);
+			this.fo = null;
+		}
+		this.loadingBG.setDisplay(0);
+		this.title.fadeOut(normalFadeOutTime,0);
+		this.bar.fadeOut(normalFadeOutTime,0);
+		this.loadingTxt.setText("");
+		this.env.stopFlash(this.loadingTxt);
+
+		setFrameout(normalFadeOutTime+1,function(){
+			this.attachLayer.removeHudItem(this.loadingBG);
+			this.loadingBG=null;
+			this.title = null;
+			this.bar = null;
+			this.barObj = null;
+			this.loadingTxt = null;
+			this.cueTxt = null;
+		},this);
+	};
+	__Page.uiLoading.onKey = function(msg,key,way,extra)
+	{
+		//if(this.page.uiBase.prototype.onKey.call(this,msg,key,way,extra))
+		//	return 1;
+		if(way==1&&msg==1)
+		{
+			return 1;
+		}
+		return 0;
+	};
+	__Page.uiLoading.setText = function(text,percent)
+	{
+		this.loadingTxt.setText(text);
+		percent = percent>100?100:percent;
+		if(percent>=0)
+			this.barObj.setW(Math.floor(percent*this.loadingObjCSS.maxw/100));
+	};
+	__Page.uiLoading.refresh = function()
+	{
+		this.env.reloadGame(this.page.STR.Relogin);
+	};
+	__Page.uiLoading.clearCache = function()
+	{
+		System.clearCache(this.page.genPageURL("*.jml"));
+		System.clearCache(this.page.genPageURL("*.js"));
+		this.env.reloadGame(this.page.STR.ClearCacheCue);
+	};
+	__Page.uiLoading.addCues = function(cues)
+	{
+		if(this.fo)
+		{
+			clearTimeout(this.fo);
+			this.fo = null;
+		}
+		this.cues = cues;
+		this.curCue = this.cues.length?Math.floor(Math.random()*this.cues.length):0;
+		this.showCue();
+	};
+	__Page.uiLoading.showCue = function()
+	{
+		this.fo = null;
+		if(this.cues.length)
+		{
+			this.cueTxt.setText(this.cues[this.curCue]);
+			this.curCue++;
+			this.curCue %= this.cues.length;
+			this.fo = setFrameout(150,this.showCue,this);
+		}
+	};
+	__Page.uiLoading.showPopAttack = function(time,fun,obj)
+	{
+		if(!time)time=1000;
+		var sLayer=this.env.uSubLayer;
+		var hud=sLayer.addHudItem({type:"div3x3",css:this.getPopHudCSS(STR.PopupAttack,time)});
+		hud.fadeIn(10,0);
+		sLayer.setTimeout(Math.max(time-1000,0),function(){
+			sLayer.removeHudItem(hud);
+			if(fun && obj)fun.call(obj);
+		},this);
+		this.page.audioObject.playSound("alli_effect");
+	};
+
+if(__Page.imgLib)
+{
+	__Page.imgLib.initSteps++;
+	__Page.imgLib["genPath_"+(__Page.imgLib.initSteps-1)] = __Page.imgLib["genPath_0"];
+	__Page.imgLib["init_"+(__Page.imgLib.initSteps-1)] = function()
+	{
+		this.genPath = this["genPath_"+(this.initSteps-1)];
+		<include check="0">imgPath+(System.getProperty("ChannelType")=="CNTelecom"?"/ui/loading_0_dx.jml":"/ui/loading_0.jml")</include>
+		if(System.getProperty("ChannelType")=="CNTelecom"){
+			var imgW = this.imgInfos["loading_0_32_dx"].w;
+			var imgH = this.imgInfos["loading_0_32_dx"].h;
+		}else{
+			var imgW = this.imgInfos["loading_0_32"].w;
+			var imgH = this.imgInfos["loading_0_32"].h;
+		}
+
+		this.getImgByName("loading_bar_bar").uv3x3 = [23/imgW,50/imgH,23/imgW,0/imgH];
+		this.getImgByName("loading_bar_bar").size3x3 = [23,50,23,0];
+		this.getImgByName("loading_bar_obj").uv3x3 = [4/imgW,4/imgH,4/imgW,4/imgH];
+		this.getImgByName("loading_bar_obj").size3x3 = [4,4,4,4];
+
+		this.getImgByName("box_dlgbox").uv3x3 = [20/imgW,18/imgH,20/imgW,26/imgH];
+		this.getImgByName("box_dlgbox").size3x3 = [20,18,20,26];
+
+		this.getImgByName("box_dlgcontent").uv3x3 = [16/imgW,16/imgH,16/imgW,16/imgH];
+		this.getImgByName("box_dlgcontent").size3x3 = [16,16,16,16];
+
+		<include check="0">imgPath+"/ui/all_0.jml"</include>
+		imgW = this.imgInfos["all_0_32"].w;
+		imgH = this.imgInfos["all_0_32"].h;
+		this.gen3x3Info("box_dlgbox",[20,18,20,26],imgW,imgH);
+		this.gen3x3Info("box_dlgcontent",[16,16,16,16],imgW,imgH);
+		this.gen3x3Info("box_solid",[16,16,16,16],imgW,imgH);
+		this.gen3x3Info("box_chat_input",[10,10,10,10],imgW,imgH);
+		<include check="0">imgPath+"/ui/official_0.jml"</include>
+		<include check="0">imgPath+"/ui/battle_0.jml"</include>
+		<include check="0">imgPath+"/ui/beattack_0.jml"</include>
+
+		this.genPath = null;
+	};
+	__Page.imgLib["init_"+(__Page.imgLib.initSteps-1)]();
+
+}

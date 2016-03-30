@@ -1,0 +1,45 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntCyber",level:3,num:2},
+	{wave:2,delaytime:150,edge:0,type:"UntMarine",level:3,num:4},
+	{wave:4,delaytime:400,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:5,delaytime:430,edge:0,type:"UntSniper",level:3,num:5},
+	
+	{wave:6,delaytime:600,edge:0,type:"UntChop",level:1,num:1},
+	{wave:7,delaytime:650,edge:0,type:"UntMarine",level:3,num:5},
+	{wave:8,delaytime:700,edge:0,type:"UntHacker",level:2,num:4},
+	{wave:9,delaytime:900,edge:0,type:"UntSniper",level:3,num:4},
+
+
+	{wave:10,delaytime:100,edge:1,type:"UntCyber",level:3,num:2},
+	{wave:11,delaytime:150,edge:1,type:"UntMarine",level:3,num:4},
+	{wave:12,delaytime:400,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:13,delaytime:430,edge:1,type:"UntSniper",level:3,num:5},
+	
+	{wave:14,delaytime:600,edge:1,type:"UntChop",level:1,num:1},
+	{wave:15,delaytime:650,edge:1,type:"UntMarine",level:3,num:5},
+	{wave:16,delaytime:700,edge:1,type:"UntHacker",level:2,num:4},
+	{wave:17,delaytime:900,edge:1,type:"UntSniper",level:3,num:4},
+
+	
+	{wave:18,delaytime:100,edge:2,type:"UntCyber",level:3,num:2},
+	{wave:19,delaytime:150,edge:2,type:"UntMarine",level:3,num:4},
+	{wave:20,delaytime:400,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:21,delaytime:430,edge:2,type:"UntSniper",level:3,num:5},
+	
+	{wave:22,delaytime:600,edge:2,type:"UntChop",level:1,num:1},
+	{wave:23,delaytime:650,edge:2,type:"UntMarine",level:3,num:5},
+	{wave:24,delaytime:700,edge:2,type:"UntHacker",level:2,num:4},
+	{wave:25,delaytime:900,edge:2,type:"UntSniper",level:3,num:4},
+	
+	{wave:26,delaytime:100,edge:3,type:"UntCyber",level:3,num:2},
+	{wave:27,delaytime:150,edge:3,type:"UntMarine",level:3,num:4},
+	{wave:28,delaytime:400,edge:3,type:"UntMarine",level:3,num:5},
+	{wave:29,delaytime:430,edge:3,type:"UntSniper",level:3,num:5},
+	
+	{wave:30,delaytime:600,edge:3,type:"UntChop",level:1,num:1},
+	{wave:31,delaytime:650,edge:3,type:"UntMarine",level:3,num:5},
+	{wave:32,delaytime:700,edge:3,type:"UntHacker",level:2,num:4},
+	{wave:33,delaytime:900,edge:3,type:"UntSniper",level:3,num:4},
+
+
+]

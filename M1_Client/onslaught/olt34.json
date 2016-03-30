@@ -1,0 +1,33 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntCyber",level:3,num:3},
+	{wave:2,delaytime:350,edge:0,type:"UntCyber",level:3,num:2},
+	
+	{wave:3,delaytime:500,edge:0,type:"UntSniper",level:4,num:4},
+	{wave:4,delaytime:500,edge:0,type:"UntSniper",level:4,num:4},
+	{wave:5,delaytime:550,edge:0,type:"UntSniper",level:4,num:4},
+	{wave:6,delaytime:600,edge:0,type:"UntSniper",level:4,num:4},
+	
+	{wave:7,delaytime:100,edge:1,type:"UntCyber",level:3,num:3},
+	{wave:8,delaytime:350,edge:1,type:"UntCyber",level:3,num:2},
+
+	{wave:9,delaytime:500,edge:1,type:"UntSniper",level:4,num:4},
+	{wave:10,delaytime:500,edge:1,type:"UntSniper",level:4,num:4},
+	{wave:11,delaytime:550,edge:1,type:"UntSniper",level:4,num:4},
+	{wave:12,delaytime:600,edge:1,type:"UntSniper",level:4,num:4},
+	
+	{wave:13,delaytime:100,edge:2,type:"UntCyber",level:3,num:3},
+	{wave:14,delaytime:350,edge:2,type:"UntCyber",level:3,num:2},
+
+	{wave:15,delaytime:500,edge:2,type:"UntSniper",level:4,num:4},
+	{wave:16,delaytime:500,edge:2,type:"UntSniper",level:4,num:4},
+	{wave:17,delaytime:550,edge:2,type:"UntSniper",level:4,num:4},
+	{wave:18,delaytime:600,edge:2,type:"UntSniper",level:4,num:4},
+	
+	{wave:19,delaytime:100,edge:3,type:"UntCyber",level:3,num:3},
+	{wave:20,delaytime:350,edge:3,type:"UntCyber",level:3,num:2},
+
+	{wave:21,delaytime:500,edge:3,type:"UntSniper",level:4,num:4},
+	{wave:22,delaytime:500,edge:3,type:"UntSniper",level:4,num:4},
+	{wave:23,delaytime:550,edge:3,type:"UntSniper",level:4,num:4},
+	{wave:24,delaytime:600,edge:3,type:"UntSniper",level:4,num:4},
+]

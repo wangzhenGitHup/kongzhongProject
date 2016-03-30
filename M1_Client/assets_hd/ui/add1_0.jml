@@ -1,0 +1,55 @@
+//For image: add1_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("add1_0_32.png"));
+	this.imgInfos["add1_0_32"]={w:512,h:512};
+	this["pic_clan_tip"]={tex_u:3/512, tex_v:3/512, tex_w:178/512, tex_h:57/512, w:178, h:57, tex:this.imgList[id]};
+	this["pic_clan_atk"]={tex_u:187/512, tex_v:3/512, tex_w:178/512, tex_h:57/512, w:178, h:57, tex:this.imgList[id]};
+	this["mark_spell_free"]={tex_u:372/512, tex_v:4/512, tex_w:48/512, tex_h:56/512, w:48, h:56, tex:this.imgList[id]};
+	this["mark_gem_full"]={tex_u:428/512, tex_v:4/512, tex_w:48/512, tex_h:56/512, w:48, h:56, tex:this.imgList[id]};
+	this["icon_rank_down"]={tex_u:483/512, tex_v:2/512, tex_w:18/512, tex_h:20/512, w:18, h:20, tex:this.imgList[id]};
+	this["icon_rank_draw"]={tex_u:483/512, tex_v:26/512, tex_w:18/512, tex_h:20/512, w:18, h:20, tex:this.imgList[id]};
+	this["icon_rank_up"]={tex_u:483/512, tex_v:50/512, tex_w:18/512, tex_h:20/512, w:18, h:20, tex:this.imgList[id]};
+	this["box_clan_rank1"]={tex_u:484/512, tex_v:74/512, tex_w:16/512, tex_h:44/512, w:16, h:44, tex:this.imgList[id]};
+	this["box_clan_rank2"]={tex_u:484/512, tex_v:122/512, tex_w:16/512, tex_h:44/512, w:16, h:44, tex:this.imgList[id]};
+	this["box_clan_rank3"]={tex_u:484/512, tex_v:170/512, tex_w:16/512, tex_h:44/512, w:16, h:44, tex:this.imgList[id]};
+	this["btn_set_91"]={tex_u:3/512, tex_v:67/512, tex_w:146/512, tex_h:106/512, w:146, h:106, tex:this.imgList[id]};
+	this["btn_set_18183"]={tex_u:155/512, tex_v:67/512, tex_w:146/512, tex_h:106/512, w:146, h:106, tex:this.imgList[id]};
+	this["btn_set_account"]={tex_u:307/512, tex_v:67/512, tex_w:146/512, tex_h:106/512, w:146, h:106, tex:this.imgList[id]};
+	this["pic_passed"]={tex_u:457/512, tex_v:220/512, tex_w:53/512, tex_h:32/512, w:53, h:32, tex:this.imgList[id]};
+	this["btn_replay_u"]={tex_u:460/512, tex_v:260/512, tex_w:47/512, tex_h:47/512, w:47, h:47, tex:this.imgList[id]};
+	this["btn_replay_d"]={tex_u:460/512, tex_v:316/512, tex_w:47/512, tex_h:47/512, w:47, h:47, tex:this.imgList[id]};
+	this["mark_gem"]={tex_u:460/512, tex_v:372/512, tex_w:48/512, tex_h:56/512, w:48, h:56, tex:this.imgList[id]};
+	this["btn_setBG_u"]={tex_u:460/512, tex_v:433/512, tex_w:32/512, tex_h:30/512, w:32, h:30, tex:this.imgList[id]};
+	this["btn_setBG_d"]={tex_u:460/512, tex_v:465/512, tex_w:32/512, tex_h:30/512, w:32, h:30, tex:this.imgList[id]};
+	this["btn_set_bbs"]={tex_u:3/512, tex_v:179/512, tex_w:146/512, tex_h:106/512, w:146, h:106, tex:this.imgList[id]};
+	this["btn_set_uc"]={tex_u:155/512, tex_v:179/512, tex_w:146/512, tex_h:106/512, w:146, h:106, tex:this.imgList[id]};
+	this["busybar_bar"]={tex_u:308/512, tex_v:180/512, tex_w:144/512, tex_h:40/512, w:144, h:40, tex:this.imgList[id]};
+	this["pic_VIP9"]={tex_u:305/512, tex_v:228/512, tex_w:70/512, tex_h:56/512, w:70, h:56, tex:this.imgList[id]};
+	this["hpbar_bar"]={tex_u:380/512, tex_v:226/512, tex_w:72/512, tex_h:20/512, w:72, h:20, tex:this.imgList[id]};
+	this["box_lantern"]={tex_u:380/512, tex_v:252/512, tex_w:32/512, tex_h:32/512, w:32, h:32, tex:this.imgList[id]};
+	this["box_btn_d"]={tex_u:419/512, tex_v:252/512, tex_w:34/512, tex_h:48/512, w:34, h:48, tex:this.imgList[id]};
+	this["box_btn_u"]={tex_u:419/512, tex_v:308/512, tex_w:34/512, tex_h:48/512, w:34, h:48, tex:this.imgList[id]};
+	this["busybar_dock"]={tex_u:4/512, tex_v:292/512, tex_w:144/512, tex_h:40/512, w:144, h:40, tex:this.imgList[id]};
+	this["pic_VIP1"]={tex_u:153/512, tex_v:292/512, tex_w:86/512, tex_h:40/512, w:86, h:40, tex:this.imgList[id]};
+	this["pic_VIP2"]={tex_u:241/512, tex_v:292/512, tex_w:86/512, tex_h:40/512, w:86, h:40, tex:this.imgList[id]};
+	this["pic_VIP3"]={tex_u:329/512, tex_v:292/512, tex_w:86/512, tex_h:40/512, w:86, h:40, tex:this.imgList[id]};
+	this["pic_cmp_step"]={tex_u:1/512, tex_v:337/512, tex_w:142/512, tex_h:86/512, w:142, h:86, tex:this.imgList[id]};
+	this["pic_official"]={tex_u:146/512, tex_v:339/512, tex_w:115/512, tex_h:50/512, w:115, h:50, tex:this.imgList[id]};
+	this["pic_VIP6"]={tex_u:265/512, tex_v:339/512, tex_w:70/512, tex_h:50/512, w:70, h:50, tex:this.imgList[id]};
+	this["box_self"]={tex_u:339/512, tex_v:338/512, tex_w:42/512, tex_h:51/512, w:42, h:51, tex:this.imgList[id]};
+	this["pic_VIP7"]={tex_u:385/512, tex_v:363/512, tex_w:70/512, tex_h:50/512, w:70, h:50, tex:this.imgList[id]};
+	this["pic_VIP8"]={tex_u:385/512, tex_v:419/512, tex_w:70/512, tex_h:50/512, w:70, h:50, tex:this.imgList[id]};
+	this["hpbar_dock"]={tex_u:148/512, tex_v:394/512, tex_w:80/512, tex_h:20/512, w:80, h:20, tex:this.imgList[id]};
+	this["pic_VIP4"]={tex_u:145/512, tex_v:420/512, tex_w:86/512, tex_h:40/512, w:86, h:40, tex:this.imgList[id]};
+	this["pic_VIP5"]={tex_u:145/512, tex_v:468/512, tex_w:86/512, tex_h:40/512, w:86, h:40, tex:this.imgList[id]};
+	this["pic_ui_gift"]={tex_u:233/512, tex_v:395/512, tex_w:70/512, tex_h:50/512, w:70, h:50, tex:this.imgList[id]};
+	this["pic_VIP0"]={tex_u:234/512, tex_v:452/512, tex_w:68/512, tex_h:40/512, w:68, h:40, tex:this.imgList[id]};
+	this["icon_local"]={tex_u:308/512, tex_v:396/512, tex_w:40/512, tex_h:40/512, w:40, h:40, tex:this.imgList[id]};
+	this["icon_earth"]={tex_u:308/512, tex_v:444/512, tex_w:40/512, tex_h:40/512, w:40, h:40, tex:this.imgList[id]};
+	this["pic_ui_notice"]={tex_u:1/512, tex_v:427/512, tex_w:70/512, tex_h:50/512, w:70, h:50, tex:this.imgList[id]};
+	this["box_sel"]={tex_u:76/512, tex_v:426/512, tex_w:56/512, tex_h:60/512, w:56, h:60, tex:this.imgList[id]};
+}

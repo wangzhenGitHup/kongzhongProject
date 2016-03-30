@@ -1,0 +1,10 @@
+﻿<jml>
+<import>"dlg_shop.js"</import>
+<import>"dlg_shop_bld.js"</import>
+<import>"dlg_shop_gem.js"</import>
+<import>"pmt_box.js"</import>
+<script>
+DBOut("Dialog JML loaded.");
+__Page.gamePage.appEnv.onPageDlgOpen(__Page);
+</script>
+</jml>

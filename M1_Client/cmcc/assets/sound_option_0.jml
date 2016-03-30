@@ -1,0 +1,13 @@
+//For image: sound_option_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("sound_option_0_32.png"));
+	this.imgInfos["sound_option_0_32"]={w:1024,h:512};
+	this["sound_option_bg"]={tex_u:4/1024, tex_v:4/512, tex_w:640/1024, tex_h:360/512, w:640, h:360, tex:this.imgList[id]};
+	this["subpage_btn_u"]={tex_u:652/1024, tex_v:2/512, tex_w:56/1024, tex_h:28/512, w:56, h:28, tex:this.imgList[id]};
+	this["subpage_btn_d"]={tex_u:716/1024, tex_v:2/512, tex_w:56/1024, tex_h:28/512, w:56, h:28, tex:this.imgList[id]};
+	this["subpage_btn_g"]={tex_u:780/1024, tex_v:2/512, tex_w:56/1024, tex_h:28/512, w:56, h:28, tex:this.imgList[id]};
+}

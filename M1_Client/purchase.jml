@@ -1,0 +1,1093 @@
+﻿if(!window.PUR)
+{
+	window.PUR={page:__Page,
+		purURL:window.PurchaseUrl
+		};
+	PUR.startPurchase=function(shop)
+	{
+		var env=this;
+		var types = [];
+		env._purchase={};
+		//shop._purchase={};
+
+		if(ChannelType=="QH")
+		{
+			if(window.QHPurchase)
+			{
+				QHPurchase.startPurchase(this.purchaseQHCb,this);
+				env._purchase["QH"] = true;
+			}
+			types = ["QH"];
+		}
+		else if(ChannelType=="91")
+		{
+			if(window.NDPlatform)
+			{
+				NDPlatform.start(this.purchase91Cb,this);
+				env._purchase["91"] = true;
+			}
+		}else if(ChannelType=="CNwdj")
+		{
+			if(window.WandoujiaPurchase)
+			{
+				WandoujiaPurchase.startPurchase(this.purchaseCNwdjCb,this);
+				env._purchase["CNwdj"] = true;
+			}
+		}else if(ChannelType=="CMGC")
+		{
+			if(window.CMGCPurchase)
+			{
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				DBOut("执行加入cmgc");
+				//Dialogs.alert("执行判断的CMGC");
+				env._purchase["CMGC"] = true;
+			}
+			types=["CMGC"];
+			//SMS
+		}else if(ChannelType=="SMS")
+		{
+			if(window.DWXPurchase)
+			{
+				DWXPurchase.startPurchase(this.purchaseDWXCb,this);
+				DBOut("DWX 执行加入SMS");
+				//Dialogs.alert("DWX 执行判断的SMS");
+				//env._purchase["SMS"] = true;
+				env._purchase["DCSZX"] = true;
+				env._purchase["DCSY"] = true;
+				env._purchase["DCZFB"] = true;
+			}else if(window.CMGCPurchase){
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				env._purchase["DCSZX"] = true;
+				env._purchase["DCSY"] = true;
+				env._purchase["DCZFB"] = true;
+				if(window.KZPurchase)KZPurchase.startPurchase(this.purchaseDCCb, this);
+			}
+			//types=["SMS","DCSY","DCSZX","DCZFB"];
+		}else if(ChannelType=="kongwob")
+		{
+			if(window.CMGCPurchase)
+			{
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				env._purchase["kongwob"] = true;
+			}
+		}else if(ChannelType=="xunlei")
+		{
+			if(window.CMGCPurchase)
+			{
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				env._purchase["xunlei"] = true;
+			}
+		}else if(ChannelType=="CM_MM")
+		{
+			if(window.CMGCPurchase)
+			{
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				env._purchase["CM_MM"] = true;
+			}
+		}else if(ChannelType=="UNI_KD")
+		{
+			if(window.CMGCPurchase)
+			{
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				env._purchase["UNI_KD"] = true;
+			}
+		}else if(ChannelType=="CNTelecom")
+		{
+			if(window.CMGCPurchase)
+			{
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				DBOut("执行加入cmgc");
+				env._purchase["CNTelecom"] = true;
+			}
+			types=["CNTelecom"];
+		}else if(ChannelType=="5GWAN")
+		{
+			if(window.CMGCPurchase)
+			{
+				CMGCPurchase.startPurchase(this.purchaseCMGCCb,this);
+				env._purchase["5GWAN"] = true;
+			}
+		}
+		else if(ChannelType=="MI")
+		{
+			if(window.MIPurchase)
+			{
+				MIPurchase.startPurchase(this.purchaseMICb,this);
+				env._purchase["MI"] = true;
+			}
+			types = ["MI"];
+		}
+		else if(ChannelType=="UC")
+		{
+			if(window.UCPurchase)
+			{
+				UCPurchase.startPurchase(this.purchaseUCCb,this);
+				env._purchase["UC"] = true;
+			}
+			types = ["UC"];
+		}
+		else if(ChannelType=="DL")
+		{
+			DLPurchase.startPurchase(this.purchaseDLCb,this);
+			env._purchase["DL"] = true;
+			types = ["DL"];
+		}
+		else if(ChannelType=="TS")
+		{
+			TSPurchase.startPurchase(this.purchaseTSCb,this);
+			env._purchase["TS"] = true;
+			types = ["TS"];
+		}
+		else if(ChannelType=="AMZN")
+		{
+			AmazonPurchase.startPurchase(this.purchaseAMZNCb,this);
+			env._purchase["AMZN"] = true;
+			types = ["AMZN"];
+		}
+		else if(ChannelType=="CNlenovo")
+		{
+			LenovoPurchase.startPurchase(this.purchaseCNlenovoCb,this);
+			env._purchase["CNlenovo"] = true;
+			types = ["CNlenovo"];
+		}
+		else if(ChannelType=="alipay")
+		{
+			AlipayPurchase.startPurchase(this.purchasealipayCb,this);
+			env._purchase["alipay"] = true;
+			types = ["alipay"];
+		}
+		else if(DeviceType=="IPHONE"&&!window.KZPurchase)
+		{
+			if(window.IAP)
+			{
+				IAP.startPurchase(this.purchaseIosCb,this);
+				{
+					if(IAP.debug)IAP.debug(this.purchaseIosDebug, this);
+					env._purchase["IOS"] = true;
+				}
+			}
+			types = ["IOS"];
+		}else if(DeviceType=="IPHONE"&& System.isJailbroken){
+			if(System.isJailbroken() && (window.LanguageStr=="cn"))
+			{
+				var dacheng = {
+					name:"DCSY",
+					init: function() {
+						if (window.KZPurchase) {
+							KZPurchase.startPurchase(env.purchaseDCCb, env);
+							//env._purchase["dacheng"] = true;
+							this._enable = true;
+						}
+					},
+					enable: function() {
+						return this._enable;
+					}
+				};
+				var szx = {
+					name:"DCSZX",
+					init: function() {
+						dacheng.init();
+					},
+					enable: function() {
+						return dacheng._enable;
+					}
+				}
+				var zfb = {
+					name:"DCZFB",
+					init: function() {
+						dacheng.init();
+					},
+					enable: function() {
+						return dacheng._enable;
+					}
+				}
+				var wyzf = {
+					name:"DCWYZF",
+					init: function() {
+						dacheng.init();
+					},
+					enable: function() {
+						return dacheng._enable;
+					}
+				}
+				var list = [dacheng,szx,zfb];
+				list.forEach(function(p){
+					p.init();
+					if (p.enable()) {
+						types.push(p.name);
+						env._purchase[p.name] = true;
+					}
+				});
+			}else{
+				if(window.IAP)
+				{
+
+					IAP.startPurchase(this.purchaseIosCb,this);
+					{
+						if(IAP.debug)IAP.debug(this.purchaseIosDebug, this);
+						env._purchase["IOS"] = true;
+					}
+				}
+				types = ["IOS"];
+			}
+		}else if(DeviceType=="CN91ads"&&window.KZPurchase)
+		{
+			var dacheng = {
+				name:"DCSY",
+				init: function() {
+					if (window.KZPurchase) {
+						KZPurchase.startPurchase(env.purchaseDCCb, env);
+						//env._purchase["dacheng"] = true;
+						this._enable = true;
+					}
+				},
+				enable: function() {
+					return this._enable;
+				}
+			};
+			var szx = {
+				name:"DCSZX",
+				init: function() {
+					dacheng.init();
+				},
+				enable: function() {
+					return dacheng._enable;
+				}
+			}
+			var zfb = {
+				name:"DCZFB",
+				init: function() {
+					dacheng.init();
+				},
+				enable: function() {
+					return dacheng._enable;
+				}
+			}
+			var wyzf = {
+				name:"DCWYZF",
+				init: function() {
+					dacheng.init();
+				},
+				enable: function() {
+					return dacheng._enable;
+				}
+			}
+			var list = [dacheng,szx,zfb];
+			list.forEach(function(p){
+				p.init();
+				if (p.enable()) {
+					types.push(p.name);
+					env._purchase[p.name] = true;
+				}
+			});
+		}
+		else
+		{
+			var dacheng = {
+				name:"DCSY",
+				init: function() {
+					if (window.KZPurchase) {
+						KZPurchase.startPurchase(env.purchaseDCCb, env);
+						//env._purchase["dacheng"] = true;
+						this._enable = true;
+					}
+				},
+				enable: function() {
+					return this._enable;
+				}
+			};
+			var szx = {
+				name:"DCSZX",
+				init: function() {
+					dacheng.init();
+				},
+				enable: function() {
+					return dacheng._enable;
+				}
+			}
+			var zfb = {
+				name:"DCZFB",
+				init: function() {
+					dacheng.init();
+				},
+				enable: function() {
+					return dacheng._enable;
+				}
+			}
+			var wyzf = {
+				name:"DCWYZF",
+				init: function() {
+					dacheng.init();
+				},
+				enable: function() {
+					return dacheng._enable;
+				}
+			}
+			var mo9 = {
+				name:"MO9",
+				init: function() {
+					if (window.MO9Purchase) {
+						MO9Purchase.startPurchase(env.purchaseMo9Cb, env);
+						env._purchase["MO9"] = true;
+						this._enable = true;
+					}
+				},
+				enable: function() {
+					return this._enable;
+				}
+			};
+
+			var google = {
+				name:"GOOGLE",
+				init: function() {
+					if (window.GPPurchase) {
+						GPPurchase.startPurchase(env.purchaseGoogleCb, env);
+						env._purchase["GOOGLE"] = true;
+						this._enable = true;
+					}
+				},
+				enable: function() {
+					return this._enable;
+				}
+			};
+			var list;
+			if(window.LanguageStr=="cn")
+				list=[dacheng,szx,zfb,mo9];
+			else
+				list=[google];
+			list.forEach(function(p){
+				p.init();
+				if (p.enable()) {
+					types.push(p.name);
+					env._purchase[p.name] = true;
+				}
+			});
+
+		}
+		if(!window.SMSPurchase || !window.SMSPurchase.canPay())
+		{
+			var i,def;
+			var defLib=window.aisEnv.defLib.pay;
+			for(i in defLib)
+			{
+				def=defLib[i]
+				if(def.Action=="MonthCard15" && env._purchase[def.ChannelType])
+					def.UnDispaly=true;
+			}
+		}else{
+			SMSPurchase.start(this.onMSGRequestDone, this, this.onMSGPayDone, this);
+		}
+		//shop.typeNamesDefault = types;
+	}
+	//-------------------buy------------------------
+	PUR.buyItem = function(item)
+	{
+		var cType,fun;
+		cType=item.ChannelType;
+		fun=this["buy"+cType+"Item"];
+		if(fun && this._purchase[cType])
+		{
+			fun(item);
+		}
+	};
+	PUR.buyQHItem = function(item)
+	{
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		QHPurchase.payPurchase(vo);
+	};
+
+	PUR.buyDCSYItem =function(item){
+		PUR.buyDCItem(item,"newwapbank");
+	};
+	PUR.buyDCSZXItem =function(item){
+		PUR.buyDCItem(item,"newmobilecard");
+	};
+	PUR.buyDCZFBItem =function(item){
+		PUR.buyDCItem(item,"10029");
+	};
+	PUR.buyDCWYZFItem =function(item){
+		PUR.buyDCItem(item,"newwapbank");
+	};
+	PUR.buyDCItem= function(item,payType)
+	{
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			gameid:"4300000",
+			areaid:"",
+			serverid:"",
+			accountid:window.USERID,
+			roleid:window.USERID+"",
+			payprice:price,
+			cburl:cburl,
+			channel:System.getProperty("ChannelID")||0,
+			userdata:toJSON(userdata),
+			paytype:payType
+		};
+		vo.paymemo=toJSON({itemId:item.PayID_Alias,itemNum:1});
+		if(ChannelType=="SMS" && window.DWXPurchase)
+			DWXPurchase.payDWXPurchase(vo);
+		else
+			KZPurchase.payPurchase(vo);
+	};
+
+	PUR.buyIOSItem = function(item)
+	{
+		var price = PUR.forDight(item.CostNumber/100,2);
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+item.CostNumber;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			itemid:item.PayID_Alias,
+			uid:window.USERID,
+			price:price+"",
+			cburl:cburl,
+			channel:System.getProperty("ChannelID")||0,
+			userdata:toJSON(userdata),
+		};
+		IAP.payPurchase(vo);
+	};
+
+	PUR.buyMO9Item = function(item)
+	{
+		var shop = this;
+		var price = item.CostNumber/100;
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var userdata = toJSON({
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		});
+
+		var vo = {
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			local:"CN",
+			currency:"CNY",
+			userdata:userdata
+		}
+		MO9Purchase.payPurchase(vo);
+	};
+
+	PUR.buyGOOGLEItem = function(item)
+	{
+		var shop = this;
+		var price = item.CostNumber/100;
+		/*
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+
+		var userdata = toJSON({
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		});
+
+		var vo = {
+			identifier:item.PayID_Alias,
+			type:"",
+			customid:"M1-"+window.USERID+"-"+Date.now(),
+			userdata:userdata,
+			cburl:cburl,
+		};
+		GPPurchase.payPurchase(vo);
+	*/
+
+		var customid = "i="+window.Imei+"#c="+(System.getProperty("ChannelID")||0)+"#uid="+window.USERID+"#app=M1#cb="+PUR.purURL+"?";
+		var cid = "M1-"+window.USERID+"-"+Date.now();
+		customid += "cid="+cid;
+		customid += "&uid="+window.USERID;
+		customid += "&sid="+item.PayID_Alias;
+		customid += "&p="+item.CostNumber;
+		customid += "&c=1";
+		customid += "&puid="+0;
+		if(PUR.isMonthCard(item))customid += "&sid_mc="+item.PayID;
+		var userdata = toJSON({
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		});
+		GPPurchase.payPurchase(item.PayID_Alias,1,userdata,item.ItemName,item.ItemDesc,price,customid);
+	};
+
+	PUR.buyMIItem = function(item,puid)
+	{
+		var self = this;
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		MIPurchase.payPurchase(vo);
+	};
+
+	//此处为新加
+    PUR.buyCM_MMItem =
+	PUR.buyUNI_KDItem =
+	PUR.buyCNTelecomItem =
+	PUR.buy5GWANItem = PUR.buykongwobItem =
+	PUR.buySMSItem =
+	PUR.buyxunleiItem =
+	PUR.buyCMGCItem = function(item,puid)
+	{
+		var self = this;
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		CMGCPurchase.payPurchase(vo);
+	};
+
+	PUR.buyUCItem = function(item,puid)
+	{
+		var self = this;
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		UCPurchase.payPurchase(vo);
+	};
+
+	PUR.buyDLItem = function(item,puid)
+	{
+		var self = this;
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		DLPurchase.payPurchase(vo);
+	};
+
+	PUR.buyTSItem = function(item)
+	{
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		TSPurchase.payPurchase(vo);
+	};
+
+	PUR.buyAMZNItem = function(item,puid)
+	{
+		var self = this;
+		var price = PUR.forDight(item.CostNumber/100,2);
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+item.CostNumber;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		AmazonPurchase.payPurchase(vo);
+	};
+
+	PUR.buy91Item = function(item,puid)
+	{
+		var self = this;
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			count:1,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		NDPlatform.payPurchase(vo);
+	};
+
+	PUR.buyCNlenovoItem = function(item,puid)
+	{
+		var self = this;
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		LenovoPurchase.payPurchase(vo);
+	};
+
+	PUR.buyalipayItem = function(item,puid)
+	{
+		var self = this;
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		AlipayPurchase.payPurchase(vo);
+	};
+
+	PUR.buyCNwdjItem = function(item)
+	{
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		if(PUR.isMonthCard(item))cburl += "&sid_mc="+item.PayID;
+		var vo={
+			productid:item.PayID_Alias,
+			price:price,
+			name:item.ItemName,
+			desc:item.ItemDesc,
+			uid:window.USERID,
+			channel:System.getProperty("ChannelID")||0,
+			cburl:cburl,
+			userdata:toJSON(userdata)
+		};
+		WandoujiaPurchase.payPurchase(vo);
+	};
+
+	PUR.requestMSG = function(item,phone,callback,obj)
+	{
+		if (!SMSPurchase || !SMSPurchase.canPay())
+			return;
+
+		var price = item.CostNumber/100;
+		var userdata = {
+			uid:window.USERID,pid:item.PayID_Alias,price:price,
+			num:1
+		};
+		var cburl = PUR.purURL+"?";
+		cburl += "uid="+window.USERID;
+		cburl += "&p="+price*100;
+		cburl += "&it="+item.PayID_Alias;
+		cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+		cburl += "&num=1";
+		cburl += "&sid_mc="+item.PayID;
+
+		SMSPurchase.setPNO(phone);
+		SMSPurchase.request({
+				type:1,
+				gameid:"118",
+				productid:item.PayID_Alias,
+				name:item.ItemName,
+				price:price*100,
+				uid:window.USERID,
+				cburl:cburl,
+				channel:System.getProperty("ChannelID")||0,
+				userdata:toJSON(userdata)
+		});
+		this.msgCallback=callback;
+		this.msgObj=obj;
+	};
+
+	PUR.onMSGRequestDone = function(msg)
+	{
+		var info,i,n;
+		var vo = fromJSON(msg.message);
+
+		if(vo && vo.messages)
+		{
+			n=vo.messages.length;
+			for(i=0;i<n;i++)
+			{
+				if(parseInt(vo.messages[i].price,10)==1500)
+				{
+					info = vo.messages[i];
+					break;
+				}
+			}
+			if(!info)
+			for(i=0;i<n;i++)
+			{
+				if(parseInt(vo.messages[i].price,10)==1000)
+				{
+					info = vo.messages[i];
+					break;
+				}
+			}
+			if(info)info.orderid=msg.orderid;
+		}
+
+		if(this.msgCallback && this.msgObj)
+		{
+			this.msgCallback.call(this.msgObj,info);
+		}
+	};
+
+	PUR.buyMSGItem = function(info)
+	{
+		SMSPurchase.pay(info.message_code, info.message, info.keyword, info.rcontent,info.orderid);
+	};
+
+	//-----------------callBack----------------------------
+	PUR.purchase91Cb=function(result)
+	{
+		NDPlatform.finish(result);
+	};
+
+	PUR.purchaseQHCb=function(result)
+	{
+		QHPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseIosCb=function(result)
+	{
+		IAP.finishPurchase(result);
+	};
+
+	PUR.purchaseIosDebug=function(msg)
+	{
+		var url="http://m1jslog.ko.cn:8180/jslog/payLog.jsp";
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST",url,true);
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send("uid="+msg.uid+"&eventid="+encodeURIComponent(msg.event)+"&data="+encodeURIComponent(toJSON(msg)));
+	};
+
+	PUR.purchaseGoogleCb=function(result)
+	{
+		GPPurchase.finishPurchase(result);
+	};
+	PUR.purchaseTSCb=function(result)
+	{
+		TSPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseAMZNCb=function(result)
+	{
+		AmazonPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseCNlenovoCb=function(result)
+	{
+		LenovoPurchase.finishPurchase(result);
+	};
+
+	PUR.purchasealipayCb=function(result)
+	{
+		AlipayPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseDCCb=function(result)
+	{
+		KZPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseMo9Cb=function(result)
+	{
+		MO9Purchase.finishPurchase(result);
+	};
+
+	PUR.purchaseDLCb=function(result)
+	{
+		DLPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseMICb=function(result)
+	{
+		MIPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseUCCb=function(result)
+	{
+		UCPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseCMGCCb=function(result)
+	{
+		CMGCPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseDWXCb=function(result)
+	{
+		DWXPurchase.finishPurchase(result);
+	};
+
+	PUR.purchaseCNwdjCb=function(result)
+	{
+		DWXPurchase.finishPurchase(result);
+	};
+
+	PUR.onMSGPayDone = function(vo)
+	{
+		SMSPurchase.finish(vo);
+	}
+
+	//-------------init-----------------
+	PUR.login=function(fun,obj,fun2)
+	{
+		if(ChannelType=="UC")
+			if(window.UCPlatform)
+			{
+				UCPlatform.login(function(result){
+				 if(UCPlatform.showFloatButton)
+			      UCPlatform.showFloatButton(1);
+		     if(fun && obj)fun.call(obj,result);
+		    },this);
+			}
+			else fun.call(obj,1);
+		else if(ChannelType=="QH")
+			if(window.QHPlatform && QHPlatform.login)
+				QHPlatform.login(fun2,obj);
+			else fun.call(obj,1);
+		else if(ChannelType=="CNwdj")
+			if(window.WandoujiaPlatform && WandoujiaPlatform.login)
+				WandoujiaPlatform.login(fun2,obj);
+			else fun.call(obj,1);
+		else if(ChannelType=="DL"){
+			if(window.DLPlatform)
+				DLPlatform.login(fun,obj);
+		}else if(ChannelType=="CNlenovo"){
+			if(window.LenovoPlatform)
+				LenovoPlatform.login(fun2,obj);
+		}else if(ChannelType=="91" ||  ChannelType=="CN91ads"){
+			if(window.NDPlatform)
+			{
+				NDPlatform.login(fun,obj);
+				if(NDPlatform.showToolBar)
+		      NDPlatform.showToolBar(1);
+	    }
+		}else
+			fun.call(obj,1);
+	};
+
+	PUR.exitGame=function(fun,obj)
+	{
+		if(ChannelType=="91")
+			if(window.NDPlatform)
+			{
+				if(fun && obj)fun.call(obj);
+				NDPlatform.exit();
+				return 1;
+			}
+
+		if(fun && obj)fun.call(obj);
+	};
+
+	PUR.forDight=function(Dight,How)
+	{
+    Dight = Math.round(Dight*Math.pow(10,How))/Math.pow(10,How);
+    return Dight;
+	};
+
+	PUR.isMonthCard=function(item)
+	{
+		return (item.Action=="MonthCard" || item.Action=="MonthCard15" || item.Action=="TH" || item.Action=="CubeCard" || item.Action=="WeekCardRes12" || item.Action=="WeekCardRes68" || item.Action=="Gift" || item.Action=="Gift2" || item.Action=="WeekCardCube68")?1:0;
+	};
+
+	PUR.showAdways=function(item)
+	{
+		if(window.Adways)
+		{
+			var cburl = PUR.purURL+"?";
+			cburl += "uid="+window.USERID;
+			cburl += "&it="+item.PayID_Alias;
+			cburl += "&oid="+"M1-"+window.USERID+"-"+Date.now();
+			cburl += "&num=1";
+
+			window.Adways.show({
+				channel:System.getProperty("ChannelID")||"0",
+				uid:""+window.USERID,
+				cburl:cburl
+			});
+		}
+	};
+
+}

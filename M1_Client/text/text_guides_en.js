@@ -1,0 +1,32 @@
+﻿if(__Page.appEnv && __Page.appEnv.textLib)
+{
+	__Page.appEnv.textLib.guidesText={
+		Greeting1:"Welcome! I have been waiting for you. Your fort is located on a small island that is abundant with resources.",
+		Greeting2:"The fort is pretty empty at the moment. Let's start by building a Gold Mine.",
+		BuildGoldMine2:"Select a good location for the Gold Mine. Buildings can only be placed in an empty area.",
+		GemBuildGoldMine1:"Building, upgrading or training always takes a bit of time. But you can complete it by using Gems.",
+		WarAlert1:"Good job! Our Gold Mine has started production. Gold is a precious resource so beware of invaders!",
+		WarAlert2:"Wow! A new fort without any defense. Hey guys, let's attack!",
+		WarAlert3:"Alert! A gang of space pirates is approaching. Build a turret ASAP to defend the fort!!",
+		BuildCannon3:"Sir, the enemy is attacking us. I suggest you rush the building process with Gems.",
+		WarStart:"Surprise!",
+		TrainUnit1:"Sir, the pirates will be back soon! It's time to form an army. Train 20 Gunners in Barracks.",
+		TrainUnit1_Btn:"Press and hold to train Gunners.",
+		TrainUnit3_Btn:"Activate Space Accelerator",
+		TrainUnit4_Btn:"Done",
+		TrainUnit5_Btn:"Cancel",
+		Attack1:"Sir, we are ready to strike the enemies. Let's go!",
+		Attack2:"Good news, all enemies outside withdrew. We should now raid their fort.",
+		Attack2_1:"Our army is not strong enough to destroy the fort. The Head Office will send elite reinforcement to help us. Let's wipe out all the enemies!",
+		Attack3:"Excellent! Your command skills are to be commended.",
+		BuildOilWell1:"Energy is essential for military activities. Training troops also consume energy. Please build an Energy Driller.",
+		UpgradeTownHall1:"HQ is vital. To build an impregnable fort, you must upgrade HQ to unlock more defensive buildings. Assign a worker to upgrade HQ.",
+		AchvmntView:"Unlock Achievements to claim Gems and EXP. This will also allow you to keep track of your development.",
+		InputName1:"Sir, there is no doubt that you want to strike fear into your enemies. Please input your name so they know who you are. The Head Office will register your name.",
+		GuideEnd1:"Sir, we are trying to connect with the Head Office. Please make sure a stable connection is available.",
+		GuideBattle1:"Welcome to the front commander!  We have discovered an island with rich resources, but it is occupied by our enemy.",
+		GuideBattle2:"The island is heavily guarded but I bet we can overtake them. Dispatch our troops to dispose the enemy!",
+		GuideBattle3:"Enemy defense is tougher than expected. Let's send more powerful troops.",
+		GuideBattle4:"A sweet victory!  Our troops will be stronger now that you are in command! Let's start building our fort!",
+	};
+}

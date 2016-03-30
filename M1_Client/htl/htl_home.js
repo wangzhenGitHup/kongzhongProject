@@ -1,0 +1,243 @@
+﻿{
+	name:"bld_selected",
+	items:[
+		{type:1,layer:"sky_shadow",aniset:"bld_docks",action:"bad_3x3"},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_1",},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_2",},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_3",},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_4",},
+		{
+			type:2,layer:"gnd_ui",handle_touch:1,
+			hud_def:{
+				type:"shape",pos:[0,-100,0],w:100,h:10,face_r:255,face_a:0,face_g:0,face_b:0,ui_event:1,
+				anchor_h:1,anchor_v:1,
+				items:[
+					{
+						type:"text",id:"NameShadow",pos:[1,-2,0],w:100,h:20,text:"建材厂",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:20,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,color_r:0,color_g:0,color_b:0,color_a:180,
+					},
+					{
+						type:"text",id:"NameText",pos:[0,-4,0],w:100,h:20,text:"建材厂",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:20,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255,color_r:255,color_g:250,color_b:200,
+					},
+					{
+						type:"text",id:"LevelShadow",pos:[1,17,0],w:100,h:20,text:"一级",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:16,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,color_r:0,color_g:0,color_b:0,color_a:180,
+					},
+					{
+						type:"text",id:"LevelText",pos:[0,15,0],w:100,h:20,text:"一级",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:16,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255,color_r:100,color_g:250,color_b:100,
+					},
+				],
+				setText:function(text,level)
+				{
+					var item;
+					item=this.getItemById("NameShadow");
+					item.setText(text);item=item.getNextItem();
+					item.setText(text);item=item.getNextItem();
+					item.setText(level);item=item.getNextItem();
+					item.setText(level);
+				}
+			}
+		},
+	]
+},
+{
+	name:"bld_getNewPos",
+	items:[
+		{type:1,layer:"sky_shadow",aniset:"bld_docks",action:"bad_3x3",},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_1",},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_2",},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_3",},
+		{type:1,layer:"gnd_objs",aniset:"mark_movebld",action:"dir_4",},
+		{
+			type:2,layer:"gnd_ui",handle_touch:1,
+			hud_def:{
+				type:"shape",pos:[0,0,0],w:100,h:10,face_r:255,face_a:0,face_g:0,face_b:0,ui_event:1,
+				anchor_h:1,anchor_v:1,
+				items:[
+					page.cssLib.btnNewBldCancel.createCSS([-40,-44,0],-4),
+					page.cssLib.btnNewBldOk.createCSS([40,-44,0],-3),
+					{
+						type:"text",id:"NameShadow",pos:[1,-2,0],w:100,h:20,text:"建材厂",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:20,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,color_r:0,color_g:0,color_b:0,color_a:180,
+					},
+					{
+						type:"text",id:"NameText",pos:[0,-4,0],w:100,h:20,text:"建材厂",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:20,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255,color_r:255,color_g:250,color_b:200,
+					},
+					{
+						type:"text",id:"LevelShadow",pos:[1,17,0],w:100,h:20,text:"一级",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:16,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:100,color_r:0,color_g:0,color_b:0,color_a:180,
+					},
+					{
+						type:"text",id:"LevelText",pos:[0,15,0],w:100,h:20,text:"一级",key:-2,ui_event:1,anchor_h:1,anchor_v:1,align_h:1,align_v:1,
+						font_size:16,edge:1,edge_r:0,edge_g:0,edge_b:0,edge_a:255,color_r:100,color_g:250,color_b:100,
+					},
+				],
+				setText:function(text,level)
+				{
+					var item;
+					item=this.getItemById("NameShadow");
+					item.setText(text);item=item.getNextItem();
+					item.setText(text);item=item.getNextItem();
+					item.setText(level);item=item.getNextItem();
+					item.setText(level);
+				}
+			}
+		},
+	]
+},
+
+{
+	name:"bld_harvestGold",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestGold.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_harvestGoldFull",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestGoldFull.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_harvestOil",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestOil.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_harvestOilFull",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestOilFull.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_harvestCube",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestCube.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_harvestCubeFull",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestCubeFull.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_harvestGem",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestGem.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_harvestGemFull",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.btnHarvestGemFull.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_busyBar",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.boxBusyBar.createCSS([0,-80,0])}]
+},
+
+{
+	name:"bld_mfcBar",
+	items:[{type:2,layer:"gnd_ui",handle_touch:1,hud_def:page.cssLib.boxMFCBar.createCSS([32,-80,0])}]
+},
+{
+	name:"bld_mfcFull",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnTrainFull.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_barrackFree",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnBarrackFree.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_spellFree",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnSpellFree.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_techFree",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnTechFree.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_clanFree",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnClanFree.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_prdFull",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnPrdFull.createCSS([0,-40,0],0)}]
+},
+{
+	name:"bld_haveGifts",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnHaveGifts.createCSS([0,-120,0],0)}]
+},
+{
+	name:"bld_haveNotices",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.btnHaveNotices.createCSS([0,-120,0],0)}]
+},
+{
+	name:"clan_flag",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.clanFlag.createCSS([-30,0,0],0)}]
+},
+{
+	name:"fakeflag",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.fakeFlag.createCSS([0,-35,0],0)}]
+},
+{
+	name:"chargefalg",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.chargeFalg.createCSS([0,-35,0],0)}]
+},
+{
+	name:"emptyflag",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.emptyFlag.createCSS([0,-35,0],0)}]
+},
+{
+	name:"residencefalg",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:page.cssLib.residenceFalg.createCSS([0,-35,0],0)}]
+},
+{
+	name:"bld_badpos",
+	items:[
+		{type:1,layer:"sky_ui",aniset:"bld_docks",action:"bad_3x3",},
+	]
+},
+{
+	name:"bld_fxOrg",
+	items:[
+		{type:2,layer:"sky_ui",hud_def:{type:"icon",pos:[0,0,0],w:32,h:32,tex:page.genPageURL(window.imgPath+"/ui/btn_edit_fxorg_32.png"),tex_u:0,tex_v:0,tex_w:1,tex_h:1,color_a:64,anchor_h:1,anchor_v:1}},
+	]
+},
+{
+	name:"bld_fxTgt",
+	items:[
+		{type:2,layer:"sky_ui",hud_def:{type:"icon",pos:[0,0,0],w:32,h:32,tex:page.genPageURL(window.imgPath+"/ui/btn_edit_fxtgt_32.png"),tex_u:0,tex_v:0,tex_w:1,tex_h:1,color_a:64,anchor_h:1,anchor_v:1}},
+	]
+},
+{
+	name:"bld_range",
+	items:[
+		{type:2,layer:"sky_ui",hud_def:{type:"icon",pos:[0,0,0],w:56*6,h:42*6,tex:page.genPageURL(window.imgPath+"/ui/mark_range_32.png"),tex_u:0,tex_v:0,tex_w:1,tex_h:1,color_a:255,anchor_h:1,anchor_v:1,filter:1,}},
+	]
+},
+{
+	name:"bld_guideFocus",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,hud_def:{type:"shape",pos:[0,0,0],w:80,h:80,border_a:0,color_a:255,display:1}}]
+},
+{
+	name:"bld_resNum",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,
+		hud_def:{
+			type:"text",css:page.cssLib.textFineMid.createCSS([0,-50,0],"0",80,30,1,1,1,1,[255,255,100]),
+			display:1,fade_pos:[0,-200,0],fade:1,fade_size:1,fade_alpha:1,
+		}
+	}]
+},
+{
+	name:"bld_resVipNum",
+	items:[{type:2,layer:"gnd_ui",handle_touch:0,
+		hud_def:{
+			type:"text",css:page.cssLib.textFineBig.createCSS([0,-10,0],"0",80,30,1,1,1,1,[224,82,8]),style:"b",
+			display:1,fade_pos:[0,-160,0],fade:1,fade_size:1,fade_alpha:1,
+		}
+	}]
+},
+{
+	name:"mac_LvBar",
+	items:[
+	{type:2,layer:"gnd_ui",hud_def:{type:"icon",pos:[0,-110,0],css:page.imgLib.mechLv_bg,anchor_h:1,anchor_v:1,filter:1,items:[
+		{
+			type:"text",id:"body",css:page.cssLib.textFineMid.createCSS([-6,-6,0],"9",80,32,1,1,1,1,[255,255,255]),style:"b",display:1,
+		},
+		{
+			type:"text",id:"leg",css:page.cssLib.textFineMid.createCSS([46,-6,0],"8",80,32,1,1,1,1,[255,255,255]),style:"b",display:1,
+		}
+	]}}
+	]
+},

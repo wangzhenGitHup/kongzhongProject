@@ -1,0 +1,90 @@
+﻿<jml>
+<import>"config.js"</import>
+<import>"config_local.jml"</import>
+<import>
+	window.LanguageStr="cn";
+	null
+</import>
+<import>"img_lib.jml"</import>
+<import>"css_lib.jml"</import>
+
+<import>"app_env.js"</import>
+<import>"ui/dlg/dlg_base.jml"</import>
+<import>"text/text_ui_"+window.LanguageStr+".js"</import>
+<import>"ui/state_base.js"</import>
+<import>"ui/state_pve.js"</import>
+<import>"ui/vw_pvestage.js"</import>
+<import>"ui/state_logs.js"</import>
+<import>"ui/dlg/pmt_info.js"</import>
+<import>"ui/dlg/pmt_choose.js"</import>
+
+<body>
+{
+	body:{
+		page_mode:"ui",w:"100%",h:"100%",align_v:"m",background:0x0,
+		items:[
+			{
+				type:"3ddiv",x:0,y:0,w:"100%",h:"100%",
+				items:[
+					{
+						type:"3dlayer",id:"ui-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[Screen.w,Screen.h,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"dlg-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[Screen.w,Screen.h,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"dlg-layer2",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[Screen.w,Screen.h,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"act-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[960,640,1],
+						frame_time:25,
+					},
+					{
+						type:"3dlayer",id:"act2-layer",x:0,y:0,w:"100%",h:"100%",renderlist:10,top_layer:0,
+						display:1,
+						camera:{fov:80.0,near:0.3,far:25.0,	pos:[0.0,0.0,8.0],at:[0,0,0],up:[0.0,1.0,0.0]},
+						hud_size:[960,640,0],
+						frame_time:25,
+					},
+				]
+			},
+			{type:"page",id:"gamepage",x:0,y:0,w:"100%",h:"100%"}
+		],
+		onFree:function()
+		{
+			audio.stopMusic();
+			//audio.stopDevice();
+		}
+	}
+}
+</body>
+
+<script>
+__Page.initApp=function()
+{
+	setUpdateSpeed("h");
+	//audio.resetDevice({rate:22050});
+	//audio.startDevice();
+	//audio.playMusic({src:this.genPageURL("sfx/battle_1.mp3"),loop:-1});
+	this.appEnv.init();
+	addEventHandler("key", __Page, this.appEnv.onKey, this.appEnv);
+};
+
+__Page.initApp();
+
+</script>
+</jml>

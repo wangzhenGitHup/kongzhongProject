@@ -1,0 +1,11 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:2,delaytime:150,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:3,delaytime:200,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:4,delaytime:250,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:5,delaytime:300,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:6,delaytime:350,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:7,delaytime:400,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:8,delaytime:450,edge:0,type:"UntHacker",level:1,num:3},
+	{wave:9,delaytime:500,edge:0,type:"UntHacker",level:1,num:3},
+]

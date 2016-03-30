@@ -1,0 +1,12 @@
+//For image: snow_0_32.png
+{
+	var id
+	if(!this.imgList)this.imgList=[];
+	if(!this.imgInfos)this.imgInfos={};
+	id=this.imgList.length;
+	this.imgList.push(this.genPath("snow_0_32.png"));
+	this.imgInfos["snow_0_32"]={w:128,h:64};
+	this["snow_s"]={tex_u:4/128, tex_v:3/64, tex_w:24/128, tex_h:25/64, w:24, h:25, tex:this.imgList[id]};
+	this["snow_m"]={tex_u:33/128, tex_v:4/64, tex_w:30/128, tex_h:31/64, w:30, h:31, tex:this.imgList[id]};
+	this["snow_l"]={tex_u:66/128, tex_v:1/64, tex_w:35/128, tex_h:37/64, w:35, h:37, tex:this.imgList[id]};
+}

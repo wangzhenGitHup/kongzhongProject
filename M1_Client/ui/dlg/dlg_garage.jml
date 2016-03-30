@@ -1,0 +1,10 @@
+﻿<jml>
+<import>"dlg_garage.js"</import>
+<import>"dlg_garage_parts.js"</import>
+<import>"dlg_garage_addons.js"</import>
+<import>"dlgcss_btnprt.js"</import>
+<script>
+DBOut("Dialog JML loaded.");
+__Page.gamePage.appEnv.onPageDlgOpen(__Page);
+</script>
+</jml>

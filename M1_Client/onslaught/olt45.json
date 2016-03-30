@@ -1,0 +1,7 @@
+[
+	{wave:1,delaytime:100,edge:0,type:"UntAvenger",level:2,num:2},
+	{wave:1,delaytime:200,edge:0,type:"UntAvenger",level:2,num:2},
+	
+	{wave:1,delaytime:100,edge:0,type:"UntPEKKA",level:2,num:2},
+	{wave:1,delaytime:200,edge:0,type:"UntPEKKA",level:2,num:2},
+]
