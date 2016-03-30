@@ -1,0 +1,83 @@
+window.imgPath="assets";
+__Page.imgLib={};
+__Page.imgLib.page=__Page;
+__Page.imgLib.imgList=[];
+__Page.imgLib.pathPrefix=window.imgPath+"/ui/";
+__Page.imgLib.pathIcon=window.imgPath+"/icon/";
+__Page.imgLib.info3x3={
+	"box_normal":	[8,8,8,8],
+	"box_name":		[12,12,12,12],
+	"box_exp":		[8,0,8,0],
+	"box_barbg":	[10,0,10,0],
+	"box_userexp":	[10,0,10,0],
+	"box_power":	[10,0,10,0],
+
+	"box_listbg":	[18,18,18,18],
+	"box_dungeonbg":[66,66,66,66],
+	"box_marquee":	[24,0,36,0],
+};
+__Page.imgLib.genPath=function(pName)
+{
+	return this.page.genPageURL(this.pathPrefix+pName);
+};
+
+//获取png路径
+__Page.imgLib.genPngPath=function(pngName)
+{
+	return this.page.genPageURL(window.imgPath + "/"+pngName+"_32.png");
+};
+//获取图标路径
+__Page.imgLib.genIconPath=function(pName)
+{
+	pName=pName+"_32";
+	return this.page.genPageURL(this.pathIcon+pName+".png");
+};
+
+/**
+__Page.imgLib.getImg=function(pName)
+{
+	var css;
+	if(this[pName]){
+		css=this[pName];
+		css.filter=1;
+	}else{
+		DBOut("========== no pic:"+pName);
+		css={};//this["Unknow"];
+	}
+	return css;
+};
+__Page.imgLib.getIcon=function(pName,size)
+{
+	var css={tex_u:0,tex_v:0,tex_w:1,tex_h:1,tex:this.genIconPath(pName,size)};
+	if(size){
+		css.w=size;
+		css.h=size;
+	}
+	css.filter=1;
+	return css;
+};
+__Page.imgLib.gen3x3Info=function(pName,size3x3,imgW,imgH)
+{
+	var box=this.getImg(pName);
+	box.size3x3=size3x3;
+	box.uv3x3=[size3x3[0]/imgW,size3x3[1]/imgH,size3x3[2]/imgW,size3x3[3]/imgH];
+	box.mode3x3=1;
+	box.mgL=size3x3[0];//margin left
+	box.mgR=size3x3[2];//margin right
+	box.mgU=size3x3[1];//margin up
+	box.mgD=size3x3[3];//margin down
+	box.mgW=size3x3[0]+size3x3[2];//margin total w
+	box.mgH=size3x3[1]+size3x3[3];//margin total h
+//	box.iw=box.w-mw;
+//	box.ih=box.h-mh;
+};
+__Page.imgLib.initPngLib=function()
+{
+	<include check="0">window.imgPath+"/ui/foe_0.jml"</include>
+	var img, imgW, imgH
+	img=this.imgInfos["all_0_32"];
+	imgW=img.w, imgH=img.h;
+	this.gen3x3Info("box_dark",[6,6,6,6],imgW,imgH);
+	this.gen3x3Info("box_dlgbox",[20,18,20,26],imgW,imgH);
+};
+/**/
