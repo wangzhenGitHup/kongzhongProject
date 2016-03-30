@@ -1,0 +1,24 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javax.microedition.rms;
+
+/**
+ *
+ * @author jinkui
+ */
+public class RecordEnumeration {
+
+    public boolean hasNextElement()
+    {
+        return false;
+    }
+
+    public int nextRecordId()
+                 throws InvalidRecordIDException
+    {
+        return 0;
+    }
+}

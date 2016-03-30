@@ -1,0 +1,263 @@
+ShowGameScreen OFF
+SetObserverMode ON
+
+LoadScene C003
+
+SetRolePosition 侯文麟 520 192
+SetRoleDir 侯文麟 2
+SetRoleVisible 侯文麟 false
+
+CreateNpc 17 女刺客 1
+SetRolePosition 女刺客 488 208
+SetRoleDir 女刺客 2
+playAnimation 1 女刺客 83 7 OFF OFF OFF
+
+CreateNpc 13 玉娘子 1
+SetRolePosition 玉娘子 536 160
+SetRoleDir 玉娘子 1
+SetRoleVisible 玉娘子 false
+
+CreateNpc 44 石岛
+SetRolePosition 石岛 344 272
+SetRoleDir 石岛 0
+
+CreateCartoon 灯柱 73 0 296 384 ON OFF OFF
+
+CreateNpc 45 莲花叶子1
+SetRolePosition 莲花叶子1 120 352
+SetRoleDir 莲花叶子1 0
+
+CreateNpc 45 莲花叶子2
+SetRolePosition 莲花叶子2 152 400
+SetRoleDir 莲花叶子2 0
+
+ShowGameScreen ON
+SetObserverMode ON
+HoldCamera ON
+ShowMovieMode 2
+
+MoveCamera 344 270 32 OFF OFF
+KeepTime 400
+CreateCartoon 侯文麟蹲持剑 97 81 296 336 ON OFF OFF
+KeepTime 100
+CreateCartoon 女主角蹲 89 29 248 240 ON OFF OFF
+KeepTime 200
+RemoveRole 石岛
+KeepTime 400
+say 玉娘子 那你现在在干什么？ 75 0 OFF
+KeepTime 400
+say 侯文麟 我在抓人犯！！ 74 0 ON
+CreateCartoon 哼 122 15 248 200 ON ON ON
+say 玉娘子 说的真好听啊，你们这些狗官就是学问好，奸淫妇女都说的这样的冠冕堂皇的。 75 0 OFF
+KeepTime 500
+MoveCamera 152 320 16 OFF OFF
+DelCartoon 女主角蹲
+CreateCartoon 闪烁 90 17 248 220 ON OFF ON
+KeepTime 100
+CreateCartoon 水花 91 9 344 384 ON OFF ON
+DelCartoon 侯文麟蹲持剑
+CreateCartoon 刀光碰撞 86 5 296 332 ON OFF ON
+KeepTime 100
+CreateCartoon 女主角左下出剑 89 27 296 336 ON OFF OFF
+DelCartoon 灯柱
+CreateCartoon 灯台 73 1 296 384 ON OFF ON
+KeepTime 100
+CreateCartoon 主角双手拿飞镖 97 82 152 388 ON OFF OFF
+
+MoveCartoon 1 女主角左下出剑 272 358 5
+DelCartoon 主角双手拿飞镖
+DelCartoon 女主角左下出剑
+CreateCartoon 女主角向后倾斜 89 30 264 368 ON OFF OFF
+CreateCartoon 主角腾空飞镖 97 74 152 384 ON OFF OFF
+KeepTime 100
+
+MoveCamera 270 320 16 OFF OFF
+CreateCartoon 灯台 73 2 296 384 ON OFF OFF
+DelCartoon 女主角向后倾斜
+CreateCartoon 女主角向后倾斜2 89 30 264 352 ON OFF OFF
+MoveCartoon 1 女主角向后倾斜2 248 336 1
+CreateCartoon 炸点 86 0 264 336 ON OFF ON
+DelCartoon 女主角向后倾斜2
+KeepTime 100
+CreateCartoon 打斗特效 86 6 300 352 ON OFF ON
+KeepTime 400
+CreateCartoon 女主角左下出剑 89 27 232 320 ON OFF OFF
+KeepTime 200
+DelCartoon 女主角左下出剑
+DelCartoon 主角腾空飞镖
+KeepTime 200
+CreateCartoon 女主角左上跳劈 89 31 216 304 ON OFF OFF
+MoveCamera 136 450 32 OFF OFF
+MoveCartoon 1 女主角左上跳劈 187 272 1
+DelCartoon 女主角左上跳劈
+KeepTime 300
+CreateCartoon 侯文麟蹲持剑 97 81 152 508 ON OFF OFF
+KeepTime 100
+CreateCartoon 女主角蹲 89 29 152 400 ON OFF OFF
+KeepTime 200
+
+
+say 侯文麟 玉娘子！我们之间的事待会再说！！ 74 0 ON
+say 侯文麟 不要让那个女刺客逃跑了！ 74 0 ON
+CreateCartoon 哼 122 15 152 355 ON ON ON
+say 玉娘子 是怕他跑出去说你是个淫贼吧！！ 75 0 OFF
+
+
+DelCartoon 女主角蹲
+CreateCartoon 女主角穿刺 89 16 152 400 ON OFF OFF
+MoveCartoon 1 女主角穿刺 152 464 1
+DElCartoon 女主角穿刺
+SetRolePosition 玉娘子 152 464 
+SetRoleVisible 玉娘子 true
+PlayAnimation 1 玉娘子 89 38 OFF OFF OFF
+DelCartoon 侯文麟蹲持剑
+CreateCartoon 侯文麟巨盾 97 83 152 508 ON OFF OFF
+CreateCartoon 三条闪烁 90 18 152 400 ON OFF ON
+CreateCartoon 炸点 86 1 152 480 ON OFF ON
+KeepTime 100
+CreateCartoon 水花 91 10 152 384 ON OFF ON
+KeepTime 200
+DelCartoon 侯文麟巨盾  
+MoveCamera 344 512 16 OFF OFF
+CreateCartoon 主角向右跳跃 90 19 152 512 ON ON ON
+CreateCartoon 主角向右跳跃 90 20 328 508 ON OFF ON
+KeepTime 100
+SetRoleVisible 玉娘子 false
+CreateCartoon 玉娘子向右闪烁 90 21 152 480 ON OFF ON
+KeepTime 100
+MoveCamera 400 496 16 OFF OFF
+CreateCartoon 主角向右站立 97 3 456 496 ON OFF OFF
+KeepTime 100
+DelCartoon 主角向右站立
+KeepTime 100
+CreateCartoon 主角向上跳跃 90 22 456 496 ON OFF ON
+MoveCamera 552 336 32 OFF OFF
+KeepTime 100
+CreateCartoon 玉娘子向右跳跃 90 20 328 508 ON OFF ON
+KeepTime 200
+MoveCamera 552 160 32 OFF OFF
+CreateCartoon 玉娘子向右跳跃 90 6 456 496 ON OFF ON
+CreateCartoon 主角向上跳跃 90 23 568 320 ON OFF ON
+KeepTime 100
+CreateCartoon 玉娘子向上跳跃1 90 23 568 448 ON OFF ON
+KeepTime 200
+
+CreateCartoon 主角向上站立 97 0 568 208 ON OFF OFF
+//MoveCamera 552 160 16 OFF OFF
+KeepTime 100
+CreateCartoon 玉娘子向上跳跃2 90 23 568 320 ON OFF ON
+DelCartoon 主角向上站立
+CreateCartoon 主角斜向右 90 24 536 176 ON OFF ON
+KeepTime 200   
+
+//MoveCamera 504 160 16 OFF OFF  
+SetRolePosition 侯文麟 504 160
+SetRoleDir 侯文麟 3
+SetRoleVIsible 侯文麟 true
+SetRolePosition 玉娘子 552 160
+SetRoleDir 玉娘子 2
+SetRoleVisible 玉娘子 true
+RoleBrow 侯文麟 6
+say 侯文麟 ……你他妈到底听不听我解释！！！ 74 1 ON
+KeepTime 100
+PlayAnimation 1 女刺客 83 8 OFF OFF OFF
+KeepTime 1000
+PlayAnimation 1 侯文麟 97 84 OFF OFF OFF
+KeepTime 100
+CreateCartoon 呃 122 16 504 112 ON OFF OFF
+CreateCartoon 飙血 90 26 520 144 ON OFF ON
+CreateCartoon 叹号 122 19 552 112 ON OFF OFF
+KeepTime 200
+DelCartoon 呃
+PlayAnimation 1 侯文麟 97 85 OFF OFF OFF
+KeepTime 200
+DelCartoon 叹号
+SetRoleVisible 玉娘子 false
+CreateCartoon 玉娘子闪烁 90 11 520 176 ON OFF ON
+KeepTime 100
+CreateCartoon 玉娘子击飞 89 32 504 188 ON OFF ON
+PlayAnimation 1 女刺客 83 7 OFF OFF OFF
+CreateCartoon 爆 86 1 504 188 ON OFF ON
+KeepTime 300
+CreateCartoon 玉娘子闪烁 90 24 488 160 ON ON ON
+SetRolePosition 玉娘子 472 160
+SetRoleDir 玉娘子 1
+SetRoleVisible 玉娘子 true
+KeepTime 800
+SetRoleDir 玉娘子 3
+RestoreAction 侯文麟 
+SetRoleDir 侯文麟 3
+KeepTIme 800
+SetRoleDir 侯文麟 2
+KeepTIme 800
+PlayANimation 1 侯文麟 97 76 OFF OFF OFF
+KeepTime 500
+say 玉娘子 这，这到底是怎么回事。 75 0 OFF
+RoleBrow 侯文麟 6
+say 侯文麟 ……你这个笨婆娘……和你说了我抓的是……刺杀刘宏的人犯。 74 0 ON
+say 侯文麟 制住这个刺客，快。 74 0 ON
+KeepTime 100
+SetRoleDir 玉娘子 1
+playAnimation 1 女刺客 83 15 OFF OFF OFF
+KeepTime 600
+playAnimation 1 女刺客 83 16 OFF OFF OFF
+MessageBox 看到西域女子吐出了黑色的血，已经毙命了。
+RoleBrow 玉娘子 19
+SetRoleDir 玉娘子 3
+say 玉娘子 这……这女子已经死了……应该是咬破了嘴里的毒丸，服毒自尽了。 75 0 OFF
+say 侯文麟 什么！？
+RestoreAction 侯文麟 
+SetRoleDir 侯文麟 1
+KeepTime 800
+SetRoleDir 侯文麟 2
+RoleBrow 侯文麟 6
+say 侯文麟 你这个胸大无脑的女人！猪一样的队友啊！！ 74 0 ON
+KeepTime 100
+PlayANimation 1 侯文麟 97 76 OFF OFF OFF
+KeepTime 200
+PlayANimation 1 侯文麟 97 86 OFF OFF OFF
+CreateCartoon 飙血 90 26 504 144 ON OFF ON
+CreateCartoon 呃 122 16 504 112 ON OFF OFF
+KeepTime 300
+DelCartoon 呃
+MessageBox 侯文麟气急攻心，伤口崩裂，再次跪倒。
+PlayANimation 1 玉娘子 89 33 OFF OFF OFF
+KeepTime 200
+say 玉娘子 狗，狗官，你没事吧！ 75 0 OFF
+say 侯文麟 说这些废话有什么用？搜一搜身！
+say 玉娘子 哦。
+MessageBox 玉娘子往侯文麟身上摸去！
+PlayANimation 1 玉娘子 89 34 OFF OFF OFF
+KeepTime 100
+RoleBrow 侯文麟 6
+PlayANimation 1 侯文麟 97 76 OFF OFF OFF
+say 侯文麟 你他妈的搜我干什么！搜她！！ 74 0 ON
+KeepTime 100
+PlayANimation 1 侯文麟 97 86 OFF OFF OFF
+RoleBrow 玉娘子 7
+玉娘子 啊？哦……哦！ 75 0 OFF
+KeepTime 200
+SetRoleVIsible 玉娘子 false
+RestoreAction 玉娘子 
+CreateCartoon 闪烁 90 10 472 160 ON OFF ON
+KeepTIme 100
+SetRolePosition 玉娘子 516 200
+SetRoleDir 玉娘子 2
+SetRoleVisible 玉娘子 true
+PlayANimation 1 玉娘子 89 35 OFF OFF OFF
+KeepTime 100
+PlayANimation 1 玉娘子 89 36 OFF OFF OFF
+MessageBox 玉娘子搜遍了刺客死尸的全身，只找到了那把匕首。
+KeepTime 500
+PlayANimation 1 玉娘子 89 37 OFF OFF OFF
+say 玉娘子 狗，狗官，只有这把刺你的匕首。 75 0 OFF
+RoleBrow 侯文麟 12
+say 侯文麟 还狗官，我有名字，侯文麟，记住了。你个笨婆娘真是气死我了！ 74 0 ON
+MessageBox 侯文麟感到身体一阵虚弱，似乎自己就要昏过去了。
+RoleBrow 侯文麟 7
+say 侯文麟 笨婆娘……带我回……京城……京城锦衣卫北镇抚司！
+PlayANimation 1 侯文麟 97 66 OFF OFF OFF
+ShowSceneSwitch 0
+ShowSubtitle 1 0 16777215 玉娘子带着侯文麟回到京城，&因为侯文麟没有保护好佥事刘宏，&被锦衣卫指挥使纪纲关到诏狱，&一边坐牢，一边养伤。
+FillScreen ON 0
+LoadScene scene0_7

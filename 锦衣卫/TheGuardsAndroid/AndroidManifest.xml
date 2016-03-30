@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="fishfly.guard"
+      android:versionCode="1"
+      android:versionName="21.0.0">
+    <application android:icon="@drawable/icon"
+         android:label="锦衣卫-倩女幽魂" >
+        <activity android:name="GuardDisplay"
+        android:launchMode="singleTask"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.game189.sms.SMS"  android:theme="@android:style/Theme.Dialog" ></activity>
+
+        <activity android:name="com.tencent.webnet.WebNetMain" android:windowSoftInputMode="adjustPan"
+        android:configChanges="orientation"/>
+
+        <meta-data android:name="ucgame_cpid" android:value="113" />
+
+        <activity
+        android:configChanges="orientation|keyboardHidden"
+        android:name="com.uc.paymentsdk.payment.PaymentsActivity" />
+
+    </application>
+    <supports-screens
+          android:largeScreens="true"
+          android:normalScreens="true"
+          android:smallScreens="true"
+          android:anyDensity="false" />
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="Android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+
+
+</manifest> 

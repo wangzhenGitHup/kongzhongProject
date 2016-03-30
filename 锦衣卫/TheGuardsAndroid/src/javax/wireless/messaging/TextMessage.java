@@ -1,0 +1,16 @@
+/*
+ * Copyright(c) 2011 北京飞思畅想科技有限责任公司
+ * All rights reserved.
+ */
+package javax.wireless.messaging;
+
+/**
+ *
+ * @author huyang
+ */
+public abstract interface TextMessage extends Message
+{
+  public abstract String getPayloadText();
+
+  public abstract void setPayloadText(String paramString);
+}

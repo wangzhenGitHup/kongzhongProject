@@ -1,0 +1,26 @@
+ShowGameScreen OFF
+SetObserverMode ON
+
+LoadScene C301
+
+SetRolePosition ╨НндВК 136 256
+SetRoleDir ╨НндВК 2
+SetRoleVIsible ╨НндВК true
+
+//CreateNpc 66 кум╪
+//SetRolePosition кум╪ 200 200
+//SetRoleDir кум╪ 0
+//SetNpcAi кум╪ 1 scene1_9die
+
+ShowGameScreen ON
+SetObserverMode OFF
+GiveMissionToActor 0
+SetMissionState 0 1 
+SetVar progess 510
+//LoadScene scene1_9
+//PlayGame 1 0
+//PlayGame 1 1
+//PlayGame 1 2 
+//PlayGame 0 0 
+//PlayGame 0 3
+//PlayGame 0

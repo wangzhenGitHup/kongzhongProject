@@ -1,0 +1,164 @@
+ShowGameScreen OFF
+SetObserverMode ON
+
+LoadScene C003
+
+SetRolePosition 侯文麟 520 192
+SetRoleDir 侯文麟 2
+SetRoleVisible 侯文麟 true
+
+CreateNpc 17 女刺客 1
+SetRolePosition 女刺客 488 208
+SetRoleDir 女刺客 2
+playAnimation 1 女刺客 83 7 OFF OFF OFF
+
+CreateNpc 13 玉娘子 1
+SetRolePosition 玉娘子 536 160
+SetRoleDir 玉娘子 1
+SetRoleVisible 玉娘子 false
+
+CreateNpc 44 石岛
+SetRolePosition 石岛 344 272
+SetRoleDir 石岛 0
+
+CreateCartoon 灯柱 73 0 296 384 ON OFF OFF
+
+CreateNpc 45 莲花叶子1
+SetRolePosition 莲花叶子1 120 352
+SetRoleDir 莲花叶子1 0
+
+CreateNpc 45 莲花叶子2
+SetRolePosition 莲花叶子2 152 400
+SetRoleDir 莲花叶子2 0
+
+ShowGameScreen ON
+SetObserverMode ON
+ShowMovieMode 2
+//RoleBrow 女刺客 19
+HoldCamera ON
+say 侯文麟 你跑不了了，说！为什么杀害刘大人！！ 74 0 ON
+RoleBrow 女刺客 2
+say 女子 ……
+MoveRoleLine 1 侯文麟 2 2 20 15 OFF 2 20 15 ON
+RoleBrow 侯文麟 6
+say 侯文麟 快说，否则别怪我辣手摧花。 74 0 ON
+SetRoleVisible 玉娘子 true
+PlayAnimation 1 玉娘子 90 27 OFF ON ON
+say 玉娘子 狗官！没想到啊，你竟然也会干这种勾当！ 75 0 OFF
+SetRoleDir 侯文麟 0
+RoleBrow 侯文麟 5
+PlayAnimation 1 侯文麟 90 27 OFF OFF ON
+SetRoleVisible 侯文麟 false
+KeepTime 100
+SetRolePosition 侯文麟 456 160
+SetRoleDir 侯文麟 3
+SetRoleVisible 侯文麟 true
+PlayAnimation 1 侯文麟 90 28 OFF ON OM  
+SetRoleDir 玉娘子 2
+KeepTime 300
+say 侯文麟 怎么又是你？！ 74 0 ON
+RoleBrow 玉娘子 6
+say 玉娘子 没想到我现在还盯着你吧。狗官，受死！ 75 0 OFF
+RoleBrow 侯文麟 20
+say 侯文麟 你听我解释，我没有你想的那样奸淫妇女。 74 0 ON
+PlayAnimation 1 玉娘子 89 25 OFF ON OFF
+SetRoleVisible 侯文麟 false
+CreateCartoon 碰 90 9 456 160 ON OFF ON
+CreateCartoon 闪烁1 90 10 504 176 ON OFF ON
+KeepTime 100
+SetRolePosition 侯文麟 540 208
+SetRoleDir 侯文麟 0
+SetRoleVisible 侯文麟 true
+KeepTime 400
+SetRoleVisible 侯文麟 false
+CreateCartoon 碰 90 9 536 208 ON OFF ON
+CreateCartoon 闪烁1 90 11 488 176 ON OFF ON
+KeepTime 100
+SetRolePosition 侯文麟 472 160
+SetRoleDir 侯文麟 3
+SetRoleVisible 侯文麟 true
+KeepTime 400
+SetRoleVIsible 侯文麟 false
+CreateCartoon 盾 97 70 472 160 ON OFF OFF
+CreateCartoon 火花 86 0 472 160 ON OFF ON
+CreateCartoon 怒 122 6 472 112 ON OFF OFF
+KeepTime 400
+DelCartoon 盾 
+KeepTime 200
+DelCartoon 怒 
+CreateCartoon 侯文麟向左闪烁 90 12 456 160 ON ON ON
+KeepTime 300
+CreateCartoon 侯文麟 97 3 344 160 ON OFF OFF
+CreateCartoon 烦躁 122 12 344 112 ON ON ON
+say 侯文麟 你够了！！我现在公事在身！！ 74 0 ON
+say 侯文麟 不想和你动手。 74 0 ON 
+say 玉娘子 鬼才信你！！ 75 0 OFF
+say 玉娘子 看招！！ 75 0 OFF
+SetRoleVisible 玉娘子 false
+ 
+CreateCartoon 闪烁打斗 90 13 536 160 ON OFF OFF
+KeepTime 100
+DelCartoon 侯文麟
+createCartoon 玉娘子持剑 89 26 400 160 ON OFF OFF
+KeepTime 100
+createCartoon 主角挥剑 97 15 344 160 ON OFF ON
+DelCartoon 闪烁打斗
+KeepTime 100
+DelCartoon 玉娘子持剑
+KeepTIme 300
+createCartoon 玉娘子闪烁 90 10 424 144 ON OFF ON
+KeepTime 400
+createCartoon 纠缠打斗 86 2 332 160 ON OFF ON
+createCartoon 纠缠身影 90 13 520 160 ON OFF ON
+KeepTime 800
+CreateCartoon 侯文麟 97 3 344 160 ON OFF OFF
+CreateCartoon 玉娘子 89 2 432 160 ON OFF OFF
+
+KeepTime 200
+CreateCartoon 怒 122 6 344 110 ON ON ON 
+say 侯文麟 你再这样胡搅蛮缠，就别怪我刀剑无情！ 74 0 ON
+say 玉娘子 狗官，这就是你的真面目吧！！ 75 0 OFF
+CreateCartoon 怒 122 6 344 110 ON ON ON 
+say 侯文麟 你今天真是要坏我大事！ 74 0 ON
+say 侯文麟 看招！！ 74 0 ON
+KeepTime 500
+DelCartoon 侯文麟
+
+createCartoon 闪烁上石头 90 14 344 160 ON OFF ON
+KeepTime 100
+DelCartoon 玉娘子
+MoveCamera 344 200 32 OFF OFF
+createCartoon 打斗效果 86 0 344 240 ON OFF ON
+createCartoon 打斗效果 86 0 352 240 ON OFF ON
+//SetRolePosition 侯文麟 328 240 
+//SetRoleVIsible 侯文麟 true
+//PlayAnimation 1 侯文麟 97 72 OFF OFF OFF
+KeepTime 100
+CreateCartoon 侯文麟跳劈 97 72 328 240 ON OFF ON
+CreateCartoon 玉娘子 89 27 344 240 ON OFF ON
+createCartoon 打斗水花 91 7 344 288 ON OFF ON
+KeepTime 100
+CreateCartoon 玉娘子闪烁 90 15 ON OFF ON
+createCartoon 打斗长水花 91 8 376 272 ON OFF ON
+KeepTime 200
+CreateCartoon 玉娘子斜向上闪躲 89 28 392 208 ON OFF OFF
+KeepTime 900
+DelCartoon 玉娘子斜向上闪躲
+CreateCartoon 纠缠刀光 86 3 360 240 ON OFF ON
+SetRoleDir 石岛 1
+CreateCartoon 纠缠身影 90 16 360 240 ON OFF ON
+//SetRoleVisible 侯文麟 false
+//RestoreAction 侯文麟
+MoveCamera 344 270 32 OFF OFF
+KeepTime 400
+CreateCartoon 侯文麟蹲持剑 97 81 296 336 ON OFF OFF
+KeepTime 100
+CreateCartoon 女主角蹲 89 29 248 240 ON OFF OFF
+KeepTime 200
+RemoveRole 石岛
+KeepTime 400
+say 玉娘子 那你现在在干什么？ 75 0 OFF
+KeepTime 400
+say 侯文麟 我在抓人犯！！ 74 0 ON
+CreateCartoon 哼 122 15 248 200 ON ON ON
+say 玉娘子 说的真好听啊，你们这些狗官就是学问好，奸淫妇女都说的这样的冠冕堂皇的。
