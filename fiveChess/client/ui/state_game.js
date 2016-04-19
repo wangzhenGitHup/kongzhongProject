@@ -567,7 +567,7 @@ if(!__Page.stateGame)
 				//超出范围 右路堵住
 				if(this.isOverRange(xa, ya))
 				{
-					right_wall = false;
+					right_wall = true;//false;
 					break;
 				}
 
@@ -587,7 +587,7 @@ if(!__Page.stateGame)
 				//如果下一个是对方棋子 则右路堵住
 				if(map[xa][ya] == (-1 * step.player))
 				{
-					right_wall = false;
+					right_wall = true;//false;
 					break;
 				}
 			}
